@@ -1,0 +1,8 @@
+# Source books (copyrighted, huge binaries) — never commit
+/cartii/
+
+# Local build artifacts (raw extracted/OCR text, intermediate generation files)
+/build/
+
+# OS junk
+.DS_Store

@@ -1,0 +1,200 @@
+{
+  "books": {
+    "plesca": {
+      "file": "Doina Anca Pleșca- Tratat de Pediatrie.pdf",
+      "title": "Pleșca - Tratat de Pediatrie",
+      "type": "ocr",
+      "offset": 14
+    },
+    "iordachescu": {
+      "file": "Tratat iordachescu 2.pdf",
+      "title": "Iordăchescu - Tratat de Pediatrie",
+      "type": "text",
+      "offset": 0
+    },
+    "ciofu": {
+      "file": "Ciofu ed 4.pdf",
+      "title": "Ciofu - Tratat de Pediatrie ed. 4",
+      "type": "text",
+      "offset": 0
+    },
+    "protocoale": {
+      "file": "Protocoale de diagnostic si tratament in Pediatrie 2023 (1).pdf",
+      "title": "Protocoale de diagnostic și tratament în Pediatrie (2023)",
+      "type": "ocr_spread",
+      "offset": 0
+    }
+  },
+  "topics": [
+    {"num": 1, "title": "Creșterea și dezvoltarea somatică. Etapele dezvoltării neuropsihice. Aprecierea dezvoltării la nivelul asistenței primare.", "citations": [{"book": "plesca", "start": 1, "end": 13}]},
+    {"num": 2, "title": "Alimentația sugarului și copilului sănătos", "citations": [{"book": "plesca", "start": 13, "end": 31}]},
+    {"num": 3, "title": "Patologia neonatală: detresa respiratorie, icterele nou-născutului, encefalopatia hipoxic-ischemică perinatală, hemoragiile intracraniene, infecțiile nou-născutului, convulsiile neonatale", "citations": [
+      {"book": "plesca", "start": 99, "end": 107},
+      {"book": "plesca", "start": 124, "end": 129},
+      {"book": "plesca", "start": 119, "end": 124},
+      {"book": "iordachescu", "start": 218, "end": 228},
+      {"book": "plesca", "start": 129, "end": 139},
+      {"book": "plesca", "start": 115, "end": 119}
+    ]},
+    {"num": 4, "title": "Embriopatii, fetopatii: TORCH, sifilis congenital", "citations": [{"book": "plesca", "start": 129, "end": 135}]},
+    {"num": 5, "title": "Falimentul creșterii. Malnutriția protein-energetică și proteică", "citations": [{"book": "iordachescu", "start": 378, "end": 391}]},
+    {"num": 6, "title": "Obezitatea", "citations": [{"book": "iordachescu", "start": 392, "end": 400}]},
+    {"num": 7, "title": "Febra la copil", "citations": [{"book": "plesca", "start": 772, "end": 783}]},
+    {"num": 8, "title": "Rinoadenoidita acută. Amigdalita acută. Faringita acută. Stomatitele și cheilitele. Otita medie acută. Mastoidita", "citations": [
+      {"book": "ciofu", "start": 202, "end": 203},
+      {"book": "iordachescu", "start": 443, "end": 459},
+      {"book": "iordachescu", "start": 441, "end": 443},
+      {"book": "iordachescu", "start": 434, "end": 439},
+      {"book": "iordachescu", "start": 453, "end": 460},
+      {"book": "ciofu", "start": 206, "end": 206}
+    ]},
+    {"num": 9, "title": "Crupul. Laringotraheobronșita acută. Bronșiolita acută", "citations": [
+      {"book": "plesca", "start": 312, "end": 316},
+      {"book": "iordachescu", "start": 489, "end": 493}
+    ]},
+    {"num": 10, "title": "Insuficiența respiratorie acută", "citations": [{"book": "iordachescu", "start": 588, "end": 592}]},
+    {"num": 11, "title": "Pneumonia acută comunitară. Supurația pulmonară. Pleurezia. Pneumotoracele", "citations": [
+      {"book": "plesca", "start": 339, "end": 346},
+      {"book": "plesca", "start": 356, "end": 363},
+      {"book": "plesca", "start": 348, "end": 354},
+      {"book": "plesca", "start": 364, "end": 366}
+    ]},
+    {"num": 12, "title": "Principiile de diagnostic și tratament ale bolii atopice. Astmul bronșic. Alergiile alimentare. Dermatita atopică. Urticaria și angioedemul", "citations": [
+      {"book": "iordachescu", "start": 509, "end": 523},
+      {"book": "plesca", "start": 689, "end": 698},
+      {"book": "plesca", "start": 710, "end": 722},
+      {"book": "plesca", "start": 699, "end": 709}
+    ]},
+    {"num": 13, "title": "Malformațiile congenitale de cord necianogene", "citations": [{"book": "iordachescu", "start": 624, "end": 636}]},
+    {"num": 14, "title": "Malformațiile congenitale de cord cianogene", "citations": [{"book": "iordachescu", "start": 646, "end": 654}]},
+    {"num": 15, "title": "Hipertensiunea arterială la copil", "citations": [{"book": "plesca", "start": 423, "end": 428}]},
+    {"num": 16, "title": "Diareea acută bacteriană și virală", "citations": [{"book": "iordachescu", "start": 743, "end": 762}]},
+    {"num": 17, "title": "Sindroamele de deshidratare", "citations": [{"book": "plesca", "start": 165, "end": 167}]},
+    {"num": 18, "title": "Diareea cronică și sindroamele de malabsorbție, inclusiv fibroza chistică și celiachia", "citations": [
+      {"book": "plesca", "start": 168, "end": 176},
+      {"book": "plesca", "start": 186, "end": 197},
+      {"book": "plesca", "start": 180, "end": 184}
+    ]},
+    {"num": 19, "title": "Boala inflamatorie intestinală", "citations": [{"book": "iordachescu", "start": 846, "end": 863}]},
+    {"num": 20, "title": "Abdomenul acut nechirurgical. Durerile abdominale recurente și alte sindroame dureroase recurente la copil", "citations": [
+      {"book": "plesca", "start": 298, "end": 301}
+    ]},
+    {"num": 21, "title": "Constipația cronică și encoprezisul", "citations": [{"book": "plesca", "start": 250, "end": 257}]},
+    {"num": 22, "title": "Icterele la sugar și copil", "citations": [{"book": "iordachescu", "start": 924, "end": 948}]},
+    {"num": 23, "title": "Hepatitele cronice și ciroza hepatică", "citations": [
+      {"book": "plesca", "start": 278, "end": 291},
+      {"book": "plesca", "start": 293, "end": 295}
+    ]},
+    {"num": 24, "title": "Hemoragiile digestive la nou-născut și copil", "citations": [{"book": "plesca", "start": 238, "end": 248}]},
+    {"num": 25, "title": "Sindroamele de hipertensiune portală. Colestaza neonatală", "citations": [
+      {"book": "iordachescu", "start": 951, "end": 952},
+      {"book": "iordachescu", "start": 924, "end": 948}
+    ]},
+    {"num": 26, "title": "Insuficiența pancreatică exocrină. Fibroza chistică", "citations": [{"book": "plesca", "start": 198, "end": 207}]},
+    {"num": 27, "title": "Miocarditele. Cardiomiopatiile primare și secundare", "citations": [
+      {"book": "plesca", "start": 433, "end": 438},
+      {"book": "plesca", "start": 411, "end": 417}
+    ]},
+    {"num": 28, "title": "Pericarditele. Endocardita infecțioasă", "citations": [
+      {"book": "plesca", "start": 446, "end": 449},
+      {"book": "plesca", "start": 439, "end": 445}
+    ]},
+    {"num": 29, "title": "Tulburări de ritm și conducere", "citations": [
+      {"book": "iordachescu", "start": 660, "end": 676},
+      {"book": "plesca", "start": 430, "end": 432}
+    ]},
+    {"num": 30, "title": "Insuficiența cardiacă", "citations": [{"book": "plesca", "start": 418, "end": 422}]},
+    {"num": 31, "title": "Rahitismul carențial, tetania și anemiile carențiale", "citations": [
+      {"book": "iordachescu", "start": 1161, "end": 1164},
+      {"book": "iordachescu", "start": 1152, "end": 1153},
+      {"book": "iordachescu", "start": 1190, "end": 1194}
+    ]},
+    {"num": 32, "title": "Anemiile hemolitice congenitale și dobândite", "citations": [{"book": "iordachescu", "start": 1194, "end": 1201}]},
+    {"num": 33, "title": "Sindroame hemoragice: trombocitopenii, trombocitopatii, coagulopatii, CID, fibrinoliza acută", "citations": [
+      {"book": "iordachescu", "start": 1202, "end": 1206},
+      {"book": "plesca", "start": 509, "end": 511},
+      {"book": "plesca", "start": 512, "end": 519},
+      {"book": "plesca", "start": 525, "end": 529},
+      {"book": "plesca", "start": 529, "end": 529}
+    ]},
+    {"num": 34, "title": "Tratamentul substitutiv cu produse de sânge", "citations": [{"book": "plesca", "start": 480, "end": 486}]},
+    {"num": 35, "title": "Infecția de tract urinar", "citations": [{"book": "plesca", "start": 599, "end": 605}]},
+    {"num": 36, "title": "Anomaliile congenitale ale tractului urinar la copil: refluxul vezico-ureteral, anomaliile obstructive ale tractului urinar", "citations": [
+      {"book": "plesca", "start": 607, "end": 610},
+      {"book": "plesca", "start": 612, "end": 618}
+    ]},
+    {"num": 37, "title": "Glomerulonefritele acute și cronice", "citations": [{"book": "plesca", "start": 629, "end": 637}]},
+    {"num": 38, "title": "Sindromul nefrotic", "citations": [{"book": "iordachescu", "start": 1322, "end": 1331}]},
+    {"num": 39, "title": "Insuficiența renală acută", "citations": [{"book": "iordachescu", "start": 1359, "end": 1366}]},
+    {"num": 40, "title": "Boala cronică renală (Insuficiența renală cronică)", "citations": [{"book": "plesca", "start": 639, "end": 649}]},
+    {"num": 41, "title": "Tuberculoza pulmonară primară și secundară", "citations": [{"book": "plesca", "start": 367, "end": 379}]},
+    {"num": 44, "title": "Leucemiile acute limfoblastice și non-limfoblastice", "citations": [{"book": "iordachescu", "start": 1230, "end": 1247}]},
+    {"num": 45, "title": "Limfoamele maligne Hodgkiniene și non-Hodgkiniene la copil", "citations": [{"book": "iordachescu", "start": 1252, "end": 1262}]},
+    {"num": 47, "title": "Urgențele oncologice la copil", "citations": [{"book": "plesca", "start": 588, "end": 598}]},
+    {"num": 48, "title": "Tumorile SNC. Tumorile solide: nefroblastomul, neuroblastomul, histiocitozele", "citations": [
+      {"book": "iordachescu", "start": 1264, "end": 1269},
+      {"book": "iordachescu", "start": 1296, "end": 1298},
+      {"book": "iordachescu", "start": 1270, "end": 1274},
+      {"book": "plesca", "start": 573, "end": 575}
+    ]},
+    {"num": 49, "title": "Anomaliile hidro-electrolitice și acido-bazice la copil", "citations": [{"book": "plesca", "start": 165, "end": 167}]},
+    {"num": 50, "title": "Sindromul hemolitic-uremic", "citations": [{"book": "iordachescu", "start": 1318, "end": 1320}]},
+    {"num": 51, "title": "Hipocalcemiile și hipercalcemiile. Rahitismele vitamino-D rezistente", "citations": [
+      {"book": "iordachescu", "start": 1143, "end": 1153},
+      {"book": "iordachescu", "start": 1164, "end": 1166}
+    ]},
+    {"num": 52, "title": "Bolile congenitale de metabolism: fenilcetonuria, hiperamoniemia, tirozinemia, galactozemia, glicogenozele, hipercolesterolemia familială, hipertrigliceridemia familială", "citations": [{"book": "plesca", "start": 754, "end": 769}]},
+    {"num": 55, "title": "Diabetul zaharat la copil. Acidocetoza și coma diabetică", "citations": [{"book": "iordachescu", "start": 403, "end": 432}]},
+    {"num": 57, "title": "Reumatismul articular acut. Artrita idiopatică juvenilă", "citations": [
+      {"book": "plesca", "start": 740, "end": 744},
+      {"book": "plesca", "start": 725, "end": 737}
+    ]},
+    {"num": 58, "title": "Colagenozele: lupusul eritematos sistemic, dermatomiozita, sclerodermia, vasculitele (purpura Henoch-Schonlein, boala Kawasaki), bolile autoinflamatorii", "citations": [
+      {"book": "plesca", "start": 745, "end": 753},
+      {"book": "iordachescu", "start": 1404, "end": 1406},
+      {"book": "iordachescu", "start": 1407, "end": 1410},
+      {"book": "iordachescu", "start": 1416, "end": 1418},
+      {"book": "iordachescu", "start": 695, "end": 705},
+      {"book": "iordachescu", "start": 1419, "end": 1424}
+    ]},
+    {"num": 59, "title": "Meningita și encefalita", "citations": [
+      {"book": "plesca", "start": 805, "end": 815},
+      {"book": "plesca", "start": 815, "end": 819}
+    ]},
+    {"num": 60, "title": "Infecții cu exantem: rujeola, rubeola, boala mână-picior-gură, varicela, scarlatina", "citations": [
+      {"book": "iordachescu", "start": 1509, "end": 1513},
+      {"book": "iordachescu", "start": 1515, "end": 1519},
+      {"book": "plesca", "start": 790, "end": 791},
+      {"book": "plesca", "start": 788, "end": 789},
+      {"book": "iordachescu", "start": 1504, "end": 1508}
+    ]},
+    {"num": 61, "title": "Infecția urliană. Mononucleoza infecțioasă", "citations": [
+      {"book": "plesca", "start": 794, "end": 795},
+      {"book": "plesca", "start": 795, "end": 797}
+    ]},
+    {"num": 62, "title": "Infecții respiratorii transmisibile: tusea convulsivă, gripa", "citations": [
+      {"book": "plesca", "start": 802, "end": 803},
+      {"book": "plesca", "start": 798, "end": 800}
+    ]},
+    {"num": 63, "title": "Șocul", "citations": [{"book": "plesca", "start": 453, "end": 468}]},
+    {"num": 64, "title": "Intoxicațiile acute: acetaminofen, alcool, barbiturice, benzodiazepine, opioide, digitalice, substanțe caustice, anticolinergice, monoxid de carbon", "citations": [
+      {"book": "iordachescu", "start": 1589, "end": 1590},
+      {"book": "iordachescu", "start": 1593, "end": 1594},
+      {"book": "iordachescu", "start": 1585, "end": 1586},
+      {"book": "iordachescu", "start": 1586, "end": 1587},
+      {"book": "iordachescu", "start": 1580, "end": 1582},
+      {"book": "iordachescu", "start": 1575, "end": 1577},
+      {"book": "iordachescu", "start": 1600, "end": 1602},
+      {"book": "ciofu", "start": 585, "end": 585},
+      {"book": "iordachescu", "start": 1598, "end": 1599}
+    ]},
+    {"num": 65, "title": "Insuficiența hepatică", "citations": [{"book": "iordachescu", "start": 978, "end": 990}]},
+    {"num": 66, "title": "Hipertensiunea craniană și edemul cerebral acut", "citations": [{"book": "protocoale", "start": 347, "end": 354}]},
+    {"num": 67, "title": "Coma și statusul convulsiv", "citations": [{"book": "plesca", "start": 683, "end": 688}]},
+    {"num": 68, "title": "Sindromul convulsiv. Convulsiile febrile", "citations": [{"book": "plesca", "start": 667, "end": 682}]},
+    {"num": 69, "title": "Paraliziile cerebrale infantile", "citations": [{"book": "plesca", "start": 654, "end": 664}]},
+    {"num": 70, "title": "Stenoza hipertrofică de pilor", "citations": [{"book": "plesca", "start": 302, "end": 304}]},
+    {"num": 71, "title": "Invaginația intestinală", "citations": [{"book": "plesca", "start": 305, "end": 307}]},
+    {"num": 72, "title": "Enterocolita ulcero-necrotică", "citations": [{"book": "plesca", "start": 139, "end": 142}]}
+  ]
+}
