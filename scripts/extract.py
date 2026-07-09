@@ -36,9 +36,18 @@ IORDACHESCU_CALIBRATION = sorted([
     (1581, 1611), (1670, 1700), (1821, 1850),
 ])
 
+# Nelson's PDF interleaves ".e" electronic-supplement pages (bibliography,
+# keywords) between real content pages, so the offset grows in large,
+# uneven jumps per chapter. Calibrated per citation range actually used.
+NELSON_CALIBRATION = sorted([
+    (390, 656), (659, 1035), (671, 1049), (848, 1312), (978, 1545),
+    (1107, 1785), (1174, 1914), (1184, 1928), (1228, 1988), (1234, 1997),
+    (1242, 2011), (1246, 2016), (1592, 2588), (1701, 2819), (2510, 4365),
+    (2573, 4496), (2580, 4508), (2603, 4576), (2607, 4587), (2614, 4605),
+])
 
-def printed_to_pdf_iordachescu(printed_page):
-    pts = IORDACHESCU_CALIBRATION
+
+def printed_to_pdf_calibrated(printed_page, pts):
     if printed_page <= pts[0][0]:
         p0, p1 = pts[0], pts[1]
     elif printed_page >= pts[-1][0]:
@@ -57,8 +66,15 @@ def printed_to_pdf_iordachescu(printed_page):
 def book_to_pdf_pages(book_key, start, end):
     book = BOOKS[book_key]
     if book_key == "iordachescu":
-        lo = printed_to_pdf_iordachescu(start) - TEXT_BUFFER
-        hi = printed_to_pdf_iordachescu(end) + TEXT_BUFFER
+        lo = printed_to_pdf_calibrated(start, IORDACHESCU_CALIBRATION) - TEXT_BUFFER
+        hi = printed_to_pdf_calibrated(end, IORDACHESCU_CALIBRATION) + TEXT_BUFFER
+        return list(range(max(1, lo), hi + 1))
+    if book_key == "nelson":
+        # Wider buffer than other text books: interpolated (non-anchor) targets
+        # can be off by more since Nelson's offset drift isn't smooth.
+        nelson_buffer = 12
+        lo = printed_to_pdf_calibrated(start, NELSON_CALIBRATION) - nelson_buffer
+        hi = printed_to_pdf_calibrated(end, NELSON_CALIBRATION) + nelson_buffer
         return list(range(max(1, lo), hi + 1))
     if book["type"] == "text":
         lo = max(1, start - TEXT_BUFFER)
