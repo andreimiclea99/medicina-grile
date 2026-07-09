@@ -3,13 +3,12 @@
 Site static cu grile de pregătire pentru examenul de specialitate Pediatrie
 (tematica cu 72 de subiecte, promoția 2017+). Întrebările sunt generate pe baza
 bibliografiei oficiale a fiecărui capitol (Pleșca, Iordăchescu, Ciofu, Protocoale
-de diagnostic și tratament în Pediatrie) și au format complement simplu (1
-răspuns corect din 5 variante), cu explicație și citare a sursei după fiecare
-răspuns.
+de diagnostic și tratament în Pediatrie, Nelson Textbook of Pediatrics) și au
+format complement simplu (1 răspuns corect din 5 variante), cu explicație și
+citare a sursei după fiecare răspuns.
 
-66 din cele 72 de capitole sunt acoperite — cele 6 bazate exclusiv pe Nelson
-Textbook of Pediatrics (carte care nu face parte din bibliografia locală) au
-fost omise.
+Toate cele 72 de capitole din tematică sunt acoperite (5 întrebări/capitol, 360
+în total).
 
 ## Structură
 
