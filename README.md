@@ -7,8 +7,10 @@ de diagnostic și tratament în Pediatrie, Nelson Textbook of Pediatrics) și au
 format complement simplu (1 răspuns corect din 5 variante), cu explicație și
 citare a sursei după fiecare răspuns.
 
-Toate cele 72 de capitole din tematică sunt acoperite (5 întrebări/capitol, 360
-în total).
+Toate cele 72 de capitole din tematică sunt acoperite, cu 501 întrebări în
+total — numărul de întrebări per capitol variază (5-11) în funcție de
+amploarea capitolului (câte boli/subteme distincte conține) și de relevanța
+sa pentru examen.
 
 ## Structură
 

@@ -8,11 +8,11 @@ const QUESTIONS = {
           "id": "1-1",
           "stem": "Un nou-născut la termen are greutatea la naștere sub percentila 10 pentru vârsta gestațională și este încadrat postnatal ca fiind mic pentru vârsta gestațională (SGA). Care dintre următoarele afirmații descrie corect relația dintre SGA și retardul de creștere intrauterină (RCIU)?",
           "options": [
-            "SGA este sinonim cu prematuritatea, iar RCIU se aplică exclusiv nou-născuților la termen",
+            "SGA și RCIU sunt entități echivalente, diagnosticate prin aceleași criterii și la același moment",
             "Diagnosticul de RCIU se stabilește pe parcursul sarcinii prin ecografii fetale seriate, iar SGA se stabilește la naștere prin raportarea greutății la vârsta gestațională; nu toți nou-născuții cu RCIU sunt și SGA",
             "SGA se diagnostichează prenatal ecografic, iar RCIU se diagnostichează postnatal prin raportarea greutății la naștere",
-            "SGA și RCIU sunt entități echivalente, diagnosticate prin aceleași criterii și la același moment",
-            "Toți nou-născuții cu RCIU sunt SGA, dar nu toți nou-născuții SGA prezintă RCIU"
+            "Toți nou-născuții cu RCIU sunt SGA, dar nu toți nou-născuții SGA prezintă RCIU",
+            "SGA este sinonim cu prematuritatea, iar RCIU se aplică exclusiv nou-născuților la termen"
           ],
           "correct": 1,
           "explanation": "Textul precizează că diagnosticul de RCIU este elaborat pe parcursul gestației prin măsurători ecografice repetate, în timp ce SGA este depistat la naștere prin raportarea greutății la naștere la greutatea corespunzătoare vârstei gestaționale. Nou-născuții SGA pot fi și cu RCIU, dar nou-născuții cu RCIU nu sunt întotdeauna și SGA, putând fi SGA, AGA sau LGA. Deși folosite adesea ca echivalente, cele două noțiuni reprezintă entități diferite.",
@@ -22,13 +22,13 @@ const QUESTIONS = {
           "id": "1-2",
           "stem": "Un copil născut prematur, cu greutatea la naștere (GN) de 1500 g, este adus la control la vârsta corectată de 6 luni, în condiții adecvate de îngrijire. Conform ritmului de recuperare ponderală descris pentru prematuri, care este greutatea așteptată la această vârstă?",
           "options": [
-            "9000 g",
-            "3000 g",
-            "6000 g",
             "3750 g",
-            "4500 g"
+            "6000 g",
+            "9000 g",
+            "4500 g",
+            "3000 g"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "Pentru prematuri, ritmul de recuperare ponderală menționat este: la 2 luni greutatea = 2 x GN, la 6 luni greutatea = 3 x GN, iar la 1 an = 6 x GN. Pentru o greutate la naștere de 1500 g, la 6 luni greutatea așteptată este 3 x 1500 g = 4500 g.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 1-13"
         },
@@ -36,13 +36,13 @@ const QUESTIONS = {
           "id": "1-3",
           "stem": "O fetiță în vârstă de 6 ani se prezintă la consult pentru apariția telarhei și a pubarhei. Cum se clasifică corect această situație clinică, conform criteriilor de vârstă prezentate?",
           "options": [
-            "Pubertate precoce",
+            "Dezvoltare pubertară normală pentru vârstă",
             "Pubertate precipitată",
             "Pubertate întârziată",
-            "Dezvoltare pubertară normală pentru vârstă",
+            "Pubertate precoce",
             "Ginecomastie"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "Pubertatea precoce se definește ca apariția semnelor pubertare (telarhă, pubarhă, menarhă) înaintea vârstei de 8 ani la fetițe. La 6 ani, apariția telarhei și pubarhei se încadrează în această categorie, spre deosebire de pubertatea precipitată, care presupune instalarea caracterelor sexuale secundare după vârsta de 7 ani la fete.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 1-13"
         },
@@ -50,13 +50,13 @@ const QUESTIONS = {
           "id": "1-4",
           "stem": "O fetiță este investigată pentru statură mică asociată cu gât scurt, implantare joasă a părului și pterygium colli. Cariotipul evidențiază monosomie X (sindrom Turner). Din care categorie etiologică de hipostatură patologică face parte acest caz, conform clasificării cauzelor hipostaturii?",
           "options": [
-            "Cauze nutriționale",
             "Hipostatura familială",
             "Cauze psihosociale",
             "Cauze genetice (cromozomiale)",
-            "Cauze endocrine"
+            "Cauze endocrine",
+            "Cauze nutriționale"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "În clasificarea cauzelor hipostaturii, sindromul Turner este încadrat explicit la cauzele genetice cromozomiale ale hipostaturii patologice, alături de sindromul Down. Cauzele endocrine, nutriționale, familiale sau psihosociale reprezintă categorii distincte, care nu includ anomaliile cromozomiale.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 1-13"
         },
@@ -64,14 +64,28 @@ const QUESTIONS = {
           "id": "1-5",
           "stem": "Un copil cu greutatea de 15 kg, fără pierderi patologice de lichide și cu activitate fizică minimă, trebuie evaluat pentru necesarul hidric zilnic. Conform formulei de estimare a necesarului hidric pe categorii de greutate, ce cantitate de lichide este recomandată pentru 24 de ore?",
           "options": [
-            "1250 ml",
-            "1000 ml",
-            "1500 ml",
+            "750 ml",
             "1750 ml",
-            "750 ml"
+            "1500 ml",
+            "1250 ml",
+            "1000 ml"
+          ],
+          "correct": 3,
+          "explanation": "Pentru copiii cu greutatea între 11 și 20 kg, formula de estimare este 1000 ml + 50 ml pentru fiecare kilogram peste 10 kg. Pentru 15 kg, calculul este 1000 ml + (5 kg x 50 ml) = 1250 ml/24 ore.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 1-13"
+        },
+        {
+          "id": "1-6",
+          "stem": "Un băiat de 11 ani este examinat pentru evaluarea dezvoltării pubertare. Se constată creșterea scrotului și a testiculelor, cu ax testicular de aproximativ 3,5 cm, volum testicular măsurat cu orhidometrul de 12 ml, penis crescut în lungime și grosime, pilozitate pubiană de consistență fermă, creață, aspră, extinsă până la jumătatea penisului, iar talia crește maximal în această perioadă. Conform stadializării Tanner, în ce stadiu al dezvoltării pubertare se încadrează acest pacient?",
+          "options": [
+            "Stadiul III",
+            "Stadiul II",
+            "Stadiul I (prepubertar)",
+            "Stadiul IV",
+            "Stadiul V (aspect de adult)"
           ],
           "correct": 0,
-          "explanation": "Pentru copiii cu greutatea între 11 și 20 kg, formula de estimare este 1000 ml + 50 ml pentru fiecare kilogram peste 10 kg. Pentru 15 kg, calculul este 1000 ml + (5 kg x 50 ml) = 1250 ml/24 ore.",
+          "explanation": "Conform tabelului stadiilor dezvoltării pubertare la băieți după Tanner, stadiul III se caracterizează prin creșterea scrotului, a testiculelor (ax testicular de 3,3-4 cm) și a penisului, păr pubian de consistență fermă, creț, aspru, extins până la jumătatea penisului, talie care crește maximal și volum testicular de 10, 12 sau 15 ml. Aceste elemente corespund exact descrierii cazului prezentat, diferențiindu-l de stadiul II (ax testicular 2,5-3,3 cm, pilozitate minimă) și de stadiul IV (păr de tip adult fără extensie pe abdomen, ax testicular 4-4,5 cm).",
           "source": "Pleșca - Tratat de Pediatrie, pag. 1-13"
         }
       ]
@@ -84,13 +98,13 @@ const QUESTIONS = {
           "id": "2-1",
           "stem": "Un sugar eutrofic, fără pierderi patologice și cu activitate fizică minimă, cântărește 14 kg. Conform metodei de estimare a necesarului hidric bazal în funcție de greutatea corporală, care este cantitatea de lichide recomandată pentru 24 de ore?",
           "options": [
-            "1200 ml",
             "1400 ml",
-            "1000 ml",
             "1500 ml",
+            "1200 ml",
+            "1000 ml",
             "700 ml"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Pentru greutăți între 11-20 kg, necesarul hidric se calculează astfel: 1000 ml + 50 ml pentru fiecare kg peste 10 kg. Pentru 14 kg rezultă 1000 ml + 50 ml x 4 kg = 1200 ml/24h. Formula pentru 3-10 kg (100 ml/kg) sau pentru peste 20 kg (1500 ml + 20 ml/kg) nu se aplică în acest caz.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 13-31"
         },
@@ -98,13 +112,13 @@ const QUESTIONS = {
           "id": "2-2",
           "stem": "Un sugar de 2 luni, alimentat exclusiv la sân, este adus la control pentru evaluarea creșterii. Mama relatează că sugarul udă mai puțin de 4 scutece pe zi, are scaune verzui, nu se aud zgomote de deglutiție în timpul suptului, iar copilul rămâne agitat și pare flămând după alăptare. Sporul ponderal este insuficient. Care este cea mai probabilă explicație a acestui tablou?",
           "options": [
+            "Deficit de vitamină K la sugar",
             "Boală de reflux gastroesofagian necomplicată",
             "Alergie la proteinele laptelui de vacă transferate prin lapte matern",
             "Intoleranță congenitală la lactoză",
-            "Hipogalactie maternă",
-            "Deficit de vitamină K la sugar"
+            "Hipogalactie maternă"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Textul menționează explicit că hipogalactia maternă este sugerată de spor ponderal insuficient, micțiuni rare (sub 4-5 scutece ude/zi), scaune verzui de foame, absența zgomotelor de deglutiție în timpul suptului și agitația/foamea persistentă a sugarului după alăptat. Celelalte afecțiuni nu au acest tablou caracteristic descris în sursă.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 13-31"
         },
@@ -112,13 +126,13 @@ const QUESTIONS = {
           "id": "2-3",
           "stem": "Un nou-născut la termen, alimentat exclusiv natural, care nu a primit profilaxie cu vitamină K la naștere, se prezintă la 10 zile de viață cu echimoze și sângerări gingivale. Care este explicația fiziopatologică principală a acestui tablou, conform particularităților metabolismului vitaminei K la nou-născut?",
           "options": [
-            "Deficitul de fier cu trombocitopenie secundară",
-            "Imaturitatea sintezei hepatice a albuminei serice",
-            "Transferul transplacentar redus de vitamină K, asociat conținutului scăzut de vitamină K din laptele matern",
+            "Excesul de vitamină E cu efect antiagregant plachetar",
             "Deficitul de vitamină D cu afectarea secundară a sintezei hepatice a factorilor de coagulare",
-            "Excesul de vitamină E cu efect antiagregant plachetar"
+            "Deficitul de fier cu trombocitopenie secundară",
+            "Transferul transplacentar redus de vitamină K, asociat conținutului scăzut de vitamină K din laptele matern",
+            "Imaturitatea sintezei hepatice a albuminei serice"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Textul arată că transferul transplacentar de vitamină K este mult mai redus comparativ cu al celorlalte vitamine liposolubile, ceea ce determină rezerve foarte mici la naștere, iar laptele uman conține doar aproximativ 0,3 µg/dl de vitamină K. Această combinație predispune la boala hemoragică a nou-născutului, motiv pentru care se impune administrarea profilactică de vitamină K.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 13-31"
         },
@@ -126,13 +140,13 @@ const QUESTIONS = {
           "id": "2-4",
           "stem": "Un sugar de 6 săptămâni prezintă regurgitații și vărsături postprandiale frecvente, fără scădere ponderală, fără semne de alarmă digestive sau respiratorii, fiind diagnosticat cu reflux gastroesofagian necomplicat. Care este conduita dietetică menționată în sursă pentru ameliorarea simptomatologiei, la un sugar alimentat artificial?",
           "options": [
-            "Trecerea la o formulă delactozată pe bază de proteine din soia",
-            "Utilizarea unei formule extensiv hidrolizate (semielementale)",
+            "Utilizarea unei formule hipercalorice de 1 kcal/ml",
             "Utilizarea unei formule elementale pe bază de aminoacizi",
-            "Utilizarea unei formule de lapte îngroșate de tip AR (antireflux)",
-            "Utilizarea unei formule hipercalorice de 1 kcal/ml"
+            "Utilizarea unei formule extensiv hidrolizate (semielementale)",
+            "Trecerea la o formulă delactozată pe bază de proteine din soia",
+            "Utilizarea unei formule de lapte îngroșate de tip AR (antireflux)"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Textul precizează că formulele îngroșate de tip AR (antireflux), cu agenți de îngroșare pe bază de făină de roșcove sau amidon de porumb/orez, sunt recomandate la sugarii cu reflux gastroesofagian. Formulele delactozate, hidrolizate, elementale sau hipercalorice sunt indicate pentru alte situații clinice (intoleranță la lactoză, alergie la proteinele laptelui de vacă, malabsorbție severă, respectiv denutriție).",
           "source": "Pleșca - Tratat de Pediatrie, pag. 13-31"
         },
@@ -140,14 +154,28 @@ const QUESTIONS = {
           "id": "2-5",
           "stem": "În cadrul consilierii unei familii privind diversificarea alimentației, referitor la momentul introducerii glutenului în dieta sugarului, care este conduita recomandată de ESPGHAN pentru reducerea riscului de boală celiacă?",
           "options": [
-            "Introducerea glutenului doar după oprirea completă a alăptării",
-            "Evitarea completă a alimentelor cu gluten până la vârsta de 1 an",
-            "Introducerea glutenului cât mai precoce posibil, înainte de vârsta de 4 luni, indiferent de alimentația lactată asociată",
             "Introducerea glutenului exclusiv sub formă de cereale delactozate, după vârsta de 12 luni",
+            "Evitarea completă a alimentelor cu gluten până la vârsta de 1 an",
+            "Introducerea glutenului doar după oprirea completă a alăptării",
+            "Introducerea glutenului cât mai precoce posibil, înainte de vârsta de 4 luni, indiferent de alimentația lactată asociată",
             "Introducerea glutenului în cantități mici, progresiv crescânde, în fereastra de oportunitate 4-7 luni, în paralel cu alimentația la sân"
           ],
           "correct": 4,
           "explanation": "Textul arată că introducerea glutenului în cantități mici, progresiv crescânde, în paralel cu alimentația la sân, în fereastra de oportunitate cuprinsă între 4 și 7 luni, poate reduce riscul de boală celiacă prin inducerea toleranței orale. Introducerea precoce (sub 4 luni) sau tardivă (peste 7 luni) a fost asociată cu reducerea acestui efect protector, crescând riscul de alergie la gluten și diabet zaharat tip 1.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 13-31"
+        },
+        {
+          "id": "2-6",
+          "stem": "Un sugar de 8 luni, aflat în plină diversificare, primește frecvent mai multe mese bogate în proteine de origine animală (carne, ou, brânză) pe lângă alăptare, astfel încât aportul proteic zilnic ajunge la valori de două-trei ori mai mari decât cele recomandate. Conform datelor prezentate în sursă, care este principala consecință pe termen lung asociată acestui aport proteic excesiv la sugar și copilul mic?",
+          "options": [
+            "Hipoglicemie prin inhibarea gluconeogenezei hepatice",
+            "Rahitism carențial prin competiția proteinelor cu absorbția vitaminei D",
+            "Steatoree cu deficit secundar de vitamine liposolubile",
+            "Creșterea indicelui de masă corporală mai târziu în copilărie sau adolescență",
+            "Anemie megaloblastică prin deficit de acid folic"
+          ],
+          "correct": 3,
+          "explanation": "Textul precizează că aportul crescut de proteine la sugar și copilul mic a fost asociat cu creșterea indicelui de masă corporală mai târziu în copilărie sau adolescență, motiv pentru care recomandările actuale propun ca, în primul an de viață, aportul energetic furnizat de substratul proteic să nu depășească 15%. Celelalte tablouri clinice (steatoree, hipoglicemie, rahitism, anemie megaloblastică) sunt asociate în text altor tipuri de dezechilibre nutriționale (exces lipidic, deficit glucidic, deficit de vitamină D, respectiv de acid folic), nu excesului proteic.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 13-31"
         }
       ]
@@ -162,11 +190,11 @@ const QUESTIONS = {
           "options": [
             "Trecere directă la ventilație de înaltă frecvență, fără administrare de surfactant",
             "Creșterea presiunii CPAP peste 10 cmH2O, fără alte intervenții",
-            "Administrare de corticoizi sistemici (dexametazonă) pentru accelerarea maturării pulmonare",
             "Administrare curativă de surfactant exogen",
+            "Administrare de corticoizi sistemici (dexametazonă) pentru accelerarea maturării pulmonare",
             "Continuarea CPAP cu FiO2 crescut, fără alte intervenții, până la 48 de ore de viață"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "Textul precizează că surfactantul este recomandat în scop curativ la prematurii care necesită FiO2 > 30% în condiții de suport ventilator neinvaziv cu CPAP cu presiuni mai mari de 6 cmH2O. Cu cât tratamentul cu surfactant se începe mai devreme, cu atât prognosticul este mai bun. Ventilația de înaltă frecvență se rezervă cazurilor care nu răspund la ventilația convențională, nu ca primă intervenție.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 99-107"
         },
@@ -174,13 +202,13 @@ const QUESTIONS = {
           "id": "3-2",
           "stem": "Un nou-născut din mamă Rh-negativă izoimunizată prezintă la naștere semne de boală hemolitică. Bilirubina indirectă determinată din sângele din cordonul ombilical este de 4,5 mg/dl, iar hemoglobina din cordon este de 11 g/dl. Care este conduita terapeutică indicată în primele 12 ore de viață?",
           "options": [
-            "Fototerapie simplă și reevaluare la 24 de ore, fără alte măsuri",
-            "Exsanguinotransfuzie",
-            "Administrare de imunoglobulină i.v. ca tratament de primă linie, fără alte investigații",
             "Administrare de fenobarbital ca unică măsură terapeutică",
+            "Fototerapie simplă și reevaluare la 24 de ore, fără alte măsuri",
+            "Administrare de imunoglobulină i.v. ca tratament de primă linie, fără alte investigații",
+            "Exsanguinotransfuzie",
             "Temporizare fără tratament, cu control al bilirubinei la 72 de ore"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Exsanguinotransfuzia este metoda de elecție în formele moderate/severe de boală hemolitică, fiind indicată în primele 12 ore atunci când bilirubina indirectă din cordonul ombilical este peste 4 mg/dl sau crește cu 0,5-1 mg/h, sau dacă hemoglobina din cordon este sub 12 g/dl. Fototerapia și fenobarbitalul nu sunt suficiente în aceste forme, iar imunoglobulina i.v. are utilitate controversată și nu este tratamentul de primă linie.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 124-129"
         },
@@ -188,13 +216,13 @@ const QUESTIONS = {
           "id": "3-3",
           "stem": "Un nou-născut la termen cu antecedente de asfixie perinatală severă prezintă în primele ore de viață letargie, hipotonie și reflexe arhaice diminuate, tablou compatibil cu encefalopatie hipoxic-ischemică de formă moderată. Care este conduita terapeutică specifică, standard, recomandată în acest caz?",
           "options": [
-            "Inițierea hipotermiei terapeutice în primele 6 ore de viață, cu răcire până la 33,5-34,5°C, timp de 72 de ore",
-            "Administrare de bicarbonat de sodiu i.v. pentru corectarea acidozei, ca măsură de primă linie",
             "Restricție hidrică severă, sub 40 ml/kg/zi, indiferent de statusul volemic",
+            "Temporizarea oricărui tratament până la apariția convulsiilor clinice",
             "Administrare profilactică de manitol pentru reducerea presiunii intracraniene, la toți pacienții",
-            "Temporizarea oricărui tratament până la apariția convulsiilor clinice"
+            "Administrare de bicarbonat de sodiu i.v. pentru corectarea acidozei, ca măsură de primă linie",
+            "Inițierea hipotermiei terapeutice în primele 6 ore de viață, cu răcire până la 33,5-34,5°C, timp de 72 de ore"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Hipotermia terapeutică a devenit standard terapeutic în formele moderate și severe de encefalopatie hipoxic-ischemică; pentru a fi eficientă, trebuie inițiată în primele 6 ore de la naștere, cu răcire până la 33,5-34,5°C timp de 72 de ore, urmată de reîncălzire treptată. Administrarea de bicarbonat de sodiu nu este recomandată, iar depletivele pentru reducerea presiunii intracraniene rămân controversate.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 124-129"
         },
@@ -202,13 +230,13 @@ const QUESTIONS = {
           "id": "3-4",
           "stem": "Un nou-născut este investigat pentru suspiciune de toxoplasmoză congenitală, mama având seroconversie documentată în cursul sarcinii. Care rezultat serologic, obținut la momentele indicate, confirmă diagnosticul de infecție congenitală la nou-născut?",
           "options": [
-            "Persistența IgG specific la vârsta de 2 luni, fără alte determinări",
-            "Test Coombs direct pozitiv la naștere",
-            "IgG pozitiv izolat în prima zi de viață, indiferent de valoarea IgM",
             "IgG și IgM pozitive la vârsta de 5 zile, cu IgA pozitiv la 10 zile",
-            "IDR la toxoplasmină pozitivă în primele 24 de ore de viață"
+            "IgG pozitiv izolat în prima zi de viață, indiferent de valoarea IgM",
+            "IDR la toxoplasmină pozitivă în primele 24 de ore de viață",
+            "Persistența IgG specific la vârsta de 2 luni, fără alte determinări",
+            "Test Coombs direct pozitiv la naștere"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Diagnosticul de toxoplasmoză congenitală se confirmă la nou-născutul cu IgG și IgM pozitive la vârsta de 5 zile și IgA pozitiv la 10 zile, deoarece IgM și IgA nu traversează placenta și sunt sintetizate de nou-născut. IgG izolat, mai ales în primele zile, poate fi de origine maternă transplacentară și nu este suficient pentru diagnostic; persistența IgG dincolo de 1 an este standardul de diagnostic la sugar/copil, nu la 2 luni.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 124-129"
         },
@@ -216,15 +244,85 @@ const QUESTIONS = {
           "id": "3-5",
           "stem": "La un nou-născut prematur cu vârstă de gestație 27 de săptămâni, ecografia transfontanelară efectuată la 6 zile de viață evidențiază hemoragie intraventriculară care ocupă peste 50% din aria ventriculară pe secțiune parasagitală, cu dilatație a ventriculului lateral. Cum se clasifică această hemoragie conform sistemului ecografic Volpe?",
           "options": [
-            "Hemoragie la nivelul matricei germinale, fără extensie intraventriculară",
+            "Gradul 2",
             "Gradul 3",
+            "Hemoragie la nivelul matricei germinale, fără extensie intraventriculară",
             "Gradul 1",
-            "Infarct hemoragic periventricular izolat, fără hemoragie intraventriculară",
-            "Gradul 2"
+            "Infarct hemoragic periventricular izolat, fără hemoragie intraventriculară"
           ],
           "correct": 1,
           "explanation": "Conform clasificării ecografice Volpe, gradul 3 corespunde unei hemoragii intraventriculare care depășește 50% din aria ventriculară pe secțiune parasagitală, situație în care apare de obicei și dilatație a ventriculului lateral. Gradul 1 corespunde hemoragiei la nivelul matricei germinale cu extensie ventriculară minimă (sub 10%), iar gradul 2 corespunde unei extinderi de 10-50%.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 218-228"
+        },
+        {
+          "id": "3-6",
+          "stem": "Un nou-născut post-termen, cu lichid amniotic meconial gros la naștere, dezvoltă detresă respiratorie severă și hipoxemie refractară la oxigenoterapie cu concentrații crescute de oxigen. Ecocardiografia relevă șunt dreapta-stânga semnificativ, sugestiv pentru hipertensiune arterială pulmonară persistentă asociată sindromului de aspirație de meconiu. Care este măsura terapeutică specifică recomandată pentru ameliorarea oxigenării și a supraviețuirii în acest context?",
+          "options": [
+            "Administrarea de oxid nitric inhalator",
+            "Antibioterapie cu spectru larg, ca unică măsură terapeutică",
+            "Creșterea presiunilor de ventilație mecanică convențională, fără alte intervenții",
+            "Restricția severă a aportului de lichide, sub 40 ml/kg/zi",
+            "Corticoterapie sistemică în doze mari, ca primă intenție terapeutică"
+          ],
+          "correct": 0,
+          "explanation": "În sindromul aspirației de meconiu complicat cu hipertensiune arterială pulmonară, administrarea de oxid nitric (sau, acolo unde acesta nu este disponibil, de sildenafil) ameliorează oxigenarea și rata de supraviețuire; în formele grave, care nu răspund la tratamentul obișnuit, se recurge la oxigenarea transmembranară extracorporeală (ECMO). Antibioticele nu modifică prognosticul SAM, iar corticoizii au rezultate deocamdată controversate.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 99-107"
+        },
+        {
+          "id": "3-7",
+          "stem": "Un nou-născut la termen prezintă crize convulsive clonice focale cu durată de peste 3 minute, confirmate clinic, în absența oricărui dezechilibru metabolic decelabil (glicemie, calcemie și magneziemie în limite normale). Care este medicamentul anticonvulsivant recomandat ca primă linie, administrat intravenos, în doză de atac de 15-20 mg/kg (repetabilă până la maximum 40 mg/kg)?",
+          "options": [
+            "Levetiracetamul",
+            "Topiramatul",
+            "Lidocaina",
+            "Fenitoina",
+            "Fenobarbitalul"
+          ],
+          "correct": 4,
+          "explanation": "Fenobarbitalul administrat intravenos, în doză de atac de 15-20 mg/kg/doză (repetabilă până la 40 mg/kg) și doză de întreținere de 5-7 mg/kg/zi, este cel mai frecvent utilizat anticonvulsivant la nou-născut, fiind folosit inclusiv pentru profilaxia crizelor. Fenitoina se asociază dacă crizele nu cedează după fenobarbital, iar topiramatul se administrează numai pe cale orală; levetiracetamul are o schemă de dozaj diferită (doză de atac de 40 mg/kg).",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 119-124"
+        },
+        {
+          "id": "3-8",
+          "stem": "Un nou-născut la termen cu antecedente de asfixie perinatală este evaluat la câteva ore de la naștere: este descris ca fiind excesiv de vioi, cu reflexe osteotendinoase și reflex Moro exagerate, pupile midriatice, tahicardic, cu reflex de supt slab, dar cu tonus muscular normal și fără convulsii. Cărei forme de encefalopatie hipoxic-ischemică, conform clasificării Sarnat, îi corespunde acest tablou clinic?",
+          "options": [
+            "Encefalopatie hipoxic-ischemică gradul I (ușoară)",
+            "Encefalopatie hipoxic-ischemică gradul III (severă)",
+            "Comă hipoxic-ischemică, cu abolirea funcțiilor de trunchi cerebral",
+            "Encefalopatie hiperbilirubinemică (icter nuclear)",
+            "Encefalopatie hipoxic-ischemică gradul II (moderată)"
+          ],
+          "correct": 0,
+          "explanation": "În encefalopatia hipoxic-ischemică de gradul I (ușoară), cea mai frecventă formă, nou-născuții sunt deseori excesiv de vioi, cu reflexe osteotendinoase și arhaice exagerate, pupile midriatice, tahicardie și reflex de supt slab, dar tonusul muscular este normal și convulsiile nu fac parte din tabloul clinic; majoritatea revin la normal în 24-48 de ore. Gradul II se caracterizează prin letargie și convulsii, iar gradul III prin stupor/comă și tonus muscular flasc.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 119-124"
+        },
+        {
+          "id": "3-9",
+          "stem": "Un nou-născut alimentat exclusiv la sân, care nu a primit vitamina K profilactic la naștere, se prezintă la vârsta de 3 săptămâni cu o hemoragie intracraniană acută instalată brusc. Care este cea mai probabilă explicație fiziopatologică a acestui tablou, respectiv cea mai eficientă măsură care ar fi putut preveni această complicație?",
+          "options": [
+            "Deficit tranzitoriu al factorilor de coagulare vitamino-K dependenți (II, VII, IX, X); administrarea profilactică de vitamina K1 intramuscular la naștere",
+            "Coagulare intravasculară diseminată secundară unui sepsis; antibioterapie profilactică cu spectru larg",
+            "Deficit ereditar de factor VIII (hemofilie A); administrarea de plasmă proaspătă congelată la naștere",
+            "Trombocitopenie aloimună; administrarea antenatală de imunoglobulină i.v. mamei",
+            "Fragilitate capilară secundară prematurității; administrarea profilactică de vitamina C"
+          ],
+          "correct": 0,
+          "explanation": "Tabloul descris corespunde formei cu debut tardiv a bolii hemoragice a nou-născutului, determinată de deficitul tranzitoriu al factorilor de coagulare vitamino-K dependenți, mai frecventă la sugarii alimentați exclusiv natural care nu au primit vitamină K profilactic; hemoragia intracraniană acută este cea mai frecventă manifestare a acestei forme (peste 50% din cazuri) și are evoluție gravă. Profilaxia constă în administrarea de fitomenadion (vitamina K1) intramuscular, 1 mg, în primele ore după naștere.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 99-107"
+        },
+        {
+          "id": "3-10",
+          "stem": "O gravidă cu culturi vaginale pozitive pentru streptococ de grup B și cu ruptură a membranelor cu peste 12 ore înainte de naștere dă naștere unui nou-născut la termen care dezvoltă, în primele 24-48 de ore de viață, insuficiență respiratorie gravă, cu tablou clinic ce mimează sindromul de detresă respiratorie. Care este cel mai probabil diagnostic?",
+          "options": [
+            "Sepsis neonatal tardiv cu stafilococ coagulazo-negativ",
+            "Displazie bronhopulmonară",
+            "Pneumonie de aspirație cu Candida albicans",
+            "Tahipnee tranzitorie a nou-născutului",
+            "Sepsis neonatal precoce cu streptococ de grup B"
+          ],
+          "correct": 4,
+          "explanation": "Streptococul de grup B este un germen Gram-pozitiv responsabil frecvent de sepsisul neonatal precoce, al cărui debut este în primele 24-48 de ore de la naștere, cu insuficiență respiratorie gravă ce poate mima sindromul de detresă respiratorie; factorii de risc includ colonizarea maternă cu acest germen și membranele rupte peste 6-12 ore. Sepsisul tardiv, cu germeni precum stafilococul coagulazo-negativ, apare după cel puțin trei zile de viață, de regulă la nou-născuți cu proceduri invazive de terapie intensivă.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 129-139"
         }
       ]
     },
@@ -236,13 +334,13 @@ const QUESTIONS = {
           "id": "4-1",
           "stem": "Un nou-născut la termen, din mamă cu toxoplasmoză gestațională diagnosticată în trimestrul III de sarcină, este asimptomatic clinic la naștere. La vârsta de 5 zile se dozează IgG și IgM anti-Toxoplasma, ambele fiind pozitive, iar la 10 zile se recoltează IgA specific, care este de asemenea pozitiv. Cum se interpretează aceste rezultate?",
           "options": [
-            "Sunt sugestive pentru sferocitoză ereditară, nu pentru toxoplasmoză congenitală",
             "Impun repetarea obligatorie a testării la vârsta de 1 an, acesta fiind singurul moment cu valoare diagnostică",
+            "Reprezintă transfer transplacentar pasiv de anticorpi materni, fără a indica infecție a nou-născutului",
+            "Sunt sugestive pentru sferocitoză ereditară, nu pentru toxoplasmoză congenitală",
             "Reprezintă rezultate fără valoare, deoarece testele serologice nu se folosesc niciodată la nou-născut în această infecție",
-            "Confirmă diagnosticul de toxoplasmoză congenitală, întrucât IgM și IgA nu traversează placenta și sunt sintetizate de către nou-născut",
-            "Reprezintă transfer transplacentar pasiv de anticorpi materni, fără a indica infecție a nou-născutului"
+            "Confirmă diagnosticul de toxoplasmoză congenitală, întrucât IgM și IgA nu traversează placenta și sunt sintetizate de către nou-născut"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Conform textului, la nou-născutul cu IgG și IgM pozitive la vârsta de 5 zile și IgA pozitiv la 10 zile se confirmă diagnosticul de toxoplasmoză congenitală, deoarece IgM și IgA nu trec prin placentă și sunt sintetizate de nou-născut. Persistența IgG dincolo de vârsta de 1 an este standardul de aur doar la sugarul mai mare, când IgG materne transplacentare ar trebui deja să fi dispărut.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 129-135"
         },
@@ -250,13 +348,13 @@ const QUESTIONS = {
           "id": "4-2",
           "stem": "Un nou-născut prezintă corioretinită, microcefalie și calcificări intracraniene periventriculare decelate la ecografia transfontanelară, tablou sugestiv pentru infecție congenitală cu citomegalovirus. Care este principala complicație pe termen lung la nou-născuții simptomatici cu această infecție?",
           "options": [
-            "Osteocondrită metafizară simetrică, similară celei din luesul congenital",
-            "Diabet zaharat insulino-dependent prin distrucția celulelor beta pancreatice",
-            "Surditate senzorială progresivă, prezentă la aproximativ 60% dintre nou-născuții simptomatici",
             "Hipotiroidism congenital prin afectare directă a glandei tiroide fetale",
+            "Diabet zaharat insulino-dependent prin distrucția celulelor beta pancreatice",
+            "Osteocondrită metafizară simetrică, similară celei din luesul congenital",
+            "Surditate senzorială progresivă, prezentă la aproximativ 60% dintre nou-născuții simptomatici",
             "Cardiopatie congenitală cianogenă de tip transpoziție de vase mari"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Textul menționează surditatea senzorială progresivă la 60% dintre nou-născuții simptomatici cu infecție citomegalică congenitală, aceasta fiind principala cauză de surditate senzorială de cauză nongenetică. Celelalte complicații enumerate (diabet, hipotiroidism, cardiopatie cianogenă, osteocondrită) nu sunt descrise ca fiind caracteristice infecției cu CMV.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 129-135"
         },
@@ -264,13 +362,13 @@ const QUESTIONS = {
           "id": "4-3",
           "stem": "Un sugar cu antecedente de rubeolă maternă confirmată în primul trimestru de sarcină este diagnosticat cu persistență de canal arterial la examenul cardiologic. Care dintre următoarele asocieri oculare este caracteristică pentru rubeola congenitală?",
           "options": [
-            "Corioretinită pigmentară cu aspect de „sare și piper” asociată cu cataractă",
-            "Microftalmie cu hipoplazie de nerv optic, caracteristică infecției cu virusul Zika",
             "Triada Hutchinson cu malformații dentare și keratită interstițială",
-            "Calcificări hepatice difuze și ascită masivă",
-            "Osteocondrită luetică simetrică a oaselor lungi"
+            "Microftalmie cu hipoplazie de nerv optic, caracteristică infecției cu virusul Zika",
+            "Corioretinită pigmentară cu aspect de „sare și piper” asociată cu cataractă",
+            "Osteocondrită luetică simetrică a oaselor lungi",
+            "Calcificări hepatice difuze și ascită masivă"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "În rubeola congenitală, printre manifestările permanente descrise se numără leziunile oculare (cataractă, microftalmie, glaucom, corioretinită pigmentară „sare și piper”) și malformațiile cardiace (persistență de canal arterial, stenoză de arteră pulmonară sau aortică, defect septal ventricular). Triada Hutchinson este specifică luesului congenital tardiv, nu rubeolei.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 129-135"
         },
@@ -279,12 +377,12 @@ const QUESTIONS = {
           "stem": "Un copil de 3 ani, cu antecedente incerte de lues congenital netratat, este adus la consult pentru malformații dentare, keratită interstițială și surditate progresivă de tip cohlear. Cum se numește această asociere clasică de manifestări tardive ale luesului congenital?",
           "options": [
             "Triada clasică a toxoplasmozei (hidrocefalie, calcificări intracraniene, corioretinită)",
-            "Sindromul de alcoolism fetal",
-            "Sindromul TORCH",
             "Triada Sabin-Feldman",
-            "Triada Hutchinson"
+            "Sindromul TORCH",
+            "Triada Hutchinson",
+            "Sindromul de alcoolism fetal"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "Manifestările tardive (sechelele) ale luesului congenital sunt descrise sub numele de triada Hutchinson, care cuprinde malformații dentare, leziuni oculare (keratită interstițială, cu posibilă cecitate) și leziuni cohleare (până la surditate). Triada hidrocefalie-calcificări-corioretinită este specifică formelor tardive de toxoplasmoză congenitală, nu luesului.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 129-135"
         },
@@ -301,6 +399,34 @@ const QUESTIONS = {
           "correct": 0,
           "explanation": "Trăsăturile faciale caracteristice ale sindromului alcoolic fetal sunt fisurile palpebrale scurte, bordura vermilion subțire a buzei superioare și philtrum-ul neted; prezența a cel puțin două dintre acestea, alături de expunerea prenatală la alcool, susține diagnosticul de FAS. Sindroamele Williams și Dubowitz, precum și efectele fenilcetonuriei materne, fac parte din diagnosticul diferențial al dismorfismului facial din FAS, dar nu se asociază cu expunerea la alcool descrisă în vinietă.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 978-982"
+        },
+        {
+          "id": "4-6",
+          "stem": "Un nou-născut de 18 zile este internat pentru letargie, convulsii focale și fontanelă anterioară bombată, fără leziuni cutanate vizibile. PCR din LCR este pozitivă pentru virusul herpes simplex, susținând diagnosticul de infecție herpetică congenitală cu afectarea sistemului nervos central. Se inițiază aciclovir intravenos, iar la 21 de zile de tratament PCR din LCR rămâne pozitivă. Care este conduita corectă în această situație?",
+          "options": [
+            "Se oprește orice tratament antiviral și se trece direct la imunoglobuline intravenoase specifice anti-herpetice",
+            "Se asociază obligatoriu corticoterapie sistemică, pentru a reduce inflamația meningoencefalitică indusă de virusul herpetic",
+            "Se întrerupe aciclovirul, deoarece 21 de zile reprezintă durata standard și suficientă a tratamentului intravenos în formele cu afectare a SNC",
+            "Se continuă aciclovirul intravenos până la 28 de zile, apoi se trece la aciclovir oral timp de șase luni, cu monitorizarea periodică a neutrofilelor",
+            "Se schimbă imediat aciclovirul intravenos cu ganciclovir intravenos, singura opțiune eficientă în cazul persistenței PCR pozitive"
+          ],
+          "correct": 3,
+          "explanation": "Conform textului, la nou-născuții cu afectarea SNC sau formă diseminată, dacă PCR din LCR este pozitivă la 21 de zile de la începutul tratamentului, se continuă aciclovirul intravenos până la 28 de zile, apoi se administrează aciclovir oral 300 mg/m²/doză de trei ori pe zi timp de șase luni, cu monitorizarea neutrofilelor inițial la 2-4 săptămâni, apoi lunar. Absența leziunilor cutanate este frecventă (30-40% din formele cu afectare a SNC nu au leziuni cutanate).",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 129-135"
+        },
+        {
+          "id": "4-7",
+          "stem": "Un copil de 4 ani, provenit dintr-un centru de plasament, este evaluat pentru retard de creștere și dificultăți cognitive. La examenul clinic se constată fisuri palpebrale scurte (sub percentila 10), bordură vermilion subțire a buzei superioare, philtrum neted și circumferință craniană sub percentila 10, dar nu există niciun istoric matern confirmat de consum de alcool în sarcină. Care dintre următoarele afirmații despre diagnosticul din spectrul tulburărilor alcoolice fetale este corectă în acest caz?",
+          "options": [
+            "Diagnosticul trebuie reformulat obligatoriu ca tulburare neurodezvoltare-comportamentală asociată cu expunerea prenatală la alcool (ND-PAE), care nu necesită trăsături faciale",
+            "Sindromul alcoolic fetal (FAS) și forma parțială (pFAS) sunt singurele tulburări din spectrul alcoolic fetal care pot fi diagnosticate în absența unui istoric matern confirmat de expunere la alcool",
+            "Diagnosticul de ND-PAE exclude prin definiție coexistența cu FAS sau pFAS la același copil",
+            "Absența unei circumferințe craniene reduse ar exclude, în orice context, diagnosticul de FAS",
+            "Diagnosticul de sindrom alcoolic fetal (FAS) este exclus definitiv în absența confirmării expunerii materne la alcool"
+          ],
+          "correct": 1,
+          "explanation": "Dintre toate tulburările din spectrul alcoolic fetal (FASD), doar FAS și forma parțială (pFAS) pot fi diagnosticate fără un istoric matern confirmat de expunere prenatală la alcool, ceea ce este relevant mai ales la copiii din plasament/adopție, la care istoricul matern lipsește frecvent. ND-PAE, spre deosebire de ARND, poate fi diagnosticat suplimentar față de FAS sau pFAS, nu în locul acestora.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 978-982"
         }
       ]
     },
@@ -312,13 +438,13 @@ const QUESTIONS = {
           "id": "5-1",
           "stem": "Sugar în vârstă de 10 luni este adus pentru scădere ponderală marcată și continuă. Examenul clinic evidențiază topirea maselor musculare și dispariția completă a țesutului adipos subcutanat, inclusiv a bulei adipoase Bichat, facies triunghiular „de bătrân” cu fruntea încrețită și privirea vie, piele uscată și încrețită, fără edeme. Indicele nutrițional (Waterlow) este de 65%, iar perimetrul brahial este de 108 mm. Care este diagnosticul cel mai probabil?",
           "options": [
+            "Malnutriție edematoasă moderată",
             "Marasm (malnutriție acută severă)",
-            "Kwashiorkor",
             "Kwashiorkor marasmic",
             "Malnutriție cronică de gradul 1 (ușoară)",
-            "Malnutriție edematoasă moderată"
+            "Kwashiorkor"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Absența edemelor, emacierea generalizată cu dispariția țesutului adipos (inclusiv bula Bichat), facies „de bătrân” și indicele nutrițional Waterlow sub 70% (cu perimetru brahial sub 115 mm) definesc marasmul, formă de malnutriție acută severă în care predomină deficitul energetic. Prezența edemelor ar orienta spre kwashiorkor, iar asocierea edemelor cu emaciere ar sugera forma marasmic-kwashiorkor.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 378-391"
         },
@@ -329,8 +455,8 @@ const QUESTIONS = {
             "Deshidratare hipertonă",
             "Kwashiorkor",
             "Marasm",
-            "Rahitism carențial",
-            "Malnutriție cronică ușoară"
+            "Malnutriție cronică ușoară",
+            "Rahitism carențial"
           ],
           "correct": 1,
           "explanation": "Kwashiorkorul apare tipic la copilul de 1-2 ani, în perioada înțărcării, prin aport insuficient de proteine în condițiile unei diete bogate în glucide; se caracterizează prin edeme (trăsătura principală), conservarea relativă a țesutului adipos („facies în lună plină”), hepatomegalie prin steatoză și modificări ale părului. Indiferent de indicii antropometrici, prezența edemelor face ca malnutriția să fie considerată severă.",
@@ -340,10 +466,10 @@ const QUESTIONS = {
           "id": "5-3",
           "stem": "Un copil internat este evaluat cu scorul STRONGkids pentru riscul de subnutriție, obținând un total de 4 puncte (din maximum 5). Conform recomandărilor de interpretare a scorului, care este conduita indicată?",
           "options": [
-            "Externare cu monitorizare ambulatorie, fără evaluare suplimentară",
             "Consult de specialitate și intervenție dietetică minimă, fără plan individualizat",
-            "Doar reevaluarea scorului la o săptămână",
+            "Externare cu monitorizare ambulatorie, fără evaluare suplimentară",
             "Cântărire de 2 ori pe săptămână, fără intervenție dietetică",
+            "Doar reevaluarea scorului la o săptămână",
             "Consult de specialitate (medic, nutriționist) și plan de nutriție specializat, individualizat"
           ],
           "correct": 4,
@@ -354,13 +480,13 @@ const QUESTIONS = {
           "id": "5-4",
           "stem": "La un sugar cu malnutriție severă, aflat în primele zile de renutriție cu ritm prea rapid de realimentare, apare sindromul de realimentare (refeeding syndrome). Care este anomalia electrolitică descrisă ca semnul cardinal al acestui sindrom, implicată în apariția aritmiilor cardiace și a insuficienței cardiace?",
           "options": [
-            "Hipofosfatemia",
+            "Hipocalcemia",
             "Hipomagneziemia",
-            "Hipernatremia",
             "Hipopotasemia",
-            "Hipocalcemia"
+            "Hipernatremia",
+            "Hipofosfatemia"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Textul precizează explicit că hipofosfatemia este semnul cardinal al sindromului de realimentare, afectând aproape toate procesele celulare și contribuind la disritmii cardiace și insuficiență cardiacă/miocardică. Hipopotasemia și hipomagneziemia apar de asemenea în acest sindrom, dar nu sunt descrise drept semnul cardinal.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 378-391"
         },
@@ -368,14 +494,28 @@ const QUESTIONS = {
           "id": "5-5",
           "stem": "La un copil cu malnutriție proteino-energetică severă la care este dificil de diferențiat clinic deshidratarea de șocul septic (semnele clasice de deshidratare fiind alterate de modificările cutaneo-adipoase), care dintre următoarele semne este considerat caracteristic pentru deshidratare și, conform textului, nu apare în șocul septic?",
           "options": [
-            "Ochii înfundați în orbite, cearcănele periorbitare și fontanela anterioară deprimată",
+            "Extremitățile reci",
+            "Oliguria",
             "Hipotermia",
             "Pulsul radial slab sau absent",
-            "Extremitățile reci",
-            "Oliguria"
+            "Ochii înfundați în orbite, cearcănele periorbitare și fontanela anterioară deprimată"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Textul menționează explicit că ochii înfundați în orbite, cearcănele periorbitare și fontanela anterioară deprimată sunt caracteristice pentru deshidratare și nu apar în sepsis. În schimb, hipotermia este considerată semn de infecție gravă/șoc septic și nu semn de deshidratare, iar pulsul radial slab/absent, extremitățile reci și oliguria sunt semne comune ambelor entități.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 378-391"
+        },
+        {
+          "id": "5-6",
+          "stem": "Sugar de 8 luni, internat cu malnutriție severă tip marasm, prezintă brusc un episod de apnee și letargie marcată. Glicemia capilară determinată de urgență este 45 mg/dL, iar copilul rămâne conștient, putând fi alimentat. Conform protocolului de tratament al hipoglicemiei la copilul cu malnutriție severă, care este conduita imediată corectă?",
+          "options": [
+            "Restricție hidrică și administrare de insulină în doză mică pentru prevenirea hiperglicemiei de rebound",
+            "Glucoză soluție 10%, 5 mL/kg, administrată exclusiv intravenos, indiferent de starea de conștiență",
+            "Bolus intravenos rapid de glucoză 30% concentrată",
+            "Bolus de 50 mL soluție de glucoză 10% (sau zaharoză 10%) administrat oral sau pe sondă nazogastrică, urmat de alimentare cât mai curând și la fiecare 2 ore",
+            "Doar monitorizarea glicemiei la 2 ore, fără tratament imediat, întrucât valoarea este peste pragul de intervenție"
+          ],
+          "correct": 3,
+          "explanation": "Tratamentul hipoglicemiei se inițiază când glicemia este sub 54 mg/dL (sub 3 mmol/L); dacă copilul este conștient, se administrează un bolus de 50 mL glucoză 10% sau zaharoză 10% pe cale orală sau pe sondă nazogastrică, urmat de alimentare cât mai curând și cât mai frecvent (la 2 ore) posibil. Administrarea IV de glucoză 10%, 5 mL/kg, este rezervată copilului inconștient, la care calea orală nu este posibilă.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 378-391"
         }
       ]
@@ -388,10 +528,10 @@ const QUESTIONS = {
           "id": "6-1",
           "stem": "Un copil de 8 ani este adus la un consult pediatric de rutină. Calculul indicelui de masă corporală (IMC) îl plasează la percentila 97 pentru vârstă și sex. Conform criteriilor CDC 2000, cum se încadrează acest copil?",
           "options": [
-            "Normoponderal",
-            "Nu poate fi încadrat fără determinarea circumferinței abdominale",
-            "Obezitate",
             "Suprapondere",
+            "Normoponderal",
+            "Obezitate",
+            "Nu poate fi încadrat fără determinarea circumferinței abdominale",
             "Obezitate extremă/morbidă"
           ],
           "correct": 2,
@@ -402,13 +542,13 @@ const QUESTIONS = {
           "id": "6-2",
           "stem": "Un băiat de 3 ani este evaluat pentru exces ponderal important, instalat de la vârsta de sugar. La examenul clinic se constată statură mică (sub percentila 5), iar la anamneză se remarcă întârziere în dezvoltarea neuropsihică. Vârsta osoasă este inferioară vârstei cronologice. Care este cea mai probabilă interpretare a acestui tablou clinic?",
           "options": [
+            "Tulburare de comportament alimentar de tip hiperfagic izolat",
+            "Malnutriție cronică supraadăugată unei alimentații hipercalorice",
             "Obezitate idiopatică (exogenă), formă comună la copilul mic",
             "Obezitate secundară, de cauză endocrină sau genetică",
-            "Variantă normală de creștere, fără semnificație patologică",
-            "Malnutriție cronică supraadăugată unei alimentații hipercalorice",
-            "Tulburare de comportament alimentar de tip hiperfagic izolat"
+            "Variantă normală de creștere, fără semnificație patologică"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Textul precizează criteriile de diferențiere a obezității primare de cea secundară: debutul la sugarul mic, statura mică (sub percentila 5) și întârzierea în dezvoltarea neuropsihică sunt caracteristice obezității secundare, spre deosebire de obezitatea idiopatică, în care debutul este de obicei la 4-6 ani, statura este înaltă și intelectul este normal. Vârsta osoasă inferioară celei cronologice susține de asemenea această orientare diagnostică.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 392-400"
         },
@@ -416,13 +556,13 @@ const QUESTIONS = {
           "id": "6-3",
           "stem": "Un copil obez în vârstă de 11 ani are circumferința abdominală peste percentila 90 pentru vârstă și sex, tensiune arterială peste percentila 95 și HDL-colesterol de 35 mg/dL. Conform criteriilor International Diabetes Federation citate în text, care este diagnosticul cel mai probabil?",
           "options": [
-            "Sindrom metabolic",
-            "Hipertensiune arterială secundară obezității, fără alte implicații metabolice",
-            "Steatohepatită non-alcoolică (NAFLD)",
             "Diabet zaharat de tip 2, fără investigații suplimentare necesare",
-            "Dislipidemie izolată, fără altă semnificație"
+            "Dislipidemie izolată, fără altă semnificație",
+            "Steatohepatită non-alcoolică (NAFLD)",
+            "Sindrom metabolic",
+            "Hipertensiune arterială secundară obezității, fără alte implicații metabolice"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "Definiția IDF a sindromului metabolic la copilul peste 6 ani presupune circumferință abdominală peste percentila 90 asociată cu cel puțin două dintre criteriile: HTA, HDL-colesterol scăzut sub 40 mg/dL sau trigliceride crescute, respectiv alterarea metabolismului glucidic. Acest pacient întrunește circumferința abdominală crescută plus două criterii (HTA și HDL scăzut), încadrându-se astfel în sindromul metabolic.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 392-400"
         },
@@ -430,13 +570,13 @@ const QUESTIONS = {
           "id": "6-4",
           "stem": "Un adolescent obez, asimptomatic, prezintă la evaluarea de rutină o valoare a transaminazei TGP (ALT) de peste două ori limita superioară a normalului, confirmată persistent la reevaluarea după 3 luni. Care este conduita corectă conform textului?",
           "options": [
-            "Se investighează suplimentar, atât pentru excluderea altor cauze de hepatită, cât și pentru confirmarea NAFLD",
-            "Se inițiază tratament hepatoprotector empiric, fără investigații suplimentare",
             "Se recomandă biopsie hepatică de primă intenție, înaintea oricărei alte investigații",
-            "Se consideră valoarea explicată în totalitate de obezitate și nu se recomandă investigații suplimentare",
-            "Ecografia abdominală este suficientă pentru stabilirea diagnosticului de certitudine de NAFLD"
+            "Se inițiază tratament hepatoprotector empiric, fără investigații suplimentare",
+            "Ecografia abdominală este suficientă pentru stabilirea diagnosticului de certitudine de NAFLD",
+            "Se investighează suplimentar, atât pentru excluderea altor cauze de hepatită, cât și pentru confirmarea NAFLD",
+            "Se consideră valoarea explicată în totalitate de obezitate și nu se recomandă investigații suplimentare"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "Textul precizează că, la orice copil cu valoare a ALT de cel puțin două ori mai mare decât limita superioară a normalului și cu creștere persistentă peste 3 luni, este necesară investigarea suplimentară pentru excluderea altor cauze de hepatită și pentru confirmarea NAFLD, deoarece doar prezența obezității nu explică acest diagnostic. Ecografia abdominală nu este recomandată ca metodă de screening sau pentru diagnosticul de certitudine.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 392-400"
         },
@@ -444,14 +584,28 @@ const QUESTIONS = {
           "id": "6-5",
           "stem": "Un adolescent de 17 ani, cu IMC de 42 kg/m² s.c., prezintă sindrom de apnee în somn sever și hipertensiune arterială, în ciuda unui program susținut de dietă și activitate fizică. Care este conduita terapeutică adecvată în această situație, conform textului?",
           "options": [
+            "Tratament cu gastrofibran, ca metodă de creștere a senzației de sațietate",
+            "Tratament de primă intenție cu fluoxetină pentru reducerea apetitului",
             "Continuarea exclusivă a regimului dietetic hipocaloric, fără altă intervenție",
             "Tratament chirurgical bariatric, indiferent de vârstă, având în vedere severitatea complicațiilor",
-            "Tratament chirurgical (chirurgie bariatrică)",
-            "Tratament cu gastrofibran, ca metodă de creștere a senzației de sațietate",
-            "Tratament de primă intenție cu fluoxetină pentru reducerea apetitului"
+            "Tratament chirurgical (chirurgie bariatrică)"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Conform textului, chirurgia bariatrică este indicată doar după vârsta de 16 ani, la pacienții cu IMC peste 40 kg/m² s.c. și care asociază complicații severe precum apneea în somn sau hipertensiunea arterială. Acest adolescent îndeplinește ambele criterii de vârstă și IMC, precum și prezența complicațiilor severe, ceea ce justifică opțiunea chirurgicală.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 392-400"
+        },
+        {
+          "id": "6-6",
+          "stem": "Un sugar prezintă obezitate extremă cu debut precoce în copilărie, hipoglicemie postprandială (în ciuda unui nivel scăzut de insulină, dar cu nivel crescut de proinsulină), hipogonadism hipogonadotrofic și hipocortizolism. Care este cea mai probabilă cauză monogenică a acestui tablou clinic?",
+          "options": [
+            "Defectul de prohormon convertază 1 (PC1)",
+            "Deficitul de receptor leptinic",
+            "Deficitul de proopiomelanocortină (POMC)",
+            "Deficitul congenital de leptină",
+            "Defectul receptorului melanocortinei 4 (MC4R)"
+          ],
+          "correct": 0,
+          "explanation": "Textul descrie defectul de prohormon convertază 1 (PC1) ca fiind recunoscut clinic prin obezitate extremă cu debut în copilărie, asociată cu o homeostazie glicemică anormală (hipoglicemie postprandială, cu insulinemie scăzută dar proinsulină crescută), hipogonadism hipogonadotrofic și hipocortizolism. Celelalte forme monogenice au tablouri distincte: deficitul de leptină și cel de receptor leptinic se manifestă prin hiperfagie, deficitul de POMC asociază insuficiență corticosuprarenală și pigmentație roșiatică a părului, iar defectul de MC4R se manifestă prin absența sațietății și bulimie.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 392-400"
         }
       ]
@@ -464,13 +618,13 @@ const QUESTIONS = {
           "id": "7-1",
           "stem": "Un sugar febril, anterior sănătos, are un aspect clinic bun la examinare. Conform criteriilor de risc scăzut pentru infecție bacteriană severă citate în text (după Huppler și Jaskiewicz), care dintre următoarele asocieri de date clinico-biologice încadrează sugarul în categoria de risc scăzut, permițând evitarea spitalizării și a antibioterapiei inutile?",
           "options": [
-            "Leucocite peste 20.000/mm3, cu deviere marcată la stânga, și sediment urinar cu peste 20 leucocite/câmp",
-            "Leucocite 5.000-15.000/mm3, cu forme tinere sub 1.500/mm3, și examen de urină cu sub 10 leucocite/câmp",
             "Leucocite sub 5.000/mm3, cu neutropenie marcată, și urocultură pozitivă",
             "Leucocite normale, dar cu peteșii cutanate difuze și letargie",
-            "Leucocite normale, dar cu redoarea cefei și bombarea fontanelei"
+            "Leucocite normale, dar cu redoarea cefei și bombarea fontanelei",
+            "Leucocite 5.000-15.000/mm3, cu forme tinere sub 1.500/mm3, și examen de urină cu sub 10 leucocite/câmp",
+            "Leucocite peste 20.000/mm3, cu deviere marcată la stânga, și sediment urinar cu peste 20 leucocite/câmp"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Textul precizează criteriile de risc scăzut: copilul arată bine, este anterior sănătos, are un număr de leucocite de 5.000-15.000/mm3 cu forme tinere sub 1.500/mm3, examen de urină sub 10 leucocite/câmp și, în caz de diaree, sub 5 leucocite pe frotiul din scaun. Celelalte variante descriu date sugestive pentru infecție severă (leucocitoză marcată, neutropenie, peteșii cu letargie, semne meningiene), incompatibile cu încadrarea în risc scăzut.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 772-783"
         },
@@ -479,12 +633,12 @@ const QUESTIONS = {
           "stem": "Un nou-născut de 3 săptămâni se prezintă cu febră rectală de 38,3°C, fără alte semne clinice evidente la examinare. Conform orientării practice pe grupe de vârstă descrise în text, care este conduita corectă?",
           "options": [
             "Externare cu antibioterapie orală empirică, fără investigații suplimentare",
-            "Tratament antipiretic la domiciliu și control clinic peste 48 de ore dacă febra persistă",
             "Internare în spital, investigații vizând etiologia septică și instituirea antibioterapiei empirice",
             "Administrare de ibuprofen și reevaluare peste 24 de ore",
+            "Tratament antipiretic la domiciliu și control clinic peste 48 de ore dacă febra persistă",
             "Observație la domiciliu, fără tratament, dacă starea generală este bună"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Pentru grupa de vârstă 0-1 lună, textul precizează că \"conduita corectă implică internarea în spital, în baza datelor clinice, investigații vizând etiologia septică și instituirea tratamentului cu antibiotice (denumit empiric, în lipsa argumentelor bacteriologice)\". Tratamentul ambulatoriu sau antipiretic simplu nu este adecvat la această vârstă, iar ibuprofenul nu este recomandat sub 3 luni.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 772-783"
         },
@@ -493,12 +647,12 @@ const QUESTIONS = {
           "stem": "Un copil de 18 luni prezintă un episod unic de convulsie febrilă, revine rapid la starea de conștiență normală și, la examenul clinic ulterior, nu prezintă redoarea cefei, bombarea fontanelei, stare toxică sau letargie. Este indicată efectuarea puncției lombare?",
           "options": [
             "Da, orice convulsie febrilă impune puncție lombară, indiferent de evoluția clinică ulterioară",
-            "Da, dar numai la copiii cu vârsta peste 5 ani",
-            "Nu, puncția lombară este contraindicată la toți copiii cu convulsii febrile",
             "Nu, un singur episod de convulsie febrilă, fără stare toxică sau letargie asociată, nu reprezintă o indicație pentru puncție lombară",
-            "Da, deoarece absența semnelor meningiene la copilul mic impune totuși PL de rutină"
+            "Nu, puncția lombară este contraindicată la toți copiii cu convulsii febrile",
+            "Da, deoarece absența semnelor meningiene la copilul mic impune totuși PL de rutină",
+            "Da, dar numai la copiii cu vârsta peste 5 ani"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Textul precizează explicit: \"Un singur episod de convulsie febrilă nu este o indicație pentru PL și nu este caracteristic pentru meningită ca singur simptom.\" Totodată, semnele specifice (redoarea cefei, bombarea fontanelei) pot lipsi la copilul mic, iar starea toxică și letargia asociate convulsiei febrile indică PL chiar în absența semnelor meningiene - situație care nu este prezentă în acest caz.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 772-783"
         },
@@ -507,10 +661,10 @@ const QUESTIONS = {
           "stem": "La un copil febril se constată bradicardie relativă, discordantă față de nivelul febrei. Conform textului, acest semn este considerat un indicator de gravitate mai ales pentru care dintre următoarele afecțiuni?",
           "options": [
             "Boala Lyme",
+            "Infecția de tract urinar",
             "Otita medie acută",
             "Faringoamigdalita streptococică",
-            "Gastroenterita acută",
-            "Infecția de tract urinar"
+            "Gastroenterita acută"
           ],
           "correct": 0,
           "explanation": "Textul afirmă: \"Bradicardia febrilă este un semn de gravitate în miocardită, endocardită infecțioasă, reumatism articular acut și boala Lyme.\" Celelalte afecțiuni enumerate (otită, gastroenterită, infecție urinară, faringoamigdalită) sunt descrise în text prin alte caracteristici clinice, fără asocierea cu bradicardia febrilă ca semn de alarmă.",
@@ -520,14 +674,42 @@ const QUESTIONS = {
           "id": "7-5",
           "stem": "Un copil de 4 ani prezintă episoade recurente, la interval de aproximativ 4-6 săptămâni, de febră ridicată însoțită de stomatită aftoasă, faringită și adenită cervicală, cu durata episoadelor de 4-5 zile și remisie completă a simptomelor între episoade. Care este diagnosticul cel mai probabil, conform textului?",
           "options": [
-            "Neutropenia ciclică",
-            "Artrita juvenilă idiopatică cu debut sistemic",
-            "Sindromul hiperimunoglobulinemiei D",
             "Sindromul PFAPA (febră periodică, stomatită aftoasă, faringită, adenopatie)",
-            "Febra familială mediteraneeană"
+            "Sindromul hiperimunoglobulinemiei D",
+            "Febra familială mediteraneeană",
+            "Artrita juvenilă idiopatică cu debut sistemic",
+            "Neutropenia ciclică"
+          ],
+          "correct": 0,
+          "explanation": "Textul descrie PFAPA drept \"o afecțiune rară, manifestată prin episoade periodice de febră ridicată, însoțite de stomatită aftoasă, faringită și adenită cervicală\", cu simptome apărând la 4-6 săptămâni, durând 4-5 zile și remisie completă între episoade - exact tabloul din vinietă. Celelalte sindroame febrile periodice menționate în text au tablouri clinice diferite (dureri abdominale/pleurale/articulare în FMF, artrită și rash în ARJ sistemică, vărsături/diaree în HIDS, neutropenie documentată în neutropenia ciclică).",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 772-783"
+        },
+        {
+          "id": "7-6",
+          "stem": "Un copil de 3 ani este adus de urgență cu febră de 39,5°C, apărută brusc, stare generală marcat alterată și erupție purpurică diseminată pe trunchi și membre, care nu dispare la vitropresiune. Conform textului, care este cea mai probabilă etiologie bacteriană gravă ce trebuie exclusă de urgență?",
+          "options": [
+            "Meningococemia",
+            "Malaria",
+            "Infecția cu citomegalovirus",
+            "Infecția cu virusul Epstein-Barr",
+            "Rujeola atipică"
+          ],
+          "correct": 0,
+          "explanation": "Textul încadrează peteșiile/erupția purpurică asociate febrei drept \"semnal de gravitate\", iar dintre infecțiile bacteriene însoțite de febră și peteșii, meningococemia este prima menționată, alături de sepsisul streptococic, stafilococic, cu H. influenzae și listerioza. Enterovirusul, virusul Epstein-Barr, citomegalovirusul, rujeola atipică și malaria sunt enumerate în text ca posibile cauze virale/parazitare de febră cu peteșii, dar nu reprezintă urgența bacteriană majoră de exclus. În plus, erupția purpurică figurează explicit printre criteriile care impun internarea în spital.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 772-783"
+        },
+        {
+          "id": "7-7",
+          "stem": "Un sugar de 6 săptămâni, evaluat în ambulator pentru febră de 38,2°C, are mama care solicită administrarea de ibuprofen pentru scăderea febrei. Conform recomandărilor din text privind terapia antipiretică medicamentoasă, care este atitudinea corectă?",
+          "options": [
+            "Sugarul sub 3 luni cu febră nu necesită niciodată tratament antipiretic, indiferent de valoarea febrei",
+            "Se administrează asocierea acetaminofen-ibuprofen, pentru o antipireză mai eficientă și mai durabilă",
+            "Se administrează ibuprofen 10 mg/kg, deoarece are acțiune antipiretică mai lungă decât acetaminofenul",
+            "Ibuprofenul nu este recomandat la această vârstă; dacă este necesară antipireza medicamentoasă, se poate folosi acetaminofen, recomandat după vârsta de 1 lună",
+            "Se recomandă exclusiv tratament fizic prin împachetări, acetaminofenul fiind contraindicat sub 3 luni"
           ],
           "correct": 3,
-          "explanation": "Textul descrie PFAPA drept \"o afecțiune rară, manifestată prin episoade periodice de febră ridicată, însoțite de stomatită aftoasă, faringită și adenită cervicală\", cu simptome apărând la 4-6 săptămâni, durând 4-5 zile și remisie completă între episoade - exact tabloul din vinietă. Celelalte sindroame febrile periodice menționate în text au tablouri clinice diferite (dureri abdominale/pleurale/articulare în FMF, artrită și rash în ARJ sistemică, vărsături/diaree în HIDS, neutropenie documentată în neutropenia ciclică).",
+          "explanation": "Textul precizează că acetaminofenul (paracetamolul) \"poate fi administrat după vârsta de 1 lună\", în timp ce ibuprofenul \"este recomandat după vârsta de 3 luni\". La un sugar de 6 săptămâni, ibuprofenul este deci contraindicat de vârstă, iar acetaminofenul reprezintă opțiunea antipiretică medicamentoasă adecvată dacă este necesară. Asocierea acetaminofen-ibuprofen este menționată în text ca fiind mai eficientă decât monoterapia, dar presupune folosirea ambelor substanțe, ceea ce nu este posibil la această vârstă din cauza restricției de vârstă a ibuprofenului.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 772-783"
         }
       ]
@@ -540,13 +722,13 @@ const QUESTIONS = {
           "id": "8-1",
           "stem": "Sugar în vârstă de 7 luni, cu rinofaringită acută necomplicată, aflat în a treia zi de evoluție, prezintă rinoree mucopurulentă, tuse și febră moderată, dar stare generală bună. Care este conduita terapeutică corectă?",
           "options": [
-            "Tratament exclusiv simptomatic și de susținere: dezobstrucție rinofaringiană, hidratare corespunzătoare, antipiretice la nevoie, fără antibiotice",
-            "Corticoterapie topică nazală asociată cu antihistaminice orale pentru reducerea rinoreei",
-            "Instilații nazale cu nafazolină, decongestionant vasoconstrictor, de mai multe ori pe zi",
             "Antibioterapie orală cu amoxicilină, pentru a preveni suprainfecția bacteriană sugerată de aspectul purulent al secrețiilor",
-            "Spitalizare sistematică pentru monitorizarea evoluției, indiferent de starea generală"
+            "Instilații nazale cu nafazolină, decongestionant vasoconstrictor, de mai multe ori pe zi",
+            "Spitalizare sistematică pentru monitorizarea evoluției, indiferent de starea generală",
+            "Corticoterapie topică nazală asociată cu antihistaminice orale pentru reducerea rinoreei",
+            "Tratament exclusiv simptomatic și de susținere: dezobstrucție rinofaringiană, hidratare corespunzătoare, antipiretice la nevoie, fără antibiotice"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Rinofaringita acută necomplicată este de etiologie virală, iar aspectul purulent al secreției nazale nu semnifică prin el însuși o suprainfecție bacteriană; antibioterapia nu scurtează evoluția și nu previne complicațiile. Tratamentul este exclusiv simptomatic (dezobstrucție, hidratare, antipiretice); soluțiile uleioase, corticoizii și antihistaminicele topice sunt ineficace sau dăunătoare, iar nafazolina este formal contraindicată sub vârsta de 6 ani.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 443-459"
         },
@@ -554,13 +736,13 @@ const QUESTIONS = {
           "id": "8-2",
           "stem": "Un copil de 8 ani este diagnosticat cu faringită acută cu streptococ beta-hemolitic grup A, confirmată prin test rapid de detecție antigenică, și primește tratament corect cu penicilină. Care este principalul beneficiu demonstrat al antibioterapiei corect administrate în această situație?",
           "options": [
-            "Elimină definitiv riscul de recidivă a faringitei acute la acest copil",
             "Sterilizează infecția faringiană streptococică și reduce dramatic complicațiile supurative locale, precum și bolile poststreptococice la distanță (reumatismul articular acut, glomerulonefrita)",
-            "Reduce contagiozitatea pacientului chiar din prima oră de la administrare, indiferent de durata tratamentului",
             "Este utilă exclusiv pentru ameliorarea simptomelor, fără impact dovedit asupra complicațiilor bolii",
-            "Scurtează cu cel puțin o săptămână durata febrei, indiferent de momentul inițierii tratamentului"
+            "Scurtează cu cel puțin o săptămână durata febrei, indiferent de momentul inițierii tratamentului",
+            "Elimină definitiv riscul de recidivă a faringitei acute la acest copil",
+            "Reduce contagiozitatea pacientului chiar din prima oră de la administrare, indiferent de durata tratamentului"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Tratamentul corect al faringitelor streptococice a condus la scăderea dramatică a complicațiilor locale (limfadenită, abces periamigdalian, otită, sinuzită) și a bolilor poststreptococice la distanță (RAA, glomerulonefrită), acesta fiind scopul principal al antibioterapiei, alături de sterilizarea infecției faringiene bacteriene. Pacienții devin necontagioși abia după 24-48 de ore de tratament antibiotic adecvat, iar recidivele rămân posibile.",
           "source": "Ciofu - Tratat de Pediatrie ed. 4, pag. 202-203"
         },
@@ -568,13 +750,13 @@ const QUESTIONS = {
           "id": "8-3",
           "stem": "Sugar de 10 luni, fără antecedente de otită medie acută, fără tratament antibiotic în ultimele 30 de zile și fără alergie cunoscută la peniciline, este diagnosticat prin otoscopie cu OMA supurată bilaterală (congestie, bombare și pierderea transparenței timpanului). Care este antibioticul de primă linie și doza recomandată?",
           "options": [
-            "Cefuroxim axetil, 30 mg/kg/zi, ca terapie de primă intenție",
             "Amoxicilină, 90 mg/kg/zi, divizată în 2 prize la 12 ore, timp de 10 zile",
-            "Azitromicină, 10 mg/kg/zi, doză unică zilnică, timp de 5 zile, ca primă opțiune",
+            "Observare 48-72 de ore fără antibiotic, cu reevaluare ulterioară",
+            "Cefuroxim axetil, 30 mg/kg/zi, ca terapie de primă intenție",
             "Amoxicilină-clavulanat de la debut, indiferent de istoricul terapeutic al copilului",
-            "Observare 48-72 de ore fără antibiotic, cu reevaluare ulterioară"
+            "Azitromicină, 10 mg/kg/zi, doză unică zilnică, timp de 5 zile, ca primă opțiune"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Copiii cu vârsta între 6 luni și 2 ani, cu OMA uni- sau bilaterală, trebuie tratați imediat cu antibiotic, pe baza criteriilor otoscopice de congestie, bombare și pierdere a transparenței timpanului. La un copil fără risc crescut de rezistență (fără beta-lactamice recente, fără conjunctivită purulentă concomitentă, fără OMA recurentă), amoxicilina 90 mg/kg/zi în 2 prize rămâne antibioticul de primă linie, cu durată de 10 zile la copiii sub 2 ani.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 443-459"
         },
@@ -582,9 +764,9 @@ const QUESTIONS = {
           "id": "8-4",
           "stem": "Sugar de 11 luni, eutrofic, anterior sănătos, dezvoltă brusc febră înaltă cu aspect septic, stare toxică și agitație extremă; la examenul local se constată tumefacție retroauriculară cu caracter inflamator, expresie a unui abces subperiostal. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Parotidită epidemică urliană",
-            "Otomastoidită latentă (formă cronică), caracteristică sugarului distrofic",
             "Celulită periauriculară secundară unei otite externe necomplicate",
+            "Otomastoidită latentă (formă cronică), caracteristică sugarului distrofic",
+            "Parotidită epidemică urliană",
             "Adenită cervicală supurată simplă, fără afectare otomastoidiană",
             "Otomastoidită acută, prin exteriorizarea unui abces mastoidian subperiostal"
           ],
@@ -596,15 +778,85 @@ const QUESTIONS = {
           "id": "8-5",
           "stem": "Băiat de 3 ani prezintă, de la vârsta de 18 luni, episoade recurente de febră înaltă (40°C), la interval de aproximativ 4 săptămâni, cu durata de 3-6 zile, însoțite de faringită și adenopatie cervicală, în absența unei infecții respiratorii superioare; între episoade copilul este complet asimptomatic, cu creștere și dezvoltare normale. Care este diagnosticul cel mai probabil și tratamentul cu cea mai bună eficiență dovedită în prevenția pe termen lung a recurențelor?",
           "options": [
+            "Sindrom PFAPA; amigdalectomia (asociată sau nu cu adenoidectomia) este cea mai eficientă terapie pentru prevenția de durată",
+            "Agranulocitoză; antibioterapie susținută și terapie de substituție",
             "Febră mediteraneană familială; colchicina este tratamentul de elecție pentru acest tablou clinic",
             "Neutropenie ciclică idiopatică; monitorizare hematologică, fără tratament specific disponibil",
-            "Agranulocitoză; antibioterapie susținută și terapie de substituție",
-            "Sindrom Stevens-Johnson; sistarea medicației incriminate",
-            "Sindrom PFAPA; amigdalectomia (asociată sau nu cu adenoidectomia) este cea mai eficientă terapie pentru prevenția de durată"
+            "Sindrom Stevens-Johnson; sistarea medicației incriminate"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Tabloul clinic (episoade recurente de febră înaltă la interval de 3-8 săptămâni, durata 3-6 zile, cu minim unul dintre semnele stomatită aftoasă, faringită sau adenopatie cervicală, debut înaintea vârstei de 5 ani, stare normală între episoade) corespunde sindromului PFAPA. Deși corticoterapia precoce cu o doză unică de prednison sau betametazonă induce frecvent remisia rapidă a febrei, amigdalectomia s-a dovedit cea mai benefică terapie în prevenția de durată a sindromului, net superioară cimetidinei, colchicinei, vitaminei D sau anakinrei.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 441-443"
+        },
+        {
+          "id": "8-6",
+          "stem": "Copil de 6 ani, cu rinofaringită acută inițial necomplicată, este reevaluat în ziua 12 de evoluție: rinoreea a rămas abundentă și net purulentă, iar obstrucția nazală și tusea diurnă nu s-au ameliorat deloc; se constată și un discret edem la nivelul feței. Cum trebuie interpretat acest tablou?",
+          "options": [
+            "Este o evoluție firească a rinofaringitei virale, care poate dura până la 14 zile, fără a fi necesară vreo altă conduită",
+            "Este tabloul tipic al unei rinofaringite necomplicate cu virus sincițial respirator și necesită doar continuarea tratamentului simptomatic, fără reevaluare",
+            "Persistența fără tendință la ameliorare, peste 10 zile, a rinoreei purulente, obstrucției nazale și tusei, asociată cu edem facial, semnalează apariția unei complicații bacteriene (sinuzită) și impune reevaluare și antibioterapie",
+            "Reprezintă o rinită alergică suprapusă, fiind indicată inițierea antihistaminicelor topice nazale",
+            "Impune reluarea instilațiilor cu nafazolină încă 5-7 zile, pentru ameliorarea dezobstrucției"
+          ],
+          "correct": 2,
+          "explanation": "Apariția complicațiilor bacteriene ale rinofaringitei (otită medie, sinuzită) poate fi semnalată de febră persistentă peste 3-5 zile sau reapariția ei, de persistența fără ameliorare peste 10 zile a rinoreei purulente, obstrucției nazale și tusei diurne, precum și de infiltrare/edem facial. Un astfel de tablou impune reevaluare medicală, deoarece rinofaringita necomplicată este autolimitată și se vindecă spontan în 5-10 zile.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 443-459"
+        },
+        {
+          "id": "8-7",
+          "stem": "Copil de 3 ani, la 3 săptămâni după un episod de otită medie acută supurată corect tratat, este afebril și fără otalgie, dar la controlul ORL se constată persistența unui lichid seros în casa timpanului, fără semne de infecție acută. Care este conduita corectă?",
+          "options": [
+            "Corticoterapie topică nazală asociată cu antihistaminice, pentru reducerea revărsatului",
+            "Paracenteză de urgență, indiferent de gradul hipoacuziei",
+            "Adenoidectomie imediată, indiferent de vârstă, pentru a preveni cronicizarea",
+            "Antibioterapie orală prelungită, 14 zile, pentru sterilizarea lichidului din urechea medie",
+            "Urmărire activă 3-6 luni, cu testarea funcției auditive și reinserția unui tub de dren dacă situația nu se ameliorează, întrucât antibioterapia, antihistaminicele și steroizii topici nu au rol dovedit în vindecare"
+          ],
+          "correct": 4,
+          "explanation": "Otita medie cu revărsat lichidian (OME) urmează adesea unei otite acute bacteriene, este de regulă asimptomatică și, în majoritatea cazurilor, autolimitată, deși durata revărsatului poate fi de luni. Este dovedit că antibioterapia, antihistaminicele și steroizii topici nu au niciun rol în vindecarea OME; copiii trebuie urmăriți activ 3-6 luni, cu testarea auzului și inserția/reinserția unui tub de timpanostomie dacă nu se ameliorează, adenoidectomia fiind formal contraindicată sub vârsta de 4 ani în aceste cazuri.",
+          "source": "Ciofu - Tratat de Pediatrie ed. 4, pag. 202-203"
+        },
+        {
+          "id": "8-8",
+          "stem": "Adolescent de 15 ani, cu angină acută ulcero-necrotică în urmă cu 6 zile, considerată vindecată, revine cu febră, frisoane, tumefacție și sensibilitate dureroasă la nivelul regiunii sternocleidomastoidiene, trismus și disfagie, iar la explorarea imagistică se decelează ulterior embolii septice pulmonare. Care este diagnosticul cel mai probabil și agentul etiologic clasic incriminat?",
+          "options": [
+            "Adenită cervicală supurată simplă, cauzată de Staphylococcus aureus, fără implicare vasculară",
+            "Sindromul Lemierre (tromboflebită septică a venei jugulare interne, cu embolii septice), asociat clasic cu Fusobacterium necrophorum",
+            "Mononucleoză infecțioasă complicată cu obstrucție de căi aeriene superioare, prin infecție cu virusul Epstein-Barr",
+            "Difterie malignă, cu extensie laringiană (crup difteric), determinată de Corynebacterium diphtheriae",
+            "Abces retrofaringian, cauzat clasic de Streptococcus pyogenes"
+          ],
+          "correct": 1,
+          "explanation": "Sindromul Lemierre este o complicație gravă, cu risc vital, a anginei acute (tipic ulcero-necrotice), prin extensia infecției de la venele tonsilare la vena jugulară internă (tromboflebită septică), manifestată prin tumefacția și sensibilitatea regiunii sternocleidomastoidiene, trismus, disfagie, urmate de septicemie cu embolii septice pulmonare, abdominale, musculo-articulare. Este asociat clasic cu Fusobacterium necrophorum, complicația survenind de regulă la 4-8 zile după o faringită deja aparent rezolvată.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 443-459"
+        },
+        {
+          "id": "8-9",
+          "stem": "Copil de 2 ani, anterior sănătos, dezvoltă brusc febră, refuzul alimentației, sialoree și halenă fetidă; la examenul cavității bucale se observă multiple vezicule pe fond eritematos, evoluând spre ulcerații confluente cu contur policiclic, acoperite parțial de o pseudomembrană alb-gălbuie, însoțite de adenopatie cervicală. Copilul este imunocompetent și nu prezintă semne de deshidratare severă. Care este conduita terapeutică corectă?",
+          "options": [
+            "Corticoterapie topică cu triamcinolon, ca primă linie de tratament",
+            "Antibioterapie sistemică cu amoxicilină-clavulanat, pentru prevenirea suprainfecției bacteriene",
+            "Suspensie orală de nistatin, aspectul descris fiind caracteristic unei stomatite candidozice",
+            "Aciclovir intravenos în doză mare, obligatoriu de la debut, la toți copiii cu acest tablou",
+            "Tratament exclusiv simptomatic (soluții anestezice locale, antiseptice, antitermice), aciclovirul oral nefiind recomandat de rutină la subiecții imunocompetenți"
+          ],
+          "correct": 4,
+          "explanation": "Tabloul descris corespunde primoinfecției herpetice (gingivostomatită herpetică primară, cauzată de HSV-1 în 90% din cazuri), frecventă între 6 luni și 5 ani. Tratamentul este simptomatic (soluții anestezice locale, antiseptice, paracetamol/ibuprofen); aciclovirul oral nu este recomandat de rutină la subiecții imunocompetenți, ci doar dacă există durere și deshidratare severă și este inițiat în primele 3 zile de la debut, sau la pacienții cu imunodeficiențe.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 434-439"
+        },
+        {
+          "id": "8-10",
+          "stem": "Adolescent de 14 ani, cu angină acută în evoluție de 3 zile, dezvoltă odinofagie intensă unilaterală și trismus important, care limitează examinarea orofaringelui; se reușește totuși vizualizarea protruziei amigdalei palatine drepte, cu deviația luetei de partea opusă. Care este conduita cea mai adecvată?",
+          "options": [
+            "Confirmarea diagnosticului de abces periamigdalian prin puncție (fluctuență, puroi), urmată de puncție aspirativă sau incizie-drenaj, asociate cu antibioterapie parenterală (de exemplu ampicilină-sulbactam sau clindamicină)",
+            "Corticoterapie sistemică în doză mare, ca singură măsură terapeutică necesară",
+            "Amigdalectomie „la cald” de primă intenție, înaintea oricărei tentative de drenaj",
+            "Antibioterapie orală ambulatorie cu penicilină V, fără altă investigație sau intervenție, aceasta fiind suficientă în toate cazurile",
+            "Observație 24-48 de ore fără niciun tratament, întrucât majoritatea abceselor periamigdaliene se remit spontan"
+          ],
+          "correct": 0,
+          "explanation": "Tumefacția lojei amigdaliene cu protruzia amigdalei palatine și deviația luetei de partea opusă, în context de odinofagie și trismus, sugerează abces periamigdalian; fluctuența și puncția pozitivă confirmă diagnosticul. Tratamentul asociază terapia antimicrobiană parenterală (ampicilină-sulbactam sau clindamicină, cu alternativă vancomicina în caz de eșec) cu drenajul colecției (puncție aspirativă sau incizie-drenaj), amigdalectomia „la rece” fiind indicată ulterior, după vindecare, iar cea „la cald” doar în caz de insuficiență respiratorie, obstrucție cronică sau eșec al drenajului.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 443-459"
         }
       ]
     },
@@ -616,13 +868,13 @@ const QUESTIONS = {
           "id": "9-1",
           "stem": "Un copil de 2 ani cu crup viral prezintă la examenul clinic: cianoză prezentă în repaus, stridor audibil în repaus, tiraj sever, murmur vezicular mult diminuat și stare de conștiență abolită. Cum se încadrează acest pacient conform scorului Westley și ce implicație are această încadrare?",
           "options": [
-            "Iminență de stop respirator (scor ≥12) – necesită monitorizare permanentă și intervenție terapeutică imediată",
-            "Crup moderat (scor 3-7) – se recomandă corticoterapie orală în doză unică, fără spitalizare",
-            "Crup ușor (scor <2) – se recomandă doar aer umidificat și hidratare orală",
             "Crup sever (scor ≥8) – necesită spitalizare, dar nu monitorizare continuă",
-            "Scorul Westley nu poate fi calculat fără determinarea gazelor sanguine"
+            "Iminență de stop respirator (scor ≥12) – necesită monitorizare permanentă și intervenție terapeutică imediată",
+            "Scorul Westley nu poate fi calculat fără determinarea gazelor sanguine",
+            "Crup ușor (scor <2) – se recomandă doar aer umidificat și hidratare orală",
+            "Crup moderat (scor 3-7) – se recomandă corticoterapie orală în doză unică, fără spitalizare"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Însumând punctajele (cianoză în repaus = 5, stridor în repaus = 2, tiraj sever = 3, murmur vezicular mult diminuat = 2, stare de conștiență abolită = 5) rezultă un scor de 17, mult peste pragul de 12, care semnifică iminență de stop respirator. Textul precizează că această categorie este semnalată tocmai de alterarea stării de conștiență, tirajul marcant, diminuarea/abolirea murmurului vezicular, tahicardie și cianoză, impunând monitorizare permanentă a acestor parametri.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 312-316"
         },
@@ -630,13 +882,13 @@ const QUESTIONS = {
           "id": "9-2",
           "stem": "Un copil de 3 ani, cu schemă de vaccinare incompletă (fără vaccinare anti-Haemophilus influenzae tip b), dezvoltă brusc, în plină stare de sănătate și fără prodrom viral, febră înaltă, stare toxică, sialoree, disfagie și voce înăbușită. Adoptă spontan poziția șezândă, aplecat ușor înainte, cu gâtul în hiperextensie. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Corp străin laringian aspirat",
             "Crup spasmodic (laringita spasmodică)",
+            "Epiglotita acută",
             "Crup viral (laringotraheită acută)",
             "Traheita bacteriană",
-            "Epiglotita acută"
+            "Corp străin laringian aspirat"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "Absența prodromului viral, debutul brusc cu febră înaltă, stare toxică, sialoree, disfagie și poziția caracteristică (aplecat înainte, cu gâtul în hiperextensie, pentru a îndepărta epiglota de calea aeriană) sunt tipice epiglotitei acute. Textul menționează că afecțiunea apare mai ales la copii de 2-4 ani neimunizați contra Haemophilus influenzae tip b, spre deosebire de crupul viral, care are prodrom viral și evoluție progresivă.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 489-493"
         },
@@ -644,13 +896,13 @@ const QUESTIONS = {
           "id": "9-3",
           "stem": "Un copil cu tablou inițial sugestiv de crup viral primește tratament corect cu corticoterapie sistemică și adrenalină în nebulizare. Evoluția este însă nefavorabilă: febra rămâne înaltă, starea generală se alterează progresiv (aspect toxic), iar răspunsul la aerosolii de adrenalină este incomplet și de scurtă durată, cu ameliorări parțiale ce necesită administrări repetate. Pacientul nu prezintă sialoree și poate fi culcat pentru examinare. Care este diagnosticul cel mai probabil și conduita corectă?",
           "options": [
-            "Crup viral sever – se continuă adrenalina în nebulizare la interval fix de 6 ore",
             "Crup spasmodic recurent – tratamentul constă doar în liniștirea pacientului și aer umidificat",
             "Epiglotită acută – se impune intubare imediată fără alte investigații",
             "Traheită bacteriană – se impune intubare, bronhoscopie cu recoltare de culturi și antibioterapie parenterală",
-            "Abces retrofaringian – se practică drenaj chirurgical de urgență"
+            "Abces retrofaringian – se practică drenaj chirurgical de urgență",
+            "Crup viral sever – se continuă adrenalina în nebulizare la interval fix de 6 ore"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "Semnul de alarmă pentru traheita bacteriană este lipsa de răspuns sau chiar agravarea sub un tratament anticrup corect și complet, cu răspuns incomplet și tranzitoriu la aerosolii de adrenalină. Tabloul este de severitate intermediară între crupul viral și epiglotită (febră, stare toxică), dar fără sialoree și fără poziție de trepied. Atitudinea corectă este intubarea, bronhoscopia cu obținerea de culturi și antibioterapie parenterală.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 489-493"
         },
@@ -659,12 +911,12 @@ const QUESTIONS = {
           "stem": "Un sugar de 8 luni, anterior sănătos, se prezintă cu primul episod de bronșiolită acută, formă ușoară-moderată, fără factori de risc (nu este fost prematur, nu are displazie bronhopulmonară, malformații sau imunodeficiențe) și provine dintr-o familie competentă. Conform ultimului consens de tratament citat în text, care este conduita terapeutică recomandată?",
           "options": [
             "Aerosoli de rutină cu salbutamol, indiferent de răspunsul clinic",
-            "Ribavirin în doze standard, administrat de rutină tuturor sugarilor",
             "Doar măsuri suportive (dezobstrucție nazală, hidratare, monitorizare clinică), fără aerosoli de rutină",
+            "Antibioterapie cu spectru larg pentru prevenirea suprainfecției bacteriene",
             "Corticoterapie sistemică asociată cu adrenalină în nebulizare, administrate la intervale fixe",
-            "Antibioterapie cu spectru larg pentru prevenirea suprainfecției bacteriene"
+            "Ribavirin în doze standard, administrat de rutină tuturor sugarilor"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Consensul AAP din 2014 nu mai recomandă aerosoli de rutină nici cu salbutamol, nici cu adrenalină, iar corticoizii și ribavirinul rămân contraindicați de rutină. Pentru un sugar la primul episod, formă ușoară-moderată, fără factori de risc și cu familie competentă, textul precizează explicit că nu se recomandă niciun fel de aerosoli de rutină, ci doar măsuri suportive.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 489-493"
         },
@@ -672,14 +924,42 @@ const QUESTIONS = {
           "id": "9-5",
           "stem": "Un sugar de 6 săptămâni cu bronșiolită acută prezintă frecvență respiratorie de 75/min, SpO2 = 88% în aer atmosferic și alterarea stării generale, cu letargie. Care este conduita corectă?",
           "options": [
-            "Externare cu monitorizare la domiciliu și control peste 48 de ore",
-            "Corticoterapie orală și reevaluare peste 24 de ore, fără alte măsuri",
+            "Administrare de aerosoli cu salbutamol la domiciliu, cu revenire la control dacă nu se ameliorează",
             "Antibioterapie empirică pentru suspiciunea de suprainfecție bacteriană",
+            "Externare cu monitorizare la domiciliu și control peste 48 de ore",
             "Internare, ținând cont de vârsta sub 3 luni, polipneea peste 70/min, hipoxemia (SpO2<90%) și alterarea stării generale",
-            "Administrare de aerosoli cu salbutamol la domiciliu, cu revenire la control dacă nu se ameliorează"
+            "Corticoterapie orală și reevaluare peste 24 de ore, fără alte măsuri"
           ],
           "correct": 3,
           "explanation": "Printre criteriile de internare menționate sunt vârsta sub 3 luni, dispneea cu polipnee peste 70/min, hipoxemia/cianoza și alterarea stării generale sau a conștienței. Oxigenul este obligatoriu la SpO2 sub 90%. Toate aceste criterii sunt îndeplinite la acest pacient, ceea ce impune spitalizarea.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 489-493"
+        },
+        {
+          "id": "9-6",
+          "stem": "Un copil de 2 ani, cu istoric familial de astm bronșic, prezintă al treilea episod nocturn de tuse lătrătoare, stridor și disfonie, instalate brusc, în plină stare de sănătate, fără febră și cu semne minime de infecție respiratorie superioară (rinoree ușoară). Simptomatologia, deși inițial zgomotoasă, se remite complet și rapid, în decurs de câteva ore, în cursul aceleiași nopți. Care este diagnosticul cel mai probabil și conduita terapeutică corespunzătoare?",
+          "options": [
+            "Criză de astm bronșic – se recomandă bronhodilatator beta-2 agonist inhalator",
+            "Epiglotită acută – se impune internare de urgență în terapie intensivă și intubare orotraheală",
+            "Crup viral – se recomandă corticoterapie sistemică în doză unică și spitalizare pentru monitorizare",
+            "Crup spasmodic (laringita spasmodică) – singurele măsuri recomandate sunt administrarea de aer umidificat și liniștirea pacientului",
+            "Traheită bacteriană – se impune bronhoscopie cu recoltare de culturi și antibioterapie parenterală"
+          ],
+          "correct": 3,
+          "explanation": "Crupul spasmodic (laringita spasmodică) se caracterizează prin debut brusc, tipic nocturn, în plină stare de sănătate, fără febră și cu semne minime de infecție virală de căi respiratorii superioare, precum și prin evoluție autolimitantă, cu remitere completă și rapidă în cursul aceleiași nopți. Este întâlnit adesea la pacienți cu istoric personal sau familial de atopie/astm și are caracter recurent. Singurele măsuri terapeutice recomandate sunt aerul umidificat inhalator și liniștirea pacientului.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 312-316"
+        },
+        {
+          "id": "9-7",
+          "stem": "Un sugar de 10 luni se prezintă cu febră înaltă, stare toxică, disfagie și hipersialoree, precum și adenopatii laterocervicale. La examenul clinic se remarcă limitarea marcată și dureroasă a mobilizării gâtului, cu poziție vicioasă a capului, iar copilul nu adoptă poziția șezândă cu aplecare înainte și hiperextensia gâtului. Care este diagnosticul cel mai probabil și care este semnul clinic cheie care îl diferențiază de epiglotita acută?",
+          "options": [
+            "Abces retro-/laterofaringian – semnul cheie este torticolisul, în general absent în epiglotita acută",
+            "Traheită bacteriană – semnul cheie este răspunsul incomplet și tranzitoriu la adrenalina în nebulizare",
+            "Epiglotită acută – semnul cheie este poziția de trepied cu hiperextensia gâtului",
+            "Abces peritonsilar – semnul cheie este trismusul asociat cu disfonie severă și absența tusei",
+            "Crup viral sever – semnul cheie este stridorul audibil în ambii timpi respiratori"
+          ],
+          "correct": 0,
+          "explanation": "În abcesul retro-/laterofaringian, hipersalivația poate fi prezentă ca în epiglotită, dar semnul tipic este torticolisul, care lipsește de regulă în epiglotita acută (unde pacientul adoptă poziția de trepied, cu hiperextensia gâtului). La vârste mici torticolisul este greu de remarcat, iar sugarii prezintă în schimb febră, disfagie, adenopatii laterocervicale și durere la mobilizarea gâtului.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 489-493"
         }
       ]
@@ -692,13 +972,13 @@ const QUESTIONS = {
           "id": "10-1",
           "stem": "Un copil de 8 ani este adus la UPU după ingestia accidentală a unei substanțe ce conține cianuri. Gazometria arterială arată PaO2 normal, iar hemoglobina este normală, dar pacientul prezintă semne clinice de hipoxie tisulară severă. Care este mecanismul fiziopatologic principal al insuficienței respiratorii acute în acest caz?",
           "options": [
-            "Anomalie de schimb gazos la nivelul barierei alveolo-capilare",
-            "Anomalie de perfuzie pulmonară, prin șunt dreapta-stânga",
             "Anomalie de pompă respiratorie, prin deprimarea centrilor respiratori bulbo-pontini",
+            "Anomalie de schimb gazos la nivelul barierei alveolo-capilare",
             "Anomalie de transport al oxigenului, prin capacitate redusă de legare a hemoglobinei",
-            "Anomalie de utilizare periferică a oxigenului, prin blocarea enzimelor mitocondriale (hipoxemie histotoxică)"
+            "Anomalie de utilizare periferică a oxigenului, prin blocarea enzimelor mitocondriale (hipoxemie histotoxică)",
+            "Anomalie de perfuzie pulmonară, prin șunt dreapta-stânga"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "Textul clasifică intoxicația cu cianuri sub mecanismul de „alterare a mecanismelor ATP-dependente”, adică incapacitatea celulei de a utiliza oxigenul la nivel periferic, prin blocarea enzimelor mitocondriale (hipoxemie histotoxică). În acest mecanism, transportul și schimbul gazos rămân normale (PaO2 și Hb normale), spre deosebire de anomaliile de pompă, schimb sau transport al oxigenului.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 588-592"
         },
@@ -706,11 +986,11 @@ const QUESTIONS = {
           "id": "10-2",
           "stem": "Un sugar de 4 luni cu bronșiolită acută prezintă tahipnee marcată, agitație intensă, „foame de aer”, paloare și transpirații, fără somnolență. Gazometria arată hipoxemie cu PaCO2 normal-scăzut. Care este tipul de insuficiență respiratorie acută cel mai probabil prezent la acest pacient?",
           "options": [
-            "IRA prin anomalie de pompă respiratorie de cauză neurologică",
+            "IRA tip 2, cu hipercapnie, prin epuizare musculară respiratorie",
             "IRA tip 1, cu hipoxemie, prin mecanism de neconcordanță ventilație-perfuzie",
             "IRA cronică acutizată, de tip restrictiv",
-            "IRA tip 2, cu hipercapnie, prin epuizare musculară respiratorie",
-            "IRA prin anomalie de transport al oxigenului"
+            "IRA prin anomalie de transport al oxigenului",
+            "IRA prin anomalie de pompă respiratorie de cauză neurologică"
           ],
           "correct": 1,
           "explanation": "IRA de tip 1 se caracterizează prin hipoxemie cu CO2 normal sau scăzut, produsă prin neconcordanță ventilație-perfuzie (V/Q mismatch), iar clinic se manifestă prin agitație marcată, „foame de aer”, paloare și transpirații. IRA de tip 2, cu hipercapnie, se manifestă în schimb prin somnolență („narcoză hipercapnică”), tablou absent la acest pacient.",
@@ -720,13 +1000,13 @@ const QUESTIONS = {
           "id": "10-3",
           "stem": "Un copil cu insuficiență respiratorie acută severă, tahipneic și agitat, devine brusc „liniștit” și mai puțin activ, deși pulsoximetria arată în continuare o saturație scăzută. Care este interpretarea corectă a acestei modificări clinice?",
           "options": [
-            "Este un fenomen normal de adaptare la efortul respirator prelungit și nu necesită intervenție",
+            "Poate indica retenție progresivă de CO2, sugerând nevoia de suport ventilator invaziv",
             "Semnifică ameliorarea clinică și scăderea necesarului de oxigen",
             "Indică hipoglicemie asociată și necesită doar administrare de glucoză",
-            "Poate indica retenție progresivă de CO2, sugerând nevoia de suport ventilator invaziv",
-            "Este expresia unei desaturări artefactuale prin malpoziționarea senzorului de pulsoximetrie"
+            "Este expresia unei desaturări artefactuale prin malpoziționarea senzorului de pulsoximetrie",
+            "Este un fenomen normal de adaptare la efortul respirator prelungit și nu necesită intervenție"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Textul avertizează explicit că un pacient cu IRA care rămâne desaturat și se „liniștește” inexplicabil ar putea avea nevoie de suport ventilator invaziv, deoarece retenția de CO2 este responsabilă de această „sedare” progresivă. Acest semn nu trebuie interpretat drept ameliorare, ci ca un semnal de alarmă pentru epuizare respiratorie iminentă.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 588-592"
         },
@@ -734,13 +1014,13 @@ const QUESTIONS = {
           "id": "10-4",
           "stem": "Din punct de vedere biochimic, care dintre următoarele seturi de valori definește insuficiența respiratorie acută (IRA) la copil?",
           "options": [
+            "PaO2 sub 70 mmHg și SpO2 sub 90%",
+            "PaO2 sub 80 mmHg și/sau PaCO2 peste 45 mmHg",
             "PaO2 sub 60 mmHg și/sau PaCO2 peste 50 mmHg",
             "PaO2 sub 50 mmHg și PaCO2 peste 60 mmHg, obligatoriu concomitent",
-            "PaO2 sub 80 mmHg și/sau PaCO2 peste 45 mmHg",
-            "PaO2 sub 70 mmHg și SpO2 sub 90%",
             "SpO2 sub 95% în aer ambiental, indiferent de valorile gazometrice"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Textul definește IRA biochimic drept scăderea PaO2 sub 60 mmHg, creșterea PaCO2 peste 50 mmHg, sau ambele modificări concomitent - nu este necesară prezența simultană obligatorie a ambelor criterii.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 588-592"
         },
@@ -748,14 +1028,28 @@ const QUESTIONS = {
           "id": "10-5",
           "stem": "Un copil este adus la UPU cu cianoză generalizată cu tentă cenușie, „ca ardezia”, după ingestia accidentală a unei substanțe conservante alimentare. Sângele recoltat pentru micrometoda Astrup are aspect brun-ciocolatiu, iar pulsoximetrul indică o saturație de aproximativ 80%. Care este cauza cea mai probabilă a acestui tablou clinic?",
           "options": [
-            "Malpoziționare a senzorului de pulsoximetrie",
-            "Intoxicație cu monoxid de carbon, cu carboxihemoglobină crescută",
-            "Șoc hipovolemic sever cu hipoperfuzie periferică",
+            "Intoxicație cu cianuri, cu blocarea respirației celulare",
             "Intoxicație cu nitriți, cu methemoglobinemie",
-            "Intoxicație cu cianuri, cu blocarea respirației celulare"
+            "Șoc hipovolemic sever cu hipoperfuzie periferică",
+            "Malpoziționare a senzorului de pulsoximetrie",
+            "Intoxicație cu monoxid de carbon, cu carboxihemoglobină crescută"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Textul descrie exact acest tablou pentru intoxicația cu nitriți: cianoză cu tentă cenușie „ca ardezia”, sânge brun-ciocolatiu la Astrup și saturație fals scăzută în jur de 80% la pulsoximetrie, din cauza methemoglobinei circulante. În contrast, intoxicația cu monoxid de carbon se caracterizează prin absența cianozei și saturații pulsoximetrice fals normale.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 588-592"
+        },
+        {
+          "id": "10-6",
+          "stem": "Un copil de 3 ani este adus la UPU pentru tuse și dificultate respiratorie. La evaluarea prin metoda PAT (Pediatric Assessment Triangle), copilul este alert, cu tonus muscular păstrat, privire normală și interacționează adecvat cu părintele, iar circulația cutanată este normală. Se observă însă tahipnee, tiraj subcostal și bătăi de aripioare nazale. Cum trebuie interpretat acest tablou clinic?",
+          "options": [
+            "Nu poate fi interpretat clinic și necesită obligatoriu gazometrie arterială înainte de orice decizie terapeutică",
+            "Este sugestiv pentru IRA de tip 2, prin semne de narcoză hipercapnică",
+            "Este sugestiv pentru IRA instalată, deoarece componenta „aspect general” (A) este afectată",
+            "Este sugestiv pentru stop cardiorespirator iminent, prin afectare a componentei circulatorii",
+            "Este sugestiv pentru detresă respiratorie/sindrom funcțional respirator, cu funcții vitale menținute prin mecanisme compensatorii"
+          ],
+          "correct": 4,
+          "explanation": "Conform evaluării PAT, pacientul cu anomalie doar la componenta „efort respirator” (B) - tahipnee, tiraj, bătăi de aripioare nazale - dar cu „aspect general” (A) și circulație cutanată (C) normale are probabil detresă respiratorie sau sindrom funcțional respirator, în care funcțiile vitale sunt menținute prin mecanisme compensatorii. IRA este foarte probabilă doar atunci când sunt afectate concomitent atât aspectul general (A), cât și efortul respirator (B).",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 588-592"
         }
       ]
@@ -768,13 +1062,13 @@ const QUESTIONS = {
           "id": "11-1",
           "stem": "Un copil de 18 luni este adus pentru febră moderată (38°C), rinoree și tuse cu debut progresiv, de 4 zile. La auscultație se decelează wheezing bilateral, fără semne de hipoxemie. Leucocitele sunt 8200/µL, VSH 12 mm/h, iar PCR 1,1 mg/dL. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Pneumonie bacteriană cu Streptococcus pneumoniae",
             "Pneumonie virală",
-            "Pneumonie cu Staphylococcus aureus",
             "Pneumonie de aspirație",
+            "Pneumonie cu Staphylococcus aureus",
+            "Pneumonie bacteriană cu Streptococcus pneumoniae",
             "Tuberculoză pulmonară"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Conform tabelului de diferențiere pneumonie virală versus bacteriană (Ruuskanen et al., 2011), debutul lent, febra mică, rinita prezentă, wheezingul frecvent, leucocitele <10000/µL, VSH <20 mm/h și PCR <2 mg/dL pledează pentru etiologie virală. De asemenea, prezența wheezingului este sugestivă pentru pneumonia virală sau cu bacterii atipice, mai ales în absența febrei înalte sau a hipoxemiei.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 339-346"
         },
@@ -782,13 +1076,13 @@ const QUESTIONS = {
           "id": "11-2",
           "stem": "Un copil de 2 ani, anterior sănătos, este diagnosticat cu pneumonie cu consolidare pulmonară pe radiografia toracică, formă ușoară/medie. Nu prezintă vărsături persistente, refuzul lichidelor per os, convulsii sau letargie și acceptă alimentația. Care este antibioticul de primă linie recomandat, în condiții de ambulatoriu?",
           "options": [
+            "Amoxicilină per os, 80-100 mg/kg/zi",
             "Amoxicilină-clavulanat per os",
             "Azitromicină per os",
             "Ceftriaxonă intravenos",
-            "Vancomicină intravenos",
-            "Amoxicilină per os, 80-100 mg/kg/zi"
+            "Vancomicină intravenos"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Amoxicilina per os în doză de 80-100 mg/kg/zi este eficientă în terapia pneumoniei la copilul cu vârsta de 6 luni-5 ani, fără semne de alertă (refuzul lichidelor, vărsături persistente, deshidratare, convulsii, letargie), fiind prima linie de tratament ambulatoriu. Amoxicilina-clavulanat este alternativă, iar azitromicina este indicată dacă nu se poate exclude etiologia atipică sau la copilul peste 5 ani; ceftriaxona și vancomicina sunt rezervate formelor severe, spitalizate.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 339-346"
         },
@@ -797,12 +1091,12 @@ const QUESTIONS = {
           "stem": "Un copil de 3 ani prezintă tuse productivă de 6 săptămâni, fără hipocratism digital, fără deformări ale cutiei toracice, cu creștere și dezvoltare normale și fără alte manifestări sugestive pentru altă boală cauzatoare de tuse cronică productivă. Radiografia toracică este normală. Tusea se remite complet după 2 săptămâni de amoxicilină-clavulanat oral, fără a se fi putut obține o cultură bacteriană din spută. Care este diagnosticul cel mai probabil?",
           "options": [
             "Fibroză chistică",
-            "Boală pulmonară supurativă cronică",
-            "Bronșectazie",
+            "Bronșită bacteriană prelungită (formă clinică)",
             "Astm bronșic",
-            "Bronșită bacteriană prelungită (formă clinică)"
+            "Boală pulmonară supurativă cronică",
+            "Bronșectazie"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "Cazul îndeplinește criteriile de BBP clinică: tuse cronică productivă peste 4 săptămâni, absența unor elemente sugestive pentru altă boală și rezoluția tusei după 2 săptămâni de antibioterapie orală, criteriul microbiologic fiind înlocuit de cel clinic. Bronșectazia și boala pulmonară supurativă cronică presupun lipsă de răspuns sau modificări imagistice persistente, iar astmul bronșic se manifestă tipic prin tuse uscată, nu productivă.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 356-363"
         },
@@ -811,12 +1105,12 @@ const QUESTIONS = {
           "stem": "Un copil de 5 ani cu pneumonie prezintă la ecografia toracică un revărsat pleural care ocupă peste jumătate din hemitorace, asociat cu detresă respiratorie marcată și stare generală toxică. Conform algoritmului terapeutic pentru pleurezia parapneumonică, care este conduita indicată?",
           "options": [
             "Antibioterapie sistemică asociată cu puncție pleurală, fără drenaj",
-            "Drenaj pleural continuu",
-            "Monitorizare clinică, fără modificarea antibioterapiei",
             "Toracotomie deschisă cu decorticare, ca primă intenție",
-            "Antibioterapie sistemică, fără puncție sau drenaj pleural"
+            "Antibioterapie sistemică, fără puncție sau drenaj pleural",
+            "Monitorizare clinică, fără modificarea antibioterapiei",
+            "Drenaj pleural continuu"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Un revărsat mare (peste 1/2 din torace) impune drenaj pleural continuu, indicație susținută și de prezența detresei respiratorii și a stării toxice/sepsis. Toracotomia deschisă cu decorticare este rezervată stadiului de organizare sau eșecului altor metode, nu conduitei inițiale.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 348-354"
         },
@@ -824,15 +1118,71 @@ const QUESTIONS = {
           "id": "11-5",
           "stem": "Un adolescent de 15 ani este adus la camera de gardă după un accident rutier, cu polipnee și tahicardie rapid progresive, hipotensiune arterială, cianoză și devierea traheii spre partea contralaterală leziunii; murmurul vezicular este abolit pe hemitoracele afectat. Care este conduita imediată?",
           "options": [
-            "Radiografie toracică de urgență, urmată de toracocenteză dacă se confirmă diagnosticul",
-            "Antibioterapie intravenoasă cu spectru larg",
             "Oxigenoterapie cu debit mare și reevaluare clinică la 24 de ore",
             "Tomografie computerizată toracică pentru confirmarea diagnosticului",
-            "Toracocenteză sau toracostomie de urgență, fără a aștepta radiografia toracică"
+            "Antibioterapie intravenoasă cu spectru larg",
+            "Toracocenteză sau toracostomie de urgență, fără a aștepta radiografia toracică",
+            "Radiografie toracică de urgență, urmată de toracocenteză dacă se confirmă diagnosticul"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "Tabloul clinic (deviere mediastinală, instabilitate hemodinamică, abolirea murmurului vezicular) este caracteristic pneumotoracelui sub tensiune, o urgență medicală majoră. Radiografia toracică nu este indicată în această situație, deoarece întârzie intervenția terapeutică; conduita corectă este toracocenteza sau toracostomia imediată.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 364-366"
+        },
+        {
+          "id": "11-6",
+          "stem": "Un copil de 6 ani prezintă tuse cronică productivă, cu peste trei episoade pe an, care nu răspunde complet nici după 4 săptămâni de antibioterapie orală. Radiografia toracică arată doar o discretă îngroșare peribronșică, iar la auscultație se decelează raluri subcrepitante bazale bilateral, fără hipocratism digital. Care este investigația imagistică de elecție pentru confirmarea diagnosticului suspectat?",
+          "options": [
+            "Tomografia computerizată toracică standard, fără rezoluție înaltă",
+            "Rezonanța magnetică toracică",
+            "Tomografia computerizată toracică cu rezoluție înaltă (HRCT)",
+            "Ecografia toracică",
+            "Radiografia toracică de control, repetată la 4 săptămâni"
+          ],
+          "correct": 2,
+          "explanation": "Lipsa de răspuns la 2-4 săptămâni de antibioterapie orală și episoadele recurente (peste trei pe an) de tuse productivă sunt sugestive pentru bronșectazie, iar HRCT este metoda gold standard de diagnostic, confirmând dilatarea bronșică, localizarea și extinderea bolii. Radiografia toracică poate fi normală într-un procentaj semnificativ de cazuri de bronșectazie, fiind nespecifică atunci când este modificată.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 356-363"
+        },
+        {
+          "id": "11-7",
+          "stem": "Un copil de 4 ani cu pneumonie bacteriană prezintă la ecografia toracică un revărsat pleural care ocupă aproximativ 1/3 din hemitorace, fără detresă respiratorie semnificativă. Se efectuează toracocenteză diagnostică, iar analiza lichidului pleural arată pH 7,1, LDH 1200 UI/L și glucoză 35 mg/dL. Care este conduita indicată?",
+          "options": [
+            "Toracotomie deschisă cu decorticare, ca primă intenție",
+            "Administrare de corticoizi sistemici, fără modificarea antibioterapiei",
+            "Continuarea antibioterapiei sistemice, fără evacuarea lichidului, cu reevaluare ecografică la 5 zile",
+            "Puncții pleurale evacuatorii repetate, la interval de 24-48 de ore",
+            "Drenaj pleural continuu"
+          ],
+          "correct": 4,
+          "explanation": "pH<7,2, LDH>1000 UI/L și glucoză <40-50 mg/dL sunt criterii biochimice care, la un revărsat mediu deja puncționat diagnostic, indică drenaj pleural continuu. Puncțiile pleurale repetate nu sunt recomandate, deoarece revărsatul parapneumonic se reface în aproximativ 50% din cazuri; toracotomia deschisă este rezervată stadiului de organizare sau eșecului altor metode.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 348-354"
+        },
+        {
+          "id": "11-8",
+          "stem": "Un adolescent de 16 ani, înalt și slab, prezintă debut brusc de durere toracică în repaus. Radiografia toracică arată un pneumotorace spontan primar cu colabare pulmonară extinsă, dar fără deviere traheală, fără instabilitate hemodinamică și cu saturație a oxigenului de 96%. Pacientul este ușor dispneic, fără alte semne de detresă respiratorie semnificativă. Care este conduita terapeutică recomandată?",
+          "options": [
+            "Toracocenteză pe ac, urmată de externare fără monitorizare",
+            "Oxigenoterapie cu debit mare, chiar dacă saturația oxigenului este normală",
+            "Toracostomie cu tub de dren, de primă intenție",
+            "Externare la domiciliu, fără nicio măsură terapeutică sau de monitorizare",
+            "Pleurodezie chimică imediată"
+          ],
+          "correct": 1,
+          "explanation": "Conform algoritmului terapeutic, un pneumotorace mare cu simptomatologie minimă (fără instabilitate hemodinamică sau deviere traheală) se tratează cu oxigenoterapie cu debit mare, chiar în absența hipoxemiei, aceasta favorizând resorbția aerului pleural. Toracostomia sau toracocenteza sunt rezervate pneumotoracelui sub tensiune sau celui cu simptomatologie semnificativă.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 364-366"
+        },
+        {
+          "id": "11-9",
+          "stem": "Un copil de 3 ani, internat pentru pneumonie, primește tratament cu lichide intravenoase pentru profilaxia deshidratării. În a treia zi de spitalizare devine somnolent și prezintă o convulsie; ionograma serică arată o hiponatremie severă. Care este cauza cea mai probabilă a acestei complicații?",
+          "options": [
+            "Insuficiența suprarenaliană acută",
+            "Sindromul de secreție inadecvată de hormon antidiuretic (ADH)",
+            "Diabetul insipid nefrogen",
+            "Sindromul hemolitic-uremic",
+            "Pierderi digestive prin vărsături incoercibile"
+          ],
+          "correct": 1,
+          "explanation": "Aportul de lichide în pneumonie trebuie monitorizat atent, deoarece poate să apară sindromul de secreție inadecvată de ADH, cu hiponatremie secundară, care se poate manifesta prin letargie și convulsii. Sindromul hemolitic-uremic este o altă complicație extrarespiratorie posibilă a pneumoniei, dar se manifestă prin anemie hemolitică, trombocitopenie și insuficiență renală, nu prin hiponatremie izolată cu convulsii.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 339-346"
         }
       ]
     },
@@ -844,13 +1194,13 @@ const QUESTIONS = {
           "id": "12-1",
           "stem": "Un copil de 3 ani este adus la consult pentru episoade recurente de wheezing: a avut 4 episoade în ultimul an, fiecare cu durată de cel puțin o zi și cu afectarea somnului. Din antecedente reținem doar diagnosticul de rinită alergică, stabilit de medic. Aplicând Indicele de Predicție a Astmului (API), ce este necesar suplimentar pentru ca scorul să fie considerat pozitiv?",
           "options": [
-            "Este necesară demonstrarea spirometrică a reversibilității obstrucției bronșice",
             "Diagnosticul de rinită alergică este suficient, singur, pentru un API pozitiv",
-            "Prezența unui criteriu major (istoric parental de astm sau dermatită atopică la copil) sau a unui al doilea criteriu minor (hipereozinofilie peste 4% sau wheezing fără semne de infecție respiratorie acută)",
+            "Este necesară demonstrarea spirometrică a reversibilității obstrucției bronșice",
             "Este necesară efectuarea testului de provocare bronșică la metacolină, pozitiv fiind criteriul suficient",
+            "Prezența unui criteriu major (istoric parental de astm sau dermatită atopică la copil) sau a unui al doilea criteriu minor (hipereozinofilie peste 4% sau wheezing fără semne de infecție respiratorie acută)",
             "Este necesară doar dozarea IgE totale serice, indiferent de valoare"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "API se aplică la copiii sub 5 ani cu minimum 3 episoade de wheezing/an, cu durată de cel puțin o zi, care afectează somnul, și necesită asocierea unui criteriu major sau a două criterii minore. Criteriile majore sunt astmul la un părinte și dermatita atopică la copil; criteriile minore sunt rinita alergică diagnosticată de medic, hipereozinofilia peste 4% și wheezing-ul fără infecție respiratorie acută. Rinita alergică reprezintă un singur criteriu minor, deci este insuficientă izolat pentru un API pozitiv.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 509-523"
         },
@@ -858,13 +1208,13 @@ const QUESTIONS = {
           "id": "12-2",
           "stem": "Un sugar de 4 luni, alimentat exclusiv cu formulă de lapte praf, prezintă de trei săptămâni scaune cu mucus și striuri sanguinolente, iritabilitate și stagnare ponderală, fără alte semne asociate. Se suspectează alergie la proteinele laptelui de vacă, formă non-IgE mediată. Care este conduita inițială recomandată?",
           "options": [
-            "Înlocuirea formulei standard cu o formulă extensiv hidrolizată, cu reevaluarea răspunsului clinic după 2 săptămâni de dietă de excludere",
-            "Testul de provocare orală dublu-orb, efectuat imediat, fără o dietă de excludere prealabilă",
-            "Determinarea IgE specifice pentru proteinele laptelui de vacă, aceasta fiind singura investigație necesară pentru diagnostic",
+            "Testarea cutanată Prick, considerată standardul de aur în diagnosticul alergiei alimentare",
             "Continuarea formulei standard, cu tratament simptomatic exclusiv cu antihistaminice orale",
-            "Testarea cutanată Prick, considerată standardul de aur în diagnosticul alergiei alimentare"
+            "Înlocuirea formulei standard cu o formulă extensiv hidrolizată, cu reevaluarea răspunsului clinic după 2 săptămâni de dietă de excludere",
+            "Determinarea IgE specifice pentru proteinele laptelui de vacă, aceasta fiind singura investigație necesară pentru diagnostic",
+            "Testul de provocare orală dublu-orb, efectuat imediat, fără o dietă de excludere prealabilă"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "La suspiciunea de alergie la proteinele laptelui de vacă, la sugarul alimentat artificial se recomandă înlocuirea formulei cu una extensiv hidrolizată, cu evaluarea răspunsului după 2 săptămâni. Testul de provocare orală este standardul de aur, dar se efectuează abia după remisia simptomelor sub dietă de excludere, nu inițial. În formele non-IgE mediate, IgE specifice și testarea Prick pot fi negative, fără valoare diagnostică certă.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 689-698"
         },
@@ -873,9 +1223,9 @@ const QUESTIONS = {
           "stem": "Care este rolul mutațiilor genei filagrinei (FLG) în patogenia dermatitei atopice, conform datelor prezentate?",
           "options": [
             "Nu au fost asociate cu debutul sau severitatea dermatitei atopice, rolul lor fiind descris exclusiv în psoriazis",
-            "Reduc colonizarea cutanată cu Staphylococcus aureus, având un efect protector față de suprainfecțiile bacteriene",
             "Cresc direct sinteza de IgE la nivelul limfocitelor B, acesta fiind principalul mecanism responsabil de alergiile alimentare asociate",
             "Cresc activitatea limfocitelor T citotoxice CD8+ și a celulelor NK, amplificând răspunsul antiviral cutanat",
+            "Reduc colonizarea cutanată cu Staphylococcus aureus, având un efect protector față de suprainfecțiile bacteriene",
             "Determină disfuncția barierei cutanate epidermice, cu creșterea expunerii la alergeni și risc crescut de debut precoce, forme severe de boală și eczemă herpeticum"
           ],
           "correct": 4,
@@ -887,12 +1237,12 @@ const QUESTIONS = {
           "stem": "Un copil de 8 ani se prezintă cu angioedem cu debut brusc, localizat la nivelul laringelui, cu stridor și dispnee progresivă. Conform conduitei terapeutice descrise pentru angioedemul cu localizare de risc, care este măsura de primă intenție?",
           "options": [
             "Omalizumab, administrat în doză unică de urgență",
-            "Montelukast oral, ca terapie de primă linie în orice formă de angioedem",
-            "Antihistaminic H1 nesedativ în doză standard, cu reevaluare clinică peste 48 de ore",
             "Adrenalină intramusculară, în doză de 0,01 mg/kg corp",
+            "Antihistaminic H1 nesedativ în doză standard, cu reevaluare clinică peste 48 de ore",
+            "Montelukast oral, ca terapie de primă linie în orice formă de angioedem",
             "Ciclosporină A, în doză de 4 mg/kg corp"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "În situațiile rare de angioedem cu localizare de risc, precum cea laringiană, se indică administrarea intramusculară de adrenalină în doză de 0,01 mg/kg corp. Antihistaminicele, montelukastul, omalizumabul și ciclosporina fac parte din schema de tratament în trepte a urticariei cronice, nu reprezintă conduita de urgență în angioedemul cu risc vital.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 699-709"
         },
@@ -901,13 +1251,83 @@ const QUESTIONS = {
           "stem": "Un copil de 6 ani dezvoltă, la aproximativ 10 zile după administrarea unei imunoglobuline heterologe (ser de origine animală), febră, urticarie generalizată, artralgii simetrice la nivelul mai multor articulații și limfadenopatie. Care este mecanismul imunologic implicat, conform clasificării Gell și Coombs?",
           "options": [
             "Reacție de tip IV, de hipersensibilitate întârziată, mediată celular prin limfocite T specifice",
-            "Reacție de tip III, prin complexe imune circulante, cu depunere în peretele vaselor și activarea complementului",
-            "Reacție toxică directă, dependentă de doză, fără substrat imunologic",
+            "Reacție de tip I, mediată IgE, prin degranulare mastocitară imediată",
             "Reacție de tip II, citotoxică, mediată prin anticorpi IgG/IgM îndreptați împotriva membranei celulare",
-            "Reacție de tip I, mediată IgE, prin degranulare mastocitară imediată"
+            "Reacție toxică directă, dependentă de doză, fără substrat imunologic",
+            "Reacție de tip III, prin complexe imune circulante, cu depunere în peretele vaselor și activarea complementului"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Tabloul descris (febră, urticarie, artralgii, limfadenopatie, apărute la 1-3 săptămâni de la administrarea unei proteine heterologe precum antiserul) este caracteristic bolii serului, produsă prin complexe imune circulante formate din antigenul medicamentos și anticorpi IgG/IgM, care se depun în pereții vasculari și activează complementul - reacție de tip III Gell și Coombs. Nivelurile serice de C3 și C4 scad, ajungând la un nadir în jurul zilei 10.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 1242-1246"
+        },
+        {
+          "id": "12-6",
+          "stem": "O fetiță de 10 ani prezintă rinoree apoasă, strănut paroxistic, prurit nazal și obstrucție nazală, cu simptome prezente aproape zilnic în ultimele două luni și impact important asupra somnului. Testarea cutanată Prick este pozitivă pentru acarienii din praful de casă, fiind stabilit diagnosticul de rinită alergică persistentă, cu formă moderat-severă. Care este tratamentul farmacologic considerat cel mai eficient pentru controlul acestei forme de boală?",
+          "options": [
+            "Antagoniștii de receptori de leucotriene, ca monoterapie de primă linie, indiferent de severitate",
+            "Decongestionantele nazale topice (oximetazolină), administrate continuu, pe termen lung",
+            "Cromoglicatul de sodiu intranazal, administrat o singură dată pe zi",
+            "Antihistaminicele orale de generația I, administrate seara la culcare",
+            "Corticosteroizii intranazali, indicați ca terapie de primă linie în formele persistente, moderat-severe"
+          ],
+          "correct": 4,
+          "explanation": "Pacienții cu simptome persistente și mai severe de rinită alergică necesită corticosteroizi intranazali, cea mai eficientă terapie disponibilă pentru această afecțiune, utilă și pentru conjunctivita alergică asociată. Antihistaminicele orale sunt o opțiune acceptabilă doar în formele intermitente, ușoare; decongestionantele topice nu se folosesc peste 5 zile din cauza riscului de congestie de rebound; cromoglicatul necesită administrare la fiecare 4 ore, iar antileucotrienele au efect modest asupra rinoreei și obstrucției nazale.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 1174-1178"
+        },
+        {
+          "id": "12-7",
+          "stem": "Un copil de 7 ani, cunoscut cu astm bronșic sever, se prezintă cu o exacerbare severă, cu ortopnee, dispnee marcată, vorbire în cuvinte și agitație intensă. Familia solicită administrarea unui sedativ pentru calmarea copilului, considerând că agitația îi accentuează efortul respirator. Care este atitudinea corectă?",
+          "options": [
+            "Se recomandă sedare profundă, de rutină, anterior intubației oro-traheale, la toți pacienții cu exacerbare severă",
+            "Se administrează o benzodiazepină intravenos, deoarece reduce travaliul respirator și anxietatea",
+            "Sedativele sunt indicate doar după apariția semnelor de epuizare musculară respiratorie",
+            "Sedativele sunt contraindicate în exacerbarea astmului bronșic, indiferent de gradul de agitație al pacientului",
+            "Sedativele se asociază de rutină tratamentului bronhodilatator, pentru toate exacerbările"
+          ],
+          "correct": 3,
+          "explanation": "În managementul exacerbării de astm bronșic nu se recomandă utilizarea de rutină a antibioticelor, a fluidificantelor secrețiilor bronșice și, în mod expres, a sedativelor, care sunt contraindicate. Agitația din exacerbarea severă poate reflecta hipoxemia, iar sedarea ar masca semnele de agravare și ar deprima suplimentar travaliul respirator, crescând riscul de stop respirator.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 509-523"
+        },
+        {
+          "id": "12-8",
+          "stem": "Un sugar de 3 luni, alimentat cu formulă de lapte praf, prezintă, la aproximativ 2 ore după masă, un episod de vărsături repetate și profuze, urmate de paloare, letargie marcată și hipotensiune, fără urticarie, angioedem sau wheezing. Un episod similar a mai apărut cu o săptămână în urmă, tot după administrarea formulei. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Proctocolită alergică indusă de proteine alimentare (FPIAP)",
+            "Gastroenterită acută virală",
+            "Sindrom de enterocolită indusă de proteinele alimentare (FPIES), formă acută",
+            "Stenoză hipertrofică de pilor",
+            "Reacție anafilactică IgE-mediată la proteinele laptelui de vacă"
+          ],
+          "correct": 2,
+          "explanation": "FPIES se manifestă tipic cu vărsături apărute la 1-4 ore de la ingestia alimentului declanșator (frecvent formulă de lapte sau soia), care se pot însoți de hipotensiune și tablou asemănător sepsisului, fără elementele clasice ale reacției IgE-mediate (urticarie, angioedem, wheezing) și cu recurență la reexpunere. Proctocolita alergică se manifestă, în schimb, prin scaune cu striuri de sânge la un sugar cu stare generală bună, fără vărsături sau hipotensiune.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 1242-1246"
+        },
+        {
+          "id": "12-9",
+          "stem": "Un copil de 4 ani, cunoscut cu dermatită atopică severă, dezvoltă brusc, la nivelul leziunilor eczematoase, grupuri de vezicule care evoluează spre papule ombilicate și apoi spre plăci eritematoase crustificate, însoțite de febră, stare generală alterată și limfadenopatie. Care este conduita terapeutică de elecție?",
+          "options": [
+            "Continuarea tratamentului cu dermatocorticoizi, fără nicio altă modificare terapeutică",
+            "Antibiotic oral antistafilococic, considerând cel mai probabil o suprainfecție bacteriană",
+            "Tratament sistemic antiviral (aciclovir sau valaciclovir), administrat intravenos, cât mai precoce",
+            "Antihistaminic oral, asociat cu creșterea frecvenței aplicării emolientelor",
+            "Inițierea unui inhibitor de calcineurină topic, pentru controlul rapid al inflamației"
+          ],
+          "correct": 2,
+          "explanation": "Tabloul descris este caracteristic eczemei herpeticum, o infecție cutanată diseminată cu virus herpes simplex, complicație a dermatitei atopice cu debut precoce, forme severe sau netratate, deficit de filagrină, IgE seric crescut sau pretratament cu inhibitori de calcineurină. Se recomandă tratament sistemic antiviral cu aciclovir sau valaciclovir, administrat intravenos, cât mai precoce după stabilirea diagnosticului; cazurile severe pot evolua cu keratoconjunctivită, meningită sau encefalită.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 710-722"
+        },
+        {
+          "id": "12-10",
+          "stem": "Un adolescent de 14 ani, aflat sub tratament cu fenitoină de aproximativ 3 săptămâni pentru epilepsie, dezvoltă febră, erupție cutanată maculopapuloasă extinsă, limfadenopatie generalizată și valori crescute ale transaminazelor hepatice. Hemoleucograma evidențiază eozinofilie marcată. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Boală a serului, indusă medicamentos",
+            "Necroliză epidermică toxică",
+            "Sindrom Stevens-Johnson",
+            "Exantem medicamentos simplu, de tip maculopapular",
+            "Sindrom DRESS (Drug Reaction with Eosinophilia and Systemic Symptoms)"
+          ],
+          "correct": 4,
+          "explanation": "Asocierea dintre erupție cutanată, febră, eozinofilie, disfuncție hepatică și limfadenopatie, apărută la un pacient tratat cu un anticonvulsivant precum fenitoina, este caracteristică sindromului DRESS. Boala serului se manifestă predominant cu urticarie, artralgii și febră, fără eozinofilie marcată sau afectare hepatică proeminentă, iar sindromul Stevens-Johnson și necroliza epidermică toxică se definesc prin afectare mucocutanată buloasă cu detașare epidermică, nu prin eozinofilie și hepatocitoliză.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1242-1246"
         }
       ]
@@ -920,10 +1340,10 @@ const QUESTIONS = {
           "id": "13-1",
           "stem": "Un sugar de 4 luni, diagnosticat ecocardiografic cu defect septal ventricular perimembranos cu șunt moderat (raport Qp/Qs aproximativ 2:1), prezintă la auscultație, pe lângă suflul holosistolic parasternal stânga inferior, un suflu/rulment mezodiastolic perceput la apex. Care este semnificația acestui suflu diastolic apical?",
           "options": [
-            "Insuficiență aortică prin prolaps de cuspidă",
-            "Regurgitare tricuspidiană secundară dilatării ventriculului drept",
             "Persistența unui canal atrioventricular asociat",
             "Stenoză mitrală organică congenitală asociată",
+            "Regurgitare tricuspidiană secundară dilatării ventriculului drept",
+            "Insuficiență aortică prin prolaps de cuspidă",
             "Stenoză mitrală relativă/funcțională, determinată de creșterea fluxului sangvin prin valva mitrală ca urmare a întoarcerii venoase pulmonare crescute"
           ],
           "correct": 4,
@@ -934,13 +1354,13 @@ const QUESTIONS = {
           "id": "13-2",
           "stem": "Un adolescent de 14 ani, cunoscut cu stenoză aortică valvulară strânsă, anterior asimptomatic, prezintă un episod de sincopă în timpul unui efort fizic intens. Care este mecanismul fiziopatologic cel mai probabil implicat?",
           "options": [
+            "Scăderea rezistenței vasculare pulmonare determină instalarea unui șunt dreapta-stânga la nivelul unui defect septal asociat",
+            "Închiderea funcțională bruscă a canalului arterial reduce brutal fluxul sistemic",
             "Limitarea deschiderii valvei aortice stenozate împiedică creșterea compensatorie a debitului cardiac necesară la efort",
             "Apariția unei stenoze mitrale relative prin creșterea fluxului pulmonar reduce umplerea ventriculului stâng",
-            "Scăderea rezistenței vasculare pulmonare determină instalarea unui șunt dreapta-stânga la nivelul unui defect septal asociat",
-            "Creșterea rezistenței vasculare sistemice produce supraîncărcare de volum a ventriculului drept",
-            "Închiderea funcțională bruscă a canalului arterial reduce brutal fluxul sistemic"
+            "Creșterea rezistenței vasculare sistemice produce supraîncărcare de volum a ventriculului drept"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "În stenozele aortice strânse, limitarea deschiderii valvei nu permite, în condiții de efort, creșterea compensatorie a debitului cardiac; ca urmare, la efort poate apărea sincopa sau chiar moartea subită. Celelalte mecanisme descrise (șunt dreapta-stânga, închiderea canalului arterial, supraîncărcare de volum a VD, stenoză mitrală relativă) nu sunt relevante pentru fiziopatologia stenozei aortice.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 624-636"
         },
@@ -948,13 +1368,13 @@ const QUESTIONS = {
           "id": "13-3",
           "stem": "Un nou-născut prematur, cu vârsta postnatală de 5 zile, prezintă semne de insuficiență cardiacă congestivă în contextul unei persistențe de canal arterial cu debit mare, confirmată ecocardiografic. Care este conduita terapeutică inițială recomandată pentru încercarea de închidere a canalului?",
           "options": [
-            "Administrarea intravenoasă de indometacin sau ibuprofen, inhibitori de prostaglandine",
-            "Administrarea intravenoasă de prostaglandină E1, pentru menținerea permeabilității canalului",
-            "Administrare de beta-blocant pentru controlul tahicardiei",
+            "Închiderea chirurgicală imediată, fără nicio tentativă de tratament medicamentos",
             "Restricție lichidiană izolată, fără altă intervenție terapeutică",
-            "Închiderea chirurgicală imediată, fără nicio tentativă de tratament medicamentos"
+            "Administrarea intravenoasă de prostaglandină E1, pentru menținerea permeabilității canalului",
+            "Administrarea intravenoasă de indometacin sau ibuprofen, inhibitori de prostaglandine",
+            "Administrare de beta-blocant pentru controlul tahicardiei"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "La prematurii cu PCA cu debit mare și ICC se încearcă închiderea farmacologică a canalului cu inhibitori de prostaglandine (indometacin, mai recent și ibuprofen), administrați intravenos, intervenție ce trebuie făcută în primele 10-14 zile de viață; doar dacă la 48-72 de ore de tratament persistă insuficiența ventriculară stângă se recurge la închidere chirurgicală. Prostaglandina E1 are efect opus, de menținere a canalului deschis, fiind folosită în alte situații (cardiopatii ducto-dependente).",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 624-636"
         },
@@ -962,13 +1382,13 @@ const QUESTIONS = {
           "id": "13-4",
           "stem": "O fetiță de 4 ani, asimptomatică, este evaluată pentru un suflu sistolic ejecțional grad 2/6, perceput parasternal stânga superior, descoperit la un control de rutină. Ce element auscultatoriu orientează diagnosticul spre un defect septal atrial tip ostium secundum, mai degrabă decât spre un suflu inocent?",
           "options": [
-            "Cianoză perioronazală intermitentă la efort",
-            "Prezența unui suflu diastolic apical asociat",
-            "Prezența unui freamăt sistolic parasternal stânga inferior",
             "Accentuarea suflului la trecerea în ortostatism",
-            "Dedublarea largă și fixă a zgomotului 2 în aria pulmonarei"
+            "Prezența unui freamăt sistolic parasternal stânga inferior",
+            "Dedublarea largă și fixă a zgomotului 2 în aria pulmonarei",
+            "Cianoză perioronazală intermitentă la efort",
+            "Prezența unui suflu diastolic apical asociat"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "Elementele clinice caracteristice DSA descrise în text sunt suflul sistolic ejecțional în focarul pulmonarei și dedublarea largă și fixă a zgomotului 2 în aria pulmonarei, pe măsura creșterii presiunilor în cordul drept. Acest semn auscultatoriu, spre deosebire de sufluri inocente, orientează spre existența unui șunt stânga-dreapta la nivel atrial.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 624-636"
         },
@@ -976,14 +1396,42 @@ const QUESTIONS = {
           "id": "13-5",
           "stem": "Un nou-născut de 6 zile se prezintă cu tahipnee, tahicardie, alterarea rapidă a stării generale, puls femural diminuat/absent și o diferență semnificativă între valorile tensionale la membrele superioare (crescute) și la cele inferioare (scăzute). Ecocardiografia confirmă o coarctație de aortă severă, de tip preductal. Care este măsura terapeutică imediată, prioritară stabilizării înaintea corecției chirurgicale?",
           "options": [
+            "Administrarea de indometacin intravenos, pentru închiderea canalului arterial",
+            "Digitalizare rapidă, ca unică măsură terapeutică",
             "Administrarea intravenoasă de prostaglandină E1, pentru menținerea permeabilității canalului arterial",
             "Administrarea de beta-blocante, pentru controlul valorilor tensionale crescute",
-            "Digitalizare rapidă, ca unică măsură terapeutică",
-            "Administrarea de indometacin intravenos, pentru închiderea canalului arterial",
             "Administrarea de inhibitori ai enzimei de conversie, pentru reducerea postsarcinii ventriculare stângi"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "În coarctația de aortă preductală diagnosticată precoce, fluxul sangvin spre jumătatea inferioară a corpului depinde de permeabilitatea canalului arterial; de aceea este necesară menținerea acestuia permeabil cu prostaglandină E1 administrată intravenos, până la stabilizare și corecție chirurgicală. Indometacinul ar închide canalul, agravând situația, iar inhibitorii enzimei de conversie sunt contraindicați deoarece pot scădea perfuzia distal de coarctație, inclusiv cea renală.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 624-636"
+        },
+        {
+          "id": "13-6",
+          "stem": "Un băiat de 11 ani, altfel asimptomatic, este trimis pentru evaluare cardiologică după ce la un consult de rutină s-au constatat valori tensionale crescute la nivelul membrelor superioare. Examenul clinic evidențiază puls femural diminuat comparativ cu cel radial și un suflu sistolic în aria subclaviculară stângă și interscapulovertebral stâng. Ecocardiografia confirmă o coarctație de aortă de tip postductal, cu circulație colaterală bine dezvoltată. Care este conduita terapeutică inițială pentru controlul valorilor tensionale, până la momentul corecției?",
+          "options": [
+            "Restricție lichidiană și diuretice, fără altă medicație antihipertensivă",
+            "Prostaglandină E1 intravenos, pentru menținerea permeabilității canalului arterial",
+            "Inhibitori ai enzimei de conversie a angiotensinei, ca primă opțiune",
+            "Digitalizare, ca unică măsură terapeutică înaintea corecției chirurgicale",
+            "Beta-blocante, cu atenție la o eventuală scădere excesivă a tensiunii arteriale la membrele superioare, care ar putea compromite perfuzia distală de coarctație"
+          ],
+          "correct": 4,
+          "explanation": "În forma cu debut tardiv de tip „adult\" a coarctației de aortă, tratamentul inițial este adresat hipertensiunii arteriale, care răspunde bine la beta-blocante; se va avea însă grijă ca scăderea prea mare a valorilor tensionale la membrele superioare să nu determine o perfuzie inadecvată a jumătății inferioare a corpului, inclusiv la nivel renal. Inhibitorii enzimei de conversie sunt folosiți ulterior, doar dacă nu mai există obstrucție reziduală, iar prostaglandina E1 este utilă în forma precoce, ducto-dependentă, nu în această formă cu circulație colaterală dezvoltată.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 624-636"
+        },
+        {
+          "id": "13-7",
+          "stem": "Un sugar de 8 luni este investigat pentru un defect septal atrial. Ecocardiografia arată un defect situat în porțiunea inferioară a septului interatrial, cu despicătură (cleft) a valvei mitrale anterioare și regurgitare mitrală asociată. Care este tipul anatomic de defect septal atrial cel mai probabil în acest caz, cu implicații asupra momentului corecției chirurgicale?",
+          "options": [
+            "Defectul de tip sinus venos, frecvent asociat cu întoarcere venoasă pulmonară anormală parțială",
+            "Defectul de tip ostium secundum, care beneficiază de închidere prin cateterism în jurul vârstei de 4-6 ani",
+            "Defectul de tip ostium primum, care se asociază aproape constant cu despicătura valvei mitrale anterioare și impune corecție chirurgicală mai precoce",
+            "Foramenul ovale patent, fără semnificație hemodinamică și fără indicație de corecție",
+            "Defectul septal al sinusului coronar, cu șunt dinspre atriul stâng spre sinusul coronar"
+          ],
+          "correct": 2,
+          "explanation": "Defectul de tip ostium primum apare prin alipirea insuficientă dintre mugurii endocardici și septum primum; deoarece mugurii endocardici participă și la formarea valvelor atrioventriculare, acest defect se asociază aproape constant cu despicătura (cleftul) valvei mitrale anterioare și impune corecția chirurgicală mai precoce decât în cazul defectelor de tip ostium secundum. Celelalte tipuri de DSA (secundum, sinus venos, sinus coronar) au alte localizări și asocieri caracteristice, descrise distinct în text.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 624-636"
         }
       ]
@@ -996,13 +1444,13 @@ const QUESTIONS = {
           "id": "14-1",
           "stem": "Un nou-născut cu transpoziție de vase mari asociată cu un defect septal ventricular larg dezvoltă, la vârsta de 3 săptămâni, tahipnee, tahicardie, transpirații excesive și stagnare ponderală, în timp ce cianoza rămâne discretă, evidentă doar în momentele de agitație. Din punct de vedere fiziopatologic, acest tablou corespunde cărei categorii de cardiopatie congenitală cianogenă?",
           "options": [
-            "MCC cianogenă cu flux pulmonar redus, prin obstrucția întoarcerii venoase pulmonare",
-            "MCC cianogenă cu flux pulmonar mult crescut, la care consecințele clinice sunt legate de supraîncărcarea de volum a ventriculului stâng și nu de hipoxemie",
-            "Stenoză aortică critică cu debit cardiac sistemic scăzut",
             "MCC acianogenă cu șunt stânga-dreapta pur, fără amestec sanguin interatrial sau interventricular",
-            "MCC cianogenă cu flux pulmonar scăzut, prin devierea unei cantități de sânge venos sistemic direct în cordul stâng"
+            "MCC cianogenă cu flux pulmonar redus, prin obstrucția întoarcerii venoase pulmonare",
+            "MCC cianogenă cu flux pulmonar scăzut, prin devierea unei cantități de sânge venos sistemic direct în cordul stâng",
+            "MCC cianogenă cu flux pulmonar mult crescut, la care consecințele clinice sunt legate de supraîncărcarea de volum a ventriculului stâng și nu de hipoxemie",
+            "Stenoză aortică critică cu debit cardiac sistemic scăzut"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Textul descrie această categorie (exemplificată de TMV cu DSV larg) prin SaO2 ușor scăzută și cianoză absentă sau discretă, consecințele clinice fiind legate de fluxul pulmonar crescut, care duce la supraîncărcarea de volum a ventriculului stâng și la insuficiența acestuia, nu de hipoxemie. Tabloul clinic descris (ICC cu cianoză minimă) corespunde exact acestei categorii. Celelalte categorii (flux scăzut prin deviere directă sau prin obstrucția întoarcerii venoase) sunt dominate de hipoxemie severă și cianoză intensă.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 646-654"
         },
@@ -1010,13 +1458,13 @@ const QUESTIONS = {
           "id": "14-2",
           "stem": "Un sugar de 5 luni, cunoscut cu tetralogie Fallot, se trezește dimineața cu agravarea bruscă a dispneei, accentuarea cianozei, iritabilitate marcată și diminuarea suflului sistolic auscultat anterior. Care este prima măsură terapeutică indicată în acest moment?",
           "options": [
-            "Administrarea de propranolol oral, zilnic",
-            "Montarea de urgență a unei linii venoase periferice pentru reechilibrare volemică",
             "Plasarea copilului în poziție genupectorală (flectarea membrelor inferioare pe abdomen)",
-            "Administrarea de oxigen pe mască în flux mare",
-            "Administrarea imediată de bicarbonat de sodiu intravenos"
+            "Administrarea imediată de bicarbonat de sodiu intravenos",
+            "Montarea de urgență a unei linii venoase periferice pentru reechilibrare volemică",
+            "Administrarea de propranolol oral, zilnic",
+            "Administrarea de oxigen pe mască în flux mare"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "Tabloul descris este cel al unei crize de rău hipoxic (hipercianoză). Tratamentul acesteia începe cu plasarea copilului în poziție genupectorală, fără a se pierde timp cu montarea unei linii de acces IV. Administrarea de oxigen are valoare limitată, deoarece problema ține de reducerea fluxului sangvin pulmonar și nu de oxigenarea acestuia; bicarbonatul și propranololul sunt măsuri ulterioare, nu de primă linie.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 646-654"
         },
@@ -1025,12 +1473,12 @@ const QUESTIONS = {
           "stem": "Un nou-născut prezintă cianoză centrală din primele ore de viață. Ecocardiografia evidențiază un ventricul drept hipoplazic, limitat la camera de ejecție, iar electrocardiograma arată deviația axului QRS spre stânga (între 0 și -90°), hipertrofie atrială dreaptă și hipertrofie ventriculară stângă, cu potențiale ventriculare drepte de amplitudine redusă. Care este diagnosticul cel mai probabil?",
           "options": [
             "Trunchiul arterial comun",
-            "Transpoziția marilor vase cu sept interventricular intact",
             "Stenoza pulmonară critică cu sept interventricular intact",
+            "Atrezia de tricuspidă",
             "Tetralogia Fallot",
-            "Atrezia de tricuspidă"
+            "Transpoziția marilor vase cu sept interventricular intact"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "Textul precizează că, la un nou-născut cianotic, modificările EKG sunt caracteristice pentru diagnosticul de atrezie de tricuspidă: devierea axului QRS la stânga, hipertrofia atriului drept, hipertrofie ventriculară stângă și potențiale ventriculare drepte de amplitudine redusă. Acest pattern, corelat cu hipoplazia ventriculului drept, este specific atreziei tricuspidiene și diferă de celelalte cardiopatii cianogene, care asociază de regulă hipertrofie ventriculară dreaptă.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 646-654"
         },
@@ -1038,13 +1486,13 @@ const QUESTIONS = {
           "id": "14-4",
           "stem": "Un copil de 4 ani cu tetralogie Fallot neoperată efectuează o radiografie cardiopulmonară care evidențiază un cord de dimensiuni normale, cu apex rotunjit și împins în sus, arc mijlociu stâng concav/scobit, pedicul vascular mic și înalt, iar câmpurile pulmonare hipertransparente. Cum se numește acest aspect radiologic caracteristic?",
           "options": [
-            "Aspect de \"ou culcat pe diafragm\"",
-            "Cord \"în formă de gheată\" (\"coeur en sabot\")",
-            "Silueta cardiacă \"în clopot\"",
             "Cardiomegalie globală cu congestie vasculară pulmonară",
-            "Dilatarea izolată a atriului stâng cu dublu contur"
+            "Silueta cardiacă \"în clopot\"",
+            "Aspect de \"ou culcat pe diafragm\"",
+            "Dilatarea izolată a atriului stâng cu dublu contur",
+            "Cord \"în formă de gheată\" (\"coeur en sabot\")"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Textul descrie explicit acest aspect radiologic din tetralogia Fallot drept \"cordul în formă de gheată\"/\"coeur en sabot\" (sau \"cord tăiat cu securea\"), determinat de arcul mijlociu stâng concav prin absența infundibulului pulmonar, apexul rotunjit și împins în sus de ventriculul drept hipertrofiat, pediculul vascular mic și înalt, cu hipertransparență pulmonară secundară hipovascularizației. Aspectul de \"ou culcat pe diafragm\" este caracteristic transpoziției marilor vase, nu tetralogiei Fallot.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 646-654"
         },
@@ -1052,14 +1500,42 @@ const QUESTIONS = {
           "id": "14-5",
           "stem": "Un copil de 6 ani cu tetralogie Fallot neoperată prezintă de 3 zile febră, cefalee intensă, vărsături și deficit motor la nivelul membrului superior drept. Care este complicația cel mai probabil implicată, favorizată direct de fiziopatologia șuntului dreapta-stânga al acestei cardiopatii?",
           "options": [
+            "Accidentul vascular cerebral hemoragic prin ruptura unui anevrism micotic aortic",
             "Tromboza de sinus venos cerebral secundară deshidratării acute",
             "Meningita bacteriană secundară unei endocardite tricuspidiene",
             "Encefalopatia hipertensivă dintr-o coarctație de aortă asociată",
-            "Abcesul cerebral, prin trecerea bacteriilor din circulația venoasă direct în circulația arterială sistemică, ocolind filtrul pulmonar",
-            "Accidentul vascular cerebral hemoragic prin ruptura unui anevrism micotic aortic"
+            "Abcesul cerebral, prin trecerea bacteriilor din circulația venoasă direct în circulația arterială sistemică, ocolind filtrul pulmonar"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Textul menționează abcesul cerebral drept una dintre principalele consecințe clinice ale unei MCC cu șunt dreapta-stânga, precizând că șuntul veno-arterial permite bacteriilor, unele provenite chiar din flora enterică, să ocolească filtrul pulmonar și să pătrundă direct în circulația arterială sistemică. Tabloul clinic (febră, cefalee, semne neurologice de focar) la un copil cu cardiopatie cianogenă de lungă durată este sugestiv pentru această complicație.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 646-654"
+        },
+        {
+          "id": "14-6",
+          "stem": "Un nou-născut la termen cu transpoziție de vase mari și sept interventricular intact prezintă cianoză centrală intensă, cu agravare progresivă din primele ore de viață. Ecocardiografia confirmă diagnosticul și evidențiază o comunicare interatrială restrictivă, iar canalul arterial are tendință de închidere spontană. Care este conduita terapeutică imediată, până la posibilitatea corecției chirurgicale definitive?",
+          "options": [
+            "Administrare de PGE1 în perfuzie continuă pentru menținerea permeabilității canalului arterial, urmată de atrioseptostomie cu balon (procedeu Rashkind)",
+            "Digoxin și diuretice, ca tratament al insuficienței cardiace congestive instalate precoce",
+            "Indometacin intravenos, pentru favorizarea închiderii canalului arterial și stabilizarea hemodinamică",
+            "Șunt sistemico-pulmonar de tip Blalock-Taussig, pentru creșterea fluxului sangvin pulmonar",
+            "Banding (serclaj) al arterei pulmonare, pentru reducerea fluxului pulmonar excesiv"
+          ],
+          "correct": 0,
+          "explanation": "Textul precizează că, în TMV cu sept interventricular intact și comunicare interatrială restrictivă, administrarea de PGE1 în perfuzie continuă menține sau redeschide canalul arterial, crescând fluxul pulmonar și presiunea din atriul stâng; dacă intervenția corectivă nu poate fi practicată imediat, se recurge la atrioseptostomia cu balon (procedeul Rashkind) pentru a lărgi comunicarea interatrială. Închiderea canalului arterial agravează rapid tabloul clinic, astfel încât indometacinul ar fi contraindicat; banding-ul pulmonar și șuntul Blalock-Taussig sunt intervenții paliative folosite în alte situații (flux pulmonar crescut, respectiv flux pulmonar scăzut din alte cardiopatii).",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 646-654"
+        },
+        {
+          "id": "14-7",
+          "stem": "Un copil de 8 ani cu tetralogie Fallot neoperată trebuie să efectueze o extracție dentară programată. Din punctul de vedere al profilaxiei endocarditei bacteriene, care este conduita corectă?",
+          "options": [
+            "Profilaxia este indicată, bolile cardiace congenitale cianogene fără corecție chirurgicală fiind încadrate la risc înalt de endocardită, iar extracția dentară fiind o procedură cu risc de bacteriemie",
+            "Profilaxia este necesară doar la copiii cu vârsta peste 10 ani care au o cardiopatie congenitală",
+            "Profilaxia nu este necesară, deoarece tetralogia Fallot neoperată nu se numără printre afecțiunile cu risc înalt de endocardită",
+            "Profilaxia este indicată doar dacă procedura este însoțită de sângerare masivă, indiferent de tipul cardiopatiei subiacente",
+            "Profilaxia nu mai este necesară, extracția dentară nefiind inclusă printre procedurile cu risc de bacteriemie"
+          ],
+          "correct": 0,
+          "explanation": "Textul include bolile cardiace congenitale cianogene fără corecție chirurgicală printre afecțiunile cu cel mai înalt risc de endocardită, pentru care profilaxia este recomandată la procedurile cu risc crescut. Extracțiile dentare figurează explicit printre procedurile stomatologice pentru care profilaxia ESTE recomandată. Vârsta pacientului nu condiționează necesitatea profilaxiei la pacienții cu risc înalt.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 646-654"
         }
       ]
@@ -1073,12 +1549,12 @@ const QUESTIONS = {
           "stem": "O adolescentă de 15 ani, asimptomatică, prezintă la trei vizite consecutive în cabinet valori ale tensiunii arteriale (TA) peste percentila 95 pentru vârstă, sex și înălțime. Se efectuează monitorizare ambulatorie a TA (holter TA/24 ore), care arată valori medii ale TAS și TAD sub percentila 95, cu mai puțin de 25% din valorile înregistrate peste limita normală pentru sex, vârstă și înălțime. Care este diagnosticul cel mai probabil?",
           "options": [
             "HTA mascată",
-            "HTA de halat alb",
-            "Profil tensional non-dipper",
             "HTA esențială stadiul 2",
-            "HTA esențială stadiul 1"
+            "HTA esențială stadiul 1",
+            "HTA de halat alb",
+            "Profil tensional non-dipper"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "HTA de halat alb este definită ca valori ale TA măsurate în cabinet mai mari sau egale cu percentila 95, dar cu valori medii ale TAS/TAD pe holter TA/24 ore sub percentila 95, în condițiile în care mai puțin de 25% din valori depășesc limita normală (load <25%). HTA mascată este situația inversă (TA normală în cabinet, dar crescută pe holter). Profilul non-dipper se referă la variabilitatea circadiană a TA, nu la discrepanța cabinet-holter.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 423-428"
         },
@@ -1086,11 +1562,11 @@ const QUESTIONS = {
           "id": "15-2",
           "stem": "Un sugar de 3 luni este diagnosticat cu hipertensiune arterială semnificativă persistentă. Conform distribuției etiologice a HTA în funcție de vârstă, care este cea mai frecventă cauză de HTA la această grupă de vârstă?",
           "options": [
-            "Feocromocitomul",
+            "Tumora Wilms",
             "Tromboza de arteră/venă renală",
             "Stenoza de arteră renală",
-            "Tumora Wilms",
-            "HTA esențială asociată obezității"
+            "HTA esențială asociată obezității",
+            "Feocromocitomul"
           ],
           "correct": 1,
           "explanation": "La nou-născut și sugar, cele mai frecvente cauze de HTA sunt tromboza de arteră/venă renală, anomaliile congenitale renale și coarctația de aortă. Tumora Wilms și stenoza de arteră renală sunt cauze predominante la copilul cu vârsta între 1 și 6 ani, iar HTA esențială predomină la adolescenți.",
@@ -1100,13 +1576,13 @@ const QUESTIONS = {
           "id": "15-3",
           "stem": "Un adolescent de 16 ani cu HTA secundară stenozei bilaterale de artere renale necesită inițierea tratamentului medicamentos antihipertensiv. Care dintre următoarele clase terapeutice este contraindicată în acest context?",
           "options": [
+            "Blocanții canalelor de calciu",
             "Diureticele de ansă",
             "Alfa-agoniștii centrali",
-            "Inhibitorii enzimei de conversie a angiotensinei (IECA)",
-            "Blocanții canalelor de calciu",
-            "Beta-blocantele"
+            "Beta-blocantele",
+            "Inhibitorii enzimei de conversie a angiotensinei (IECA)"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "IECA și antagoniștii receptorilor angiotensinei II (ARA) au contraindicație absolută în stenoza bilaterală de artere renale, în sarcină și în hiperpotasemie. Celelalte clase menționate nu sunt contraindicate specific în stenoza bilaterală de artere renale conform textului.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 423-428"
         },
@@ -1114,13 +1590,13 @@ const QUESTIONS = {
           "id": "15-4",
           "stem": "Un copil de 8 ani se prezintă cu cefalee severă, vărsături și convulsii, cu valori tensionale mult crescute (peste 20% față de limita stadiului 2 de HTA) și encefalopatie hipertensivă. După internarea în terapie intensivă și inițierea tratamentului parenteral (de exemplu nitroprusiat de sodiu), care este strategia corectă de reducere a TA în primele ore?",
           "options": [
-            "Reducerea TA cu maximum 25% din scăderea estimată în primele 6-8 ore, urmată de scădere graduală și continuă în următoarele 24-48 ore",
-            "Reducerea TA la valori normale în primele 6-8 ore, cu continuarea tratamentului oral după 24 de ore",
             "Normalizarea rapidă a TA în prima oră, pentru a preveni cât mai repede afectarea organelor-țintă",
-            "Reducerea imediată a TA cu 50% din valoarea inițială, urmată de menținerea constantă a acestei valori",
-            "Administrarea tratamentului oral cu nifedipină, urmată de reevaluare la 24 de ore"
+            "Reducerea TA cu maximum 25% din scăderea estimată în primele 6-8 ore, urmată de scădere graduală și continuă în următoarele 24-48 ore",
+            "Administrarea tratamentului oral cu nifedipină, urmată de reevaluare la 24 de ore",
+            "Reducerea TA la valori normale în primele 6-8 ore, cu continuarea tratamentului oral după 24 de ore",
+            "Reducerea imediată a TA cu 50% din valoarea inițială, urmată de menținerea constantă a acestei valori"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Scăderea TA în criza hipertensivă trebuie să fie graduală, pentru a evita hipoperfuzia organelor, în special hipoperfuzia cerebrală: în primele 6-8 ore TA se reduce cu maximum 25% din scăderea estimată, urmată de o scădere continuă și graduală în următoarele 24-48 de ore. Tratamentul crizei hipertensive se face întotdeauna parenteral, nu oral.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 423-428"
         },
@@ -1128,14 +1604,42 @@ const QUESTIONS = {
           "id": "15-5",
           "stem": "Pentru care dintre următoarele categorii de pacienți pediatrici cu HTA este indicată, conform ghidurilor citate, efectuarea investigațiilor de laborator adiționale (catecolamine/metanefrine urinare și plasmatice, steroizi, renină plasmatică, imagistică renală) pentru identificarea unei cauze secundare?",
           "options": [
-            "Copiii mici cu HTA de stadiul 1 și orice copil/adolescent cu HTA de stadiul 2",
             "Doar adolescenții cu HTA esențială confirmată",
+            "Doar copiii cu HTA de halat alb",
             "Toți copiii cu valori ale TA între percentilele 90 și 94, indiferent de comorbidități",
-            "Doar copiii cu vârsta peste 12 ani, indiferent de stadiul HTA",
-            "Doar copiii cu HTA de halat alb"
+            "Copiii mici cu HTA de stadiul 1 și orice copil/adolescent cu HTA de stadiul 2",
+            "Doar copiii cu vârsta peste 12 ani, indiferent de stadiul HTA"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "Textul precizează explicit că populația-țintă pentru investigațiile adiționale (catecolamine, steroizi, renină plasmatică, imagistică renală) este reprezentată de copiii mici cu HTA de stadiul 1 și de orice copil/adolescent cu HTA de stadiul 2 (renina plasmatică se indică suplimentar și în caz de istoric familial de HTA severă). Investigațiile de rutină, nu cele adiționale, se efectuează la toți copiii cu HTA confirmată.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 423-428"
+        },
+        {
+          "id": "15-6",
+          "stem": "Un copil de 9 ani este evaluat pentru HTA nou-descoperită. La examenul clinic se decelează un suflu sistolic și puls femural diminuat. Măsurarea TA la nivelul membrelor arată o valoare a TAS la brațul drept cu 25 mmHg mai mare decât TAS măsurată la nivelul piciorului (normal, TAS la membrele inferioare este mai mare decât la membrele superioare). Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Tromboză de arteră/venă renală",
+            "Stenoză de arteră renală",
+            "Coarctație de aortă",
+            "Sindrom Cushing",
+            "Feocromocitom"
+          ],
+          "correct": 2,
+          "explanation": "Coarctația de aortă istmică sau abdominală este sugerată de o diferență a TAS între brațul drept și picior mai mare sau egală cu 20 mmHg, asociată clinic cu diferență de TA între membrele superioare și inferioare și suflu sistolic. Normal, TAS la membrele inferioare este cu 10-20% mai mare decât la cele superioare, astfel încât inversarea acestui raport (TAS mai mare la braț decât la picior) este sugestivă pentru coarctație. Celelalte cauze secundare de HTA menționate nu se asociază cu un gradient tensional între membre.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 423-428"
+        },
+        {
+          "id": "15-7",
+          "stem": "Un adolescent de 15 ani, cu HTA reziduală după corecția chirurgicală a unei coarctații de aortă, are în antecedente astm bronșic sever, aflat sub tratament bronhodilatator cronic. Se decide inițierea terapiei antihipertensive. Deși este indicată în HTA asociată coarctației de aortă, care dintre următoarele clase medicamentoase este contraindicată la acest pacient?",
+          "options": [
+            "Blocanții canalelor de calciu",
+            "Beta-blocantele",
+            "Diureticele de ansă",
+            "Inhibitorii enzimei de conversie a angiotensinei",
+            "Alfa-agoniștii centrali"
+          ],
+          "correct": 1,
+          "explanation": "Beta-blocantele sunt indicate în HTA asociată cu coarctație de aortă și în insuficiența cardiacă congestivă, dar sunt contraindicate în astm bronșic, diabet zaharat, psoriazis și la sportivi. La acest pacient astmatic, o alternativă adecvată tot pentru HTA asociată coarctației de aortă este reprezentată de blocanții canalelor de calciu, care nu au această contraindicație.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 423-428"
         }
       ]
@@ -1150,11 +1654,11 @@ const QUESTIONS = {
           "options": [
             "Diaree entero-invazivă/inflamatoare (citotoxică)",
             "Diaree exsudativă, cu enteropatie cu pierdere de proteine",
-            "Diaree prin tulburări de motilitate (hipermotilitate)",
             "Diaree secretorie (non-inflamatoare/enterotoxică)",
-            "Diaree prin scăderea suprafeței de absorbție (sindrom de intestin scurt)"
+            "Diaree prin scăderea suprafeței de absorbție (sindrom de intestin scurt)",
+            "Diaree prin tulburări de motilitate (hipermotilitate)"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "Diareea secretorie se caracterizează clinic prin scaune apoase, voluminoase, absența semnelor sistemice (febră), absența semnelor de inflamație/sânge în scaun și absența leucocitelor fecale - exact tabloul descris. Diareea entero-invazivă se însoțește de sindrom dizenteric, cu sânge, mucus, leucocite în scaun și semne sistemice, ceea ce nu se regăsește la acest pacient.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 743-762"
         },
@@ -1164,9 +1668,9 @@ const QUESTIONS = {
           "options": [
             "Nu se administrează antibiotic, deoarece la gazdele normale, cu gastroenterită necomplicată, antibioterapia nu scurtează diareea și poate prelungi portajul",
             "Se administrează antibiotic, deoarece vârsta sub 3 luni reprezintă un factor de risc pentru boală invazivă la infecția cu Salmonella",
-            "Se administrează antibiotic doar dacă apar convulsii febrile",
+            "Se administrează antibiotic doar dacă antibiograma arată rezistență la ampicilină",
             "Se administrează antibiotic doar în cazul asocierii cu deshidratare severă",
-            "Se administrează antibiotic doar dacă antibiograma arată rezistență la ampicilină"
+            "Se administrează antibiotic doar dacă apar convulsii febrile"
           ],
           "correct": 1,
           "explanation": "Textul precizează că tratamentul antimicrobian este indicat pentru gastroenterita cu Salmonella non-tifoidă la pacienții cu risc crescut de boală invazivă, printre care sugarii cu vârsta sub 3 luni, indiferent de prezența bacteriemiei. În schimb, la gazdele normale cu gastroenterită necomplicată, antibioterapia nu scurtează durata diareei și poate prelungi eliminarea fecală (portajul).",
@@ -1176,13 +1680,13 @@ const QUESTIONS = {
           "id": "16-3",
           "stem": "Un copil de 4 ani prezintă diaree cu sânge, în context epidemiologic sugestiv pentru infecție cu E. coli enterohemoragic (ECEH O157:H7). Care este atitudinea corectă privind antibioterapia?",
           "options": [
-            "Antibioterapia este contraindicată, deoarece poate crește riscul de sindrom hemolitic-uremic",
-            "Se administrează metronidazol, ca în infecția cu Clostridium difficile",
             "Antibioterapia este obligatorie la orice vârstă, indiferent de tulpina implicată",
             "Se administrează ciprofloxacină imediat, pentru a scurta durata bolii",
+            "Antibioterapia este contraindicată, deoarece poate crește riscul de sindrom hemolitic-uremic",
+            "Se administrează metronidazol, ca în infecția cu Clostridium difficile",
             "Se administrează cotrimoxazol, ca tratament de primă linie"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Textul menționează explicit că antibioterapia este contraindicată în infecția cu ECEH-O157:H7. Studii retrospective și prospective au evidențiat un risc crescut de sindrom hemolitic-uremic atunci când se administrează antibiotice în timpul perioadei de diaree sangvinolentă cauzată de E. coli producător de toxină de tip Shiga.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 743-762"
         },
@@ -1191,12 +1695,12 @@ const QUESTIONS = {
           "stem": "Un copil de 3 ani cu gastroenterită acută și deshidratare ușoară-moderată prezintă vărsături repetate care împiedică rehidratarea orală. Care medicament este menționat ca fiind eficace și sigur pentru controlul vărsăturilor, crescând șansa de succes a rehidratării orale și reducând nevoia de spitalizare/terapie IV?",
           "options": [
             "Diosmectită",
-            "Ondansetron",
+            "Loperamid",
             "Bismut subsalicilic",
-            "Racecadotril",
-            "Loperamid"
+            "Ondansetron",
+            "Racecadotril"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Ondansetronul administrat oral (sublingual), în doză unică, poate controla vărsăturile și ameliora succesul rehidratării orale la copiii cu gastroenterită și deshidratare ușoară până la moderată, reducând nevoia de spitalizare și de terapie IV. Loperamidul nu are efect antiemetic și este de altfel contraindicat la copiii mici, iar racecadotrilul, bismutul subsalicilic și diosmectita sunt agenți antidiareici/adsorbanți, nu antiemetice cu acest profil.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 743-762"
         },
@@ -1204,14 +1708,28 @@ const QUESTIONS = {
           "id": "16-5",
           "stem": "Părinții unui copil de 2 ani cu diaree acută infecțioasă întreabă dacă îi pot administra loperamid pentru a reduce numărul de scaune. Care este răspunsul corect, conform datelor din literatură?",
           "options": [
-            "Loperamidul este de primă linie la copiii sub 5 ani cu diaree apoasă",
-            "Loperamidul este contraindicat la copiii sub 12 ani, deoarece riscul de reacții adverse severe depășește beneficiul antidiareic modest",
+            "Loperamidul se poate asocia în siguranță cu antibioterapia pentru a accelera vindecarea",
             "Loperamidul poate înlocui rehidratarea orală în formele ușoare de diaree",
-            "Loperamidul este indicat exclusiv în diareea invazivă cu Shigella",
-            "Loperamidul se poate asocia în siguranță cu antibioterapia pentru a accelera vindecarea"
+            "Loperamidul este contraindicat la copiii sub 12 ani, deoarece riscul de reacții adverse severe depășește beneficiul antidiareic modest",
+            "Loperamidul este de primă linie la copiii sub 5 ani cu diaree apoasă",
+            "Loperamidul este indicat exclusiv în diareea invazivă cu Shigella"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Studiile clinice, inclusiv o metaanaliză la copii sub 12 ani, arată că riscul de efecte adverse severe ale loperamidului (obstrucție intestinală/ileus, enterocolită ulcero-necrozantă, perforație intestinală, letargie, deces) depășește modestele sale efecte antidiareice. De aceea, formularea pediatrică a fost retrasă în cea mai mare parte a lumii, iar loperamidul (ca și difenoxilatul) este contraindicat în diareea acută infecțioasă la copiii sub 12 ani.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 743-762"
+        },
+        {
+          "id": "16-6",
+          "stem": "Un copil de 6 ani a avut, cu aproximativ 2 săptămâni în urmă, un episod de diaree acută cu scaune sanguinolente, atribuit unei infecții cu Campylobacter jejuni, cu evoluție favorabilă. Se prezintă acum cu slăbiciune musculară simetrică, ascendentă, la nivelul membrelor inferioare, cu abolirea reflexelor osteotendinoase și dificultăți la mers, fără febră și fără semne digestive active. Care este complicația postinfecțioasă cel mai probabil implicată?",
+          "options": [
+            "Sindrom Guillain-Barré (polinevrită idiopatică acută)",
+            "Sindrom de intestin iritabil postinfecțios",
+            "Artrită reactivă/sindrom Reiter",
+            "Megacolon toxic",
+            "Sindrom hemolitic-uremic"
+          ],
+          "correct": 0,
+          "explanation": "Sindromul Guillain-Barré (polinevrita idiopatică acută) este o complicație imuno-reactivă de convalescență, întâlnită în special după infecțiile cu Campylobacter jejuni, manifestată prin slăbiciune musculară ascendentă și areflexie, la un interval de câteva săptămâni de la episodul diareic. Celelalte complicații enumerate (sindrom hemolitic-uremic, artrită reactivă, megacolon toxic, sindrom de intestin iritabil postinfecțios) sunt asociate mai ales altor agenți patogeni (ECEH, Shigella) sau au tablou clinic diferit, digestiv/articular, nu neurologic motor.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 743-762"
         }
       ]
@@ -1224,13 +1742,13 @@ const QUESTIONS = {
           "id": "17-1",
           "stem": "Un sugar de 6 luni se prezintă cu gastroenterită acută, pierdere ponderală estimată peste 10%, pliu cutanat persistent, absența lacrimilor, mucoase uscate și timp de recolorare capilară foarte întârziat, cu oligoanurie. Care este conduita terapeutică inițială recomandată?",
           "options": [
+            "Administrare de glucoză 5% intravenos, 100 ml/kg în 24 de ore",
             "Rehidratare orală cu soluții de rehidratare orală, în ritm lent",
             "Administrare de ser fiziologic 20 ml/kg intravenos în 10-15 minute, repetabil până la refacerea volemiei (maximum 60 ml/kg)",
-            "Administrare de glucoză 5% intravenos, 100 ml/kg în 24 de ore",
-            "Restricție hidrică până la reluarea diurezei spontane",
-            "Administrare de bicarbonat de sodiu intravenos ca primă măsură terapeutică"
+            "Administrare de bicarbonat de sodiu intravenos ca primă măsură terapeutică",
+            "Restricție hidrică până la reluarea diurezei spontane"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "În SDA severă, primul obiectiv terapeutic este refacerea volemiei. Textul precizează administrarea de ser fiziologic 20 ml/kg în 10-15 minute, care se poate repeta până la refacerea volemiei, până la maximum 60 ml/kg. Rehidratarea orală este rezervată formelor ușoare/moderate, iar bicarbonatul se folosește pentru corectarea acidozei, nu ca primă măsură în șocul hipovolemic.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 165-167"
         },
@@ -1238,13 +1756,13 @@ const QUESTIONS = {
           "id": "17-2",
           "stem": "Un sugar cu aport hidric redus din cauza vărsăturilor persistente prezintă la examenul clinic febră, letargie, hipertonie musculară și hiperreflexie, în timp ce diureza este relativ păstrată, iar tahicardia este doar moderată. Acest tablou clinic, cu simptomatologie mai puțin evidentă decât în alte forme de deshidratare, este caracteristic pentru:",
           "options": [
-            "Deshidratarea hiponatremică (extracelulară)",
             "Deshidratarea hipernatremică (celulară)",
+            "Deshidratarea hiponatremică (extracelulară)",
             "Deshidratarea prin pierderi renale izolate, fără afectare a natremiei",
             "Deshidratarea izonatremică (mixtă)",
             "Hipovolemia prin hemoragie acută"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Deshidratarea hipernatremică (Na>150 mEq/l) apare prin pierdere de apă liberă și se caracterizează prin febră, letargie/iritabilitate și hipertonie/hiperreflexie. Simptomatologia este adesea mai puțin evidentă decât în deshidratarea hipotonă, diureza putând fi păstrată, iar tahicardia fiind moderată, deoarece trecerea apei din spațiul intracelular în cel extracelular protejează volumul intravascular.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 165-167"
         },
@@ -1252,13 +1770,13 @@ const QUESTIONS = {
           "id": "17-3",
           "stem": "Un copil cu deshidratare hipernatremică severă este supus rehidratării intravenoase. Care este principala complicație asociată cu scăderea prea rapidă a osmolarității extracelulare în cursul corectării?",
           "options": [
-            "Mielinoză pontină centrală",
+            "Insuficiență renală acută prin necroză tubulară",
             "Acidoză metabolică severă prin pierdere de bicarbonat",
-            "Edem cerebral și convulsii, prin trecerea apei din spațiul extracelular în celulele creierului",
             "Hemoragie intracraniană prin deshidratare celulară persistentă",
-            "Insuficiență renală acută prin necroză tubulară"
+            "Edem cerebral și convulsii, prin trecerea apei din spațiul extracelular în celulele creierului",
+            "Mielinoză pontină centrală"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Textul precizează că scăderea rapidă a osmolarității extracelulare în timpul corectării hipernatremiei determină trecerea apei din spațiul extracelular în celulele creierului, producând edem cerebral și convulsii. Din acest motiv, corectarea hipernatremiei severe se realizează lent, în 3-4 zile, evitându-se ritmul rapid în primele 8 ore. Mielinoza pontină centrală este, în schimb, complicația corecției rapide a hiponatremiei.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 165-167"
         },
@@ -1266,13 +1784,13 @@ const QUESTIONS = {
           "id": "17-4",
           "stem": "Un sugar de 10 kg cu deshidratare hiponatremică (Na seric inițial 118 mEq/l) necesită corectarea deficitului de sodiu conform formulei Deficit sodiu = 0,6 x G x (Na+d - Na+i). Care este rata maximă recomandată de corecție a natremiei în primele 24 de ore, pentru a evita riscul de mielinoză pontină centrală?",
           "options": [
-            "6 mEq/l în 24 de ore",
-            "12 mEq/l în 24 de ore",
-            "20 mEq/l în 24 de ore",
+            "30 mEq/l în 24 de ore",
             "24 mEq/l în 24 de ore",
-            "30 mEq/l în 24 de ore"
+            "20 mEq/l în 24 de ore",
+            "12 mEq/l în 24 de ore",
+            "6 mEq/l în 24 de ore"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Conform textului, în deshidratarea hiponatremică se corectează cel mult 12 mEq/l în 24 de ore, corectarea rapidă având risc de mielinoză pontină centrală. Aceeași limită de 12 mEq/l/24 ore este menționată și pentru scăderea natremiei în cursul corectării deshidratării hipernatremice.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 165-167"
         },
@@ -1280,14 +1798,42 @@ const QUESTIONS = {
           "id": "17-5",
           "stem": "Pentru un copil cu greutatea de 14 kg, necesarul zilnic de lichide calculat după metoda Holliday-Segar este:",
           "options": [
-            "1000 ml/zi",
-            "1100 ml/zi",
-            "1200 ml/zi",
             "1300 ml/zi",
-            "1500 ml/zi"
+            "1200 ml/zi",
+            "1000 ml/zi",
+            "1500 ml/zi",
+            "1100 ml/zi"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Conform metodei Holliday-Segar, pentru greutăți între 11-20 kg necesarul este de 1000 ml plus 50 ml/kg pentru fiecare kg peste 10 kg. Pentru 14 kg: 1000 ml + 50 ml x 4 kg = 1200 ml/zi. Acest necesar se administrează în plus față de corectarea deficitului estimat, în cursul a 24-48 de ore.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 165-167"
+        },
+        {
+          "id": "17-6",
+          "stem": "Un sugar cu gastroenterită acută este adus la camera de gardă. La examenul clinic se constată tahicardie, oligurie, iritabilitate, față încercănată, lăcrimare diminuată, mucoase uscate, pliu cutanat leneș, fontanelă anterioară deprimată și timp de recolorare capilară întârziat (peste 2 secunde, dar sub 4 secunde). Conform clasificării severității SDA în funcție de procentul de scădere ponderală, acest tablou clinic corespunde unei deshidratări:",
+          "options": [
+            "Medii, cu pierdere ponderală de 6-9%",
+            "Deshidratarea nu poate fi apreciată clinic în funcție de greutatea corporală",
+            "Severe, cu pierdere ponderală peste 10%",
+            "Ușoare, cu pierdere ponderală de 3-5%",
+            "Fără semne clinice, cu pierdere ponderală sub 3%"
+          ],
+          "correct": 0,
+          "explanation": "Textul clasifică severitatea SDA după procentul de scădere ponderală: <3% fără semne clinice, 3-5% deshidratare ușoară, 6-9% deshidratare medie și >10% deshidratare severă. Asocierea de tahicardie, oligurie, iritabilitate/letargie, față încercănată, lăcrimare diminuată, mucoase uscate, pliu cutanat leneș, fontanelă deprimată și TRC ușor întârziat (>2s, <4s) corespunde tabelului 17.2 pentru deshidratarea medie (6-9%), spre deosebire de forma severă, în care pulsul este slab și rapid, apare oligoanuria, pliul cutanat este persistent, lacrimile absente, iar TRC foarte întârziat.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 165-167"
+        },
+        {
+          "id": "17-7",
+          "stem": "Un sugar cu deshidratare hipernatremică severă (Na seric 168 mEq/l), rămasă necorectată, dezvoltă hemoragie intracraniană. Care este mecanismul fiziopatologic incriminat de textul de referință în apariția acestei complicații neurologice?",
+          "options": [
+            "Trecerea apei din spațiul extracelular în celulele creierului, cu edem cerebral consecutiv",
+            "Trecerea apei din celulele creierului în lichidul extracelular hiperton",
+            "Corectarea prea rapidă a natremiei, cu apariția mielinozei pontine centrale",
+            "Ischemia cerebrală difuză secundară hipovolemiei extreme",
+            "Acidoza metabolică severă asociată deshidratării hipertone"
+          ],
+          "correct": 1,
+          "explanation": "Textul arată că deshidratarea hipernatremică poate determina complicații neurologice semnificative (hemoragii, tromboze), acestea fiind secundare trecerii apei din celulele creierului în lichidul extracelular hiperton, mecanism prin care se protejează volumul intravascular. Acest fenomen este opus celui care produce edemul cerebral (trecerea apei din LEC în celulele creierului), care apare atunci când corectarea hipernatremiei se face prea rapid, iar mielinoza pontină centrală este complicația corecției rapide a hiponatremiei.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 165-167"
         }
       ]
@@ -1300,13 +1846,13 @@ const QUESTIONS = {
           "id": "18-1",
           "stem": "Un sugar de 8 luni este investigat pentru un sindrom de malabsorbție, prezentând scaune abundente și grăsoase. Testarea scaunului prin colorația Sudan (pată pentru globulele de grăsime) evidențiază o cantitate excesivă de grăsimi neutre. Ce semnificație clinică are acest rezultat?",
           "options": [
+            "Sugerează insuficiență pancreatică exocrină, prin maldigestia luminală a lipidelor",
             "Exclude orice etiologie a steatoreei la acest pacient",
             "Sugerează o boală primară a mucoasei intestinului subțire, precum boala celiacă",
-            "Sugerează insuficiență pancreatică exocrină, prin maldigestia luminală a lipidelor",
-            "Confirmă diagnosticul de deficit congenital de lactază",
-            "Este un semn caracteristic pentru limfangiectazia intestinală primară"
+            "Este un semn caracteristic pentru limfangiectazia intestinală primară",
+            "Confirmă diagnosticul de deficit congenital de lactază"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "Testul cu pată Sudan diferențiază trigliceridele neutre (nedigerate) de acizii grași liberi rezultați după digestia lipazică. Textul precizează explicit că prezența de grăsime neutră excesivă în scaun este sugestivă pentru insuficiența pancreatică exocrină (maldigestie), spre deosebire de bolile mucoasei intestinale (ca boala celiacă), unde apar acizi grași neabsorbiți, nu grăsimi neutre.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 168-176"
         },
@@ -1314,13 +1860,13 @@ const QUESTIONS = {
           "id": "18-2",
           "stem": "Un copil de 3 ani cu retard staturo-ponderal marcat, malnutriție severă și edeme este investigat pentru fibroză chistică, în absența oricărui tablou respirator sugestiv. Testul sudorii arată clor 68 mmol/l (valoare pozitivă), dar testarea genetică pentru mutații CFTR este negativă. Care este cea mai probabilă explicație pentru acest rezultat al testului sudorii?",
           "options": [
-            "Reprezintă un rezultat fals negativ al testului sudorii",
-            "Confirmă cert diagnosticul de fibroză chistică, indiferent de rezultatul testului genetic",
             "Rezultat fals pozitiv al testului sudorii, favorizat de malnutriția severă",
+            "Este expresia unei mutații CFTR de clasa a VI-a, cu turnover accentuat",
             "Este sugestiv pentru sindromul Shwachman-Diamond",
-            "Este expresia unei mutații CFTR de clasa a VI-a, cu turnover accentuat"
+            "Reprezintă un rezultat fals negativ al testului sudorii",
+            "Confirmă cert diagnosticul de fibroză chistică, indiferent de rezultatul testului genetic"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "Printre cauzele de test al sudorii fals pozitiv, textul menționează explicit malnutriția severă, alături de insuficiența adrenală, hipotiroidismul netratat sau boala celiacă. Absența tabloului respirator, testul genetic negativ și contextul de malnutriție severă orientează spre un fals pozitiv, nu spre confirmarea fibrozei chistice.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 186-197"
         },
@@ -1329,12 +1875,12 @@ const QUESTIONS = {
           "stem": "Un copil cu fibroză chistică și insuficiență pancreatică primește tratament substitutiv cu preparate enzimatice pancreatice în doze care depășesc 10000 UI lipază/kg corp/zi. Ulterior dezvoltă dureri abdominale și constipație, iar investigațiile imagistice evidențiază stricturi la nivelul colonului. Care este cel mai probabil diagnostic?",
           "options": [
             "Boală Crohn cu debut colonic",
-            "Sindrom de obstrucție intestinală distală, independent de doza de enzime",
-            "Invaginație intestinală recurentă",
             "Colonopatie fibrozantă, complicație asociată dozelor mari de enzime pancreatice",
-            "Prolaps rectal recidivant"
+            "Invaginație intestinală recurentă",
+            "Prolaps rectal recidivant",
+            "Sindrom de obstrucție intestinală distală, independent de doza de enzime"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Textul precizează că administrarea de doze mari de enzime pancreatice a fost asociată cu apariția stricturilor colonice (colonopatie fibrozantă), complicație ce poate apărea la doze mai mari de 10000 UI lipază/kg corp/zi. De aceea, tratamentul substitutiv enzimatic nu trebuie să depășească acest prag.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 186-197"
         },
@@ -1342,13 +1888,13 @@ const QUESTIONS = {
           "id": "18-4",
           "stem": "O fetiță de 6 ani cu diaree cronică, distensie abdominală și stagnare ponderală este evaluată pentru boală celiacă. Nivelul IgA total seric este normal, iar anticorpii anti-transglutaminază tisulară (TG2) de tip IgA au o valoare de peste 10 ori limita superioară a normalului. Conform algoritmului de diagnostic ESPGHAN, care este conduita recomandată?",
           "options": [
-            "Se renunță la biopsia duodenală și se recomandă testarea HLA-DQ2/DQ8 împreună cu anticorpii antiendomisium (EMA)",
-            "Este obligatorie efectuarea biopsiei duodenale înainte de a putea stabili diagnosticul",
             "Se repetă dozarea IgA totale peste 6 luni, fără alte investigații suplimentare",
             "Se exclude diagnosticul de boală celiacă dacă testul EMA este negativ, fără a mai fi necesară biopsia",
-            "Se inițiază direct dieta fără gluten, fără nicio altă testare de confirmare"
+            "Se inițiază direct dieta fără gluten, fără nicio altă testare de confirmare",
+            "Este obligatorie efectuarea biopsiei duodenale înainte de a putea stabili diagnosticul",
+            "Se renunță la biopsia duodenală și se recomandă testarea HLA-DQ2/DQ8 împreună cu anticorpii antiendomisium (EMA)"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Conform textului, atunci când anticorpii TG2 depășesc de peste 10 ori valoarea normală, biopsia duodenală nu mai este necesară, iar algoritmul ESPGHAN recomandă testarea HLA-DQ2/DQ8 și a anticorpilor antiendomisium (EMA) pentru susținerea diagnosticului. Biopsia rămâne obligatorie doar în restul situațiilor, cu valori anticorpi sub acest prag.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 180-184"
         },
@@ -1357,14 +1903,56 @@ const QUESTIONS = {
           "stem": "Un sugar prezintă steatoree și insuficiență pancreatică exocrină documentată, cu tulburări de creștere, dar testul sudorii este repetat normal. Evaluarea hematologică arată neutropenie cronică și trombocitopenie, iar radiografia scheletică relevă anomalii metafizare. Care este diagnosticul cel mai probabil?",
           "options": [
             "Boala incluziunilor vilozitare",
-            "Abetalipoproteinemia",
+            "Fibroză chistică, cu test al sudorii fals negativ",
             "Deficiență de enterokinază",
             "Sindromul Shwachman-Diamond",
-            "Fibroză chistică, cu test al sudorii fals negativ"
+            "Abetalipoproteinemia"
           ],
           "correct": 3,
           "explanation": "Tabelul dedicat insuficienței pancreatice și afectării marginii în perie descrie sindromul Shwachman ca insuficiență pancreatică exocrină asociată cu neutropenie cronică sau ciclică, trombocitopenie, anemie, eczemă, anomalii metafizare și întârzierea creșterii. Testul sudorii normal exclude fibroza chistică, iar celelalte entități nu asociază tipic neutropenie și anomalii osoase metafizare.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 168-176"
+        },
+        {
+          "id": "18-6",
+          "stem": "Un sugar de 5 luni prezintă vărsături, distensie abdominală și steatoree, cu hipocolesterolemie marcată la evaluarea biochimică. Investigațiile ulterioare arată implicare hepatică cu steatoză. La vârsta de 3 ani, copilul dezvoltă ataxie, dismetrie și pierderea sensibilității proprioceptive. Care este diagnosticul cel mai probabil și care este măsura terapeutică esențială pentru a preveni agravarea manifestărilor neurologice?",
+          "options": [
+            "Boala Whipple; antibioterapie prelungită",
+            "Abetalipoproteinemie; administrare precoce de vitamină E",
+            "Limfangiectazie intestinală primară; dietă hiperproteică cu trigliceride cu lanț mediu",
+            "Boala incluziunilor vilozitare; nutriție parenterală totală",
+            "Sindromul intestinului scurt; nutriție parenterală prelungită"
+          ],
+          "correct": 1,
+          "explanation": "Abetalipoproteinemia (ABL) se caracterizează prin hipocolesterolemie și steatoree cauzate de malabsorbția lipidelor și a vitaminelor liposolubile, cu manifestări digestive (vărsături, distensie abdominală, steatoree), implicare hepatică (steatoză, transaminaze crescute) și degenerare neurologică (ataxie, dismetrie, pierderea sensibilității proprioceptive). Textul precizează că tratamentul constă din administrarea precoce de vitamină E, care întârzie sau împiedică dezvoltarea disfuncției neurologice.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 168-176"
+        },
+        {
+          "id": "18-7",
+          "stem": "Un sugar alimentat cu formulă de lapte dezvoltă, în primele luni de viață, diaree, dermatită eritematoasă bine delimitată și alopecie. Care este mecanismul fiziopatologic al acestei afecțiuni și care este grupul de copii cu risc crescut de a o dezvolta?",
+          "options": [
+            "Malabsorbție congenitală de cupru (boala Menkes); risc crescut la copiii cu fibroză chistică",
+            "Malabsorbție ereditară de folat; risc crescut la copiii cu deficit de transcobalamină",
+            "Deficit de biotinidază; risc crescut la copiii cu sindromul intestinului scurt",
+            "Deficit de vitamină A; risc crescut la copiii cu colestază cronică",
+            "Acrodermatită enteropatică, prin mutația proteinei transportoare a zincului; risc crescut la copiii cu boală inflamatorie intestinală, fibroză chistică, boală celiacă sau sindrom de intestin scurt"
+          ],
+          "correct": 4,
+          "explanation": "Malabsorbția congenitală a zincului (acrodermatita enteropatică) este o boală autozomal recesivă provocată de mutația proteinei transportoare a zincului, cu simptome apărute în primele luni de viață la sugarii hrăniți cu formulă. Textul precizează că prezintă risc crescut copiii cu boală inflamatorie intestinală, fibroză chistică, boală celiacă sau sindromul intestinului scurt, iar clinic apar diaree, dermatită eritematoasă, alopecie și simptome neurologice.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 168-176"
+        },
+        {
+          "id": "18-8",
+          "stem": "Un copil de 10 ani, cunoscut cu fibroză chistică și insuficiență pancreatică, se prezintă cu durere abdominală colicativă recurentă, distensie abdominală și constipație, fără semne de peritonită, tablou sugestiv pentru sindromul de obstrucție intestinală distală. Care este conduita terapeutică inițială recomandată?",
+          "options": [
+            "Intervenție chirurgicală de urgență, prin rezecție segmentară de intestin subțire",
+            "Repaus digestiv absolut și nutriție parenterală totală, fără alte măsuri",
+            "Antibioterapie sistemică cu spectru anti-Pseudomonas, indiferent de rezultatul culturilor",
+            "Creșterea imediată a dozei de enzime pancreatice peste 10000 UI lipază/kg corp/zi",
+            "Hidratare, lactuloză și acetilcisteină oral, asociate cu Gastrografin per os; în caz de eșec, clismă cu Gastrografin sub monitorizare radiologică"
+          ],
+          "correct": 4,
+          "explanation": "Textul precizează că tratamentul curativ al sindromului de obstrucție intestinală distală constă din hidratare, lactuloză, acetilcisteină oral și Gastrografin per os, iar în cazurile neresponsive se recomandă clismă cu Gastrografin sub monitorizare radiologică. Creșterea dozei de enzime peste 10000 UI lipază/kg corp/zi este de altfel asociată cu risc de colonopatie fibrozantă, nefiind o măsură terapeutică adecvată pentru acest tablou.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 186-197"
         }
       ]
     },
@@ -1376,13 +1964,13 @@ const QUESTIONS = {
           "id": "19-1",
           "stem": "Un copil de 12 ani cu colită ulcerativă acută severă (scor PUCAI inițial > 65) primește corticoterapie intravenoasă. În ziua a 5-a de tratament, scorul PUCAI rămâne > 65. Care este interpretarea corectă a situației și conduita indicată?",
           "options": [
-            "Se definește colita ulcerativă steroid-refractară, fiind necesară trecerea la terapia de linia a doua (infliximab, ciclosporină, tacrolimus sau chirurgie)",
-            "Este un răspuns terapeutic satisfăcător; se continuă corticoterapia intravenoasă până la 14 zile",
-            "Se introduce azatioprină în monoterapie, pentru inducerea rapidă a remisiunii",
             "Se inițiază nutriție enterală exclusivă ca terapie de primă intenție pentru inducerea remisiunii",
-            "Se crește doza de corticoid intravenos și se reevaluează răspunsul după încă 5 zile"
+            "Se definește colita ulcerativă steroid-refractară, fiind necesară trecerea la terapia de linia a doua (infliximab, ciclosporină, tacrolimus sau chirurgie)",
+            "Se crește doza de corticoid intravenos și se reevaluează răspunsul după încă 5 zile",
+            "Se introduce azatioprină în monoterapie, pentru inducerea rapidă a remisiunii",
+            "Este un răspuns terapeutic satisfăcător; se continuă corticoterapia intravenoasă până la 14 zile"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Conform scorului PUCAI, o valoare > 65 menținută în ziua a 5-a de corticoterapie intravenoasă definește colita ulcerativă steroid-refractară și impune trecerea la terapia de linia a doua (infliximab, ciclosporină, tacrolimus sau chirurgie). Nutriția enterală exclusivă nu este eficace în colita ulcerativă, iar tiopurinele (azatioprina) nu sunt eficace pentru inducerea remisiunii, ci doar pentru menținere.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 846-863"
         },
@@ -1391,12 +1979,12 @@ const QUESTIONS = {
           "stem": "Un adolescent de 13 ani este adus la control pentru încetinirea vitezei de creștere staturală, documentată pe parcursul ultimelor 6 luni, fără dureri abdominale, diaree sau scădere ponderală semnificativă, cu VSH și PCR normale. Care este atitudinea corectă?",
           "options": [
             "Absența triadei clasice (durere abdominală, diaree, scădere ponderală) exclude diagnosticul de boală inflamatorie intestinală",
-            "Copilul trebuie investigat pentru boală inflamatorie intestinală, în special boala Crohn, deoarece încetinirea vitezei de creștere poate precede cu mult timp semnele digestive",
-            "Diagnosticul de boală inflamatorie intestinală poate fi exclus, deoarece markerii inflamatori sangvini sunt normali",
+            "Retardul de creștere este o trăsătură specifică colitei ulcerative și nu justifică investigarea pentru boala Crohn",
             "Se recomandă doar monitorizarea periodică a curbei de creștere, investigațiile fiind indicate exclusiv la apariția semnelor digestive",
-            "Retardul de creștere este o trăsătură specifică colitei ulcerative și nu justifică investigarea pentru boala Crohn"
+            "Copilul trebuie investigat pentru boală inflamatorie intestinală, în special boala Crohn, deoarece încetinirea vitezei de creștere poate precede cu mult timp semnele digestive",
+            "Diagnosticul de boală inflamatorie intestinală poate fi exclus, deoarece markerii inflamatori sangvini sunt normali"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Retardul de creștere și încetinirea vitezei de creștere pot precede cu mult timp instalarea semnelor digestive, mai ales în boala Crohn, motiv pentru care orice copil cu întârziere de creștere fără altă cauză aparentă trebuie investigat și pentru boală inflamatorie intestinală. Triada clasică a bolii Crohn apare doar la o parte dintre copii, iar markerii inflamatori pot fi normali la diagnostic la o proporție semnificativă a cazurilor.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 846-863"
         },
@@ -1404,13 +1992,13 @@ const QUESTIONS = {
           "id": "19-3",
           "stem": "Un copil de 10 ani este diagnosticat cu boală Crohn ileo-colonică, formă ușoară-moderată, necomplicată (fără fistule, abcese sau stenoze). Care este terapia de elecție pentru inducerea remisiunii, conform abordării terapeutice utilizate de rutină la copil?",
           "options": [
-            "Infliximab administrat de la debut, conform schemei „top-down”",
             "Nutriția enterală exclusivă, administrată timp de 6-8 (maximum 12) săptămâni",
-            "Azatioprină în monoterapie, pentru inducerea remisiunii",
+            "Corticoterapie orală cu prednison, ca primă linie de tratament",
             "Sulfasalazină orală în doză maximă",
-            "Corticoterapie orală cu prednison, ca primă linie de tratament"
+            "Infliximab administrat de la debut, conform schemei „top-down”",
+            "Azatioprină în monoterapie, pentru inducerea remisiunii"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Nutriția enterală exclusivă reprezintă terapia de elecție și de primă intenție pentru inducerea remisiunii în boala Crohn necomplicată la copil, fiind cel puțin la fel de eficace ca și corticoizii, dar fără reacțiile adverse ale acestora, cu o rată de vindecare a mucoasei net superioară (74% față de 33%). Corticoterapia se folosește când nutriția enterală exclusivă nu este tolerată/posibilă, iar azatioprina și derivații 5-ASA nu sunt eficienți pentru inducerea remisiunii în boala Crohn.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 846-863"
         },
@@ -1418,11 +2006,11 @@ const QUESTIONS = {
           "id": "19-4",
           "stem": "O pacientă cu colită ulcerativă cu debut la vârsta de 8 ani, formă pancolonică, se află acum la 10 ani de evoluție a bolii, aflată în remisie clinică. Care este conduita corectă privind supravegherea riscului de cancer colorectal?",
           "options": [
+            "Este suficientă determinarea anuală a calprotectinei fecale, fără a fi necesară colonoscopia",
             "Nu este necesară nicio supraveghere suplimentară, întrucât pacienta este asimptomatică și în remisie clinică",
-            "Supravegherea colonoscopică se recomandă a fi începută abia după 20 de ani de evoluție a bolii",
             "Riscul de cancer colorectal la pacienții cu boală inflamatorie intestinală este similar cu cel al populației generale, deci nu se justifică o supraveghere specifică",
             "Se inițiază monitorizarea colonoscopică la fiecare 1-2 ani, având în vedere durata de evoluție și extinderea pancolonică a bolii",
-            "Este suficientă determinarea anuală a calprotectinei fecale, fără a fi necesară colonoscopia"
+            "Supravegherea colonoscopică se recomandă a fi începută abia după 20 de ani de evoluție a bolii"
           ],
           "correct": 3,
           "explanation": "Incidența cancerului colorectal este de 4-20 de ori mai crescută la pacienții cu boală inflamatorie intestinală, mai ales în formele severe cu pancolită, astfel încât după 8-10 ani de evoluție se impune monitorizarea colonoscopică, la fiecare 1-2 ani. Remisia clinică nu exclude riscul, iar prezența inflamației cronice crește suplimentar acest risc.",
@@ -1432,14 +2020,28 @@ const QUESTIONS = {
           "id": "19-5",
           "stem": "Un copil cu boală Crohn aflat sub terapie de menținere cu infliximab prezintă reapariția simptomelor. Dozarea arată nivel seric scăzut de infliximab și titru crescut de anticorpi împotriva agentului anti-TNFα (AAT). Conform principiilor de optimizare terapeutică bazate pe monitorizarea farmacologică, care este conduita corectă?",
           "options": [
-            "Se scurtează intervalul dintre administrările de infliximab, fără a modifica agentul terapeutic",
-            "Se crește doza de infliximab la 10 mg/kg, păstrând același interval între administrări",
-            "Se oprește definitiv orice terapie biologică și se recomandă direct intervenția chirurgicală",
             "Se schimbă agentul anti-TNFα cu un altul din aceeași clasă (de exemplu adalimumab), eventual cu asociere de imunomodulator",
-            "Se continuă schema terapeutică nemodificată, deoarece anticorpii anti-infliximab nu au semnificație clinică"
+            "Se oprește definitiv orice terapie biologică și se recomandă direct intervenția chirurgicală",
+            "Se continuă schema terapeutică nemodificată, deoarece anticorpii anti-infliximab nu au semnificație clinică",
+            "Se scurtează intervalul dintre administrările de infliximab, fără a modifica agentul terapeutic",
+            "Se crește doza de infliximab la 10 mg/kg, păstrând același interval între administrări"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Nivelul scăzut de anti-TNFα asociat cu titru crescut de anticorpi anti-agent (AAT detectabili) indică un nivel insuficient prin imunogenicitate mediată imun, situație în care se recomandă schimbarea cu alt agent anti-TNFα, eventual cu asociere de imunomodulator. Creșterea dozei sau scurtarea intervalului de administrare a aceluiași agent este utilă doar când AAT sunt nedetectabili și mecanismul este farmacocinetic neimun.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 846-863"
+        },
+        {
+          "id": "19-6",
+          "stem": "Un sugar de 8 luni, provenit dintr-o familie cu consangvinitate parentală, este adus pentru diaree cronică severă, refractară la tratamentele standard, asociind fistulă perianală și foliculită recurentă. Care este atitudinea diagnostică corectă?",
+          "options": [
+            "Diagnosticul de boală inflamatorie intestinală este exclus la această vârstă, tabloul fiind explicat exclusiv printr-o alergie la proteinele laptelui de vacă",
+            "Se stabilește diagnosticul de boală Crohn cu debut infantil și se inițiază direct nutriție enterală exclusivă, ca la orice copil cu Crohn necomplicat",
+            "Vârsta de debut sub 2 ani, contextul de consangvinitate și tabloul clinic sever refractar sugerează un deficit imun primar (boală monogenică), fiind necesar consult genetic și imunologic (fenotipare limfocitară, genotipare IL-10/IL-10R, XIAP etc.)",
+            "Se indică inițierea directă a terapiei biologice anti-TNFα, conform schemei „top-down”, fără investigații etiologice suplimentare",
+            "Se recomandă doar colonoscopie cu calcularea scorului PUCAI, fără alte investigații suplimentare, întrucât acesta este suficient pentru diagnosticul pozitiv la orice vârstă"
+          ],
+          "correct": 2,
+          "explanation": "La pacienții cu debut sub 6 ani, și mai ales sub 2 ani, trebuie efectuate determinări genetice pentru o posibilă boală prin deficit imun primar (DIP), care poate mima BII printr-o colită severă, refractară la tratament, cu atingere perianală/recto-vaginală, abces sau foliculită, frecvent pe fond de consangvinitate sau istoric familial. În aceste situații este necesar consult genetic (de exemplu genotipare IL-10/IL-10R, XIAP, IPEX-like, test NBT sau genetica bolii granulomatoase cronice), aceste forme monogenice fiind considerate distincte de BII clasică și necesitând o abordare diagnostică și terapeutică diferită.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 846-863"
         }
       ]
@@ -1452,13 +2054,13 @@ const QUESTIONS = {
           "id": "20-1",
           "stem": "Un nou-născut prezintă distensie abdominală marcată, vărsături bilioase și stare generală alterată. Conform datelor epidemiologice privind durerea abdominală acută la copil, care este cea mai frecventă etiologie la această categorie de vârstă?",
           "options": [
-            "Apendicita acută",
-            "Volvulusul și enterocolita ulceronecrotică",
             "Boala Hirschsprung necomplicată",
+            "Apendicita acută",
+            "Invaginația intestinală",
             "Hernia încarcerată",
-            "Invaginația intestinală"
+            "Volvulusul și enterocolita ulceronecrotică"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Textul precizează că la nou-născut etiologia cea mai frecventă a durerii abdominale este reprezentată de volvulus și de enterocolita ulceronecrotică. Hernia încarcerată, invaginația intestinală și complicațiile maladiei Hirschsprung sunt caracteristice până la vârsta de 2 ani, iar apendicita acută devine frecventă după vârsta de 5 ani.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 298-301"
         },
@@ -1466,13 +2068,13 @@ const QUESTIONS = {
           "id": "20-2",
           "stem": "Un copil de 8 ani acuză durere abdominală cu debut brusc, care precede la scurt timp apariția vărsăturilor. Conform elementelor de anamneză descrise pentru abdomenul acut, acest tipar temporal orientează diagnosticul mai degrabă către:",
           "options": [
+            "Durerea abdominală funcțională",
             "O afecțiune chirurgicală",
             "O gastroenterită acută virală",
-            "Durerea abdominală funcțională",
             "Migrena abdominală",
             "Colicile de tip funcțional"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Textul menționează că în afecțiunile chirurgicale durerea abdominală precede de obicei episoadele de vărsătură, în timp ce în afecțiunile medicale vărsăturile preced durerea abdominală. Acest element de anamneză ajută la orientarea diagnosticului diferențial.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 298-301"
         },
@@ -1481,12 +2083,12 @@ const QUESTIONS = {
           "stem": "Un sugar de 3 luni este adus la camera de gardă pentru vărsături repetate. Din anamneză reiese caracterul bilios al vărsăturilor. Care este conduita corectă recomandată în această situație?",
           "options": [
             "Administrarea de antiemetice și reevaluare peste 24 de ore",
-            "Monitorizare la domiciliu, fără investigații suplimentare",
-            "Tratament antispastic și externare cu recomandări de dietă",
             "Investigarea obligatorie pentru o posibilă obstrucție intestinală",
-            "Efectuarea de rutină a ecografiei abdominale doar dacă apare febră"
+            "Monitorizare la domiciliu, fără investigații suplimentare",
+            "Efectuarea de rutină a ecografiei abdominale doar dacă apare febră",
+            "Tratament antispastic și externare cu recomandări de dietă"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Textul precizează explicit că orice vărsătură bilioasă trebuie investigată pentru posibilitatea unei obstrucții intestinale, aceasta fiind un semn de alarmă care nu trebuie ignorat sau tratat simptomatic.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 298-301"
         },
@@ -1494,10 +2096,10 @@ const QUESTIONS = {
           "id": "20-4",
           "stem": "Un copil de 10 ani se prezintă cu durere în cadranul abdominal inferior drept, suspectă de apendicită acută. Se decide efectuarea unei ecografii abdominale. Conform datelor din text, care sunt valorile aproximative ale sensibilității și specificității acestei investigații pentru diagnosticul apendicitei acute la copil?",
           "options": [
-            "Sensibilitate 60-70% și specificitate 70-80%",
-            "Sensibilitate 40-50% și specificitate 90-95%",
             "Sensibilitate și specificitate egale, de aproximativ 75%",
+            "Sensibilitate 60-70% și specificitate 70-80%",
             "Sensibilitate 99% și specificitate 50%",
+            "Sensibilitate 40-50% și specificitate 90-95%",
             "Sensibilitate 90-96% și specificitate 94-98%"
           ],
           "correct": 4,
@@ -1508,14 +2110,28 @@ const QUESTIONS = {
           "id": "20-5",
           "stem": "Un copil evaluat în urgență pentru durere abdominală acută prezintă ameliorare simptomatică după administrarea de antialgice, fără modificări ale examenului clinic inițial. Conform criteriilor menționate în text, care este condiția principală pentru a decide externarea la domiciliu?",
           "options": [
+            "Obținerea unei ecografii abdominale strict normale",
             "Diminuarea simptomatologiei dureroase și menținerea funcțiilor vitale și a saturației oxigenului",
             "Trecerea unui interval minim de 24 de ore de observație în spital",
-            "Normalizarea completă a hemogramei și a probelor inflamatorii",
             "Absența oricărei sensibilități abdominale la palpare superficială",
-            "Obținerea unei ecografii abdominale strict normale"
+            "Normalizarea completă a hemogramei și a probelor inflamatorii"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Conform textului, criteriile principale pentru externarea la domiciliu a unui pacient pediatric evaluat în urgență pentru durere abdominală sunt diminuarea simptomatologiei dureroase și menținerea funcțiilor vitale și a saturației oxigenului; dacă starea generală este modificată, pacientul trebuie internat pentru continuarea investigațiilor.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 298-301"
+        },
+        {
+          "id": "20-6",
+          "stem": "Un copil de 7 ani este adus la camera de gardă pentru durere abdominală acută. La examenul clinic se remarcă faptul că pacientul stă nemișcat, în poziție antalgică, și evită orice mobilizare, întrucât aceasta îi accentuează durerea. Acest comportament clinic este sugestiv pentru:",
+          "options": [
+            "Durere de tip visceral, prin spasmul musculaturii netede a unui organ cavitar",
+            "Iritație peritoneală",
+            "Migrenă abdominală, ca echivalent migrenos",
+            "Durere abdominală funcțională, fără substrat organic",
+            "Colici de tip funcțional, caracteristice sugarului"
+          ],
+          "correct": 1,
+          "explanation": "Textul precizează că pacienții cu durere abdominală viscerală sunt hiperactivi, în timp ce pacienții cu iritație peritoneală sunt imobilizați de durere. Imobilizarea antalgică este deci un semn clinic ce orientează spre o cauză chirurgicală, prin iritație peritoneală, și impune evaluare promptă.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 298-301"
         }
       ]
@@ -1528,11 +2144,11 @@ const QUESTIONS = {
           "id": "21-1",
           "stem": "Un copil în vârstă de 5 ani este adus la consult pentru tulburări de defecație. Din anamneză reiese: 2 defecații pe săptămână la toaletă, istoric de postură retentivă și cel puțin un episod de incontinență fecală pe săptămână, fără semne de alarmă. Conform actualizării criteriilor Roma pentru constipația funcțională (aliniată ghidurilor ESPGHAN/NASPGHAN), care este durata minimă necesară a simptomelor pentru susținerea diagnosticului?",
           "options": [
-            "6 luni",
-            "2 săptămâni",
+            "2 luni",
             "3 luni",
+            "6 luni",
             "1 lună",
-            "2 luni"
+            "2 săptămâni"
           ],
           "correct": 3,
           "explanation": "Textul precizează că modificarea criteriilor a constat în scăderea duratei simptomelor necesare de la două luni la o lună, pentru a fi în concordanță cu ghidurile ESPGHAN, NASPGHAN și NASPGHAN Nutrition Constipation, deoarece intervalul de două luni din Roma III putea întârzia tratamentul. Diagnosticul de constipație funcțională necesită cel puțin două dintre criteriile Roma, prezente minimum o dată pe săptămână, timp de cel puțin o lună. Acest interval mai scurt este similar cu cel folosit pentru definiția constipației funcționale la nou-născut/sugar.",
@@ -1542,13 +2158,13 @@ const QUESTIONS = {
           "id": "21-2",
           "stem": "Un nou-născut la termen elimină primul scaun meconial la 60 de ore de la naștere, iar ulterior dezvoltă constipație severă cu distensie abdominală importantă. Care este afecțiunea pe care acest tablou clinic trebuie să o ridice în primul rând ca suspiciune diagnostică?",
           "options": [
-            "Fibroza chistică",
-            "Stenoza anală funcțională",
             "Boala Hirschsprung",
-            "Hipotiroidismul congenital",
-            "Alergia la proteinele laptelui de vacă"
+            "Stenoza anală funcțională",
+            "Alergia la proteinele laptelui de vacă",
+            "Fibroza chistică",
+            "Hipotiroidismul congenital"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "Textul menționează explicit că întârzierea eliminării meconiului peste 48 de ore la un nou-născut la termen crește probabilitatea bolii Hirschsprung și este listată printre semnele de alarmă în constipație. Debutul constipației în prima lună de viață și istoricul familial de boală Hirschsprung sunt alte elemente de alarmă asociate acestei afecțiuni. Celelalte cauze organice enumerate în text nu se asociază caracteristic cu întârzierea pasajului meconial.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 250-257"
         },
@@ -1556,13 +2172,13 @@ const QUESTIONS = {
           "id": "21-3",
           "stem": "Care dintre următoarele investigații reprezintă, conform textului, standardul de aur pentru diagnosticul bolii Hirschsprung la un copil evaluat pentru constipație intractabilă?",
           "options": [
-            "Manometria anorectală",
-            "Radiografia abdominală pe gol",
+            "Rectosigmoidoscopia/colonoscopia cu biopsie rectală",
             "RMN de coloană lombosacrală",
+            "Manometria anorectală",
             "Clisma baritată",
-            "Rectosigmoidoscopia/colonoscopia cu biopsie rectală"
+            "Radiografia abdominală pe gol"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Textul afirmă clar că rectosigmoidoscopia/colonoscopia cu biopsie rectală reprezintă standardul de aur pentru diagnosticul bolii Hirschsprung. Manometria anorectală este indicată în principal pentru evaluarea reflexului inhibitor anorectal în constipația intractabilă, iar clisma baritată nu ar trebui utilizată de primă intenție. Radiografia abdominală și RMN-ul au alte indicații (impactare fecală, respectiv suspiciune de patologie medulară).",
           "source": "Pleșca - Tratat de Pediatrie, pag. 250-257"
         },
@@ -1570,13 +2186,13 @@ const QUESTIONS = {
           "id": "21-4",
           "stem": "Un copil de 6 ani prezintă, de peste o lună, episoade de defecație în locuri inadecvate contextului social. La evaluare nu se decelează istoric de retenție a materiilor fecale, iar o evaluare medicală adecvată exclude o altă patologie subiacentă. Care este diagnosticul cel mai probabil?",
           "options": [
+            "Abuz sexual cu manifestări digestive",
             "Boală Hirschsprung cu debut tardiv",
             "Incontinență fecală nonretențională (encoprezis)",
-            "Sindrom de intestin iritabil",
             "Constipație funcțională cu incontinență prin supraplin",
-            "Abuz sexual cu manifestări digestive"
+            "Sindrom de intestin iritabil"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Criteriile din text pentru incontinența fecală nonretențională impun istoric de cel puțin o lună de defecație în locuri inadecvate contextului social, la un copil peste 4 ani, în absența retenției de materii fecale, simptome ce nu pot fi explicate de altă patologie după evaluare adecvată. Spre deosebire de constipația funcțională, acești copii prezintă evacuare completă a conținutului colonic, nu doar pătarea lenjeriei. Textul menționează abuzul sexual doar ca element de investigat în context, nu ca diagnostic implicit.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 250-257"
         },
@@ -1585,13 +2201,27 @@ const QUESTIONS = {
           "stem": "În cadrul dezimpactării fecale la un copil cu constipație cronică și retenție stercorală, care dintre următoarele metode NU este recomandată, din cauza riscului de toxicitate?",
           "options": [
             "Polietilenglicol administrat oral sau pe sondă nazogastrică",
+            "Supozitoare cu glicerină, folosite intermitent la sugar",
             "Ulei mineral administrat intrarectal la un copil peste 1 an",
             "Clisme cu ser fiziologic, de două ori pe zi, timp de trei zile",
-            "Clisme cu soluții cu magneziu",
-            "Supozitoare cu glicerină, folosite intermitent la sugar"
+            "Clisme cu soluții cu magneziu"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Textul precizează explicit că nu se recomandă pentru dezimpactare clismele cu soluții de săpun, apă de robinet sau soluții cu magneziu, din cauza potențialului de toxicitate, alături de administrarea orală de hidroxid de magneziu, lactuloză, sorbitol, senna sau bisacodil. În schimb, polietilenglicolul, clismele cu ulei mineral sau ser fiziologic și supozitoarele cu glicerină (folosite intermitent, nu pe termen lung) sunt metode acceptate în protocolul de dezimpactare descris.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 250-257"
+        },
+        {
+          "id": "21-6",
+          "stem": "Un copil de 3 ani este adus la consult pentru defecație dureroasă însoțită de striuri de sânge la suprafața scaunului, fără scădere ponderală, vărsături sau distensie abdominală. La inspecția regiunii perianale se observă eritem bine delimitat, fără fisuri vizibile. Conform textului, care dintre următoarele afecțiuni trebuie inclusă în primul rând în diagnosticul diferențial al acestui tablou, alături de fisurile anale și, mai rar, abuzul sexual?",
+          "options": [
+            "Displazia neuronală intestinală",
+            "Infecția perianală cu streptococ de grup A",
+            "Boala Hirschsprung",
+            "Boala celiacă",
+            "Alergia la proteinele laptelui de vacă"
+          ],
+          "correct": 1,
+          "explanation": "Textul precizează, la secțiunea de evaluare și istoric, că defecația dureroasă și prezența scaunelor sangvinolente impun diferențierea de infecția perianală cu streptococ de grup A, de fisurile anale și, mai rar, de abuzul sexual. Acest element clinic (durere la defecație plus sânge în scaun) este distinct de semnele de alarmă sistemice (scădere ponderală, vărsături, distensie abdominală) care orientează spre alte cauze organice, precum boala Hirschsprung. Boala celiacă și alergia la proteinele laptelui de vacă sunt menționate în text ca alte cauze de constipație organică, dar nu sunt asociate specific cu acest tablou perianal descris.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 250-257"
         }
       ]
@@ -1604,13 +2234,13 @@ const QUESTIONS = {
           "id": "22-1",
           "stem": "Un nou-născut la termen este diagnosticat cu atrezie de căi biliare la vârsta de 5 săptămâni și este programat pentru hepatoportoenterostomie (operația Kasai). Care dintre următorii factori are cea mai mare influență asupra ratei de succes (restabilirea fluxului biliar) a intervenției?",
           "options": [
-            "Greutatea la naștere",
             "Prezența icterului încă de la naștere",
+            "Nivelul seric al alfa-1-antitripsinei",
             "Sexul pacientului",
-            "Vârsta la care se efectuează intervenția chirurgicală",
-            "Nivelul seric al alfa-1-antitripsinei"
+            "Greutatea la naștere",
+            "Vârsta la care se efectuează intervenția chirurgicală"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Textul precizează că succesul intervenției Kasai depinde de mai mulți factori, cel mai important fiind vârsta la care se intervine: flux biliar restabilit la 80% dintre cazuri când intervenția se realizează sub vârsta de 60 de zile, cu reducerea șansei de reușită la 20% peste vârsta de 90 de zile. De aceea diagnosticul precoce al atreziei biliare este esențial, intervenția trebuind efectuată înainte de 45-60 de zile.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 924-948"
         },
@@ -1618,13 +2248,13 @@ const QUESTIONS = {
           "id": "22-2",
           "stem": "Un sugar la termen, alimentat exclusiv natural cu tehnică corectă de alăptare (supt frecvent, fără suplimentare cu apă), cu creștere ponderală satisfăcătoare, prezintă icter cu debut după ziua a 5-a de viață, cu valoare maximă în zilele 10-15 (bilirubină indirectă 14 mg/dL). Nu există hemoliză, hepatosplenomegalie sau modificări ale testelor hepatice. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Hipotiroidism congenital",
-            "Sindrom Crigler-Najjar tip 2",
-            "Icter la laptele matern (Breastmilk Jaundice)",
             "Atrezie de căi biliare",
-            "Icterul copilului alimentat la sân (Breastfeeding Jaundice)"
+            "Hipotiroidism congenital",
+            "Icterul copilului alimentat la sân (Breastfeeding Jaundice)",
+            "Sindrom Crigler-Najjar tip 2",
+            "Icter la laptele matern (Breastmilk Jaundice)"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Diagnosticul icterului la laptele matern este clinic, bazat pe icter prezent după ziua a 5-a de viață, la un sugar alimentat la sân, sănătos, cu creștere ponderală satisfăcătoare, fără hemoliză sau alte cauze patologice de icter. Icterul copilului alimentat la sân (Breastfeeding Jaundice) debutează în schimb în primele 5 zile și este cauzat de o tehnică de alăptare necorespunzătoare, cu aport caloric redus. Atrezia biliară ar asocia hiperbilirubinemie directă și scaune acolice, iar celelalte variante nu se corelează cu tabloul descris.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 924-948"
         },
@@ -1632,13 +2262,13 @@ const QUESTIONS = {
           "id": "22-3",
           "stem": "Un nou-născut prezintă hiperbilirubinemie indirectă severă, cu creșterea rapidă a bilirubinei (valoare maximă 40 mg/dL) în ciuda fototerapiei corect aplicate. Testele hepatice, inclusiv bilirubina directă, sunt normale, nu există hemoliză, iar histologia hepatică este normală. După administrarea de fenobarbital timp de 48 de ore, nivelul bilirubinei serice rămâne nemodificat. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Sindrom Dubin-Johnson",
             "Sindrom Gilbert",
             "Icter la laptele matern",
             "Sindrom Crigler-Najjar tip 1",
-            "Sindrom Crigler-Najjar tip 2"
+            "Sindrom Crigler-Najjar tip 2",
+            "Sindrom Dubin-Johnson"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "În sindromul Crigler-Najjar tip 1, UDP-glucuronil-transferaza este complet absentă, bilirubina serică atinge valori maxime de 15-50 mg/dL, iar răspunsul la fenobarbital este absent. În tipul 2, defectul enzimatic este parțial, bilirubina maximă este mai mică (12-22 mg/dL), iar fenobarbitalul scade nivelul bilirubinei cu 40-80% la 48 de ore. Sindromul Gilbert produce hiperbilirubinemie mult mai moderată (2-6 mg/dL), iar sindromul Dubin-Johnson determină hiperbilirubinemie directă, nu indirectă.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 924-948"
         },
@@ -1646,13 +2276,13 @@ const QUESTIONS = {
           "id": "22-4",
           "stem": "Un sugar cu colestază intrahepatică familială progresivă (PFIC) prezintă icter, hepatomegalie și prurit moderat. Testele biochimice arată GGT serică crescută, de peste 10 ori valoarea normală, colesterol seric normal și nivel biliar scăzut al fosfolipidelor. Care tip de PFIC este cel mai probabil?",
           "options": [
-            "Deficit de sinteză a acizilor biliari",
-            "Sindrom Alagille",
-            "PFIC tip 2 (deficit de BSEP)",
             "PFIC tip 1 (deficit de FIC1)",
-            "PFIC tip 3 (deficit de MDR3)"
+            "PFIC tip 2 (deficit de BSEP)",
+            "PFIC tip 3 (deficit de MDR3)",
+            "Sindrom Alagille",
+            "Deficit de sinteză a acizilor biliari"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "Spre deosebire de PFIC 1 și PFIC 2, la care GGT rămâne normală, în PFIC 3 (deficit de MDR3) GGT este crescută, frecvent de peste 10 ori valoarea normală, iar caracteristica biochimică este nivelul biliar scăzut al fosfolipidelor (fosfatidilcolina), cu nivel biliar normal al acizilor biliari. Acest profil biochimic permite diagnosticul diferențial între formele de PFIC.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 924-948"
         },
@@ -1660,14 +2290,28 @@ const QUESTIONS = {
           "id": "22-5",
           "stem": "Un sugar de 3 luni prezintă colestază cronică cu prurit, facies particular (frunte largă, hipertelorism ușor, bărbie ascuțită), suflu sistolic prin stenoză periferică a arterei pulmonare și embriotoxon posterior la examenul oftalmologic. Biopsia hepatică evidențiază paucitatea duetelor biliare intrahepatice. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Colestaza intrahepatică familială progresivă tip 1",
             "Atrezie de căi biliare",
+            "Sindrom Alagille",
             "Colangită sclerozantă neonatală",
-            "Fibroză chistică",
-            "Sindrom Alagille"
+            "Colestaza intrahepatică familială progresivă tip 1",
+            "Fibroză chistică"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "Diagnosticul sindromului Alagille se bazează pe demonstrarea paucității duetelor biliare intrahepatice la biopsia hepatică, asociată cu cel puțin 3 din cele 5 elemente majore: colestaza cronică, faciesul caracteristic, stenoza periferică a arterelor pulmonare (cea mai frecventă manifestare cardiacă, 75%), vertebra în aripi de fluture și embriotoxonul posterior. Pacientul descris întrunește 4 din aceste criterii, susținând diagnosticul de sindrom Alagille și nu atrezia biliară sau alte cauze de colestază.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 924-948"
+        },
+        {
+          "id": "22-6",
+          "stem": "Un nou-născut la termen, aparent sănătos, dezvoltă icter sclero-tegumentar vizibil la vârsta de 30 de ore de viață, cu extindere limitată la nivelul capului și gâtului. Mama întreabă dacă este necesară vreo investigație. Care este atitudinea corectă?",
+          "options": [
+            "Nu este necesară nicio evaluare, întrucât extinderea limitată la cap și gât exclude o hiperbilirubinemie semnificativă",
+            "Icterul este fiziologic, deoarece a debutat după primele 24 de ore de viață, deci nu necesită investigații",
+            "Icterul este fiziologic, fiind explicat prin imaturitatea tranzitorie a glucuronil-transferazei hepatice specifică primelor 36 de ore de viață",
+            "Icterul trebuie considerat patologic până la proba contrarie, deoarece a apărut în primele 36 de ore de viață, fiind necesară investigarea etiologiei (de exemplu, hemoliză)",
+            "Este caracteristic icterului la laptele matern (Breastmilk Jaundice), care debutează constant în primele 36 de ore de viață"
+          ],
+          "correct": 3,
+          "explanation": "Textul precizează că apariția icterului în primele 36 de ore de viață reprezintă una dintre caracteristicile care impun considerarea acestuia ca patologic, până la proba contrarie, alături de persistența peste 10-14 zile, bilirubina serică peste 12 mg/dL sau creșterea bilirubinei directe peste 2 mg/dL ori peste 30% din bilirubina totală. Icterul la laptele matern debutează, în schimb, după ziua a 5-a de viață, cu maximum în zilele 10-15, deci nu este compatibil cu acest tablou.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 924-948"
         }
       ]
@@ -1680,10 +2324,10 @@ const QUESTIONS = {
           "id": "23-1",
           "stem": "Un copil cu hepatopatie cronică prezintă transaminaze crescute. Raportul AST/ALT (indicele de Ritis) calculat este de 2,5. Care este interpretarea cea mai probabilă a acestei valori?",
           "options": [
-            "Sugerează o etiologie virală acută a afectării hepatice",
-            "Sugerează o etiologie metabolică a afectării hepatice",
             "Exclude diagnosticul de ciroză hepatică",
+            "Sugerează o etiologie metabolică a afectării hepatice",
             "Este caracteristică hepatitei autoimune de tip 1",
+            "Sugerează o etiologie virală acută a afectării hepatice",
             "Indică un răspuns favorabil la terapia cu interferon"
           ],
           "correct": 1,
@@ -1694,13 +2338,13 @@ const QUESTIONS = {
           "id": "23-2",
           "stem": "Un copil cu icter colestatic și timp de protrombină prelungit primește vitamină K parenteral, iar timpul de protrombină se corectează prompt. Acest tip de răspuns terapeutic este caracteristic pentru:",
           "options": [
-            "Disfuncție hepatocitară severă, necorectabilă farmacologic",
-            "Colestază cu deficit al factorilor de coagulare vitamina K-dependenți",
-            "Ciroza hepatică decompensată, clasa Child-Pugh C",
             "Macro-aspartat transaminaza (macro-AST)",
-            "Hepatita autoimună de tip 2"
+            "Ciroza hepatică decompensată, clasa Child-Pugh C",
+            "Colestază cu deficit al factorilor de coagulare vitamina K-dependenți",
+            "Hepatita autoimună de tip 2",
+            "Disfuncție hepatocitară severă, necorectabilă farmacologic"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Timpul de protrombină/INR se modifică semnificativ în disfuncțiile severe ale hepatocitului și nu se corectează la administrarea de vitamină K în această situație. În schimb, corecția disfuncției de coagulare prin administrarea vitaminei K este caracteristică colestazei, în care deficitul de factori II, VII, IX, X (vitamina K-dependenți) este consecința malabsorbției, nu a insuficienței de sinteză hepatocitară.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 278-291"
         },
@@ -1708,13 +2352,13 @@ const QUESTIONS = {
           "id": "23-3",
           "stem": "Un copil cu ciroză hepatică prezintă la evaluare: encefalopatie hepatică grad 1-2, ascită redusă, bilirubină serică 2,5 mg/dL, albumină serică 3 g/dL și timp de protrombină moderat prelungit (categoria intermediară a scorului). Fiecare dintre aceste criterii se încadrează în categoria de 2 puncte a scorului Child-Turcotte-Pugh. Care este clasa de severitate corespunzătoare unui scor total de 10 puncte?",
           "options": [
+            "Clasa D Child (peste 15 puncte)",
+            "Clasa C Child (10-15 puncte)",
             "Clasa A Child (5-6 puncte)",
             "Clasa B Child (7-9 puncte)",
-            "Clasa C Child (10-15 puncte)",
-            "Nu poate fi încadrat în sistemul Child-Pugh, este necesar scorul MELD",
-            "Clasa D Child (peste 15 puncte)"
+            "Nu poate fi încadrat în sistemul Child-Pugh, este necesar scorul MELD"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Scorul Child-Turcotte-Pugh însumează punctajul (1-3 puncte) pentru encefalopatie, ascită, bilirubină, albumină și timp de protrombină/INR. Clasificarea în clase de severitate este: Clasa A = 5-6 puncte, Clasa B = 7-9 puncte, Clasa C = 10-15 puncte. Un scor total de 10 puncte încadrează pacientul în Clasa C, cea mai severă formă.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 293-295"
         },
@@ -1722,13 +2366,13 @@ const QUESTIONS = {
           "id": "23-4",
           "stem": "O adolescentă se prezintă cu debut acut și sever al unei hepatite cronice, cu recidive frecvente. Testele serologice evidențiază anticorpi anti-LKM1 pozitivi, în timp ce ANA și ASMA sunt negativi. Care este tipul de hepatită autoimună cel mai probabil?",
           "options": [
-            "Hepatita autoimună de tip 1",
             "Hepatita autoimună de tip 2",
-            "Hepatita cronică virală B",
+            "Steatohepatita nonalcoolică (NASH)",
             "Boala Wilson",
-            "Steatohepatita nonalcoolică (NASH)"
+            "Hepatita cronică virală B",
+            "Hepatita autoimună de tip 1"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Hepatita autoimună de tip 2 se caracterizează serologic prin prezența anticorpilor antimicrozomali anti-LKM1, iar tabloul clinic și leziunile histopatologice sunt de afecțiune acută și severă, cu recidive frecvente. Hepatita autoimună de tip 1 este definită de ANA și/sau ASMA pozitivi, are debut la adolescență și răspuns terapeutic în general bun.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 278-291"
         },
@@ -1736,14 +2380,42 @@ const QUESTIONS = {
           "id": "23-5",
           "stem": "La un copil cu hepatită cronică virală B se efectuează elastografie hepatică tranzitorie (FibroScan), obținându-se o valoare a rigidității hepatice de 13 kPa. Această valoare este sugestivă pentru:",
           "options": [
-            "Fibroză absentă (F0)",
-            "Ciroză hepatică",
-            "Fibroză semnificativă, fără ciroză",
             "Rezultat neinterpretabil, este necesară biopsia hepatică",
+            "Fibroză semnificativă, fără ciroză",
+            "Ciroză hepatică",
+            "Fibroză absentă (F0)",
             "Fibroză portală fără septuri (F1)"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Prin elastografia hepatică tranzitorie (FibroScan), valoarea-limită validată pentru fibroza semnificativă este de 7,1 kPa, iar cea pentru ciroză este de 12,5 kPa. O valoare de 13 kPa depășește pragul de ciroză, fiind astfel sugestivă pentru acest diagnostic.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 278-291"
+        },
+        {
+          "id": "23-6",
+          "stem": "Un copil de 10 ani se prezintă cu debut acut de icter, anemie hemolitică cu test Coombs direct negativ și insuficiență renală acută, asociate cu creșterea transaminazelor. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Steatohepatita nonalcoolică (NASH)",
+            "Hepatita autoimună de tip 1",
+            "Injurie hepatică toxică medicamentoasă (DILI)",
+            "Boala Wilson",
+            "Hepatita cronică virală B, faza de toleranță imună"
+          ],
+          "correct": 3,
+          "explanation": "Anemia hemolitică acută cu test Coombs negativ, asociată cu insuficiență hepatică și insuficiență renală acută, poate fi modalitatea de debut a bolii Wilson, fiind constatată la aproximativ 6,9% dintre pacienții pediatrici cu această afecțiune. Hepatita autoimună de tip 1 nu se asociază tipic cu hemoliză și insuficiență renală, iar faza de toleranță imună a hepatitei B evoluează cu transaminaze normale.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 278-291"
+        },
+        {
+          "id": "23-7",
+          "stem": "O gravidă cu infecție cronică cu VHB are, la evaluarea din săptămâna 28 de sarcină, o viremie VHB de 350 000 UI/mL. Pentru reducerea riscului de transmitere materno-fetală a infecției, care este conduita terapeutică maternă recomandată?",
+          "options": [
+            "Operație cezariană electivă, fără terapie antivirală maternă, este suficientă pentru prevenirea transmiterii",
+            "Vaccinare maternă cu vaccin recombinant anti-VHB, administrată în ultimul trimestru de sarcină",
+            "Terapie cu interferon alfa pegylat, administrată din săptămâna 28 până la naștere",
+            "Terapia antivirală este contraindicată în sarcină, indiferent de nivelul viremiei materne",
+            "Terapie antivirală cu tenofovir, lamivudină sau telbivudină, din săptămâna 28 până la naștere și încă trei luni postpartum"
+          ],
+          "correct": 4,
+          "explanation": "Terapia antivirală va fi administrată mamei cu viremie VHB în săptămâna 28 de sarcină mai mare de 200 000 UI/mL, din această perioadă până la naștere și încă trei luni postpartum, folosind tenofovir, lamivudină sau telbivudină, considerate fără efecte adverse asupra fătului. Interferonul nu se administrează în sarcină, iar cezariana și vaccinarea maternă nu înlocuiesc terapia antivirală în acest context.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 278-291"
         }
       ]
@@ -1758,11 +2430,11 @@ const QUESTIONS = {
           "options": [
             "Frotiul de sânge periferic",
             "Timpul de protrombină",
+            "Testul Apt-Downey",
             "Testul Gregersen/hem-test din scaun",
-            "Dozarea bilirubinei indirecte",
-            "Testul Apt-Downey"
+            "Dozarea bilirubinei indirecte"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "Testul Apt-Downey constă în adăugarea de apă sterilă și NaOH 1% peste vărsătura cu sânge. Dacă sângele este de proveniență maternă rezultă o culoare galbenă, iar dacă provine de la nou-născut culoarea rămâne neschimbată, deoarece hemoglobina fetală este alcalinorezistentă.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 238-248"
         },
@@ -1770,13 +2442,13 @@ const QUESTIONS = {
           "id": "24-2",
           "stem": "Un copil de 2 ani se prezintă cu un episod de hematochezie masivă, nedureroasă, cu debut brusc. Se suspectează diverticulul Meckel drept sursă a sângerării, cauzată de ulcerația peptică la joncțiunea dintre mucoasa ectopică și ileonul normal. Care este investigația de elecție pentru confirmarea diagnosticului?",
           "options": [
-            "Scintigrafia cu Techneţiu-99m",
-            "Clisma baritată",
             "Ecografia abdominală Doppler",
+            "Radiografia abdominală pe gol",
+            "Scintigrafia cu Techneţiu-99m",
             "Colonoscopia cu prelevare de biopsii",
-            "Radiografia abdominală pe gol"
+            "Clisma baritată"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Diagnosticul diverticulului Meckel se stabilește pe baza scintigrafiei cu Tc99m, care evidențiază mucoasa ectopică (de obicei gastrică), prezentă în peste 80% din cazuri și responsabilă de ulcerația peptică ce determină sângerarea.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 238-248"
         },
@@ -1785,12 +2457,12 @@ const QUESTIONS = {
           "stem": "Un copil de 4 ani, cu istoric recent de diaree cu sânge, se prezintă cu durere abdominală severă, difuză, oligurie și paloare. Analizele evidențiază anemie hemolitică microangiopatică și trombocitopenie, iar coprocultura este pozitivă pentru un serotip enterohemoragic de E. coli. Care este diagnosticul cel mai probabil?",
           "options": [
             "Purpură Henoch-Schönlein",
-            "Boală inflamatorie intestinală",
             "Sindrom hemolitic-uremic",
+            "Boală inflamatorie intestinală",
             "Invaginație intestinală",
             "Colită pseudomembranoasă"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Triada diaree sangvinolentă (asociată E. coli producătoare de verotoxină/toxină Shiga), anemie hemolitică microangiopatică și trombocitopenie este caracteristică sindromului hemolitic-uremic, care se poate complica cu invaginație, pancreatită sau perforație intestinală.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 238-248"
         },
@@ -1798,13 +2470,13 @@ const QUESTIONS = {
           "id": "24-4",
           "stem": "În cadrul managementului inițial al unui copil cu hemoragie digestivă masivă și instabilitate hemodinamică, la ce valoare a numărului de trombocite este indicată administrarea de masă trombocitară?",
           "options": [
+            "Sub 20.000/mm3",
             "Sub 50.000/mm3",
             "Sub 100.000/mm3",
             "Sub 150.000/mm3",
-            "Sub 20.000/mm3",
             "Indiferent de valoare, dacă hemoragia este activă"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Conform managementului terapeutic descris, masa trombocitară se administrează doar dacă numărul trombocitelor este sub 50.000/mm3, alături de fluide izotone, produse de sânge, vitamină K administrată empiric și, la nevoie, plasmă proaspătă congelată.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 238-248"
         },
@@ -1812,14 +2484,28 @@ const QUESTIONS = {
           "id": "24-5",
           "stem": "La un copil cu suspiciune de hemoragie digestivă superioară se montează sondă nazogastrică și se efectuează lavaj gastric, care evidențiază conținut clar, fără urme de sânge proaspăt sau aspect de „zaț de cafea”. Ce concluzie susține acest rezultat?",
           "options": [
-            "Exclude o sursă hemoragică situată deasupra ligamentului Treitz",
+            "Indică prezența varicelor esofagiene",
+            "Impune repetarea imediată a lavajului cu ser rece",
             "Confirmă o sursă hemoragică activă situată deasupra ligamentului Treitz",
             "Confirmă o sursă hemoragică oprită, situată deasupra ligamentului Treitz",
-            "Indică prezența varicelor esofagiene",
-            "Impune repetarea imediată a lavajului cu ser rece"
+            "Exclude o sursă hemoragică situată deasupra ligamentului Treitz"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Un lavaj gastric clar, fără sânge proaspăt sau aspect de „zaț de cafea”, exclude o sursă hemoragică deasupra ligamentului Treitz; prezența „zațului de cafea” sugerează o sursă superioară cu sângerare probabil oprită, iar sângele proaspăt indică sângerare activă deasupra ligamentului Treitz.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 238-248"
+        },
+        {
+          "id": "24-6",
+          "stem": "Un copil de 14 luni este adus de urgență pentru un episod cu debut brusc de colici abdominale intense, intercalate cu perioade de acalmie, iar la un moment dat elimină un scaun cu aspect de „jeleu de coacăze”. Tușeul rectal evidențiază sânge pe mănușă. Care este investigația imagistică de primă intenție pentru confirmarea diagnosticului suspectat?",
+          "options": [
+            "Angiografia mezenterică",
+            "Ecografia abdominală",
+            "Scintigrafia cu Techneţiu-99m",
+            "Radiografia abdominală pe gol",
+            "Rezonanța magnetică abdominală"
+          ],
+          "correct": 1,
+          "explanation": "Invaginația intestinală, frecventă la copiii sub 2 ani, debutează brusc cu colici abdominale intercalate cu perioade de acalmie și scaune sangvinolente cu aspect de jeleu. Diagnosticul se stabilește pe baza tușeului rectal (sânge pe mănușă) sau a ecografiei abdominale, care evidențiază aspectul de cercuri concentrice și tumoreta de invaginație; tratamentul constă în reducere hidrostatică sau intervenție chirurgicală.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 238-248"
         }
       ]
@@ -1832,11 +2518,11 @@ const QUESTIONS = {
           "id": "25-1",
           "stem": "Un copil de 2 ani este investigat pentru splenomegalie izolată, descoperită întâmplător la un examen clinic de rutină. Ficatul are dimensiuni normale, iar transaminazele, bilirubina și timpul de protrombină sunt normale. Din antecedente se reține un cateterism al venei ombilicale în perioada neonatală. Care este cea mai probabilă cauză a hipertensiunii portale la acest copil?",
           "options": [
-            "Ciroza hepatică postnecrotică",
+            "Scleroza hepatoportală",
             "Cavernomul de venă portă (transformarea cavernomatoasă a venei porte)",
+            "Ciroza hepatică postnecrotică",
             "Fibroza hepatică congenitală",
-            "Sindromul Budd-Chiari",
-            "Scleroza hepatoportală"
+            "Sindromul Budd-Chiari"
           ],
           "correct": 1,
           "explanation": "Obstrucția venei porte (bloc presinusoidal/prehepatic) duce la transformarea cavernomatoasă a venei porte, care se manifestă clinic prin splenomegalie izolată, fără hepatomegalie, cu teste hepatice normale, diagnostic confirmat ecografic. Aproape 40% dintre cazuri au antecedente de cateterism venos ombilical, iar semnele de hipertensiune portală apar precoce, complicându-se frecvent cu hemoragie digestivă înaintea vârstei de 3 ani. Fibroza hepatică congenitală și scleroza hepatoportală pot avea și ele teste hepatice normale, dar nu se asociază tipic cu cateterismul ombilical.",
@@ -1847,12 +2533,12 @@ const QUESTIONS = {
           "stem": "Un copil cu hepatopatie cronică dezvoltă ascită. Se efectuează paracenteză diagnostică, iar din analiza lichidului se calculează gradientul albuminei ser-lichid de ascită (SAAG). Care valoare a SAAG susține puternic (sensibilitate 97%) diagnosticul de ascită secundară hipertensiunii portale?",
           "options": [
             "SAAG nu are valoare diagnostică în ascita copilului",
-            "SAAG sub 1,1 g/dL",
-            "SAAG între 0,5-1,0 g/dL, indiferent de proteinele din lichid",
             "SAAG peste 1,1 g/dL",
-            "SAAG egal cu 0"
+            "SAAG egal cu 0",
+            "SAAG între 0,5-1,0 g/dL, indiferent de proteinele din lichid",
+            "SAAG sub 1,1 g/dL"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Gradientul albuminei ser-lichid de ascită (SAAG) este util pentru diferențierea ascitei prin hipertensiune portală de alte cauze de ascită. O valoare SAAG > 1,1 g/dL susține puternic, cu o sensibilitate de 97%, diagnosticul de hipertensiune portală, alături de alți parametri precum concentrația scăzută de proteine în lichidul de ascită.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 951-952"
         },
@@ -1860,13 +2546,13 @@ const QUESTIONS = {
           "id": "25-3",
           "stem": "Un sugar de 5 săptămâni este diagnosticat cu atrezie de căi biliare, confirmată prin colangiografie intraoperatorie. Pentru a obține cele mai mari șanse de restabilire a fluxului biliar prin hepatoportoenterostomie (operația Kasai), intervenția chirurgicală trebuie efectuată, ideal, înainte de:",
           "options": [
-            "6 luni de viață",
             "30 de zile de viață",
-            "60 de zile de viață",
+            "6 luni de viață",
             "1 an de viață",
-            "120 de zile de viață"
+            "120 de zile de viață",
+            "60 de zile de viață"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Succesul intervenției Kasai depinde în principal de vârsta la care se intervine chirurgical: fluxul biliar este restabilit la 80% dintre cazuri când intervenția se realizează sub vârsta de 60 de zile, șansa de reușită scăzând la doar 20% la o vârstă mai mare de 90 de zile. De aceea diagnosticul precoce al atreziei biliare este esențial, pentru a permite efectuarea intervenției înaintea vârstei de 45-60 de zile.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 924-948"
         },
@@ -1874,13 +2560,13 @@ const QUESTIONS = {
           "id": "25-4",
           "stem": "Un sugar de 6 săptămâni cu icter colestatic, scaune parțial decolorate și urini hipercrome este evaluat pentru colestază neonatală. Ecografia abdominală evidențiază o veziculă biliară de dimensiuni reduse, cu pereți neregulați, și o zonă triunghiulară hiperecogenă situată anterior de bifurcația ramurilor venei porte („triangular cord”). Care este diagnosticul cel mai probabil sugerat de acest aspect ecografic?",
           "options": [
+            "Hepatita neonatală idiopatică",
+            "Sindromul Alagille",
             "Atrezia de căi biliare",
             "Chistul de coledoc",
-            "Sindromul Alagille",
-            "Hepatita neonatală idiopatică",
             "Cavernomul de venă portă"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Ecografia abdominală în atrezia de căi biliare poate evidenția o veziculă biliară anormală, cu pereți neregulați sau absentă, și semnul „triangular cord” - zona triunghiulară hiperecogenă situată anterior de bifurcația ramurilor venei porte - aspecte sugestive pentru acest diagnostic. Ecografia nu este însă suficientă singură pentru confirmare, fiind necesare investigații suplimentare (scintigrafie hepatobiliară, biopsie hepatică).",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 924-948"
         },
@@ -1888,14 +2574,42 @@ const QUESTIONS = {
           "id": "25-5",
           "stem": "Un sugar de 4 luni prezintă colestază progresivă cu prurit sever, hepatosplenomegalie, diaree cronică și hipotrofie staturo-ponderală, fără xantoame. Acizii biliari serici sunt marcat crescuți, dar gama-glutamiltranspeptidaza (GGT) este normală. Care este cel mai probabil diagnostic?",
           "options": [
-            "Sindromul Alagille",
             "Atrezia de căi biliare",
+            "Sindromul Alagille",
             "Colestaza intrahepatică familială progresivă tip 1 (boala Byler)",
-            "Colestaza intrahepatică familială progresivă tip 3",
-            "Colestaza asociată nutriției parenterale totale"
+            "Colestaza asociată nutriției parenterale totale",
+            "Colestaza intrahepatică familială progresivă tip 3"
           ],
           "correct": 2,
           "explanation": "PFIC tip 1 (deficit de FIC1/ATP8B1) se manifestă prin colestază progresivă cu prurit sever, diaree, malabsorbție și hipotrofie staturo-ponderală, fără xantoame, cu acizi biliari serici crescuți dar GGT normală - spre deosebire de PFIC tip 3, sindromul Alagille sau atrezia de căi biliare, în care GGT este caracteristic crescută. Această disociere (GGT normală în prezența colestazei severe) este un element cheie de diagnostic diferențial în PFIC tip 1 și tip 2.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 924-948"
+        },
+        {
+          "id": "25-6",
+          "stem": "Un copil de 4 ani, cunoscut cu transformare cavernomatoasă a venei porte, este internat pentru o nouă hemoragie digestivă superioară prin ruptură de varice esofagiene, cu antecedente de mai multe episoade similare tratate prin ligatură endoscopică. Se decide evaluarea posibilității unui tratament chirurgical definitiv al hipertensiunii portale. Explorarea vasculară arată că ramura stângă a venei porte este permeabilă. Care este conduita chirurgicală indicată în această situație?",
+          "options": [
+            "Șunt portosistemic transjugular intrahepatic (TIPSS)",
+            "Derivație portosistemică splenorenală",
+            "Derivație portosistemică mezenterico-cavă",
+            "Transplant hepatic de urgență",
+            "Intervenție de reperfuzie a ficatului, utilizând ramura portă stângă permeabilă"
+          ],
+          "correct": 4,
+          "explanation": "În blocul sub-/prehepatic prin cavernom de venă portă, dacă ramura stângă a venei porte este permeabilă, se poate realiza o intervenție de reperfuzie a ficatului; doar dacă sistemul port intrahepatic nu este permeabil se recurge la o derivație portosistemică (mezenterico-cavă sau splenorenală). TIPSS este propus pentru blocul intra- sau suprahepatic, iar transplantul hepatic este rezervat controlului complicațiilor unei boli hepatice severe, nefiind indicat de primă intenție într-un bloc prehepatic cu funcție hepatocelulară normală.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 951-952"
+        },
+        {
+          "id": "25-7",
+          "stem": "Un sugar de 3 luni este investigat pentru colestază cronică (icter, scaune parțial decolorate, prurit). Examenul obiectiv evidențiază un facies particular (frunte largă, hipertelorism ușor, bărbie ascuțită) și un suflu sistolic; ecocardiografia relevă stenoză periferică a arterei pulmonare, iar examenul oftalmologic identifică embriotoxon posterior. Biopsia hepatică arată un raport ducte biliare/spații porte sub 0,5, fără proliferare ductală. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Colangita sclerozantă neonatală",
+            "Fibroza hepatică congenitală",
+            "Colestaza intrahepatică familială progresivă tip 2",
+            "Sindromul Alagille (paucitatea sindromatică a ductelor biliare)",
+            "Atrezia de căi biliare"
+          ],
+          "correct": 3,
+          "explanation": "Diagnosticul sindromului Alagille se bazează pe paucitatea ductelor biliare intrahepatice la biopsie (raport ducte biliare/spații porte sub 0,5-0,75) și prezența a cel puțin 3 din cele 5 criterii majore: colestază cronică, facies caracteristic, stenoză periferică a arterelor pulmonare, vertebră în aripi de fluture și embriotoxon posterior - toate întrunite la acest pacient. Atrezia de căi biliare se caracterizează histologic prin proliferare de ducte biliare (nu paucitate) și nu se asociază cu malformația cardiacă și cu modificările oculare descrise.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 924-948"
         }
       ]
@@ -1909,10 +2623,10 @@ const QUESTIONS = {
           "stem": "Un copil de 10 ani este adus la camera de gardă pentru durere abdominală cu debut brusc, cu iradiere dorsală, însoțită de vărsături. Lipaza serică este de 2 ori mai mare decât limita superioară a normalului, iar ecografia abdominală transabdominală nu evidențiază modificări sugestive. Conform criteriilor de diagnostic pozitiv al pancreatitei acute, care este afirmația corectă?",
           "options": [
             "Este îndeplinit un singur criteriu (durerea abdominală caracteristică), deoarece lipaza nu atinge pragul de minimum 3 ori valoarea normală, iar imagistica este negativă, fiind necesare investigații suplimentare pentru confirmarea diagnosticului",
-            "Este necesară doar repetarea dozării lipazei peste 24 de ore, fiind singurul criteriu validat pentru diagnostic",
-            "Diagnosticul este exclus, deoarece ecografia abdominală este investigația standard de aur, iar rezultatul ei negativ infirmă pancreatita acută",
+            "Sunt îndeplinite deja 2 din cele 3 criterii de diagnostic (durerea și enzimele pancreatice), astfel diagnosticul este confirmat",
             "Diagnosticul de pancreatită acută este confirmat, fiind suficiente durerea caracteristică și creșterea lipazei serice, indiferent de valoarea acesteia",
-            "Sunt îndeplinite deja 2 din cele 3 criterii de diagnostic (durerea și enzimele pancreatice), astfel diagnosticul este confirmat"
+            "Diagnosticul este exclus, deoarece ecografia abdominală este investigația standard de aur, iar rezultatul ei negativ infirmă pancreatita acută",
+            "Este necesară doar repetarea dozării lipazei peste 24 de ore, fiind singurul criteriu validat pentru diagnostic"
           ],
           "correct": 0,
           "explanation": "Diagnosticul pozitiv de pancreatită acută necesită întrunirea a cel puțin 2 din 3 criterii: durere abdominală caracteristică, amilază și/sau lipază serică de cel puțin 3 ori limita superioară a normalului și dovezi imagistice de pancreatită. În acest caz este îndeplinit doar criteriul clinic (durerea), lipaza nu atinge pragul de 3x, iar ecografia este negativă, deci sunt necesare investigații suplimentare (de exemplu CT abdominal cu contrast) pentru confirmarea diagnosticului.",
@@ -1923,12 +2637,12 @@ const QUESTIONS = {
           "stem": "În managementul analgeziei la un copil cu pancreatită acută severă, care dintre următoarele substanțe trebuie evitată, deoarece determină creșterea presiunii la nivelul sfincterului Oddi și poate agrava evoluția bolii?",
           "options": [
             "Acetaminofen",
+            "Morfină",
             "Ketorolac",
             "Fentanil",
-            "Meperidină",
-            "Morfină"
+            "Meperidină"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "Textul precizează explicit că se evită utilizarea morfinei ca analgezic în pancreatita acută, deoarece s-a demonstrat că aceasta determină creșterea presiunii la nivelul sfincterului Oddi și poate agrava cursul bolii. Analgezia se realizează, în schimb, prin administrare intravenoasă de acetaminofen, meperidină sau petidină, cu ajustarea dozei în funcție de necesar.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 198-207"
         },
@@ -1937,12 +2651,12 @@ const QUESTIONS = {
           "stem": "Un adolescent cu pancreatită cronică și insuficiență pancreatică exocrină este tratat cu supliment enzimatic pancreatic (extract porcin – pancreatină). Care este principalul risc asociat administrării unor doze care depășesc 10000 UI lipază/kg/zi?",
           "options": [
             "Agravarea diabetului zaharat tip 3c prin efect toxic pancreatic direct",
+            "Precipitarea unui nou episod de pancreatită acută prin hiperstimulare secretorie",
             "Hepatotoxicitate severă, cu insuficiență hepatică acută",
-            "Stenoze/stricturi colonice, prin hipertrofia muscularei colonice",
             "Nefrocalcinoză secundară hipercalcemiei induse enzimatic",
-            "Precipitarea unui nou episod de pancreatită acută prin hiperstimulare secretorie"
+            "Stenoze/stricturi colonice, prin hipertrofia muscularei colonice"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Textul atrage atenția că dozele de enzime pancreatice care depășesc 10000 UI de lipază/kg/zi nu sunt recomandate, existând riscul producerii de stenoze/stricturi colonice prin hipertrofia muscularei colonice, aspect discutat în special în contextul terapiei substitutive din fibroza chistică.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 198-207"
         },
@@ -1950,13 +2664,13 @@ const QUESTIONS = {
           "id": "26-4",
           "stem": "Care este particularitatea insuficienței pancreatice endocrine la copiii cu pancreatită cronică calcifiantă, conform datelor prezentate în text?",
           "options": [
+            "Diabetul zaharat de tip 1, prin mecanism autoimun, este forma cea mai frecvent întâlnită",
+            "Toleranța la glucoză rămâne normală indiferent de gradul de fibroză și calcificare pancreatică",
             "Diabetul zaharat apare rar, iar atunci când apare, riscul de episoade hipoglicemice este scăzut",
             "50-70% dintre acești pacienți dezvoltă diabet zaharat de tip 3c, cu risc crescut de episoade hipoglicemice",
-            "Insuficiența endocrină precede întotdeauna instalarea insuficienței exocrine",
-            "Diabetul zaharat de tip 1, prin mecanism autoimun, este forma cea mai frecvent întâlnită",
-            "Toleranța la glucoză rămâne normală indiferent de gradul de fibroză și calcificare pancreatică"
+            "Insuficiența endocrină precede întotdeauna instalarea insuficienței exocrine"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Textul arată că, în cazul pancreatitei cronice calcifiante, în 50-70% din cazuri pacienții dezvoltă diabet zaharat de tip 3c, ca urmare a fibrozei și calcificărilor pancreatice progresive, iar acești pacienți au un risc crescut de episoade hipoglicemice.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 198-207"
         },
@@ -1964,14 +2678,28 @@ const QUESTIONS = {
           "id": "26-5",
           "stem": "Un sugar prezintă falimentul creșterii, steatoree cu scaune voluminoase și urât mirositoare, neutropenie intermitentă documentată prin hemoleucograme repetate și anomalii scheletice (statură mică, distrofie toracică). Testarea genetică pentru mutații CFTR este negativă. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Fibroza chistică, cu test genetic fals negativ",
             "Anemia Fanconi",
-            "Sindromul Pearson",
             "Diskeratoza congenitală",
-            "Sindromul Shwachman-Diamond"
+            "Sindromul Shwachman-Diamond",
+            "Fibroza chistică, cu test genetic fals negativ",
+            "Sindromul Pearson"
+          ],
+          "correct": 2,
+          "explanation": "Sindromul Shwachman-Diamond este a doua cauză genetică de insuficiență pancreatică exocrină după fibroza chistică și se caracterizează prin triada pancitopenie (mai ales neutropenie intermitentă), insuficiență pancreatică exocrină (steatoree) și anomalii osoase. Spre deosebire de fibroza chistică (care nu asociază insuficiență medulară) și de anemia Fanconi (care nu asociază insuficiență pancreatică exocrină), tabloul descris este tipic pentru SDS; testul CFTR negativ exclude practic fibroza chistică.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 198-207"
+        },
+        {
+          "id": "26-6",
+          "stem": "Un sugar de 4 luni este investigat pentru falimentul creșterii, pancitopenie (anemie, neutropenie, trombocitopenie) și acidoză lactică persistentă. Explorarea funcției pancreatice exocrine evidențiază steatoree, cu niveluri scăzute ale elastazei fecale. Aspiratul medular arată celularitate normală, cu prezența inelelor sideroblastice și vacuolizarea precursorilor hematopoietici, fără anomalii osoase asociate. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Sindromul Shwachman-Diamond",
+            "Diskeratoza congenitală",
+            "Anemia Fanconi",
+            "Sindromul Johanson-Blizzard",
+            "Sindromul Pearson"
           ],
           "correct": 4,
-          "explanation": "Sindromul Shwachman-Diamond este a doua cauză genetică de insuficiență pancreatică exocrină după fibroza chistică și se caracterizează prin triada pancitopenie (mai ales neutropenie intermitentă), insuficiență pancreatică exocrină (steatoree) și anomalii osoase. Spre deosebire de fibroza chistică (care nu asociază insuficiență medulară) și de anemia Fanconi (care nu asociază insuficiență pancreatică exocrină), tabloul descris este tipic pentru SDS; testul CFTR negativ exclude practic fibroza chistică.",
+          "explanation": "Sindromul Pearson este o afecțiune congenitală multisistemică determinată de anomalii ale ADN-ului mitocondrial, care asociază pancitopenie, insuficiență pancreatică exocrină, acidoză lactică și faliment al creșterii. Spre deosebire de sindromul Shwachman-Diamond (măduvă hipocelulară, lipomatoză pancreatică și anomalii osoase frecvente), sindromul Pearson se caracterizează prin celularitate medulară normală, inele sideroblastice, vacuolizarea progenitorilor hematologici, fibroză pancreatică (nu lipomatoză) și absența leziunilor osoase.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 198-207"
         }
       ]
@@ -1984,13 +2712,13 @@ const QUESTIONS = {
           "id": "27-1",
           "stem": "Un copil de 8 ani se prezintă cu dispnee și fatigabilitate cu debut în urmă cu 10 zile, precedate de un episod de infecție respiratorie acută. Ecocardiografia relevă disfuncție sistolică a ventriculului stâng, cu dilatare ventriculară stângă minimă. Care dintre următoarele elemente pledează cel mai mult pentru diagnosticul de miocardită acută, în defavoarea unei cardiomiopatii dilatative idiopatice?",
           "options": [
-            "Debutul recent al simptomelor (sub două săptămâni), istoricul infecțios recent și absența dilatării semnificative a ventriculului stâng",
             "Istoric familial de cardiomiopatie dilatativă la rude de gradul I",
-            "Fracția de ejecție a ventriculului stâng sub 30%",
             "Dilatarea severă și cronică a ventriculului stâng",
-            "Prezența trombilor intracavitari la ecocardiografie"
+            "Debutul recent al simptomelor (sub două săptămâni), istoricul infecțios recent și absența dilatării semnificative a ventriculului stâng",
+            "Prezența trombilor intracavitari la ecocardiografie",
+            "Fracția de ejecție a ventriculului stâng sub 30%"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Textul precizează că debutul recent al simptomatologiei (sub două săptămâni), istoricul recent de infecție virală și absența dilatării semnificative a ventriculului stâng pledează pentru diagnosticul de miocardită, diagnosticul diferențial cu CMD idiopatică fiind adesea dificil. Dilatarea cronică severă, trombii intracavitari sau istoricul familial sunt mai degrabă sugestive pentru o cardiomiopatie dilatativă stabilită.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 433-438"
         },
@@ -1998,13 +2726,13 @@ const QUESTIONS = {
           "id": "27-2",
           "stem": "Un sugar dezvoltă brusc, la câteva zile după o infecție virală, semne de debit cardiac scăzut, hipotensiune arterială și acidoză, cu evoluție rapidă spre șoc cardiogen, tablou sugestiv pentru miocardită fulminantă. Care este afirmația corectă privind prognosticul acestei forme, în condițiile unui management agresiv, inclusiv suport mecanic ECMO?",
           "options": [
+            "Miocardita fulminantă nu necesită terapie agresivă, evoluând spontan favorabil în majoritatea cazurilor",
             "Deși prezentarea inițială este dramatică, cazurile de miocardită fulminantă pot evolua cu recuperare completă și risc scăzut de a dezvolta cardiomiopatie dilatativă",
-            "Miocardita fulminantă are întotdeauna un prognostic rezervat, majoritatea cazurilor decedând în ciuda suportului mecanic",
-            "Miocardita fulminantă asociază un risc mai mare de progresie spre cardiomiopatie dilatativă comparativ cu miocardita acută",
             "Suportul ECMO este contraindicat în miocardita fulminantă din cauza riscului aritmic crescut",
-            "Miocardita fulminantă nu necesită terapie agresivă, evoluând spontan favorabil în majoritatea cazurilor"
+            "Miocardita fulminantă are întotdeauna un prognostic rezervat, majoritatea cazurilor decedând în ciuda suportului mecanic",
+            "Miocardita fulminantă asociază un risc mai mare de progresie spre cardiomiopatie dilatativă comparativ cu miocardita acută"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Textul arată că, în ciuda tabloului dramatic, în cazul unui management agresiv care implică suport mecanic ECMO, cazurile de miocardită fulminantă pot evolua cu recuperare completă și risc scăzut de a dezvolta CMD, spre deosebire de miocardita acută, care asociază un prognostic pe termen lung mai sever, cu progresie mai frecventă spre CMD.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 433-438"
         },
@@ -2012,13 +2740,13 @@ const QUESTIONS = {
           "id": "27-3",
           "stem": "La biopsia endomiocardică a unui copil cu suspiciune clinică de miocardită se descrie un infiltrat inflamator limfocitar la nivel miocardic, fără evidențierea necrozei sau a degenerării miocitare asociate. Conform criteriilor histopatologice Dallas, acest aspect corespunde:",
           "options": [
-            "Miocardită cronică/CMD cu inflamație",
             "Fibroelastoză endomiocardică",
-            "Miocardită borderline",
             "Aspect histologic normal, care exclude diagnosticul de miocardită",
-            "Miocardită acută"
+            "Miocardită acută",
+            "Miocardită cronică/CMD cu inflamație",
+            "Miocardită borderline"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Conform criteriilor Dallas, miocardita acută presupune infiltrat inflamator asociat cu necroză miocitară și degenerarea miocitelor subiacente, în timp ce miocardita borderline este definită ca infiltrat inflamator limfocitar fără distrucție miocardică și necroză, exact aspectul descris în vinietă.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 433-438"
         },
@@ -2026,11 +2754,11 @@ const QUESTIONS = {
           "id": "27-4",
           "stem": "Un adolescent cu cardiomiopatie hipertrofică obstructivă, aflat sub tratament cu propranolol în doză maximă tolerată, prezintă în continuare episoade sincopale, iar examinarea Doppler evidențiază un gradient pe tractul de ejecție al ventriculului stâng de 65 mmHg în repaus. Care este conduita terapeutică indicată în această situație?",
           "options": [
-            "Creșterea dozei de digoxin pentru ameliorarea funcției sistolice",
+            "Administrarea de isoproterenol intravenos pentru susținerea debitului cardiac",
             "Tratament chirurgical prin miectomie septală",
-            "Asocierea diureticelor în doze mari pentru reducerea presarcinii",
             "Continuarea aceleiași scheme terapeutice, fără modificări, cu reevaluare la 6 luni",
-            "Administrarea de isoproterenol intravenos pentru susținerea debitului cardiac"
+            "Creșterea dozei de digoxin pentru ameliorarea funcției sistolice",
+            "Asocierea diureticelor în doze mari pentru reducerea presarcinii"
           ],
           "correct": 1,
           "explanation": "Textul precizează că pacienților cu CMH obstructivă simptomatică, cu sincope și fără răspuns la terapia beta-blocantă, în prezența unui gradient pe tractul de ejecție al VS ≥50 mmHg în repaus sau provocat, le este recomandat tratamentul chirurgical (miectomia septală). Digitalicele, diureticele în doze mari și isoproterenolul sunt de altfel contraindicate/evitate în CMH obstructivă.",
@@ -2040,14 +2768,42 @@ const QUESTIONS = {
           "id": "27-5",
           "stem": "La un copil diagnosticat cu cardiomiopatie dilatativă, care dintre următorii parametri se asociază cu un prognostic nefavorabil?",
           "options": [
-            "Insuficiență mitrală ușoară și staționară",
-            "Absența tulburărilor de ritm și de conducere",
+            "Funcție ventriculară dreaptă normală, fără dilatare",
             "Fracția de ejecție a ventriculului stâng sub 30%",
+            "Insuficiență mitrală ușoară și staționară",
             "Clasa funcțională NYHA/Ross I",
-            "Funcție ventriculară dreaptă normală, fără dilatare"
+            "Absența tulburărilor de ritm și de conducere"
+          ],
+          "correct": 1,
+          "explanation": "Printre factorii cu impact nefavorabil asupra prognosticului în CMD, textul menționează clasa de insuficiență cardiacă NYHA/Ross III-IV, fibroelastoza endomiocardică, insuficiența mitrală progresivă, dilatarea și disfuncția ventriculară dreaptă, tulburările de ritm și conducere, precum și o fracție de ejecție a VS sub 30%. Celelalte variante descriu, dimpotrivă, elemente favorabile.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 411-417"
+        },
+        {
+          "id": "27-6",
+          "stem": "Un copil de 6 ani este diagnosticat cu miocardită acută, confirmată pe baza criteriilor clinice și a RMN-ului cardiac, fără semne asociate de boală autoimună sistemică. Care este conduita recomandată în practica medicală curentă privind terapia imunomodulatoare specifică?",
+          "options": [
+            "Administrarea de imunoglobulină umană intravenoasă în doză mare (2 g/kg corp/zi)",
+            "Terapie imunosupresivă triplă (prednison, azatioprină, ciclosporină), administrată de rutină încă din faza acută",
+            "Administrarea de rutină a glucocorticoizilor, indiferent de etiologia miocarditei",
+            "Inițierea terapiei antivirale de rutină cu ganciclovir, chiar în absența documentării unui agent patogen",
+            "Neinstituirea niciunei forme de terapie imunomodulatoare, aceasta fiind contraindicată în toate formele de miocardită acută la copil"
+          ],
+          "correct": 0,
+          "explanation": "Textul precizează că, în practica medicală curentă, se recomandă administrarea imunoglobulinei umane în doză mare (2 g/kg corp/zi) la copiii cu miocardită acută diagnosticată pe baza criteriilor clinice, a RMN-ului sau a BEM. Glucocorticoizii nu se administrează de rutină (cu excepția miocarditei asociate bolii autoimune sistemice), terapia antivirală de rutină nu este recomandată, iar terapia imunosupresivă nu se utilizează în faza acută, deoarece interferează cu procesul natural de eradicare virală.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 433-438"
+        },
+        {
+          "id": "27-7",
+          "stem": "Un adolescent de sex masculin este investigat pentru hipertrofie ventriculară stângă neexplicată prin anomalii de umplere ventriculară, asociată cu angiokeratoame cutanate difuze. Testarea genetică evidențiază o mutație cu transmitere recesivă, X-linkată. Care este diagnosticul cel mai probabil și particularitatea sa terapeutică?",
+          "options": [
+            "Sindromul Noonan, sindrom genetic asociat cu cardiomiopatia hipertrofică, fără tratament de substituție enzimatică disponibil",
+            "Sindromul LEOPARD (lentiginosis), sindrom genetic asociat cu cardiomiopatia hipertrofică, fără tratament de substituție enzimatică disponibil",
+            "Boala Fabry, boală lizozomală care beneficiază de tratament de substituție enzimatică",
+            "Ataxia Friedreich, sindrom genetic asociat cu cardiomiopatia hipertrofică, fără tratament de substituție enzimatică disponibil",
+            "Sindromul Costello, sindrom genetic asociat cu cardiomiopatia hipertrofică, fără tratament de substituție enzimatică disponibil"
           ],
           "correct": 2,
-          "explanation": "Printre factorii cu impact nefavorabil asupra prognosticului în CMD, textul menționează clasa de insuficiență cardiacă NYHA/Ross III-IV, fibroelastoza endomiocardică, insuficiența mitrală progresivă, dilatarea și disfuncția ventriculară dreaptă, tulburările de ritm și conducere, precum și o fracție de ejecție a VS sub 30%. Celelalte variante descriu, dimpotrivă, elemente favorabile.",
+          "explanation": "Textul menționează boala Fabry (angiokeratoma difuză), cu transmitere recesivă, X-linkată, drept cauză a 4% din cazurile de HVS neexplicată la tineri, aceasta făcând parte din categoria bolilor lizozomale care beneficiază de tratament substitutiv enzimatic. Sindroamele Noonan, Costello, LEOPARD și ataxia Friedreich sunt menționate în text ca alte sindroame genetice asociate cu CMH, fără a fi descrise ca beneficiind de terapie de substituție enzimatică.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 411-417"
         }
       ]
@@ -2060,13 +2816,13 @@ const QUESTIONS = {
           "id": "28-1",
           "stem": "Un copil cunoscut cu pericardită acută dezvoltă brusc zgomote cardiace asurzite, hipotensiune arterială și distensia venelor jugulare, tabloul fiind sugestiv pentru tamponadă cardiacă. Care este scăderea minimă a tensiunii arteriale sistolice în timpul inspirului care definește pulsul paradoxal caracteristic acestei complicații?",
           "options": [
-            "Mai mult de 10 mmHg",
             "Mai mult de 25 mmHg",
-            "Mai mult de 15 mmHg",
+            "Mai mult de 5 mmHg",
+            "Mai mult de 10 mmHg",
             "Mai mult de 20 mmHg",
-            "Mai mult de 5 mmHg"
+            "Mai mult de 15 mmHg"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Textul precizează că, în tamponada cardiacă, alături de triada Beck (zgomote cardiace asurzite, hipotensiune, presiune venoasă centrală crescută), apare pulsul paradoxal, definit ca scăderea tensiunii arteriale sistolice cu mai mult de 10 mmHg în timpul inspirului. Tamponada cardiacă reprezintă o urgență majoră ce necesită măsuri terapeutice prompte.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 446-449"
         },
@@ -2074,13 +2830,13 @@ const QUESTIONS = {
           "id": "28-2",
           "stem": "Un sugar cu pneumonie severă dezvoltă durere toracică cu debut brusc, febră înaltă, tahicardie și tahipnee; ecocardiografia evidențiază un revărsat pericardic important, iar analiza lichidului pericardic sugerează etiologie bacteriană. Care este conduita terapeutică optimă în această situație?",
           "options": [
-            "Antiinflamatoare nesteroidiene în monoterapie, cu reevaluare ecocardiografică la o săptămână",
             "Antibioterapie empirică cu spectru larg timp de 7 zile, fără evacuarea colecției",
             "Corticoterapie sistemică, dată fiind evoluția potențial fulminantă",
-            "Doar monitorizare clinică, întrucât pericardita purulentă are evoluție spontan favorabilă la copil",
-            "Antibioterapie adecvată asociată evacuării colecției pericardice, cu durată de minimum 4-6 săptămâni"
+            "Antiinflamatoare nesteroidiene în monoterapie, cu reevaluare ecocardiografică la o săptămână",
+            "Antibioterapie adecvată asociată evacuării colecției pericardice, cu durată de minimum 4-6 săptămâni",
+            "Doar monitorizare clinică, întrucât pericardita purulentă are evoluție spontan favorabilă la copil"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "În pericardita purulentă, tratamentul se bazează pe identificarea agentului etiologic (hemoculturi, analiza lichidului pericardic), inițierea antibioterapiei adecvate asociată evacuării colecției pericardice reprezentând măsurile terapeutice optime. Durata antibioterapiei se recomandă a fi de cel puțin 4-6 săptămâni, evitându-se antibioterapia cu spectru larg nedirijată etiologic.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 446-449"
         },
@@ -2089,12 +2845,12 @@ const QUESTIONS = {
           "stem": "Un copil provenit dintr-o zonă endemică prezintă febră joasă, transpirații nocturne, scădere ponderală și dispnee; lichidul pericardic obținut prin pericardiocenteză este serosangvinolent, cu conținut proteic crescut și predominanță limfocitară, ridicând suspiciunea de pericardită tuberculoasă. Ce valoare a adenozin-deaminazei (ADA) în lichidul pericardic susține acest diagnostic?",
           "options": [
             "Peste 30 U/L",
-            "Peste 100 U/L",
-            "Peste 10 U/L",
             "Peste 50 U/L",
-            "Peste 20 U/L"
+            "Peste 10 U/L",
+            "Peste 20 U/L",
+            "Peste 100 U/L"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Textul menționează că determinarea adenozin deaminazei din lichidul pericardic are valoare diagnostică pentru pericardita tuberculoasă la un nivel de peste 50 U/L, aceasta fiind utilă mai ales pentru orientarea rapidă a diagnosticului, întrucât izolarea bacililor tuberculoși în culturi poate necesita până la șase săptămâni.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 446-449"
         },
@@ -2102,13 +2858,13 @@ const QUESTIONS = {
           "id": "28-4",
           "stem": "Un copil cu suspiciune de endocardită infecțioasă are două hemoculturi separate pozitive cu Streptococcus viridans și, la ecocardiografie, se evidențiază o vegetație mobilă la nivelul valvei mitrale, cu regurgitare valvulară nou apărută. Conform criteriilor Duke modificate, cum se interpretează acest tablou?",
           "options": [
-            "Diagnostic incert, impunând repetarea hemoculturilor înainte de orice concluzie",
-            "Diagnostic exclus, în absența criteriilor minore asociate",
             "Diagnostic posibil, necesitând obligatoriu confirmare prin biopsie endocardică",
             "Diagnostic incert, fiind necesare minimum cinci criterii minore suplimentare",
-            "Diagnostic cert de endocardită infecțioasă, fiind îndeplinite două criterii clinice majore"
+            "Diagnostic cert de endocardită infecțioasă, fiind îndeplinite două criterii clinice majore",
+            "Diagnostic exclus, în absența criteriilor minore asociate",
+            "Diagnostic incert, impunând repetarea hemoculturilor înainte de orice concluzie"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "Hemoculturile pozitive cu germen etiologic specific (Streptococcus viridans) și evidența ecocardiografică a implicării endocardice (vegetație, regurgitare valvulară nouă) reprezintă fiecare câte un criteriu clinic major. Diagnosticul pozitiv de endocardită infecțioasă este susținut, printre altele, de îndeplinirea a două criterii clinice majore.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 439-445"
         },
@@ -2117,13 +2873,41 @@ const QUESTIONS = {
           "stem": "Un copil aflat sub tratament antibiotic pentru endocardită infecțioasă dezvoltă embolii pulmonare recurente, iar ecocardiografia evidențiază o vegetație la nivelul valvei tricuspide cu diametrul de 25 mm. Care este conduita terapeutică indicată în această situație?",
           "options": [
             "Tratament chirurgical, cu înlăturarea vegetației",
-            "Pericardiocenteză evacuatorie de urgență",
-            "Continuarea antibioterapiei, fără altă intervenție, întrucât vegetațiile tricuspidiene regresează spontan",
             "Anticoagulare terapeutică, fără modificarea antibioterapiei",
+            "Continuarea antibioterapiei, fără altă intervenție, întrucât vegetațiile tricuspidiene regresează spontan",
+            "Pericardiocenteză evacuatorie de urgență",
             "Schimbarea empirică a antibioticului, fără altă măsură suplimentară"
           ],
           "correct": 0,
           "explanation": "Printre indicațiile tratamentului chirurgical în endocardita infecțioasă se numără vegetațiile de valvă tricuspidă persistente, cu dimensiuni ce depășesc 20 mm, apărute după embolii pulmonare recurente, situație în care se practică înlăturarea vegetației. Anticoagularea sau simpla continuare a antibioterapiei nu sunt suficiente în acest context de risc embolic important.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 439-445"
+        },
+        {
+          "id": "28-6",
+          "stem": "Un copil de 6 ani, anterior sănătos, prezintă subfebrilitate și durere precordială la o săptămână după o infecție de căi respiratorii superioare. La examenul clinic se decelează frecătură pericardică, iar ecocardiografia arată o cantitate mică de lichid pericardic; hemoleucograma este normală, cu limfocitoză relativă. Tabloul este sugestiv pentru pericardită virală. Care este conduita terapeutică adecvată?",
+          "options": [
+            "Antiinflamatoare nesteroidiene, cu evitarea corticoterapiei, aceasta din urmă crescând riscul recurențelor",
+            "Antibioterapie empirică cu spectru larg, asociată evacuării colecției pericardice",
+            "Corticoterapie sistemică de primă linie, pentru prevenirea recurențelor",
+            "Pericardiectomie chirurgicală imediată, pentru prevenirea constricției pericardice",
+            "Pericardiocenteză de urgență, indiferent de cantitatea de lichid pericardic"
+          ],
+          "correct": 0,
+          "explanation": "Pericarditele virale au, în majoritatea cazurilor, evoluție benignă, iar administrarea antiinflamatoarelor nesteroidiene este suficientă pentru tratamentul simptomatic. Se recomandă evitarea corticoterapiei, întrucât studiile sugerează creșterea riscului de apariție a pericarditelor recurente. Pericardiocenteza este rezervată cazurilor cu revărsat pericardic masiv.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 446-449"
+        },
+        {
+          "id": "28-7",
+          "stem": "Un copil de 8 ani cu cardiopatie congenitală cianogenă necorectată chirurgical, fără alergie la penicilină, urmează să efectueze o extracție dentară ce presupune manipularea regiunii gingivale. Care este conduita profilactică adecvată pentru prevenirea endocarditei infecțioase?",
+          "options": [
+            "Vancomicină intravenos, administrată imediat înaintea procedurii dentare",
+            "Antibioterapie cu spectru larg timp de 7 zile, începută cu o zi înaintea procedurii",
+            "Amoxicilină administrată zilnic, timp de două săptămâni după procedură",
+            "Amoxicilină 50 mg/kg oral, în doză unică, cu 30-60 de minute anterior procedurii",
+            "Nu este necesară profilaxie antibiotică, acest pacient fiind considerat cu risc scăzut"
+          ],
+          "correct": 3,
+          "explanation": "Cardiopatiile congenitale cianogene necorectate chirurgical încadrează pacientul în categoria de risc mare pentru endocardită infecțioasă, iar procedurile dentare cu manipularea gingiei impun profilaxie antibiotică. În absența alergiei la penicilină, regimul recomandat la copil este amoxicilină 50 mg/kg oral, administrată în doză unică, cu 30-60 de minute anterior procedurii.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 439-445"
         }
       ]
@@ -2136,13 +2920,13 @@ const QUESTIONS = {
           "id": "29-1",
           "stem": "Un copil de 11 ani, cunoscut cu sindrom WPW (cale accesorie manifestă, cu antecedente de crize de tahicardie), se prezintă cu palpitații; traseul EKG arată o tahiaritmie neregulată, cu complex QRS larg și frecvență ventriculară medie de 280/min, sugestivă pentru fibrilație atrială cu conducere anterogradă pe calea accesorie. Care dintre următoarele atitudini terapeutice este considerată riscantă în acest context?",
           "options": [
-            "Administrarea de adenozină intravenos",
-            "Solicitarea consultului de electrofiziologie pediatrică",
             "Sedare profundă cu monitorizare EKG continuă",
+            "Administrarea de adenozină intravenos",
             "Administrarea de flecainidă intravenos",
-            "Conversia electrică sincronă (cardioversie)"
+            "Conversia electrică sincronă (cardioversie)",
+            "Solicitarea consultului de electrofiziologie pediatrică"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Textul menționează explicit riscul administrării adenozinei la pacienții cu fibrilație atrială și sindrom WPW, deoarece poate crește frecvența ventriculară prin favorizarea conducerii pe calea accesorie, cu risc de degenerare în fibrilație ventriculară, mai ales la interval RR < 230 ms. În schimb, pentru tahicardia antidromică/FiA cu WPW, conversia electrică (clasa I) și flecainida IV (clasa IIa) sunt opțiuni recomandate conform tabelului de tratament acut.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 660-676"
         },
@@ -2150,13 +2934,13 @@ const QUESTIONS = {
           "id": "29-2",
           "stem": "Un copil de 10 ani se prezintă cu palpitații cu debut și sfârșit brusc; EKG în criză arată o tahicardie cu complex QRS îngust, frecvență 220/min. În derivația V1 se observă o mică deflexiune pozitivă la finalul complexului QRS (aspect „pseudo-r′”), iar intervalul RP este sub 70 ms. Acest aspect ECG este cel mai sugestiv pentru:",
           "options": [
-            "Tahicardie joncțională permanentă reciprocă (PJRT)",
-            "Tahicardie atrială ectopică",
-            "Tahicardie ortodromică prin reintrare pe cale accesorie (AVRT)",
             "Tahicardie prin reintrare în nodul atrioventricular (AVNRT)",
-            "Flutter atrial cu conducere 2/1"
+            "Tahicardie ortodromică prin reintrare pe cale accesorie (AVRT)",
+            "Tahicardie joncțională permanentă reciprocă (PJRT)",
+            "Flutter atrial cu conducere 2/1",
+            "Tahicardie atrială ectopică"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Textul precizează că prezența unui pattern pseudo-r′ în V1 cu interval RP sub 70 ms este un argument pentru reintrare nodală (AVNRT), impulsul fiind transmis retrograd la atriu pe calea rapidă a nodului atrioventricular. Un interval RP peste 70 ms ar sugera, în schimb, reintrare pe cale accesorie (AVRT).",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 660-676"
         },
@@ -2164,13 +2948,13 @@ const QUESTIONS = {
           "id": "29-3",
           "stem": "Un adolescent cu sindrom de QT lung cunoscut prezintă episoade sincopale declanșate în mod caracteristic de stimuli auditivi bruști (de exemplu, soneria telefonului sau alarma ceasului). Acest tipar de declanșare este caracteristic pentru:",
           "options": [
-            "LQT3",
-            "Sindromul Timothy",
-            "LQT1",
             "Sindromul Andersen-Tawil",
-            "LQT2"
+            "LQT1",
+            "LQT2",
+            "LQT3",
+            "Sindromul Timothy"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "Conform textului, factorii declanșatori ai aritmiilor în sindromul de QT lung diferă pe tipuri: efortul fizic și factorii stresanți pentru tipul 1, stimulii auditivi (zgomote bruște, alarma de ceas) pentru tipul 2, iar în tipul 3 aritmiile apar de obicei în repaus.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 660-676"
         },
@@ -2178,13 +2962,13 @@ const QUESTIONS = {
           "id": "29-4",
           "stem": "La un făt diagnosticat cu bloc atrioventricular complet congenital, în contextul unei mame cu anticorpi anti-Ro/La pozitivi, care dintre următoarele elemente reprezintă factori de risc dovediți pentru mortalitate crescută?",
           "options": [
+            "Absența unei boli autoimune materne manifeste clinic",
             "Hidrops fetal și frecvență ventriculară sub 55/min",
             "Debutul blocului atrioventricular după săptămâna 30 de gestație",
-            "Absența unei boli autoimune materne manifeste clinic",
             "Sexul feminin al fătului",
             "Titrul scăzut de anticorpi anti-Ro materni"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Textul precizează că factorii de risc dovediți pentru mortalitate în BAV congenital autoimun sunt hidropsul fetal și frecvența ventriculară sub 55/min. BAV complet la făt se instalează tipic în săptămânile 16-24 de gestație, iar diagnosticul matern de lupus este adesea stabilit abia după decelarea blocului la nou-născut.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 660-676"
         },
@@ -2193,14 +2977,42 @@ const QUESTIONS = {
           "stem": "Un nou-născut cu bloc atrioventricular complet congenital, pe cord structural normal, este asimptomatic clinic și este urmărit prin monitorizare Holter EKG. Care dintre următoarele constatări reprezintă, conform ghidurilor citate, o indicație de cardiostimulare permanentă chiar în absența simptomelor?",
           "options": [
             "Interval PR normal pentru vârstă asociat",
-            "Frecvență cardiacă medie în somn sub 50/min",
-            "Pauze ventriculare mai scurte decât durata unui ciclu al ritmului de scăpare",
+            "Complex QRS îngust al ritmului de scăpare, cu frecvență peste 80/min",
             "Absența disfuncției sistolice de ventricul stâng",
-            "Complex QRS îngust al ritmului de scăpare, cu frecvență peste 80/min"
+            "Pauze ventriculare mai scurte decât durata unui ciclu al ritmului de scăpare",
+            "Frecvență cardiacă medie în somn sub 50/min"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Printre indicațiile de cardiostimulare permanentă în BAV congenital de grad III, simptomatic sau asimptomatic, se numără: ritm de scăpare cu complexe QRS largi, disfuncție de VS, interval QTc prelungit, frecvență cardiacă medie în somn sub 50/min și pauze cu durata mai mare de 3 cicluri ale ritmului de scăpare. Celelalte variante descriu situații favorabile, fără indicație de stimulare.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 430-432"
+        },
+        {
+          "id": "29-6",
+          "stem": "Un copil de 7 ani, cu antecedente de episoade paroxistice de palpitații cu debut și sfârșit brusc, se prezintă în criză cu tahicardie cu complex QRS îngust, frecvență 210/min, stabil hemodinamic. Sub monitorizare EKG continuă se efectuează manevra Valsalva: în timpul manevrei, frecvența ventriculară scade brusc la jumătate, cu evidențierea unui raport undă atrială/complex QRS de 2/1, revenind imediat la frecvența inițială după încetarea manevrei. Acest răspuns la manevra vagală este cel mai sugestiv pentru:",
+          "options": [
+            "Flutter atrial",
+            "Fibrilație atrială",
+            "Tahicardie prin reintrare în nodul atrioventricular (AVNRT)",
+            "Tahicardie atrială ectopică (mecanism automatic)",
+            "Tahicardie ortodromică prin reintrare pe cale accesorie (AVRT)"
+          ],
+          "correct": 0,
+          "explanation": "Textul precizează că, în timpul manevrelor vagale, scăderea frecvenței ventriculare la jumătate cu vizualizarea unui raport undă atrială/QRS de 2/1 strict pe durata manevrei sugerează cu mare probabilitate un flutter atrial. În schimb, întreruperea completă a crizei certifică o tahiaritmie prin reintrare (AVNRT/AVRT), iar scăderea ușoară și tranzitorie a frecvenței, cu revenire la frecvența de bază după încetarea manevrei, sugerează un mecanism automatic (tahicardie atrială ectopică).",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 660-676"
+        },
+        {
+          "id": "29-7",
+          "stem": "Un sugar de 1 an, cu cord structural normal, prezintă episoade de tahicardie cu complex QRS de durată intermediară (relativ îngust), cu morfologie de bloc de ramură dreaptă și axă deviată la stânga. Aritmia răspunde la administrarea de verapamil. Acest tablou este cel mai sugestiv pentru:",
+          "options": [
+            "Tahicardie prin reintrare în nodul atrioventricular cu bloc de ramură funcțional",
+            "Tahicardie ventriculară cu origine în tractul de ejecție al ventriculului drept",
+            "Tahicardie ventriculară polimorfă catecolaminergică",
+            "Tahicardie ventriculară fasciculară (idiopatică de ventricul stâng)",
+            "Tahicardie antidromică prin reintrare pe cale accesorie"
+          ],
+          "correct": 3,
+          "explanation": "Textul descrie tahicardia ventriculară idiopatică de VS (fasciculară), care implică fasciculul postero-inferior al sistemului His, produce un QRS de durată intermediară cu morfologie de bloc de ramură dreaptă și axă superioară stângă, și este de obicei sensibilă la verapamil, sugerând un mecanism calciu-dependent. Tahicardia cu origine în tractul de ejecție al VD are, în schimb, morfologie de bloc de ramură stângă cu axă inferioară și este de obicei sensibilă la adenozină.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 660-676"
         }
       ]
     },
@@ -2212,10 +3024,10 @@ const QUESTIONS = {
           "id": "30-1",
           "stem": "Un sugar de 3 luni este adus la camera de gardă pentru tahipnee și dificultăți de alimentație (durata suptului peste 20 de minute, transpirații profuze în timpul mesei). La examenul obiectiv se constată tahicardie peste valorile normale pentru vârstă, hepatomegalie și prezența unui ritm de galop. Tabloul respirator ar putea fi confundat inițial cu o bronșiolită acută. Care dintre următoarele elemente orientează diagnosticul spre insuficiență cardiacă, și nu spre o afecțiune respiratorie acută?",
           "options": [
-            "Contextul epidemiologic sezonier de infecție virală respiratorie",
-            "Prezența wheezing-ului expirator difuz",
-            "Febra asociată tabloului respirator",
             "Ralurile sibilante bilaterale la auscultația pulmonară",
+            "Contextul epidemiologic sezonier de infecție virală respiratorie",
+            "Febra asociată tabloului respirator",
+            "Prezența wheezing-ului expirator difuz",
             "Hepatomegalia și ritmul de galop"
           ],
           "correct": 4,
@@ -2226,13 +3038,13 @@ const QUESTIONS = {
           "id": "30-2",
           "stem": "Un sugar cu insuficiență cardiacă prezintă diaforeză marcată la fiecare supt, tahipnee importantă în timpul alimentației și falimentul creșterii, fără simptome prezente în repaus. Conform clasificării Ross a insuficienței cardiace la copil, acest tablou clinic corespunde clasei funcționale:",
           "options": [
+            "Clasa IV",
+            "Clasa III",
             "Clasa II",
             "Clasa I",
-            "Clasificarea Ross nu se aplică la sugar",
-            "Clasa IV",
-            "Clasa III"
+            "Clasificarea Ross nu se aplică la sugar"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "Conform tabelului de clasificare Ross, clasa III la sugar este definită prin tahipnee marcantă, diaforeză la efortul de supt și falimentul creșterii. Clasa II presupune manifestări mai ușoare (tahipnee ușoară/diaforeză, fără afectarea curbei de creștere), iar clasa IV presupune simptome prezente în repaus, ceea ce nu este cazul aici.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 418-422"
         },
@@ -2241,12 +3053,12 @@ const QUESTIONS = {
           "stem": "La un copil cu insuficiență cardiacă cronică decompensată, care dintre următoarele modificări biologice reprezintă un factor de prognostic negativ, sugerând un grad important de retenție volemică?",
           "options": [
             "Hipercreatininemia ușoară, izolată",
-            "Leucocitoza moderată",
-            "Hiperpotasemia",
+            "Hiponatremia",
             "Creșterea ușoară a transaminazelor",
-            "Hiponatremia"
+            "Hiperpotasemia",
+            "Leucocitoza moderată"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "Textul menționează explicit că hiponatremia la copilul cu IC indică un grad de retenție volemică și reprezintă un factor de prognostic negativ. Hiperpotasemia este descrisă ca apărând în stadiile avansate prin insuficiență renală de debit cardiac scăzut, dar factorul de prognostic negativ legat de retenția volemică menționat explicit este hiponatremia.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 418-422"
         },
@@ -2254,13 +3066,13 @@ const QUESTIONS = {
           "id": "30-4",
           "stem": "Un copil de 6 ani se prezintă cu semne de insuficiență cardiacă acută: hipoperfuzie periferică și retenție hidrosalină evidentă (edeme, hepatomegalie, raluri de stază). Care este conduita terapeutică medicamentoasă de primă linie?",
           "options": [
-            "Digoxin oral, în doză de întreținere",
-            "Inițierea unui inhibitor de enzimă de conversie în doză maximă",
+            "Milrinonă în perfuzie continuă",
             "Carvedilol, cu titrare rapidă a dozei",
-            "Furosemid injectabil, cu monitorizarea TA, electroliților și funcției renale",
-            "Milrinonă în perfuzie continuă"
+            "Inițierea unui inhibitor de enzimă de conversie în doză maximă",
+            "Digoxin oral, în doză de întreținere",
+            "Furosemid injectabil, cu monitorizarea TA, electroliților și funcției renale"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Textul precizează că tratamentul medicamentos de primă linie al IC acute cu retenție hidrosalină este diureticul de ansă (furosemid) administrat injectabil, cu monitorizarea TA, electroliților (risc de hipopotasemie și hiponatremie) și a funcției renale. Agenții inotropi precum milrinona se folosesc doar în lipsa răspunsului la diuretice, iar IEC și beta-blocantele nu sunt indicate în faza acută necontrolată.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 418-422"
         },
@@ -2270,12 +3082,26 @@ const QUESTIONS = {
           "options": [
             "Captopril",
             "Losartan",
+            "Ramipril",
             "Enalapril",
-            "Perindopril",
-            "Ramipril"
+            "Perindopril"
           ],
           "correct": 0,
           "explanation": "Conform textului, captoprilul este prima alegere de IEC la pacienții cu vârsta sub 2 ani, în timp ce enalaprilul este indicat la cei peste 2 ani, iar preparatele cu durată lungă de acțiune (ramipril, perindopril) sunt rezervate copilului mare, stabil hemodinamic. Sartanii nu reprezintă prima alegere descrisă pentru această categorie de vârstă.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 418-422"
+        },
+        {
+          "id": "30-6",
+          "stem": "Un nou-născut prematur (32 de săptămâni de gestație), cu antecedente de displazie bronhopulmonară severă, dezvoltă la vârsta de 8 săptămâni un tablou de insuficiență cardiacă dreaptă: hepatomegalie, edeme periferice și jugulare turgescente, fără sufluri cardiace semnificative la auscultație. Care este cauza cea mai probabilă a acestui tablou, având în vedere vârsta și antecedentele pacientului?",
+          "options": [
+            "Defectul septal ventricular de dimensiuni mari cu șunt stânga-dreapta",
+            "Cardiomiopatia genetică",
+            "Cordul pulmonar acut secundar displaziei bronhopulmonare",
+            "Canalul arterial patent cu șunt stânga-dreapta de debit mare",
+            "Miocardita virală acută"
+          ],
+          "correct": 2,
+          "explanation": "Textul enumeră, pentru nou-născutul prematur, cordul pulmonar acut secundar displaziei bronhopulmonare drept una dintre cauzele de IC specifice acestei grupe de vârstă. Absența suflurilor cardiace semnificative face improbabile leziunile cu șunt stânga-dreapta (PCA, DSV), care se asociază de regulă cu sufluri, iar tabloul de IC dreaptă izolată, la un prematur cu displazie bronhopulmonară severă, este concordant cu cordul pulmonar secundar bolii pulmonare cronice.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 418-422"
         }
       ]
@@ -2290,11 +3116,11 @@ const QUESTIONS = {
           "options": [
             "Administrare intramusculară de vitamină D, considerată superioară administrării orale pentru refacerea rezervelor de 25(OH)D",
             "Administrare de calcitriol [1,25(OH)2D] ca tratament de primă linie al deficitului de vitamină D",
+            "Administrare a unei doze unice mari de vitamină D („stoss therapy”) pentru asigurarea complianței terapeutice",
             "Administrare de calciferol (D2 sau D3) 2.000 UI/zi, pe cale orală, timp de 8 săptămâni",
-            "Continuarea dozei profilactice de 400 UI/zi de vitamină D, fără alte măsuri suplimentare",
-            "Administrare a unei doze unice mari de vitamină D („stoss therapy”) pentru asigurarea complianței terapeutice"
+            "Continuarea dozei profilactice de 400 UI/zi de vitamină D, fără alte măsuri suplimentare"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Tratamentul curativ al rahitismului nutrițional la sugarii 0-6 luni constă în calciferol 2.000 UI/zi, oral, timp de 8 săptămâni. Doza unică mare („stoss therapy”) nu este recomandată din cauza riscului de hipercalcemie, iar derivații 1-alfa-hidroxilați (calcitriol) nu sunt indicați în tratamentul de rutină. Administrarea orală este preferată deoarece restabilește mai rapid rezervele de 25(OH)D comparativ cu cea intramusculară.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1161-1164"
         },
@@ -2302,13 +3128,13 @@ const QUESTIONS = {
           "id": "31-2",
           "stem": "Adolescentă de 15 ani se prezintă în urgență cu parestezii periorale, spasm carpal și anxietate marcată, instalate în timpul unui episod de plâns intens, cu hiperventilație. Calcemia recoltată de urgență este în limite normale. Care este explicația fiziopatologică cea mai probabilă a tabloului clinic?",
           "options": [
-            "Hipoparatiroidism funcțional indus acut de stresul emoțional",
             "Alcaloza respiratorie indusă de hiperventilație, care poate produce tetanie chiar în absența hipocalcemiei",
             "Hipomagneziemie acută secundară hiperventilației",
             "Hipocalcemie tranzitorie, nedetectabilă prin dozarea calciului total",
-            "Acidoză metabolică secundară hiperventilației, cu pierderea efectului protector asupra excitabilității neuromusculare"
+            "Acidoză metabolică secundară hiperventilației, cu pierderea efectului protector asupra excitabilității neuromusculare",
+            "Hipoparatiroidism funcțional indus acut de stresul emoțional"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Textul menționează explicit că alcaloza respiratorie produsă prin hiperventilație poate determina tetanie chiar în absența hipocalcemiei, prin creșterea legării calciului de albumină și scăderea fracției ionizate. Semnul Trousseau poate fi indus voluntar prin hiperventilație, ceea ce confirmă acest mecanism.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1152-1153"
         },
@@ -2316,13 +3142,13 @@ const QUESTIONS = {
           "id": "31-3",
           "stem": "Sugar de 10 luni cu semne radiologice de rahitism (metafize lărgite, cu aspect neregulat) prezintă la bilanțul biologic: calciu seric normal, fosfat seric scăzut, fosfatază alcalină crescută, PTH în limite normale. Care este cea mai probabilă formă etiopatogenică de rahitism?",
           "options": [
-            "Rahitism calcipenic prin deficit alimentar de calciu, cu hiperparatiroidism secundar",
+            "Rahitism fosfopenic (de exemplu hipofosfatemic), la care nivelul PTH este frecvent normal",
             "Rahitism prin deficit de 1-alfa-hidroxilază, cu PTH crescut compensator",
-            "Rahitism dependent de vitamina D tip II, cu rezistență la acțiunea vitaminei D și PTH crescut",
             "Rahitism calcipenic prin deficit de vitamină D, la care PTH este invariabil crescut",
-            "Rahitism fosfopenic (de exemplu hipofosfatemic), la care nivelul PTH este frecvent normal"
+            "Rahitism calcipenic prin deficit alimentar de calciu, cu hiperparatiroidism secundar",
+            "Rahitism dependent de vitamina D tip II, cu rezistență la acțiunea vitaminei D și PTH crescut"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Conform textului, nivelul PTH este un element biologic esențial pentru diagnosticul diferențial: este invariabil crescut în rahitismul calcipenic și frecvent normal în rahitismul fosfopenic. Asocierea calciu normal, fosfat scăzut și PTH normal orientează spre o formă fosfopenică, nu spre una calcipenică (în care PTH ar fi crescut).",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1161-1164"
         },
@@ -2330,13 +3156,13 @@ const QUESTIONS = {
           "id": "31-4",
           "stem": "Copil de 2 ani, provenit dintr-o zonă geografică cu prevalență crescută a sindroamelor talasemice, prezintă o anemie microcitară hipocromă ușoară, cu aspect clinic altfel normal. Care dintre următoarele seturi de rezultate paraclinice orientează diagnosticul spre beta-talasemie minoră (heterozigotă) și nu spre anemie feriprivă?",
           "options": [
+            "Feritinemie scăzută sub 35 ng/L, cu sideremie scăzută",
             "Capacitate totală de legare a fierului crescută, cu receptor solubil al transferinei crescut",
             "Sideremie normală, cu niveluri crescute de HbA2 și HbF",
-            "Feritinemie scăzută sub 35 ng/L, cu sideremie scăzută",
             "Protoporfirină eritrocitară liberă foarte mult crescută, cu plumburie crescută",
             "RDW și HDW crescute, cu hematii „palide” pe frotiul de sânge periferic"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Beta-talasemia minoră (heterozigotă) se caracterizează prin anemie ușoară, microcitară și normosideremică, cu HbA2 și HbF crescute, spre deosebire de anemia feriprivă, în care feritina și sideremia sunt scăzute, iar capacitatea de legare a fierului și receptorul solubil al transferinei sunt crescute. Protoporfirina liberă crescută cu plumburie crescută este caracteristică intoxicației cu plumb, alt diagnostic diferențial al anemiei microcitare.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1190-1194"
         },
@@ -2353,6 +3179,48 @@ const QUESTIONS = {
           "correct": 2,
           "explanation": "Manifestările neurologice (parestezii, ataxie, diminuarea reflexelor) sunt caracteristice deficitului de vitamină B12. Textul precizează că, înainte de administrarea acidului folic, trebuie exclus deficitul de vitamină B12, deoarece acidul folic nu are efect asupra simptomelor neurologice și poate, dimpotrivă, să le inducă sau agraveze, în ciuda ameliorării parametrilor hematologici.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1190-1194"
+        },
+        {
+          "id": "31-6",
+          "stem": "La controlul de bilanț de la vârsta de 1 lună, mama unui sugar sănătos, alimentat natural exclusiv, întreabă despre profilaxia rahitismului. Care este conduita corectă, conform recomandărilor actuale pentru profilaxia cu vitamina D?",
+          "options": [
+            "Amânarea profilaxiei până la introducerea diversificării, la vârsta de 6 luni, cu supliment de calciu în prealabil",
+            "Vitamina D 600 UI/zi de la naștere până la 12 luni, doză recomandată pentru toți sugarii",
+            "Profilaxia nu este necesară dacă sugarul este alimentat natural, deoarece laptele matern conține vitamină D suficientă",
+            "O doză unică mare de vitamină D („stoss therapy”) administrată la 1 lună, pentru a asigura complianța pe termen lung",
+            "Vitamina D 400 UI/zi, de la naștere până la 12 luni, indiferent de tipul de alimentație (natural sau cu formulă)"
+          ],
+          "correct": 4,
+          "explanation": "Recomandarea actuală pentru profilaxia rahitismului nutrițional este de 400 UI/zi de vitamină D pentru toți sugarii de la naștere până la vârsta de 12 luni, independent de modul de alăptare (natural sau cu formulă); doza de 600 UI/zi se recomandă dincolo de vârsta de 11 luni. Doza unică mare („stoss therapy”) nu este recomandată nici în tratamentul curativ, cu atât mai puțin ca strategie profilactică, din cauza riscului de hipercalcemie.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1161-1164"
+        },
+        {
+          "id": "31-7",
+          "stem": "Sugar cu aspect clinic normal la naștere dezvoltă, în primii 2 ani de viață, întârziere de creștere, retard de dezvoltare motorie, hipotonie musculară generalizată, dureri osoase și un episod de convulsii hipocalcemice. Bilanțul biologic arată hipocalcemie severă cu hiperparatiroidism secundar, grade variate de hipofosfatemie, fosfatază alcalină crescută, nivel seric normal de 25(OH)D și nivel foarte scăzut sau absent de 1,25(OH)2D. Care este tratamentul de elecție pentru această entitate?",
+          "options": [
+            "Administrare de doze fiziologice de calcitriol [1,25(OH)2D], cu monitorizarea calcemiei, fosfatemiei și a PTH-ului",
+            "Calciferol (vitamina D2 sau D3) în dozele standard folosite în rahitismul nutrițional",
+            "Doză unică mare de vitamină D („stoss therapy”) pentru corectarea rapidă a hipocalcemiei",
+            "Paratiroidectomie, având în vedere hiperparatiroidismul secundar sever",
+            "Suplimentare exclusivă cu fosfor elemental oral, fără alt tratament asociat"
+          ],
+          "correct": 0,
+          "explanation": "Tabloul descris (nivel normal de 25(OH)D dar 1,25(OH)2D foarte scăzut sau absent, hipocalcemie severă cu hiperparatiroidism secundar) este caracteristic deficitului de 1-alfa-hidroxilază (rahitism vitamino-D dependent tip I), secundar mutațiilor genei CYP27B1. Deoarece defectul constă în incapacitatea de a converti 25(OH)D în forma activă, administrarea de calciferol standard este ineficientă; tratamentul de elecție este administrarea de doze fiziologice de calcitriol, cu obiectivul menținerii calcemiei la limita fiziologică inferioară și supresiei secreției de PTH.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1161-1164"
+        },
+        {
+          "id": "31-8",
+          "stem": "Sugar de 9 luni, alimentat predominant cu lapte de vacă, este diagnosticat cu anemie feriprivă (Hb 8 g/dL, microcitoză, hipocromie, feritinemie scăzută) și începe tratament cu fier oral, 5 mg/kg/zi Fe elemental. Care este cea mai precoce modificare de laborator utilizată ca indicator al răspunsului favorabil la tratament, conform criteriilor evolutive descrise?",
+          "options": [
+            "Refacerea completă a hemoglobinei, așteptată la 7 zile de la începerea tratamentului",
+            "Normalizarea RDW (lărgimea distribuției eritrocitare) în primele 24 de ore de tratament",
+            "Scăderea capacității totale de legare a fierului, așteptată la 48 de ore de tratament",
+            "Formarea depozitelor tisulare de fier, evidentă încă din primele 7-10 zile de tratament",
+            "Corectarea fierului enzimatic în primele 24 de ore, urmată de criza reticulocitară la 7-10 zile de tratament"
+          ],
+          "correct": 4,
+          "explanation": "Criteriile evolutive ale răspunsului la tratamentul cu fier oral sunt, în ordine cronologică: corectarea fierului enzimatic în 24 de ore, criza reticulocitară la 7-10 zile de la începerea tratamentului, refacerea hemoglobinei în aproximativ 30 de zile și formarea depozitelor de fier în 2-3 luni. Refacerea hemoglobinei nu este așteptată la 7 zile, iar depozitele de fier se reconstituie mult mai lent, motiv pentru care tratamentul se continuă încă 6-8 săptămâni după normalizarea hemoglobinei.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1190-1194"
         }
       ]
     },
@@ -2364,13 +3232,13 @@ const QUESTIONS = {
           "id": "32-1",
           "stem": "Un copil de 8 ani, cunoscut cu sferocitoză ereditară formă tipică, se prezintă cu febră, dureri abdominale intense, agravarea icterului și a palorii, la 5 zile după o infecție respiratorie. Hemoleucograma arată Hb 6 g/dL (față de valoarea bazală de 9 g/dL) și reticulocite crescute (12%). Care este cel mai probabil diagnostic?",
           "options": [
-            "Debut al unei leucemii acute limfoblastice",
             "Sindrom hemolitic-uremic asociat infecției",
-            "Criză aplastică prin infecție cu parvovirus B19",
+            "Debut al unei leucemii acute limfoblastice",
+            "Criză de deglobulizare (hemolitică), prin accentuarea hemolizei declanșată de infecție",
             "Anemie megaloblastică asociată, prin deficit de acid folic",
-            "Criză de deglobulizare (hemolitică), prin accentuarea hemolizei declanșată de infecție"
+            "Criză aplastică prin infecție cu parvovirus B19"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "În sferocitoza ereditară, infecțiile (virale sau bacteriene), stresul emoțional, frigul sau efortul fizic pot declanșa crize de deglobulizare, manifestate prin febră, dureri abdominale, accentuarea icterului și palorii, urină hipercromă și agravarea anemiei cu reticulocite crescute. Acestea se diferențiază de crizele aplastice (asociate infecției cu parvovirus B19), în care agravarea anemiei se însoțește de reticulopenie, nu de reticulocitoză. Prezența reticulocitozei (12%) în acest caz susține criza hemolitică, nu cea aplastică.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1194-1201"
         },
@@ -2378,13 +3246,13 @@ const QUESTIONS = {
           "id": "32-2",
           "stem": "Un băiat de 4 ani, fără antecedente semnificative, dezvoltă la 36 de ore de la administrarea de cotrimoxazol pentru o infecție urinară icter intens, urini hipercrome și paloare accentuată. Frotiul de sânge periferic evidențiază corpi Heinz. Care este mecanismul fiziopatologic cel mai probabil implicat?",
           "options": [
-            "Deficit de glucozo-6-fosfat-dehidrogenază, cu precipitarea hemoglobinei oxidate în interiorul hematiei",
-            "Defect de sinteză a spectrinei membranare eritrocitare",
+            "Mutație somatică a genei PIG-A cu hemoliză mediată de complement",
             "Deficit de piruvatkinază cu alterarea glicolizei anaerobe",
-            "Prezența de autoanticorpi IgG la cald pe suprafața hematiilor",
-            "Mutație somatică a genei PIG-A cu hemoliză mediată de complement"
+            "Defect de sinteză a spectrinei membranare eritrocitare",
+            "Deficit de glucozo-6-fosfat-dehidrogenază, cu precipitarea hemoglobinei oxidate în interiorul hematiei",
+            "Prezența de autoanticorpi IgG la cald pe suprafața hematiilor"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "Cotrimoxazolul (sulfamidele) figurează pe lista medicamentelor cu potențial oxidant care declanșează hemoliză la pacienții cu deficit de G6PD, tipic la 24-48 de ore de la expunere. Hemoliza se datorează precipitării hemoglobinei oxidate sub formă de corpi Heinz, vizibili pe frotiu doar în primele 3-4 zile, deoarece hematiile care îi conțin sunt rapid îndepărtate din circulație. Boala este recesivă, legată de cromozomul X, motiv pentru care afectează tipic sexul masculin.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1194-1201"
         },
@@ -2392,13 +3260,13 @@ const QUESTIONS = {
           "id": "32-3",
           "stem": "Un copil de 7 ani cu sferocitoză ereditară formă medie (moderată), fără dependență transfuzională, este evaluat pentru indicația de splenectomie. Care dintre următoarele afirmații este corectă?",
           "options": [
-            "Vaccinarea antipneumococică se recomandă doar după splenectomie, nu înainte",
-            "Splenectomia totală este preferată la această vârstă, deoarece riscul infecțios este mai scăzut după vârsta de 6 ani, cu condiția vaccinării antipneumococice, anti-Hib și antimeningococice în prealabil",
-            "Splenectomia parțială este obligatorie la toți pacienții, indiferent de vârstă",
+            "Splenectomia nu influențează evoluția bolii, sferocitoza eritrocitară dispărând spontan postoperator",
             "Splenectomia este contraindicată înainte de vârsta de 10 ani, indiferent de forma clinică",
-            "Splenectomia nu influențează evoluția bolii, sferocitoza eritrocitară dispărând spontan postoperator"
+            "Splenectomia totală este preferată la această vârstă, deoarece riscul infecțios este mai scăzut după vârsta de 6 ani, cu condiția vaccinării antipneumococice, anti-Hib și antimeningococice în prealabil",
+            "Vaccinarea antipneumococică se recomandă doar după splenectomie, nu înainte",
+            "Splenectomia parțială este obligatorie la toți pacienții, indiferent de vârstă"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Conform textului, splenectomia (totală sau parțială) este indicată la vârsta peste 6 ani, preferându-se splenectomia totală, deoarece riscul infecțios este mai scăzut după această vârstă; la copiii sub 1 an, dependenți de transfuzii sau cu anemie severă, se preferă splenectomia parțială. Anterior splenectomiei, pacienții trebuie vaccinați antipneumococic, anti-Hib și antimeningococic. Postsplenectomie icterul dispare și Hb se corectează, dar sferocitoza eritrocitară persistă.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1194-1201"
         },
@@ -2406,13 +3274,13 @@ const QUESTIONS = {
           "id": "32-4",
           "stem": "Un copil de 3 ani cu beta-talasemie majoră (anemia Cooley), aflat sub program transfuzional regulat, are valori ale feritinei serice de peste 2000 ng/mL. Care este conduita terapeutică indicată în acest moment?",
           "options": [
+            "Inițierea terapiei chelatoare de fier (desferoxamină, deferipironă sau deferasirox), cu scopul menținerii feritinei sub 1000 ng/mL",
             "Exsangvinotransfuzie repetată la interval de 2 săptămâni",
             "Întreruperea transfuziilor până la normalizarea feritinei",
-            "Inițierea terapiei chelatoare de fier (desferoxamină, deferipironă sau deferasirox), cu scopul menținerii feritinei sub 1000 ng/mL",
             "Splenectomie de urgență, indiferent de dimensiunea splinei",
             "Administrare de fier oral pentru corectarea rapidă a anemiei"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "În beta-talasemia majoră, fierul acumulat din absorbția intestinală crescută și din transfuziile repetate determină hemosideroză cu afectare hepatică, cardiacă și endocrină. De aceea, chelarea cu desferoxamină, deferipironă sau deferasirox se începe de la vârsta de 2-4 ani, concomitent cu transfuziile, cu scopul menținerii feritinei sub 1000 ng/mL. Fierul oral este contraindicat, iar transfuziile regulate reprezintă tratamentul de bază, nu trebuie întrerupte.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1194-1201"
         },
@@ -2421,13 +3289,27 @@ const QUESTIONS = {
           "stem": "O adolescentă de 14 ani dezvoltă, în contextul unei infecții recente cu Mycoplasma pneumoniae, paloare, fenomene de acrocianoză/tip Raynaud la expunerea la frig și urini hipercrome. Testul Coombs direct este pozitiv doar pentru fracțiuni ale complementului, fără IgG detectabil. Care este mecanismul fiziopatologic cel mai probabil?",
           "options": [
             "Mutație a genei PIG-A cu pierderea proteinelor ancorate la suprafața hematiei",
-            "Anticorpi IgG la cald, care opsonizează hematiile fără a activa complet complementul, determinând hemoliză extravasculară splenică",
-            "Anticorpi IgM la rece, care aglutinează hematiile și activează complementul până la C9, cu hemoliză intravasculară",
+            "Deficit ereditar de piruvatkinază declanșat de infecție",
             "Defect al proteinelor de membrană eritrocitară (spectrină), agravat de infecție",
-            "Deficit ereditar de piruvatkinază declanșat de infecție"
+            "Anticorpi IgM la rece, care aglutinează hematiile și activează complementul până la C9, cu hemoliză intravasculară",
+            "Anticorpi IgG la cald, care opsonizează hematiile fără a activa complet complementul, determinând hemoliză extravasculară splenică"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Anemia hemolitică cu anticorpi la rece este frecvent secundară infecției cu Mycoplasma pneumoniae sau virusului Epstein-Barr. Anticorpii sunt de tip IgM, compleți, care aglutinează hematiile la temperaturi scăzute și activează complementul până la C9, producând hemoliză intravasculară; deoarece IgM se disociază de hematii în regiunile mai calde ale corpului, testul Coombs evidențiază ulterior doar fracțiunile complementului. Pacienții prezintă tipic fenomene Raynaud sau acrocianoză la expunerea la frig.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1194-1201"
+        },
+        {
+          "id": "32-6",
+          "stem": "Un adolescent de 16 ani prezintă anemie hemolitică cronică, cu episoade repetate de urină brun-roșiatică observate dimineața, la trezire, agravate de infecții intercurente, la care se adaugă un episod de tromboză venoasă profundă. Testul Coombs direct este negativ. Care este investigația de elecție pentru confirmarea diagnosticului suspectat?",
+          "options": [
+            "Evidențierea prin flow-citometrie a deficitului proteinelor de suprafață ancorate GPI (de exemplu CD55, CD59)",
+            "Testul de autohemoliză cu corecție prin adaos de glucoză",
+            "Mielograma, pentru evaluarea celularității și morfologiei liniei eritroide",
+            "Electroforeza hemoglobinei",
+            "Dozarea cantitativă a activității glucozo-6-fosfat-dehidrogenazei eritrocitare"
+          ],
+          "correct": 0,
+          "explanation": "Tabloul de hemoglobinurie nocturnă/matinală recurentă, hemoliză cronică Coombs-negativă și tromboză este caracteristic hemoglobinuriei paroxistice nocturne (HPN), determinată de o mutație somatică a genei PIG-A, cu pierderea proteinelor ancorate prin glicozil-fosfatidil-inozitol (GPI) de la suprafața hematiei, ceea ce le face vulnerabile la liza mediată de complement. Diagnosticul se stabilește prin evidențierea prin flow-citometrie a acestui deficit de proteine de suprafață. Electroforeza Hb orientează spre hemoglobinopatii/talasemii, dozarea G6PD spre enzimopatii, iar testul de autohemoliză spre sferocitoză sau alte anemii nesferocitare enzimatice; mielograma poate evidenția uneori hipoplazie asociată, dar nu reprezintă testul diagnostic specific pentru HPN.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1194-1201"
         }
       ]
@@ -2441,12 +3323,12 @@ const QUESTIONS = {
           "stem": "Un copil în vârstă de 4 ani este adus la camera de gardă pentru apariția bruscă, la 2 săptămâni după un episod febril viral, a unor echimoze și peteșii cu dispoziție „haotică” pe tegumente, fără alte acuze. Hemoleucograma arată trombocite = 18.000/mm3, cu leucocite, formulă leucocitară, hemoglobină și reticulocite normale, iar frotiul de sânge periferic este normal. Se suspectează purpură trombocitopenică imună (PTI). Care dintre următoarele elemente, dacă ar fi prezent la examenul clinic, ar impune excluderea diagnosticului de PTI necomplicată și căutarea unei alte cauze de trombocitopenie?",
           "options": [
             "Echimoze la nivelul membrelor inferioare",
-            "Epistaxis moderat",
             "Peteșii la nivelul mucoasei bucale",
             "Splenomegalie",
+            "Epistaxis moderat",
             "Gingivoragii minore"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "În PTI necomplicată, în afara purpurei și a sângerărilor mucoase, examenul clinic este normal, iar copilul nu arată bolnav, lipsind adenopatiile și splenomegalia. Prezența splenomegaliei (alături de adenopatii sau hepatomegalie) ridică suspiciunea de leucemie, limfom sau altă boală de fond, impunând investigații suplimentare.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1202-1206"
         },
@@ -2454,13 +3336,13 @@ const QUESTIONS = {
           "id": "33-2",
           "stem": "Un sugar cu hemofilie A formă severă (activitate FVIII sub 1%), cu greutatea de 10 kg, prezintă o hemartroză acută la nivelul genunchiului. Se dorește obținerea unui nivel plasmatic al factorului VIII de 40%, știind că activitatea actuală a pacientului este considerată practic 0%. Conform formulei uzuale de calcul a dozei de substituție în hemofilia A (fiecare unitate de FVIII/kg crește nivelul plasmatic cu aproximativ 2%), câte unități de factor VIII trebuie administrate?",
           "options": [
-            "40 UI",
             "200 UI",
             "800 UI",
-            "100 UI",
-            "400 UI"
+            "400 UI",
+            "40 UI",
+            "100 UI"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Numărul de unități de FVIII de administrat se calculează astfel: (nivel țintă - nivel actual) x greutatea (kg)/2, deoarece fiecare unitate de FVIII infuzată pe kilogram crește nivelul plasmatic cu aproximativ 2%. În acest caz: (40-0) x 10/2 = 200 UI.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1202-1206"
         },
@@ -2468,13 +3350,13 @@ const QUESTIONS = {
           "id": "33-3",
           "stem": "O adolescentă cunoscută cu boală von Willebrand tip 2B este programată pentru o intervenție chirurgicală minoră. Din cauza mecanismului particular al bolii (mutații care cresc afinitatea factorului von Willebrand pentru glicoproteina Ib plachetară, cu formarea de agregate și clearance crescut al complexului FvW-trombocite), un anumit tratament este relativ contraindicat, deoarece poate agrava trombocitopenia. Care este acest tratament?",
           "options": [
+            "Desmopresina (DDAVP)",
             "Acidul tranexamic",
-            "Plasma proaspătă congelată",
-            "Concentratul de FVIII îmbogățit cu factor von Willebrand",
             "Transfuzia de masă trombocitară",
-            "Desmopresina (DDAVP)"
+            "Concentratul de FVIII îmbogățit cu factor von Willebrand",
+            "Plasma proaspătă congelată"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "În boala von Willebrand tip 2B, desmopresina (1-desamino-8D-arginina vasopresină) determină eliberarea factorului von Willebrand anormal, cu risc de inducere a unor agregate trombocitare și de agravare a trombocitopeniei, motiv pentru care se recomandă evitarea ei în acest subtip, tratamentul de elecție fiind concentratul de FVIII-FvW.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 512-519"
         },
@@ -2482,13 +3364,13 @@ const QUESTIONS = {
           "id": "33-4",
           "stem": "Un copil cu sepsis sever dezvoltă peteșii cu caracter necrotic la nivelul pulpei degetelor și al pavilioanelor urechilor, sângerări la locurile de puncție venoasă și șoc progresiv. Se suspectează coagulare intravasculară diseminată (CID) în faza de coagulopatie de consum. Care dintre următoarele modificări NU corespunde tabloului biologic tipic descris pentru această fază a CID?",
           "options": [
-            "Fibrinogen sub 1,5 g/L",
             "Trombocite sub 100.000/mm3",
             "Scurtarea timpului parțial de tromboplastină activată (APTT)",
+            "Fibrinogen sub 1,5 g/L",
             "Prezența D-dimerilor",
             "Factor V sub 50%"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Constelația tipică a CID în faza de coagulopatie de consum este: fibrinogen sub 1,5 g/L, trombocite sub 100.000/mm3, factor V sub 50%, produși de degradare a fibrinei peste 10 μg/ml și D-dimeri prezenți. Timpul parțial de tromboplastină activată este crescut (TPTA > 1,5xN), nu scăzut, deoarece factorii de coagulare sunt consumați.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 525-529"
         },
@@ -2496,15 +3378,85 @@ const QUESTIONS = {
           "id": "33-5",
           "stem": "Un adolescent de 16 ani se prezintă cu al treilea episod de tromboză venoasă profundă a membrului inferior, fără factor declanșator identificabil (fără imobilizare, traumatism, cateter venos sau tratament trombogen recent). Conform criteriilor menționate pentru orientarea investigării unei trombofilii ereditare, această situație clinică justifică efectuarea unui bilanț complet de trombofilie. Care dintre următoarele situații, în schimb, NU reprezintă în mod obișnuit o indicație pentru un astfel de screening amplu?",
           "options": [
-            "Tromboembolism neprovocat la vârstă tânără",
             "Tromboză cu sediu neobișnuit",
             "Tromboză venoasă profundă recurentă, neprovocată",
+            "Tromboză venoasă superficială apărută la locul unei cateterizări venoase centrale, la un copil altfel sănătos",
             "Antecedente familiale pozitive pentru tromboză",
-            "Tromboză venoasă superficială apărută la locul unei cateterizări venoase centrale, la un copil altfel sănătos"
+            "Tromboembolism neprovocat la vârstă tânără"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "Screeningul pentru trombofilie ereditară este indicat în prezența anamnezei familiale pozitive, a trombembolismului neprovocat la vârstă tânără, a trombozei recurente sau cu sediu neobișnuit. Un screening al tuturor persoanelor cu tromboză provocată de factori dobândiți precum cateterizarea venoasă centrală nu este justificat, aceasta fiind încadrată drept condiție dobândită predispozantă, nu o indicație pentru bilanț extins de trombofilie ereditară.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 525-529"
+        },
+        {
+          "id": "33-6",
+          "stem": "Un copil de 3 ani prezintă echimoze extinse și epistaxis recurent încă de la vârste mici. Hemoleucograma arată un număr normal de trombocite, iar dimensiunea și morfologia trombocitelor pe frotiul de sânge periferic sunt normale. Timpul de sângerare este mult prelungit. Testarea agregării plachetare arată absența agregării la ADP, colagen și epinefrină, în timp ce aglutinarea plachetară indusă de ristocetină este normală. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Trombastenia Glanzmann",
+            "Sindromul Bernard-Soulier",
+            "Purpură trombocitopenică imună",
+            "Boala von Willebrand tip 1",
+            "Storage pool disease (deficit de granule dense)"
+          ],
+          "correct": 0,
+          "explanation": "Trombastenia Glanzmann este o trombocitopatie prin defecțiune a receptorului glicoproteic IIb/IIIa, esențial pentru agregarea indusă de agoniști fiziologici (ADP, colagen, epinefrină), dar aglutinarea indusă de ristocetină (dependentă de GPIb, nu de GPIIb/IIIa) rămâne normală. În sindromul Bernard-Soulier, defectul GPIb determină trombocite gigante și aglutinare anormală la ristocetină, iar în boala von Willebrand activitatea cofactorului ristocetinic este scăzută; storage pool disease se caracterizează prin deficiență de fază a doua a agregării cu dezagregare, nu prin absența completă a agregării, iar PTI presupune trombocitopenie, absentă în acest caz.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 509-511"
+        },
+        {
+          "id": "33-7",
+          "stem": "Un nou-născut la termen, fără sângerări la naștere, prezintă sângerare persistentă la nivelul bontului ombilical la câteva zile după detașarea acestuia. Testele uzuale de coagulare - timp de protrombină, timp parțial de tromboplastină activată, timp de trombină și numărul de trombocite - sunt toate normale. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Afibrinogenemie congenitală",
+            "Deficitul congenital de factor XIII",
+            "Hemofilie A formă severă",
+            "Coagulare intravasculară diseminată",
+            "Boala von Willebrand tip 3"
+          ],
+          "correct": 1,
+          "explanation": "Deficitul congenital de factor XIII, în forma homozigotă, se manifestă caracteristic prin sângerări spontane, cu risc particular de hemoragie la nivelul bontului ombilical; deoarece factorul XIII acționează în etapa finală de stabilizare a cheagului de fibrină, testele de coagulare uzuale (TP, APTT, timp de trombină, trombocite) rămân normale. Hemofilia A severă ar prelungi APTT, afibrinogenemia ar altera toate testele globale de coagulabilitate, boala von Willebrand tip 3 ar prelungi și timpul de sângerare și APTT, iar CID ar asocia trombocitopenie și modificări ale testelor globale.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 512-519"
+        },
+        {
+          "id": "33-8",
+          "stem": "Un nou-născut la termen, alimentat exclusiv la sân, fără profilaxie cu vitamina K administrată la naștere, dezvoltă la vârsta de 3 zile un episod de melenă, fiind în rest într-o stare generală bună. Investigațiile de laborator relevă scăderea sub 20% din valorile normale ale adultului a factorilor II, VII, IX și X. Care este conduita terapeutică imediată de primă intenție?",
+          "options": [
+            "Concentrat de complex protrombinic (PPSB)",
+            "Administrarea de vitamina K1, intramuscular sau intravenos",
+            "Exsangvinotransfuzie",
+            "Plasmă proaspătă congelată, 10 ml/kg",
+            "Transfuzie de masă trombocitară"
+          ],
+          "correct": 1,
+          "explanation": "Tabloul descris corespunde formei clasice a bolii hemoragice a nou-născutului, apărută la 2-3 zile la cei fără profilaxie cu vitamina K, cu debut tipic prin hemoragie digestivă (melenă). Tratamentul de primă intenție este vitamina K1, 1-2 mg (maximum 5 mg), i.m. sau i.v., cu evitarea administrării rapide în doze mari din cauza riscului de hemoliză, mai ales la copiii cu deficit de G6PD. Plasma proaspătă sau PPSB se rezervă formelor cu manifestări hemoragice grave, iar transfuzia de trombocite sau exsangvinotransfuzia nu sunt indicate în absența trombocitopeniei sau a formelor catastrofale.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 525-529"
+        },
+        {
+          "id": "33-9",
+          "stem": "La 6 ore după o intervenție chirurgicală toracică laborioasă, un adolescent dezvoltă sângerări masive difuze „în pânză”, cutaneo-mucoase și la nivelul plăgii operatorii. Investigațiile arată fibrinogen scăzut, factori V, VIII și XIII scăzuți, timp de trombină prelungit și liză a euglobulinelor marcat accelerată, în timp ce numărul de trombocite este normal. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Insuficiență hepatică acută",
+            "Boală von Willebrand dobândită",
+            "Sindrom de fibrinoliză (hiperfibrinoliză) primară",
+            "Coagulare intravasculară diseminată",
+            "Trombocitopenie indusă de heparină"
+          ],
+          "correct": 2,
+          "explanation": "Sindromul hiperfibrinolitic primar, deși rar la copil, este descris în asociere cu intervenții chirurgicale laborioase (pulmon, pancreas) și circulație extracorporeală, caracterizându-se prin scăderea fibrinogenului și a factorilor V, VIII și XIII, lizați nespecific de plasmina în exces, cu liză marcat accelerată a euglobulinelor. Element-cheie de diferențiere față de CID este numărul de trombocite, care rămâne normal în fibrinoliza primară, spre deosebire de CID, unde trombocitele sunt scăzute; insuficiența hepatică nu explică debutul acut postoperator cu liză accelerată a euglobulinelor, iar celelalte opțiuni nu se corelează cu acest context clinico-biologic.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 529-529"
+        },
+        {
+          "id": "33-10",
+          "stem": "Un nou-născut din mamă cu diabet zaharat prezintă, în prima săptămână de viață, hematurie macroscopică, o masă abdominală palpabilă în flanc și trombocitopenie. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Tromboza venei renale",
+            "Sindrom hemolitic-uremic",
+            "Tumoră Wilms",
+            "Hemoragie suprarenaliană neonatală",
+            "Rinichi polichistic"
+          ],
+          "correct": 0,
+          "explanation": "Tromboza venei renale este cea mai frecventă tromboză venoasă spontană la nou-născut, iar sugarii din mame diabetice au risc crescut pentru această condiție; tabloul clinic tipic asociază hematurie, masă abdominală palpabilă și trombocitopenie, aproximativ 25% dintre cazuri fiind bilaterale. Sindromul hemolitic-uremic nu se prezintă tipic cu masă abdominală palpabilă, hemoragia suprarenaliană nu determină de regulă hematurie, iar rinichiul polichistic și tumora Wilms nu se asociază cu trombocitopenie sau cu acest context matern particular.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 2603-2607"
         }
       ]
     },
@@ -2516,13 +3468,13 @@ const QUESTIONS = {
           "id": "34-1",
           "stem": "Un nou-născut prematur cu greutatea de 1200 g necesită exsangvinotransfuzie pentru o hiperbilirubinemie severă. Care dintre următoarele reprezintă o precauție specifică obligatorie la acest pacient, dincolo de măsurile standard (iradiere, concentrat cu leucodepleție nu mai vechi de 7 zile)?",
           "options": [
-            "Utilizarea de sânge CMV-negativ, concentrat filtrat în primele 24 de ore de la recoltare, cu spălarea eritrocitelor înainte de administrare",
+            "Utilizarea sângelui integral recoltat cu peste 14 zile înainte, fără filtrare",
             "Utilizarea de sânge integral neiradiat, indiferent de vechimea recoltării",
-            "Utilizarea concentratului eritrocitar cu buffy-coat, fără adaos de plasmă proaspătă congelată",
             "Utilizarea de sânge de la donator cu status CMV pozitiv cunoscut, fără alte restricții",
-            "Utilizarea sângelui integral recoltat cu peste 14 zile înainte, fără filtrare"
+            "Utilizarea concentratului eritrocitar cu buffy-coat, fără adaos de plasmă proaspătă congelată",
+            "Utilizarea de sânge CMV-negativ, concentrat filtrat în primele 24 de ore de la recoltare, cu spălarea eritrocitelor înainte de administrare"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "La prematurul cu greutate sub 1500 g, exsangvinotransfuzia se face cu sânge CMV-negativ, cu concentrat filtrat în primele 24 de ore de la recoltare, iar spălarea eritrocitelor înainte de administrare este obligatorie. Aceste măsuri se adaugă precauțiilor generale (iradiere obligatorie, concentrat fără buffy-coat cu adaos de FFP, leucodepleție, vechime sub 7 zile).",
           "source": "Pleșca - Tratat de Pediatrie, pag. 480-486"
         },
@@ -2530,13 +3482,13 @@ const QUESTIONS = {
           "id": "34-2",
           "stem": "La un copil transfuzat cu concentrat trombocitar, incrementul corectat calculat este de 5 la 1 oră post-transfuzie și de 3 la 24 de ore post-transfuzie. Cum se interpretează acest rezultat?",
           "options": [
-            "Indicație de transfuzie eritrocitară suplimentară",
-            "Semn de coagulare intravasculară diseminată activă",
             "Caracter refractar al transfuziei trombocitare",
+            "Semn de coagulare intravasculară diseminată activă",
+            "Indicație de transfuzie eritrocitară suplimentară",
             "Răspuns transfuzional normal, eficient",
             "Formă acută de purpură trombocitopenică imună"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "Valori ale incrementului corectat mai mici de 7,5 la o oră și sub 4,5 la 24 de ore definesc caracterul refractar al trombocitopeniei la transfuzie. Valorile din vignetă (5 la 1 oră și 3 la 24 de ore) se situează sub aceste praguri.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 480-486"
         },
@@ -2545,12 +3497,12 @@ const QUESTIONS = {
           "stem": "Un copil anemic, normovolemic, are Hb 7 g/dl și prezintă insuficiență cardiacă asociată (factor de risc), fără semne evidente de hipoxie anemică. Conform indicațiilor de transfuzie eritrocitară în anemia acută, care este conduita adecvată?",
           "options": [
             "Doar monitorizare clinică, fără nicio intervenție transfuzională",
-            "Transfuzie eritrocitară indicată, dat fiind că este vorba de o compensare limitată în prezența unui factor de risc",
             "Administrare de plasmă proaspătă congelată ca alternativă la masa eritrocitară",
+            "Transfuzie eritrocitară indicată, dat fiind că este vorba de o compensare limitată în prezența unui factor de risc",
             "Abținere de la transfuzie, deoarece Hb este peste pragul de 6 g/dl",
             "Transfuzie de concentrat trombocitar în locul celui eritrocitar"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Pentru valori ale Hb de 6-8 g/dl, transfuzia este indicată atunci când compensarea este limitată de prezența unor factori de risc precum insuficiența cardiacă, spre deosebire de situația compensării adecvate fără factori de risc, când transfuzia nu este indicată la aceleași valori ale Hb.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 480-486"
         },
@@ -2559,12 +3511,12 @@ const QUESTIONS = {
           "stem": "Un nou-născut aflat sub ventilație asistată, în prima zi de viață, are un hematocrit de 38%. Conform indicațiilor de transfuzie eritrocitară la nou-născut și sugarul sub 4 luni, care este conduita corectă?",
           "options": [
             "Nu se indică transfuzie, deoarece Ht este apropiat de valoarea normală medie pentru vârstă",
-            "Transfuzie indicată doar dacă Ht scade sub 25%, indiferent de statusul respirator",
             "Transfuzie eritrocitară indicată, întrucât Ht este sub pragul de 40% pentru ziua 1 de viață la un nou-născut cu necesar de ventilație asistată",
+            "Transfuzie indicată doar dacă Ht scade sub 25%, indiferent de statusul respirator",
             "Se recomandă exclusiv administrare de eritropoietină, fără transfuzie",
             "Transfuzie indicată numai în cazul unei intervenții chirurgicale programate"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Pentru ziua 1 de viață, valoarea medie normală a Ht este 56%, iar pragul sub care se indică transfuzia este 40%; prezența ventilației asistate este una dintre condițiile care susțin indicația de transfuzie. Un Ht de 38% la un nou-născut ventilat se situează sub acest prag.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 480-486"
         },
@@ -2573,13 +3525,27 @@ const QUESTIONS = {
           "stem": "Un pacient aflat în tratament cronic cu antivitamine K (AVK) necesită o intervenție chirurgicală de urgență. Care produs de sânge este recomandat pentru corectarea rapidă a coagulării în această situație?",
           "options": [
             "Masa eritrocitară deleucocitată",
-            "Crioprecipitatul (concentrat de FVIII, FvW, fibrinogen)",
-            "Concentratul granulocitar",
             "Concentratul PPSB (concentrat de FII, FVII, FIX, FX)",
-            "Albumina umană"
+            "Concentratul granulocitar",
+            "Albumina umană",
+            "Crioprecipitatul (concentrat de FVIII, FvW, fibrinogen)"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Concentratul PPSB, care conține factorii II, VII, IX și X, este recomandat pentru bolnavii aflați sub tratament anticoagulant cu antivitamine K și care necesită intervenție chirurgicală de urgență. Crioprecipitatul are indicații diferite, precum boala von Willebrand neresponsivă la DDAVP sau hipo-/afibrinogenemia la bolnavul care sângerează.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 480-486"
+        },
+        {
+          "id": "34-6",
+          "stem": "Un copil de 9 ani, cunoscut cu boală von Willebrand, se prezintă cu epistaxis activ, greu de controlat. Administrarea de desmopresină (DDAVP) nu reușește să oprească sângerarea, iar preparatul specific de factor von Willebrand nu este disponibil în acel moment. Care produs de sânge este cel mai indicat pentru corectarea hemostazei în această situație?",
+          "options": [
+            "Concentratul granulocitar, pentru reducerea riscului infecțios asociat sângerării",
+            "Concentratul standard de eritrocite iradiate, pentru susținerea capacității de transport al oxigenului",
+            "Crioprecipitatul, ca sursă de factor VIII, factor von Willebrand și fibrinogen",
+            "Albumina umană, pentru corectarea hipoproteinemiei",
+            "Concentratul PPSB, ca sursă de factori II, VII, IX și X"
+          ],
+          "correct": 2,
+          "explanation": "Crioprecipitatul (concentrat de FVIII, factor von Willebrand și fibrinogen) este indicat în boala von Willebrand atunci când lipsește preparatul specific adecvat și pacientul nu răspunde la DDAVP, precum și în hipo-/afibrinogenemia la bolnavul care sângerează. PPSB este util în corectarea rapidă a coagulării la pacienții sub AVK, nu în boala von Willebrand, iar concentratul granulocitar, albumina și masa eritrocitară nu au rol în corectarea deficitului de factor von Willebrand.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 480-486"
         }
       ]
@@ -2592,13 +3558,13 @@ const QUESTIONS = {
           "id": "35-1",
           "stem": "Un copil în vârstă de 4 ani prezintă, în ultimele 10 luni, două episoade distincte de pielonefrită acută, confirmate prin urocultură pozitivă, cu sterilizarea completă a urinei între cele două episoade. Cum se clasifică corect această situație clinică?",
           "options": [
+            "ITU nevindecată",
             "ITU recurentă",
             "Bacteriurie asimptomatică recurentă",
-            "ITU nevindecată",
-            "ITU cronică complicată cu factor obstructiv",
-            "Reinfecție fără semnificație clinică, deoarece urina a fost sterilă între episoade"
+            "Reinfecție fără semnificație clinică, deoarece urina a fost sterilă între episoade",
+            "ITU cronică complicată cu factor obstructiv"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "ITU recurentă se definește, printre altele, prin prezența a cel puțin două episoade de pielonefrită acută la același pacient, urina fiind sterilă între episoade. ITU nevindecată presupune persistența infecției (rezistență la antibiotic, necomplianță sau factori care interferă cu concentrația urinară a antibioticului), nu sterilizarea urinei între episoade.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 599-605"
         },
@@ -2606,13 +3572,13 @@ const QUESTIONS = {
           "id": "35-2",
           "stem": "Sugar de 8 luni, cu antecedente de infecții urinare recurente, necesită confirmarea prin urocultură a unui nou episod de ITU, fiind esențială eliminarea riscului de contaminare a probei. Care este metoda de recoltare a urinei considerată standard de aur în acest context, conform ghidurilor pediatrice americane?",
           "options": [
-            "Puncția vezicală suprapubiană",
-            "Colectorul steril (punga din plastic atașată)",
             "Tampoane speciale pentru colectarea urinei",
-            "Cateterismul vezical",
-            "Recoltarea din mijlocul jetului urinar"
+            "Colectorul steril (punga din plastic atașată)",
+            "Recoltarea din mijlocul jetului urinar",
+            "Puncția vezicală suprapubiană",
+            "Cateterismul vezical"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "Puncția vezicală suprapubiană este considerată metoda standard pentru diagnosticul ITU recidivante la copiii sub 2 ani, deoarece nu există riscul contaminării. Colectorul steril, deși simplu și puțin traumatizant, are o rată de rezultate fals pozitive de 85-90%, iar cateterismul vezical este invaziv și presupune risc de introducere a unor microorganisme.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 599-605"
         },
@@ -2620,11 +3586,11 @@ const QUESTIONS = {
           "id": "35-3",
           "stem": "O fetiță de 6 ani se prezintă cu disurie și polakiurie. Examenul de urină pe bandeletă arată esterază leucocitară pozitivă, dar testul nitriților este negativ. Urocultura ulterioară evidențiază Staphylococcus saprophyticus. Care este explicația cea mai probabilă pentru rezultatul negativ al testului nitriților în acest caz?",
           "options": [
-            "Contactul prelungit dintre urină și bacterii determină degradarea nitriților formați",
-            "Bacteriile Gram-pozitive nu sintetizează nitritoxidaza, enzima necesară transformării nitraților urinari în nitriți",
             "Leucocituria asociată inhibă reacția chimică de detectare a nitriților pe bandeletă",
+            "Bacteriile Gram-pozitive nu sintetizează nitritoxidaza, enzima necesară transformării nitraților urinari în nitriți",
+            "Concentrația urinară crescută de proteine interferă cu reacția testului nitriților",
             "Testul nitriților este util doar pentru diagnosticul bacteriuriei asimptomatice",
-            "Concentrația urinară crescută de proteine interferă cu reacția testului nitriților"
+            "Contactul prelungit dintre urină și bacterii determină degradarea nitriților formați"
           ],
           "correct": 1,
           "explanation": "Testul nitriților se bazează pe capacitatea bacteriilor de a sintetiza nitritoxidaza, enzimă care transformă nitrații urinari în nitriți. Bacteriile Gram-pozitive, precum Staphylococcus saprophyticus, nu sintetizează această enzimă, motiv pentru care testul este negativ chiar în prezența unei infecții urinare reale.",
@@ -2634,13 +3600,13 @@ const QUESTIONS = {
           "id": "35-4",
           "stem": "Un copil de 4 ani prezintă al treilea episod de cistită, documentat prin urocultură pozitivă; ecografia renală este normală. Care este conduita corectă privind investigarea unui eventual reflux vezicoureteral la acest pacient?",
           "options": [
-            "Nu se recomandă uretrocistografia micțională; se preferă efectuarea ecografiei asociate cu scintigrafia renală",
-            "Se efectuează uretrocistografie micțională de urgență, indiferent de vârstă",
             "Se recomandă puncție vezicală suprapubiană pentru reconfirmarea diagnosticului de ITU",
+            "Nu este necesară nicio investigație suplimentară, fiind suficientă o ecografie renală normală",
             "Se indică uro-RMN cu substanță de contrast ca primă investigație imagistică",
-            "Nu este necesară nicio investigație suplimentară, fiind suficientă o ecografie renală normală"
+            "Se efectuează uretrocistografie micțională de urgență, indiferent de vârstă",
+            "Nu se recomandă uretrocistografia micțională; se preferă efectuarea ecografiei asociate cu scintigrafia renală"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Uretrocistografia micțională nu este indicată la copiii de peste 3 ani, chiar în caz de ITU recurentă; în această situație se efectuează ecografie asociată cu scintigrafie renală. Uretrocistografia micțională rămâne indicată doar la sugarii sub 6 luni cu ITU recurentă.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 599-605"
         },
@@ -2648,14 +3614,42 @@ const QUESTIONS = {
           "id": "35-5",
           "stem": "Care dintre următoarele situații NU reprezintă, prin ea însăși, o indicație de spitalizare la un copil cu infecție de tract urinar?",
           "options": [
-            "Vărsături persistente, cu imposibilitatea tolerării lichidelor pe cale orală",
-            "Stare toxică",
+            "Prezența unei obstrucții de tract urinar",
             "Vârstă mai mare de 6 luni, fără alte semne de severitate asociate",
+            "Stare toxică",
             "Deshidratare medie sau severă",
-            "Prezența unei obstrucții de tract urinar"
+            "Vărsături persistente, cu imposibilitatea tolerării lichidelor pe cale orală"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Criteriile de spitalizare menționate sunt: vârstă mai mică de 6 luni, incapacitatea de a accepta lichide per os, vărsături persistente, deshidratare medie/severă, stare toxică, febră peste 38,5°C și obstrucție de tract urinar. Vârsta peste 6 luni, în absența altor semne de severitate, nu constituie prin ea însăși un criteriu de spitalizare.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 599-605"
+        },
+        {
+          "id": "35-6",
+          "stem": "O fetiță de 3 ani, cu control sfincterian, se prezintă cu disurie și polakiurie de 2 zile. Urina recoltată din mijlocul jetului micțional este trimisă la urocultură, care evidențiază 40.000 germeni/ml. Cum se interpretează corect acest rezultat și care este conduita ulterioară?",
+          "options": [
+            "Rezultat negativ, care exclude diagnosticul de ITU",
+            "Rezultat incert (ITU posibilă); se impune repetarea uroculturii",
+            "Rezultat net pozitiv, care confirmă ITU și nu necesită nicio altă probă",
+            "Rezultat care indică cu certitudine contaminarea probei, fiind necesară puncția vezicală suprapubiană",
+            "Rezultat echivalent cu bacteriurie asimptomatică, care nu necesită tratament antibiotic"
+          ],
+          "correct": 1,
+          "explanation": "Urocultura se interpretează ca pozitivă la peste 100.000 germeni/ml, ca negativă sub 1.000 germeni/ml, iar rezultatele cuprinse între 10.000 și 100.000 germeni/ml sunt considerate incerte (ITU posibilă), impunând repetarea uroculturii. Un rezultat de 40.000 germeni/ml se încadrează în această categorie intermediară, deci nu poate fi interpretat direct ca pozitiv, negativ sau ca certitudine de contaminare.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 599-605"
+        },
+        {
+          "id": "35-7",
+          "stem": "O fetiță de 4 ani este diagnosticată, după al doilea episod de pielonefrită acută, cu reflux vezicoureteral (RVU) de grad IV la cistografia micțională. Conform studiului suedez de reflux, care este principalul beneficiu demonstrat al chimioprofilaxiei antibiotice continue la fetele cu RVU de grad III sau IV?",
+          "options": [
+            "Reduce semnificativ apariția de noi cicatrice renale la scintigrafie, comparativ cu grupul de control fără profilaxie",
+            "Evită complet necesitatea unei eventuale intervenții chirurgicale antireflux, indiferent de gradul RVU",
+            "Determină dispariția completă și vindecarea RVU la toate pacientele tratate",
+            "Scurtează durata antibioterapiei recomandate pentru episoadele acute de pielonefrită",
+            "Elimină necesitatea oricărei cistografii micționale de control ulterioare"
+          ],
+          "correct": 0,
+          "explanation": "Studiul suedez de reflux a arătat că niciun pacient din grupul cu profilaxie antibiotică nu a dezvoltat noi cicatrice renale, comparativ cu 8 din 43 de fete din grupul de control și 5 din 42 tratate endoscopic, demonstrând eficacitatea chimioprofilaxiei în prevenirea cicatricelor renale la fetele cu RVU de grad III sau IV. Profilaxia nu vindecă RVU, nu elimină investigațiile imagistice de control și nu modifică durata tratamentului episoadelor acute.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 599-605"
         }
       ]
@@ -2668,10 +3662,10 @@ const QUESTIONS = {
           "id": "36-1",
           "stem": "Un sugar de 8 luni este investigat pentru reflux vezicoureteral (VUR) după o infecție de tract urinar febrilă. Cistouretrografia micțională evidențiază dilatarea ureterului, a bazinetului și a calicelor, fără tortuozitate marcată a ureterului. Conform clasificării Grupului Internațional de Studiu privind Refluxul, care este gradul VUR la acest pacient?",
           "options": [
-            "Gradul III",
             "Gradul II",
-            "Gradul I",
             "Gradul V",
+            "Gradul I",
+            "Gradul III",
             "Gradul IV"
           ],
           "correct": 4,
@@ -2682,13 +3676,13 @@ const QUESTIONS = {
           "id": "36-2",
           "stem": "Un copil de 3 ani cu VUR de grad III, diagnosticat după o pielonefrită acută, este menținut sub profilaxie antibiotică continuă cu doză mică, fără intervenție chirurgicală. Care dintre următoarele afirmații privind managementul medical conservator al VUR este corectă?",
           "options": [
-            "Administrarea intermitentă a antibioticului este superioară administrării continue în prevenirea apariției de noi leziuni renale",
-            "Administrarea continuă a profilaxiei antibiotice este mai eficientă decât administrarea intermitentă pentru prevenirea de noi leziuni renale",
-            "Profilaxia antibiotică trebuie întreruptă imediat ce copilul devine asimptomatic, indiferent de gradul refluxului",
+            "Managementul chirurgical precoce s-a dovedit superior celui medical în privința cicatrizării renale, conform Studiului Internațional de Reflux la Copii",
             "Refluxul steril determină leziuni renale progresive chiar și în absența disfuncției vezicale",
-            "Managementul chirurgical precoce s-a dovedit superior celui medical în privința cicatrizării renale, conform Studiului Internațional de Reflux la Copii"
+            "Administrarea intermitentă a antibioticului este superioară administrării continue în prevenirea apariției de noi leziuni renale",
+            "Profilaxia antibiotică trebuie întreruptă imediat ce copilul devine asimptomatic, indiferent de gradul refluxului",
+            "Administrarea continuă a profilaxiei antibiotice este mai eficientă decât administrarea intermitentă pentru prevenirea de noi leziuni renale"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Administrarea continuă a profilaxiei cu antibiotic este mai bună decât administrarea intermitentă pentru prevenirea de noi leziuni renale la pacienții tratați conservator. Studiul Internațional de Reflux la Copii nu a găsit niciun avantaj al tratamentului chirurgical față de cel medical privind cicatrizarea sau funcția renală, iar refluxul steril nu produce leziuni renale la pacienții cu funcție vezicală normală.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 607-610"
         },
@@ -2696,13 +3690,13 @@ const QUESTIONS = {
           "id": "36-3",
           "stem": "Un nou-născut de sex masculin este diagnosticat cu valvă de uretră posterioară și VUR bilateral asociat cu golire vezicală sever disfuncțională. Care este conduita chirurgicală recomandată în acest context?",
           "options": [
-            "Reimplantare ureterovezicală bilaterală, efectuată imediat după ablația valvei",
             "Cistoplastie de augmentare, efectuată concomitent cu ablația valvei",
+            "Vezicostomie, intervenția antireflux fiind rezervată doar după o evaluare atentă ulterioară",
             "Nefrostomie bilaterală definitivă, fără altă intervenție ulterioară",
-            "Injectare subureterală endoscopică de hidrogel, ca primă opțiune terapeutică",
-            "Vezicostomie, intervenția antireflux fiind rezervată doar după o evaluare atentă ulterioară"
+            "Reimplantare ureterovezicală bilaterală, efectuată imediat după ablația valvei",
+            "Injectare subureterală endoscopică de hidrogel, ca primă opțiune terapeutică"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "Chirurgia antireflux trebuie efectuată numai după o evaluare atentă la pacienții cu valvă de uretră posterioară, vezică neurogenă sau golire disfuncțională severă. La acești pacienți, vezicostomia este, de obicei, o opțiune mai bună decât intervenția antireflux imediată.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 607-610"
         },
@@ -2711,12 +3705,12 @@ const QUESTIONS = {
           "stem": "La ecografia antenatală efectuată la 30 de săptămâni de gestație se constată o dilatație a bazinetului renal fetal de 22 mm. Care este semnificația prognostică a acestei valori?",
           "options": [
             "Risc scăzut (aproximativ 3%) de răsunet clinic postnatal",
-            "Valoarea nu are nicio semnificație prognostică, doar aspectul parenchimului contează",
+            "Risc crescut (aproximativ 94%) de răsunet clinic postnatal",
             "Reprezintă o indicație absolută de întrerupere a sarcinii",
-            "Indică cu certitudine un reflux vezicoureteral, excluzând o cauză obstructivă",
-            "Risc crescut (aproximativ 94%) de răsunet clinic postnatal"
+            "Valoarea nu are nicio semnificație prognostică, doar aspectul parenchimului contează",
+            "Indică cu certitudine un reflux vezicoureteral, excluzând o cauză obstructivă"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "O dilatație intrauterină a bazinetului mai mare de 20 mm se asociază cu o rată crescută a răsunetului clinic postnatal (94%), spre deosebire de dimensiunile sub 10 mm, care au o rată de doar 3%. Diferențierea intrauterină între cauzele obstructive și cele neobstructive nu este posibilă, cu excepția valvei de uretră posterioară.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 612-618"
         },
@@ -2724,15 +3718,43 @@ const QUESTIONS = {
           "id": "36-5",
           "stem": "Un nou-născut de 2 săptămâni cu hidronefroză stângă diagnosticată antenatal efectuează o scintigrafie renală cu MAG3 și test diuretic cu furosemid pentru a diferenția o dilatare obstructivă de una neobstructivă. Testul nu arată un răspuns concludent la furosemid. Care este interpretarea corectă a acestui rezultat?",
           "options": [
-            "Spălarea întârziată a radiotrasorului confirmă întotdeauna diagnosticul de obstrucție, indiferent de vârstă",
-            "Rezultatul neconcludent poate fi explicat prin imaturitatea funcțională nefronală specifică primelor patru săptămâni de viață, iar testul trebuie interpretat cu prudență",
             "MAG3 este contraindicat la nou-născuți din cauza toxicității renale",
             "Testul diuretic trebuie repetat imediat cu DMSA pentru a obține un rezultat interpretabil",
-            "Absența răspunsului exclude cu certitudine o uropatie obstructivă la această vârstă"
+            "Rezultatul neconcludent poate fi explicat prin imaturitatea funcțională nefronală specifică primelor patru săptămâni de viață, iar testul trebuie interpretat cu prudență",
+            "Absența răspunsului exclude cu certitudine o uropatie obstructivă la această vârstă",
+            "Spălarea întârziată a radiotrasorului confirmă întotdeauna diagnosticul de obstrucție, indiferent de vârstă"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "În primele patru săptămâni de viață există o imaturitate funcțională nefronală, motiv pentru care studiul diuretic nu va avea un răspuns corespunzător; de aceea, un rezultat neconcludent la această vârstă nu poate exclude o obstrucție. MAG3 este agentul radiofarmaceutic de elecție la copiii mici și poate fi efectuat încă din prima săptămână de viață.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 612-618"
+        },
+        {
+          "id": "36-6",
+          "stem": "Un copil de 8 ani prezintă episoade recurente de durere la nivelul flancului drept, însoțite de greață, care apar caracteristic în perioadele cu diureză crescută (de exemplu, după ingestia unei cantități mari de lichide). Ecografia renală evidențiază dilatație pielocaliceală dreaptă, cu ureter nevizualizat, sugestivă pentru sindrom de joncțiune pieloureterală. Care este mecanismul etiopatogenic cel mai probabil al tabloului clinic intermitent descris?",
+          "options": [
+            "Compresiune extrinsecă intermitentă a joncțiunii pieloureterale printr-un vas polar aberant",
+            "Reflux vezicoureteral cu creșterea presiunii intravezicale",
+            "Segment ureteral juxtavezical adinamic, cu depunere anormală de colagen",
+            "Anomalie intramurală de tip valvular, similară valvei de uretră posterioară",
+            "Pliuri semicirculare ale mucoasei uretrei posterioare"
+          ],
+          "correct": 0,
+          "explanation": "Anomaliile extramurale ale sindromului de joncțiune pieloureterală sunt determinate de compresiune extrinsecă prin vase polare aberante, benzi sau adeziuni și produc caracteristic reduceri intermitente ale fluxului urinar, cu dilatări intermitente ale sistemului pielocaliceal, iar durerea asociată episoadelor de diureză crescută este sugestivă pentru o malformație obstructivă. Segmentul juxtavezical adinamic este mecanismul megaureterului primar obstructiv, pliurile mucoasei uretrei posterioare definesc valva de uretră posterioară, iar refluxul vezicoureteral nu produce obstrucție, ci flux retrograd de urină; anomaliile intramurale de tip valvular sunt o cauză rară a sindromului de joncțiune pieloureterală.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 612-618"
+        },
+        {
+          "id": "36-7",
+          "stem": "Un sugar de 4 luni dezvoltă a doua pielonefrită acută febrilă în context de VUR de grad III, cu inițiere tardivă a tratamentului antibiotic. La scintigrafia DMSA de control se constată apariția de cicatrice renale la nivelul polilor renali. Care dintre următoarele NU reprezintă un factor de risc recunoscut pentru apariția cicatricelor renale secundare VUR?",
+          "options": [
+            "Vârsta mică la momentul infecției urinare febrile",
+            "Refluxul intrarenal",
+            "Refluxul cu presiune înaltă",
+            "Vârsta mai mare la momentul infecției urinare",
+            "Inițierea tardivă a tratamentului antibiotic"
+          ],
+          "correct": 3,
+          "explanation": "Cicatricele renale secundare VUR apar cu atât mai frecvent cu cât vârsta la momentul infecției este mai mică, tratamentul antibiotic este inițiat mai tardiv, infecțiile sunt recurente, refluxul are presiune înaltă sau există reflux intrarenal. Prin urmare, vârsta mai mare la momentul infecției urinare nu reprezintă un factor de risc pentru cicatrizare, ci, dimpotrivă, vârsta mică este cea asociată cu risc crescut.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 607-610"
         }
       ]
     },
@@ -2744,13 +3766,13 @@ const QUESTIONS = {
           "id": "37-1",
           "stem": "Un copil de 8 ani prezintă, în a doua zi de la debutul unei infecții respiratorii acute (febră, odinofagie), urini hematurice macroscopice, fără edeme semnificative și cu complement C3 normal. Care este cel mai probabil diagnostic, având în vedere intervalul foarte scurt dintre debutul infecției și apariția hematuriei?",
           "options": [
+            "Nefropatia IgA (boala Berger)",
+            "Nefrita lupică",
             "Glomerulonefrită membranoproliferativă",
             "Glomerulonefrită acută post-streptococică",
-            "Nefrita lupică",
-            "Nefropatia IgA (boala Berger)",
             "Sindrom Goodpasture"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "În nefropatia IgA, hematuria macroscopică episodică se instalează caracteristic în primele 2-3 zile de la debutul unei infecții respiratorii acute (hematurie sincronă infecției). În GNAPS, dimpotrivă, există o perioadă de latență asimptomatică de aproximativ 2-3 săptămâni (până la 4-6 săptămâni în infecțiile cutanate) între infecția streptococică și debutul nefropatiei. C3 este normal în nefropatia IgA, spre deosebire de GNAPS unde este scăzut la peste 90% din cazuri.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 629-637"
         },
@@ -2758,13 +3780,13 @@ const QUESTIONS = {
           "id": "37-2",
           "stem": "Un copil de 6 ani este investigat pentru hematurie. Se constată: debut la 3 săptămâni după o infecție cutanată streptococică, oligurie, densitate urinară normală, iar examinarea ecografică renală arată rinichi de dimensiuni normale. Aceste elemente clinico-paraclinice pledează cel mai mult pentru:",
           "options": [
-            "Glomerulonefrită acută",
             "Rinichi polichistic",
+            "Nefropatie de reflux",
             "Sindrom nefrotic cu leziuni minime",
             "Glomerulonefrită cronică",
-            "Nefropatie de reflux"
+            "Glomerulonefrită acută"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Textul precizează explicit criteriile de diagnostic diferențial: pledează pentru GNA debutul postinfecțios (la interval de minimum două săptămâni), oliguria, densitatea urinară normală și dimensiunea normală a rinichilor la ecografie. Pentru GNC ar pleda instalarea hematuriei în cursul infecțiilor acute, poliuria, densitatea urinară scăzută și rinichii mici, hiperecogeni.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 629-637"
         },
@@ -2772,13 +3794,13 @@ const QUESTIONS = {
           "id": "37-3",
           "stem": "Un copil diagnosticat cu glomerulonefrită acută post-streptococică prezintă, la 8 săptămâni de la debut, valori persistent scăzute ale complementului C3 seric, care nu s-au normalizat. Conform conduitei descrise, această situație reprezintă o indicație pentru:",
           "options": [
+            "Repetarea tratamentului antibiotic cu benzatin penicilină pe termen lung",
+            "Puncție-biopsie renală",
             "Amigdalectomie",
             "Corticoterapie orală prelungită, fără investigații suplimentare",
-            "Repetarea tratamentului antibiotic cu benzatin penicilină pe termen lung",
-            "Inițierea de urgență a epurării extrarenale",
-            "Puncție-biopsie renală"
+            "Inițierea de urgență a epurării extrarenale"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "Puncția-biopsie renală nu este recomandată de rutină în GNA, ci doar în situații particulare: titru ASO normal, C3 normal sau C3 scăzut peste 6-8 săptămâni, retenție azotată cu clearance al creatininei sub 30 ml/min/s.c. sau hematurie recurentă. Persistența hipocomplementemiei peste 6-8 săptămâni ridică suspiciunea unei alte forme de GN și impune biopsia.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 629-637"
         },
@@ -2786,13 +3808,13 @@ const QUESTIONS = {
           "id": "37-4",
           "stem": "O fetiță de 5 ani prezintă purpură cutanată la nivelul membrelor inferioare, dureri abdominale colicative și hematurie microscopică, tabloul fiind sugestiv pentru purpura Henoch-Schönlein cu afectare renală. Complementul seric C3 este dozat și se constată valori normale. Cum trebuie interpretat acest rezultat?",
           "options": [
+            "Este caracteristic nefritei lupice active",
             "Indică o glomerulonefrită postinfecțioasă activă",
             "Sugerează o endocardită infecțioasă asociată",
-            "Este un rezultat tipic, purpura Henoch-Schönlein neasociindu-se de regulă cu hipocomplementemie",
             "Exclude diagnosticul de nefrită din purpura Henoch-Schönlein",
-            "Este caracteristic nefritei lupice active"
+            "Este un rezultat tipic, purpura Henoch-Schönlein neasociindu-se de regulă cu hipocomplementemie"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Fracțiunea C3 a complementului are valori normale în poliarterita nodoasă, purpura Henoch-Schönlein, nefropatia IgA, GNRP, sindromul Goodpasture sau sindromul Alport. În schimb, C3 este scăzut în GN postinfecțioasă, GN membranoproliferativă, endocardita infecțioasă, nefrita de șunt, nefrita lupică și crioglobulinemia mixtă esențială.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 629-637"
         },
@@ -2800,14 +3822,28 @@ const QUESTIONS = {
           "id": "37-5",
           "stem": "Un adolescent cu nefropatie IgA confirmată bioptic prezintă proteinurie de 1,5 g/24 ore, persistentă de 4 luni sub tratament cu inhibitor al enzimei de conversie, fără declin rapid al funcției renale și fără semilune extinse la examenul histopatologic. Conform conduitei terapeutice descrise, această situație reprezintă o indicație pentru:",
           "options": [
-            "Rituximab, ca terapie de primă linie",
             "Tratament imunosupresor, cu glucocorticosteroizi ca primă intenție",
+            "Rituximab, ca terapie de primă linie",
+            "Doar restricție dietetică de sodiu, fără altă intervenție terapeutică",
             "Transplant renal preventiv",
-            "Amigdalectomie, ca primă măsură terapeutică",
-            "Doar restricție dietetică de sodiu, fără altă intervenție terapeutică"
+            "Amigdalectomie, ca primă măsură terapeutică"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Tratamentul imunosupresor este recomandat în formele cu proteinurie de peste 1 g/24 de ore persistentă timp de 3-6 luni, cu semilune la peste jumătate dintre glomeruli sau cu declin funcțional renal rapid. Glucocorticosteroizii reprezintă terapia de primă intenție în majoritatea cazurilor, administrați pe o durată de 8 luni; rituximab nu și-a dovedit eficiența asupra conservării funcției renale sau reducerii proteinuriei.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 629-637"
+        },
+        {
+          "id": "37-6",
+          "stem": "Un băiat de 7 ani, la 3 săptămâni după un episod de impetigo, este adus de urgență pentru cefalee intensă, vărsături și o criză convulsivă tonico-clonică generalizată. Examenul obiectiv evidențiază tensiune arterială mult peste percentila 99 pentru vârstă și talie, edeme palpebrale discrete și urini hipercrome, iar la evaluarea biologică se constată complement C3 scăzut. Care este cea mai probabilă complicație responsabilă de tabloul neurologic actual?",
+          "options": [
+            "Insuficiență renală acută",
+            "Sindrom hemolitic-uremic",
+            "Encefalopatie hipertensivă",
+            "Glomerulonefrită rapid progresivă",
+            "Edem pulmonar acut"
+          ],
+          "correct": 2,
+          "explanation": "Debutul atipic al GNAPS poate fi sever, cu fenomene de encefalopatie hipertensivă (convulsii, pierderea conștienței, edem cerebral), consecință a HTA severe asociate hipervolemiei și activării sistemului renină-angiotensină-aldosteron. HTA și encefalopatia hipertensivă sunt enumerate explicit printre complicațiile GNAPS, alături de edemul pulmonar acut și insuficiența renală acută, însă tabloul convulsiv pe fondul valorilor tensionale mult crescute este caracteristic encefalopatiei hipertensive, nu celorlalte complicații enumerate.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 629-637"
         }
       ]
@@ -2821,12 +3857,12 @@ const QUESTIONS = {
           "stem": "Un copil de 4 ani se prezintă cu edeme progresive, palpebrale și pretibiale. Investigațiile arată proteinurie masivă și hipoalbuminemie severă. Conform criteriilor de diagnostic pozitiv al sindromului nefrotic, alături de proteinuria de rang nefrotic și hipoalbuminemie, care este al treilea criteriu care trebuie demonstrat?",
           "options": [
             "Hipertensiunea arterială",
+            "Retenția azotată",
             "Hematuria macroscopică",
             "Hiperlipidemia",
-            "Prezența edemelor generalizate",
-            "Retenția azotată"
+            "Prezența edemelor generalizate"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Textul precizează explicit că, pentru a susține diagnosticul pozitiv de sindrom nefrotic, trebuie demonstrate trei criterii: proteinurie de rang nefrotic, hipoalbuminemie și hiperlipidemie. Hematuria, hipertensiunea și retenția azotată reprezintă criterii de impurificare, nu criterii diagnostice obligatorii. Edemul, deși frecvent prezent (95% din cazuri), nu figurează printre cele trei criterii enumerate la diagnosticul pozitiv.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1322-1331"
         },
@@ -2834,13 +3870,13 @@ const QUESTIONS = {
           "id": "38-2",
           "stem": "Un copil cu sindrom nefrotic primitiv primește tratament cu prednison 60 mg/m2/zi, zilnic, timp de 5 săptămâni, fără a intra în remisiune. Cum se clasifică acest răspuns terapeutic conform textului?",
           "options": [
-            "Sindrom nefrotic corticodependent",
-            "Sindrom nefrotic corticorezistent",
             "Sindrom nefrotic corticosensibil cu remisiune întârziată",
+            "Sindrom nefrotic corticodependent",
+            "Sindrom nefrotic cu recăderi frecvente",
             "Sindrom nefrotic impur",
-            "Sindrom nefrotic cu recăderi frecvente"
+            "Sindrom nefrotic corticorezistent"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Sindromul nefrotic corticorezistent este definit ca inabilitatea de a induce remisiunea în 4 săptămâni de corticoterapie zilnică cu 60 mg/m2/zi; textul precizează că absența răspunsului la prednison în primele 30 de zile de administrare susține această încadrare. Corticodependența presupune recăderea în timpul reducerii dozei sau în primele săptămâni de la oprirea corticoterapiei, situație diferită de lipsa oricărui răspuns inițial.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1322-1331"
         },
@@ -2849,10 +3885,10 @@ const QUESTIONS = {
           "stem": "Conform recomandărilor KDIGO 2012 citate în text, la care dintre următorii copii cu sindrom nefrotic nou diagnosticat se poate iniția corticoterapia înaintea efectuării biopsiei renale?",
           "options": [
             "Copil de 5 ani, cu funcție renală normală, fără hematurie macroscopică, fără semne de boală sistemică, complement seric normal și screening viral negativ",
-            "Copil de 6 ani cu hematurie macroscopică și complement C3 scăzut",
+            "Copil de 13 ani cu retenție azotată prezentă la debut",
             "Copil de 7 ani cu febră, eritem cutanat și dureri articulare, sugestive pentru o boală sistemică",
             "Sugar de 9 luni cu tablou sugestiv de sindrom nefrotic congenital",
-            "Copil de 13 ani cu retenție azotată prezentă la debut"
+            "Copil de 6 ani cu hematurie macroscopică și complement C3 scăzut"
           ],
           "correct": 0,
           "explanation": "Corticoterapia poate fi inițiată empiric, înaintea biopsiei renale, doar la copiii cu vârsta între 1 și 8 ani, funcție renală normală, fără hematurie macroscopică, fără semne de boală sistemică, complement seric normal, screening viral negativ și anamneză familială negativă pentru boli renale. Vârsta sub 1 an, hematuria macroscopică, complementul scăzut, semnele de boală sistemică și retenția azotată reprezintă indicații de biopsie renală, conform textului.",
@@ -2864,11 +3900,11 @@ const QUESTIONS = {
           "options": [
             "Transfuzie de masă trombocitară pentru corectarea stării procoagulante",
             "Antiagregare cu acid acetilsalicilic, fără altă intervenție terapeutică",
-            "Anticoagulare profilactică empirică, inițiată de rutină la toți copiii cu sindrom nefrotic",
             "Tromboliză cu heparină și/sau agenți fibrinolitici, urmată de profilaxie secundară cu warfarină timp de 6 luni",
+            "Anticoagulare profilactică empirică, inițiată de rutină la toți copiii cu sindrom nefrotic",
             "Corticoterapie intravenoasă în doze mari, fără terapie antitrombotică asociată"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "Textul precizează că anticoagularea empirică profilactică nu are indicație în sindromul nefrotic la copil, dar tratamentul unui eveniment tromboembolic constituit se realizează inițial prin tromboliză cu heparină și/sau agenți fibrinolitici (activator de plasminogen, streptokinază sau urokinază), urmată de profilaxie secundară cu warfarină timp de 6 luni.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1322-1331"
         },
@@ -2876,14 +3912,42 @@ const QUESTIONS = {
           "id": "38-5",
           "stem": "Un copil cu sindrom nefrotic corticosensibil, aflat sub corticoterapie, dezvoltă febră, dureri abdominale intense, distensie abdominală, apărare musculară și oprirea tranzitului intestinal, tablou sugestiv de peritonită. Care este agentul etiologic predominant citat în text pentru această complicație infecțioasă?",
           "options": [
-            "Proteus mirabilis",
-            "Pseudomonas aeruginosa",
             "Staphylococcus aureus",
+            "Streptococcus pneumoniae",
+            "Pseudomonas aeruginosa",
             "Klebsiella pneumoniae",
-            "Streptococcus pneumoniae"
+            "Proteus mirabilis"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "Textul menționează că cele mai grave infecții la copilul cu sindrom nefrotic sunt peritonita și sepsisul, iar cauza predominantă este Streptococcus pneumoniae, alături de bacteriile gram-negative precum Escherichia coli. Riscul crescut se datorează pierderii urinare de factor B, scăderii sintezei de IgG și efectului imunosupresor al corticoterapiei.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1322-1331"
+        },
+        {
+          "id": "38-6",
+          "stem": "Un copil de 6 ani cu sindrom nefrotic aflat în puseu prezintă anasarcă, dar și mucoase uscate, tahicardie și timp de recolorare capilară prelungit, semne sugestive pentru depleție marcată a volumului intravascular. Edemele sunt simptomatice și necesită intervenție terapeutică. Care este conduita corectă conform textului?",
+          "options": [
+            "Se recomandă doar restricție hidrică severă și regim hipoproteic, fără nicio terapie diuretică",
+            "Se ia în considerare administrarea de albumină umană 20-25%, 1 g/kg, în perfuzie continuă timp de 24 de ore, având în vedere depleția intravasculară marcată",
+            "Se inițiază imediat un inhibitor al enzimei de conversie pentru reducerea proteinuriei, ca unică măsură terapeutică",
+            "Se administrează furosemid în doză mare, în bolus intravenos, indiferent de statusul volemic, pentru mobilizarea rapidă a edemelor",
+            "Se administrează diuretic tiazidic în monoterapie, fără asocierea unui diuretic de ansă"
+          ],
+          "correct": 1,
+          "explanation": "Textul precizează că, la pacienții cu anasarcă și depleție masivă intravasculară, trebuie luată în considerare administrarea de albumină 20-25%, 1 g/kg intravenos, în perfuzie continuă timp de 24 de ore. Administrarea izolată a furosemidului la un pacient cu volum intravascular deja scăzut riscă precipitarea unui șoc hipovolemic, iar inhibitorii enzimei de conversie trebuie folosiți cu prudență în context de depleție intravasculară sau insuficiență renală acută.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1322-1331"
+        },
+        {
+          "id": "38-7",
+          "stem": "Un copil cu sindrom nefrotic corticosensibil se află la o lună de la încheierea unei cure de corticoterapie sistemică și nu a mai primit agenți citotoxici. Familia solicită administrarea unui vaccin viu atenuat. Conform recomandărilor din text privind amânarea vaccinurilor vii atenuate la acești pacienți, care este conduita corectă?",
+          "options": [
+            "Vaccinul viu atenuat poate fi administrat, deoarece a trecut intervalul minim de o lună de la încheierea corticoterapiei",
+            "Vaccinul viu atenuat poate fi administrat doar dacă pacientul este încă sub corticoterapie, în doză mică",
+            "Este necesară așteptarea a 6 luni de la încheierea corticoterapiei, similar cu recomandarea pentru agenții citotoxici",
+            "Vaccinul viu atenuat trebuie amânat cel puțin 3 luni de la încheierea corticoterapiei, indiferent de tipul de tratament imunosupresor folosit anterior",
+            "Vaccinurile vii atenuate sunt contraindicate definitiv la orice copil cu antecedente de sindrom nefrotic"
+          ],
+          "correct": 0,
+          "explanation": "Textul precizează că amânarea vaccinurilor vii atenuate respectă următoarele indicații: administrarea se poate face după o lună de la încheierea corticoterapiei sau după 3 luni de la încheierea terapiei cu agenți citotoxici. Cum pacientul nu a primit agenți citotoxici și a trecut o lună de la oprirea corticoterapiei, vaccinarea cu vaccin viu atenuat este permisă.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1322-1331"
         }
       ]
@@ -2897,12 +3961,12 @@ const QUESTIONS = {
           "stem": "Sugar în vârstă de 8 luni, cu gastroenterită acută (vărsături și diaree de 3 zile), se prezintă cu oligurie, mucoase uscate și tahicardie. Ureea și creatinina serice sunt ușor crescute. Examenul de urină arată: concentrația sodiului urinar = 8 mEq/L, densitate urinară = 1026, fracția de excreție a Na+ = 0,6%, sediment urinar cu cilindri hialini. Care este cel mai probabil diagnostic?",
           "options": [
             "Glomerulonefrită acută postinfecțioasă",
-            "Insuficiență renală acută prerenală",
-            "Insuficiență renală acută intrinsecă prin necroză tubulară acută",
             "Nefrită interstițială acută",
-            "Insuficiență renală acută postrenală prin obstrucție"
+            "Insuficiență renală acută intrinsecă prin necroză tubulară acută",
+            "Insuficiență renală acută postrenală prin obstrucție",
+            "Insuficiență renală acută prerenală"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Markerii urinari descriși (Na urinar < 10 mEq/L, fracția de excreție a Na+ < 1%, densitate urinară > 1020, cilindri hialini) sunt caracteristici IRA prerenale, spre deosebire de IRA intrinsecă unde FeNa > 1%, Na urinar > 20 mEq/L, densitate < 1010 și apar cilindri granulari. Contextul clinic (deshidratare prin pierderi digestive) susține mecanismul prerenal, potențial reversibil după refacerea volemică.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1359-1366"
         },
@@ -2910,11 +3974,11 @@ const QUESTIONS = {
           "id": "39-2",
           "stem": "Copil de 3 ani cu sindrom hemolitic-uremic dezvoltă insuficiență renală acută cu anurie de 50 de ore, sub tratament conservator maximal. Care dintre următoarele reprezintă o indicație absolută pentru inițierea terapiei de substituție renală în acest caz?",
           "options": [
-            "Ureea serică de 20 mmol/L",
-            "Acidoză metabolică ușoară, corectată cu bicarbonat de sodiu",
-            "Anuria de peste 48 de ore, mai ales în contextul sindromului hemolitic-uremic",
+            "Hipervolemie moderată, responsivă la doza inițială de furosemid",
             "Potasiul seric de 5,8 mmol/L, fără modificări EKG",
-            "Hipervolemie moderată, responsivă la doza inițială de furosemid"
+            "Anuria de peste 48 de ore, mai ales în contextul sindromului hemolitic-uremic",
+            "Ureea serică de 20 mmol/L",
+            "Acidoză metabolică ușoară, corectată cu bicarbonat de sodiu"
           ],
           "correct": 2,
           "explanation": "Textul precizează explicit anuria de peste 48 de ore, mai ales în sindromul hemolitic-uremic, ca indicație absolută pentru inițierea epurării extrarenale. Celelalte situații descrise (uree 20 mmol/L, K+ 5,8 fără modificări EKG, hipervolemie responsivă la diuretic, acidoză ușoară corectabilă medicamentos) nu ating pragurile absolute menționate (uree > 40 mmol/L, K+ > 6,5 mEq/L, acidoză severă refractară, hipervolemie refractară la diuretic).",
@@ -2924,13 +3988,13 @@ const QUESTIONS = {
           "id": "39-3",
           "stem": "Copil cu insuficiență renală acută are potasiu seric de 6,2 mmol/L, fără modificări electrocardiografice. Conform conduitei terapeutice descrise pentru acest interval al hiperpotasemiei, care este atitudinea inițială cea mai adecvată?",
           "options": [
-            "Administrare de soluție de NaCl hipertonă conform formulei de corecție a natremiei",
+            "Hidratare, bolus lent de calciu gluconic 10% sub monitorizare EKG, perfuzie de glucoză cu insulină și Kayexalate, cu corectarea acidozei dacă rezerva alcalină este scăzută",
             "Doar restricție alimentară de potasiu, fără altă intervenție",
-            "Hemodializă de urgență, fără alte măsuri prealabile",
+            "Administrare de soluție de NaCl hipertonă conform formulei de corecție a natremiei",
             "Nebulizare cu salbutamol ca unică măsură terapeutică",
-            "Hidratare, bolus lent de calciu gluconic 10% sub monitorizare EKG, perfuzie de glucoză cu insulină și Kayexalate, cu corectarea acidozei dacă rezerva alcalină este scăzută"
+            "Hemodializă de urgență, fără alte măsuri prealabile"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Pentru K+ între 6,0-6,5 mmol/L textul indică sistarea medicației economisitoare de K, restricție alimentară, hidratare, bolus lent de calciu gluconic 10% (0,5 mL/kg) sub monitorizare EKG, perfuzie de glucoză tamponată cu insulină, Kayexalate și, dacă rezerva alcalină este sub 18 mmol/L, bicarbonat de sodiu. Hemodializa și nebulizarea cu salbutamol sunt rezervate hiperpotasemiei severe (K+ > 6,5 mmol/L).",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1359-1366"
         },
@@ -2938,13 +4002,13 @@ const QUESTIONS = {
           "id": "39-4",
           "stem": "Un biomarker urinar se secretă după instalarea leziunii ischemice renale, precede cu 2-4 zile creșterea creatininei serice și reprezintă un excelent predictor al instalării insuficienței renale acute la copiii cu sindrom hemolitic-uremic. Despre care biomarker este vorba?",
           "options": [
-            "Cistatina C serică",
-            "Molecula de injurie renală (KIM-1)",
-            "Neutrophil Gelatinase-Associated Lipocalin (NGAL)",
             "Interleukina 18 urinară",
-            "Chemokinele derivate din keratinocite (CK)"
+            "Neutrophil Gelatinase-Associated Lipocalin (NGAL)",
+            "Chemokinele derivate din keratinocite (CK)",
+            "Cistatina C serică",
+            "Molecula de injurie renală (KIM-1)"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Textul menționează explicit că NGAL se secretă urinar după instalarea leziunii ischemice renale, precede cu 2-4 zile creșterea creatininei serice și reprezintă un excelent predictor al instalării IRA în sindromul hemolitic-uremic. Ceilalți biomarkeri au alte caracteristici: KIM-1 crește în primele 12 ore, cistatina C precede cu 1-2 zile creșterea creatininei fără a diferenția cauzele, iar CK cresc în primele 4 ore și diferențiază eșecul de succesul unui transplant renal.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1359-1366"
         },
@@ -2952,14 +4016,28 @@ const QUESTIONS = {
           "id": "39-5",
           "stem": "Un copil aflat în evoluția unei insuficiențe renale acute reia diureza, cu debit urinar de peste 3 mL/kg/oră. În ciuda ameliorării stării clinice, ureea și creatinina serice continuă să crească în primele zile ale acestei perioade, urmate de un platou și apoi de scădere rapidă. Cărei faze evolutive a IRA îi corespunde acest tablou?",
           "options": [
+            "Evoluție spre insuficiență renală cronică",
+            "Faza poliurică și de recuperare funcțională",
             "Faza preanurică",
             "Faza anurică",
-            "Faza poliurică și de recuperare funcțională",
-            "Faza de recuperare funcțională tardivă (la un an)",
-            "Evoluție spre insuficiență renală cronică"
+            "Faza de recuperare funcțională tardivă (la un an)"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Textul descrie faza poliurică (diureză peste 3 mL/kg/oră) ca fiind însoțită de o creștere paradoxală a produșilor de retenție azotată în primele 5 zile, urmată de un platou de 5 zile și apoi de scădere rapidă, deși starea clinică a pacientului se ameliorează. Aceasta o diferențiază de faza anurică (oligoanurie, semnul cardinal fiind diureza sub 1 mL/kg/oră) și de faza de recuperare funcțională propriu-zisă, în care filtrarea glomerulară crește progresiv pe parcursul unui an.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1359-1366"
+        },
+        {
+          "id": "39-6",
+          "stem": "Copil de 10 ani, extras de sub dărâmături după un cutremur, cu leziuni de strivire musculară extinsă la nivelul membrelor inferioare, dezvoltă urină brun-negricioasă și insuficiență renală acută atribuită rabdomiolizei. Care este conduita terapeutică inițială cea mai adecvată pentru limitarea leziunii tubulare renale?",
+          "options": [
+            "Restricție hidrică strictă, asociată cu administrarea imediată de furosemid, fără reechilibrare volemică prealabilă",
+            "Refacerea rapidă a volumului circulant, urmată de diuretice (manitol, furosemid) și alcalinizarea urinei pentru a crește solubilitatea mioglobinei",
+            "Hemodializă de urgență, ca primă și unică măsură terapeutică, indiferent de statusul volemic",
+            "Acidifierea urinei cu doze mari de vitamina C, pentru a favoriza precipitarea și eliminarea pigmenților hemici",
+            "Administrare izolată de bicarbonat de sodiu, fără corectarea volemiei și fără diuretice"
+          ],
+          "correct": 1,
+          "explanation": "Textul precizează că, în IRA prin hemoglobinurie/mioglobinurie (rabdomioliză), tratamentul constă în refacerea rapidă a volumului circulant, urmată în al doilea pas de diuretice (manitol, furosemid) pentru a împiedica depunerea pigmenților în tubi, iar alcalinizarea urinei crește solubilitatea mioglobinei și hemoglobinei, prevenind leziunea tubulară. Restricția hidrică, acidifierea urinei sau dializa de primă intenție, fără corectare volemică prealabilă, nu corespund conduitei descrise, mecanismul lezional fiind legat de vasoconstricție, precipitarea pigmenților intratubular și stresul oxidativ indus de hem.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1359-1366"
         }
       ]
@@ -2973,12 +4051,12 @@ const QUESTIONS = {
           "stem": "Un sugar în vârstă de 6 săptămâni, cunoscut cu valvă de uretră posterioară, prezintă la ecografia postnatală rinichi mici, hiperecogeni, cu RFG estimată sub valorile normale pentru vârstă. Conform criteriilor NKF/KDOQI adaptate populației pediatrice, care dintre următoarele afirmații este corectă?",
           "options": [
             "Diagnosticul de BCR necesită obligatoriu confirmare prin puncție-biopsie renală la această vârstă",
-            "Diagnosticul de BCR poate fi pus doar dacă leziunile renale sau reducerea RFG persistă cel puțin 3 luni, criteriu valabil și la această vârstă",
-            "La copiii sub 2 ani, criteriul RFG sub 60 ml/min/1,73 m2 este întotdeauna aplicabil, indiferent de vârstă",
             "La copiii cu vârsta sub 3 luni, criteriul duratei de persistență a leziunilor (peste 3 luni) nu poate fi aplicat pentru definirea BCR",
-            "RFG estimată prin formula Schwartz modificată (bedside) este validă la această vârstă pentru diagnosticul de BCR"
+            "RFG estimată prin formula Schwartz modificată (bedside) este validă la această vârstă pentru diagnosticul de BCR",
+            "La copiii sub 2 ani, criteriul RFG sub 60 ml/min/1,73 m2 este întotdeauna aplicabil, indiferent de vârstă",
+            "Diagnosticul de BCR poate fi pus doar dacă leziunile renale sau reducerea RFG persistă cel puțin 3 luni, criteriu valabil și la această vârstă"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Textul menționează explicit două excepții pediatrice de la criteriile NKF/KDOQI: la copiii sub 2 ani nu se poate aplica criteriul RFG sub 60 ml/min/1,73 m2 (valorile normale fiind fiziologic mai mici, trebuie adaptate vârstei), iar la copiii sub 3 luni nu se poate aplica criteriul duratei. În plus, formula Schwartz modificată este validată doar pentru populația de 1-16 ani.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 639-649"
         },
@@ -2986,13 +4064,13 @@ const QUESTIONS = {
           "id": "40-2",
           "stem": "Copil de 3 ani, diagnosticat cu boală cronică de rinichi în contextul unei hipoplazii/displazii renale bilaterale asociate cu reflux vezicoureteral. Conform datelor de epidemiologie prezentate, care este cea mai frecventă categorie etiologică de BCR la copiii cu vârsta sub 5 ani?",
           "options": [
-            "Nefropatia cu IgA",
-            "Sindromul hemolitic-uremic",
-            "Nefrita lupică",
+            "Glomeruloscleroza focală și segmentară",
             "Anomaliile congenitale ale rinichiului și tractului urinar (CAKUT)",
-            "Glomeruloscleroza focală și segmentară"
+            "Sindromul hemolitic-uremic",
+            "Nefropatia cu IgA",
+            "Nefrita lupică"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "La copil, afecțiunile care conduc la BCR sunt dominate de anomaliile congenitale ale rinichiului și tractului urinar (CAKUT), mai ales displazia/hipoplazia renală asociată sau nu cu reflux vezicoureteral sau obstrucție, în primii cinci ani de viață. Nefropatiile glomerulare (inclusiv GSFS) ocupă locul al doilea, iar la adolescenți ordinea se inversează.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 639-649"
         },
@@ -3001,12 +4079,12 @@ const QUESTIONS = {
           "stem": "Copil de 11 ani cu BCR stadiul IV (RFG 22 ml/min/1,73 m2) prezintă paloare tegumentară cu tentă teroasă și astenie fizică. Hemoleucograma arată anemie normocromă normocitară, cu sideremie, feritină, vitamina B12 și acid folic în limite normale. Care este mecanismul patogenic cel mai important implicat în anemia acestui pacient?",
           "options": [
             "Pierderile cronice de sânge prin gastrita uremică",
-            "Deficitul de fier secundar aportului alimentar insuficient",
-            "Supresia medulară secundară hiperparatiroidismului sever (mielofibroză)",
             "Scăderea duratei de viață a hematiilor prin acțiunea toxinelor uremice",
-            "Reducerea producției de eritropoietină de către celulele din corticala renală"
+            "Supresia medulară secundară hiperparatiroidismului sever (mielofibroză)",
+            "Reducerea producției de eritropoietină de către celulele din corticala renală",
+            "Deficitul de fier secundar aportului alimentar insuficient"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "Textul precizează că mecanismul patogenic cel mai important al anemiei din BCR este reducerea producției de eritropoietină de către celulele din corticala renală, la care se adaugă, secundar, scăderea duratei de viață a hematiilor, deficitele nutriționale și supresia medulară. În acest caz, cu deficitele nutriționale excluse prin dozări normale, mecanismul dominant rămâne deficitul de eritropoietină.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 639-649"
         },
@@ -3014,13 +4092,13 @@ const QUESTIONS = {
           "id": "40-4",
           "stem": "Copil de 9 ani cu BCR stadiul IV prezintă dureri osoase, o fractură survenită la traumatism minim și genu valgum. Biologic: hipocalcemie, hiperfosfatemie, parathormon seric mult crescut și fosfatază alcalină crescută; radiologic se observă eroziuni periostale și fracturi metafizare. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Boala adinamică osoasă (turnover redus)",
-            "Osteoporoză idiopatică juvenilă",
-            "Osteodistrofia renală cu turnover osos ridicat (osteitis fibrosa)",
             "Hiperparatiroidism primar",
+            "Osteoporoză idiopatică juvenilă",
+            "Boala adinamică osoasă (turnover redus)",
+            "Osteodistrofia renală cu turnover osos ridicat (osteitis fibrosa)",
             "Rahitism carențial prin deficit alimentar de vitamină D"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Forma cu turnover ridicat (osteitis fibrosa) este cea mai frecventă la copilul cu BCR și se caracterizează biologic prin hipocalcemie, hiperfosfatemie, creșterea PTH și a fosfatazei alcaline, radiologic prin eroziuni periostale și fracturi metafizare, iar clinic prin dureri osoase, fracturi la traumatisme minime și deformări precum genu valgum. Boala adinamică osoasă are, dimpotrivă, PTH supresat și hipercalcemie.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 639-649"
         },
@@ -3028,14 +4106,28 @@ const QUESTIONS = {
           "id": "40-5",
           "stem": "Copil de 18 luni cu boală cronică de rinichi stadiul terminal necesită inițierea epurării extrarenale. Abordul vascular este dificil din cauza vârstei mici, iar familia dorește o metodă ce poate fi efectuată la domiciliu, de către aparținători. Care este metoda de epurare extrarenală de primă intenție în acest caz?",
           "options": [
-            "Hemodializa prin cateter venos central tunelizat",
             "Dializa peritoneală",
-            "Hemodializa prin fistulă arteriovenoasă",
+            "Hemodializa zilnică de scurtă durată efectuată în centru",
             "Transplantul renal de la donator decedat, fără pregătire prealabilă",
-            "Hemodializa zilnică de scurtă durată efectuată în centru"
+            "Hemodializa prin fistulă arteriovenoasă",
+            "Hemodializa prin cateter venos central tunelizat"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Dializa peritoneală este recomandată în special la vârste mici, la care abordul vascular este foarte dificil, și poate fi practicată la domiciliu de către aparținători, spre deosebire de hemodializă, al cărei abord vascular este dificil de executat mai ales la vârste mici.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 639-649"
+        },
+        {
+          "id": "40-6",
+          "stem": "Copil de 7 ani cu BCR stadiul III se prezintă pentru evaluarea creșterii staturale. Aportul caloric și proteic este adecvat vârstei, acidoza metabolică este corectată (bicarbonat seric peste 22 mEq/l), anemia este tratată corespunzător (Hb 11,5 g/dl), iar valorile PTH se mențin în limitele țintă pentru stadiul bolii. Cu toate acestea, copilul prezintă un deficit statural de -2,3 DS față de talia țintă. Care este conduita terapeutică indicată în acest moment?",
+          "options": [
+            "Inițierea tratamentului cu hormon de creștere uman recombinant (rHuGH), 0,05 mg/kgc/zi subcutanat",
+            "Creșterea aportului proteic peste necesarul recomandat pentru vârstă, pentru stimularea creșterii",
+            "Creșterea dozei de calcitriol, independent de nivelul seric al PTH, pentru stimularea creșterii osoase",
+            "Administrarea de steroizi anabolizanți pentru recuperarea staturală",
+            "Temporizarea oricărei intervenții, deoarece deficitul statural se corectează spontan după transplantul renal"
+          ],
+          "correct": 0,
+          "explanation": "Textul precizează că atunci când deficitul statural devine mai mare de 1,88 DS, în ciuda unui aport caloric și proteic adecvat, a corectării acidozei metabolice, a anemiei și a valorilor PTH, este indicată inițierea tratamentului cu hormon de creștere uman recombinant (rHuGH) în doză de 0,05 mg/kgc/zi subcutanat, până la atingerea taliei dorite sau până la efectuarea transplantului renal. Rația proteică nu trebuie crescută peste necesar, iar steroizii anabolizanți nu sunt menționați ca opțiune terapeutică.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 639-649"
         }
       ]
@@ -3062,13 +4154,13 @@ const QUESTIONS = {
           "id": "41-2",
           "stem": "Un sugar de 8 luni prezintă febră, vărsături și redoare de ceafă instalate progresiv în ultimele 10 zile, fără răspuns la antibioterapie empirică. Se suspectează meningită tuberculoasă și se efectuează puncție lombară. Care dintre următoarele aspecte ale LCR este cel mai sugestiv pentru etiologia tuberculoasă?",
           "options": [
-            "LCR cu eozinofilie marcată și glicorahie crescută",
-            "LCR clar, acelular, cu proteinorahie și glicorahie normale",
             "LCR hemoragic, cu eritrocite numeroase și proteinorahie normală",
+            "LCR tulbure, purulent, cu polimorfonucleare peste 1000/mm3 și glicorahie normală",
             "LCR clar, cu citorahie de 200-500 elemente/mm3 cu predominanță limfocitară, proteinorahie peste 100 mg% și glicorahie sub 30 mg%",
-            "LCR tulbure, purulent, cu polimorfonucleare peste 1000/mm3 și glicorahie normală"
+            "LCR clar, acelular, cu proteinorahie și glicorahie normale",
+            "LCR cu eozinofilie marcată și glicorahie crescută"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "În meningita tuberculoasă, LCR este clar, cu citorahie de 200-500 elemente/mm3 cu predominanță limfocitară (peste 50-80%), proteinorahie crescută (peste 100 mg%, uneori peste 3 g% sugerând blocaj medular) și glicorahie scăzută (sub 30 mg%). Persistența acestor modificări este caracteristică pentru etiologia tuberculoasă, spre deosebire de aspectul purulent din meningitele bacteriene.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 367-379"
         },
@@ -3076,13 +4168,13 @@ const QUESTIONS = {
           "id": "41-3",
           "stem": "Un copil de 4 ani este diagnosticat cu meningită tuberculoasă și se inițiază schema de tratament antituberculos în faza intensivă. Față de schemele standard folosite în alte forme de tuberculoză pulmonară, care este modificarea recomandată și motivul ei?",
           "options": [
-            "Se folosește doar izoniazidă în monoterapie, pentru penetrabilitate meningeală maximă",
             "Se înlocuiește pirazinamida cu acid paraaminosalicilic încă din prima linie de tratament",
-            "Se elimină rifampicina din schemă din cauza toxicității hepatice crescute la nivel meningeal",
+            "Se folosește doar izoniazidă în monoterapie, pentru penetrabilitate meningeală maximă",
             "Se înlocuiește etambutolul cu streptomicină, deoarece etambutolul nu traversează bariera meningeală",
+            "Se elimină rifampicina din schemă din cauza toxicității hepatice crescute la nivel meningeal",
             "Se dublează doza de pirazinamidă și se elimină izoniazida din schemă"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "Textul precizează explicit că în meningita tuberculoasă se folosește streptomicina în locul etambutolului, deoarece acesta din urmă nu traversează bariera meningoencefalică, în timp ce streptomicina, deși cu difuziune redusă în LCR în mod normal, are penetrabilitate crescută în prezența inflamației meningeale.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 367-379"
         },
@@ -3090,13 +4182,13 @@ const QUESTIONS = {
           "id": "41-4",
           "stem": "Un copil de 3 ani necesită asociere de tuberculostatice pentru o formă de tuberculoză pulmonară extinsă. Deși etambutolul are o penetrabilitate bună inclusiv în SNC, la această vârstă utilizarea sa este evitată. Care este motivul principal?",
           "options": [
-            "Risc de nevrită retrobulbară, ale cărei simptome (scăderea acuității vizuale, scotoame) nu pot fi sesizate sau comunicate de copilul mic",
+            "Necesită obligatoriu asociere cu piridoxină pentru prevenirea neuropatiei periferice",
             "Interferează semnificativ cu absorbția digestivă a rifampicinei",
             "Risc crescut de ototoxicitate ireversibilă specific acestei vârste",
             "Risc crescut de hepatotoxicitate severă și ireversibilă",
-            "Necesită obligatoriu asociere cu piridoxină pentru prevenirea neuropatiei periferice"
+            "Risc de nevrită retrobulbară, ale cărei simptome (scăderea acuității vizuale, scotoame) nu pot fi sesizate sau comunicate de copilul mic"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Etambutolul poate produce, la doze mari, nevrită retrobulbară cu scăderea acuității vizuale, vedere în ceață și scotoame centrale. Textul menționează că se recomandă după vârsta de 5 ani, deoarece sub această vârstă copilul nu poate sesiza sau relata tulburările de vedere, reacție adversă posibilă a medicamentului.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 367-379"
         },
@@ -3104,14 +4196,28 @@ const QUESTIONS = {
           "id": "41-5",
           "stem": "O lăuză este diagnosticată imediat postpartum cu miliarie tuberculoasă, formă cu diseminare hematogenă. Nou-născutul este asimptomatic la naștere. Care este conduita corectă în acest caz?",
           "options": [
-            "Se administrează doar vaccinarea BCG, fără alte investigații sau tratament",
             "Copilul este evaluat pentru tuberculoză congenitală (inclusiv examen histologic al placentei), separat de mamă până la momentul necontagiozității acesteia și tratat cu izoniazidă până la testarea IDR-PPD la 4-6 luni",
             "Se inițiază direct schema completă de patru tuberculostatice timp de 12 luni, indiferent de rezultatele investigațiilor",
-            "Alăptarea continuă fără nicio restricție, iar copilul se testează IDR-PPD abia la vârsta de 1 an",
-            "Nu sunt necesare investigații suplimentare, deoarece transmiterea la nou-născut prin această cale este exclusă"
+            "Nu sunt necesare investigații suplimentare, deoarece transmiterea la nou-născut prin această cale este exclusă",
+            "Se administrează doar vaccinarea BCG, fără alte investigații sau tratament",
+            "Alăptarea continuă fără nicio restricție, iar copilul se testează IDR-PPD abia la vârsta de 1 an"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "În cazul mamei cu diseminare hematogenă (meningită TB, miliarie, TB osteoarticulară), nou-născutul trebuie evaluat pentru tuberculoză congenitală, inclusiv prin examinarea histologică a placentei. Dacă aspectul clinic și radiologic nu sunt sugestive pentru boală congenitală, copilul se separă de mamă până la necontagiozitate și primește izoniazidă până la testarea IDR-PPD la 4-6 luni, tratament care se prelungește sau se sistează în funcție de rezultat.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 367-379"
+        },
+        {
+          "id": "41-6",
+          "stem": "Un adolescent de 16 ani, fără antecedente semnificative, se prezintă cu debut acut de febră, tuse și durere toracică de tip pleuritic. Radiografia toracică evidențiază voalarea sinusului costodiafragmatic drept. Toracocenteza extrage lichid serocitrin, cu proteine peste 3 g%, citorahie cu predominanță limfocitară (peste 50%) și valori crescute ale adenozin-deaminazei. Examenul bacteriologic direct al lichidului este negativ. Care este atitudinea corectă?",
+          "options": [
+            "Se indică toracostomie cu tub de dren ca primă intenție, similar conduitei din pneumotoracele sub tensiune",
+            "Se administrează antibioterapie cu spectru larg pentru pneumonie bacteriană complicată cu empiem, fără alte investigații etiologice",
+            "Se inițiază tratament antituberculos, deoarece tabloul clinico-biologic este sugestiv pentru pleurezie tuberculoasă, iar bacteriologia lichidului pleural este frecvent negativă din cauza caracterului paucibacilar al acestuia",
+            "Se recomandă doar monitorizare, fără tratament, deoarece evoluția spontană a pleureziei tuberculoase este întotdeauna favorabilă și nu există risc de reactivare ulterioară",
+            "Se exclude etiologia tuberculoasă, deoarece examenul bacteriologic negativ infirmă diagnosticul"
+          ],
+          "correct": 2,
+          "explanation": "Pleurezia tuberculoasă (mai frecventă la adolescenți) se caracterizează prin lichid serocitrin de tip exsudat (proteine peste 3 g%), cu predominanță limfocitară și valori crescute ale adenozin-deaminazei, marker pentru etiologia TB. Examenul bacteriologic este frecvent negativ din cauza caracterului paucibacilar al lichidului pleural, ceea ce nu exclude diagnosticul. Deși evoluția spontană poate fi favorabilă, tratamentul antituberculos precoce se justifică, deoarece bolnavii netratați au risc crescut pentru reactivarea bolii pulmonare.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 367-379"
         }
       ]
@@ -3124,13 +4230,13 @@ const QUESTIONS = {
           "id": "42-1",
           "stem": "Un nou-născut de 3 săptămâni prezintă hepatosplenomegalie, icter, rinoree persistentă hemoragică ('guturai'), erupție maculopapuloasă pe palme și plante cu tendință la descuamare și iritabilitate marcată, cu refuzul de a mișca membrul superior stâng. Radiografia evidențiază osteocondrită la nivelul metafizelor. Care este cel mai probabil diagnostic?",
           "options": [
-            "Sifilis congenital precoce, cu pseudoparalizie Parrot",
-            "Scorbut infantil (deficit de vitamina C)",
-            "Artrită septică de umăr",
             "Rahitism carențial cu fracturi patologice",
-            "Osteomielită hematogenă acută stafilococică"
+            "Osteomielită hematogenă acută stafilococică",
+            "Artrită septică de umăr",
+            "Scorbut infantil (deficit de vitamina C)",
+            "Sifilis congenital precoce, cu pseudoparalizie Parrot"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Asocierea hepatosplenomegalie, icter, rinită persistentă (snuffles), erupție maculopapuloasă/veziculobuloasă cu descuamare palmoplantară și osteocondrită dureroasă este caracteristică sifilisului congenital precoce. Durerea osoasă determină iritabilitate și refuzul de a mișca membrul afectat, fenomen numit pseudoparalizia lui Parrot.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1592-1599"
         },
@@ -3139,12 +4245,12 @@ const QUESTIONS = {
           "stem": "La un nou-născut din mamă cu serologie reactivă pentru sifilis se compară titrul nontreponemic (RPR/VDRL) al copilului cu cel matern, conform algoritmului de evaluare a nou-născutului la risc. Care rezultat susține cel mai puternic diagnosticul de sifilis congenital cert sau foarte probabil?",
           "options": [
             "Testul treponemal matern este negativ",
-            "Titrul RPR al copilului este mai mic decât titrul matern",
             "Titrul RPR al copilului este egal cu titrul matern",
-            "Titrul RPR al copilului este de cel puțin 4 ori mai mare decât titrul matern",
-            "Titrul RPR al copilului devine nedetectabil până la 3-6 luni"
+            "Titrul RPR al copilului este mai mic decât titrul matern",
+            "Titrul RPR al copilului devine nedetectabil până la 3-6 luni",
+            "Titrul RPR al copilului este de cel puțin 4 ori mai mare decât titrul matern"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Un titru al sugarului cel puțin de 4 ori (2 diluții) mai mare decât titrul matern, coroborat cu examen fizic sau evaluare anormală, indică sifilis congenital dovedit sau foarte probabil. Un titru egal sau mai mic decât cel matern sugerează mai degrabă transfer pasiv de anticorpi materni, care în mod normal devine nedetectabil în 3-6 luni.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1592-1599"
         },
@@ -3152,13 +4258,13 @@ const QUESTIONS = {
           "id": "42-3",
           "stem": "Triada Hutchinson, manifestare tardivă a sifilisului congenital netratat (copii peste 2 ani), este alcătuită din:",
           "options": [
-            "Dinți Hutchinson, keratită interstițială și surditate prin afectarea nervului VIII",
-            "Nas în șa, tibii 'în iatagan' și scapulă scafoidă",
             "Pseudoparalizia Parrot, hepatosplenomegalie și icter",
+            "Dinți Hutchinson, keratită interstițială și surditate prin afectarea nervului VIII",
             "Frunte olimpiană, semnul Higoumenaki și rhagade",
+            "Nas în șa, tibii 'în iatagan' și scapulă scafoidă",
             "Articulația Clutton, molari 'în mure' și keratită interstițială"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Triada Hutchinson este definită de textul de referință ca fiind formată din dinții Hutchinson, keratita interstițială și surditatea (afectarea nervului acustic, VIII). Celelalte semne enumerate (nas în șa, tibii în iatagan, scapulă scafoidă, frunte olimpiană, semnul Higoumenaki, rhagade, articulația Clutton, molari în mure) sunt manifestări tardive distincte, dar nu fac parte din această triadă.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1592-1599"
         },
@@ -3166,13 +4272,13 @@ const QUESTIONS = {
           "id": "42-4",
           "stem": "Un sugar de 2 săptămâni este diagnosticat cu sifilis congenital cert. Care este conduita terapeutică corectă?",
           "options": [
+            "Azitromicină orală, timp de 10 zile",
             "Penicilină G benzatinică, în doză unică, intramuscular",
             "Ceftriaxonă intramusculară, în doză unică",
-            "Azitromicină orală, timp de 10 zile",
-            "Penicilină G cristalină apoasă, administrată parenteral (intravenos), timp de 10 zile",
-            "Doxiciclină intravenoasă, timp de 14 zile"
+            "Doxiciclină intravenoasă, timp de 14 zile",
+            "Penicilină G cristalină apoasă, administrată parenteral (intravenos), timp de 10 zile"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Penicilina G apoasă administrată parenteral este singurul tratament documentat eficace pentru sifilisul congenital, deoarece asigură concentrații treponemicide susținute (inclusiv în LCR) pe durata necesară, dat fiind timpul lung de diviziune al T. pallidum. Penicilina benzatinică nu atinge concentrații adecvate în LCR, iar doxiciclina și macrolidele nu sunt folosite pentru tratamentul sifilisului congenital la sugar.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1592-1599"
         },
@@ -3181,13 +4287,27 @@ const QUESTIONS = {
           "stem": "Un adolescent cu sifilis secundar (erupție maculopapuloasă generalizată, inclusiv palmoplantară) primește penicilină G benzatinică intramuscular. La câteva ore după administrare dezvoltă febră, frisoane și mialgii tranzitorii. Care este conduita corectă?",
           "options": [
             "Continuarea tratamentului cu penicilină, reacția fiind autolimitată",
-            "Întreruperea penicilinei și trecerea la doxiciclină",
-            "Desensibilizare de urgență la penicilină",
+            "Dublarea imediată a dozei de penicilină administrate",
             "Oprirea definitivă a oricărui tratament antibiotic",
-            "Dublarea imediată a dozei de penicilină administrate"
+            "Întreruperea penicilinei și trecerea la doxiciclină",
+            "Desensibilizare de urgență la penicilină"
           ],
           "correct": 0,
           "explanation": "Tabloul descris corespunde reacției Jarisch-Herxheimer, o reacție febrilă sistemică tranzitorie determinată de eliberarea masivă de antigene de tip endotoxinic în urma lizei bacteriene, care apare la 15-20% dintre pacienții cu sifilis dobândit sau congenital tratați cu penicilină. Aceasta nu reprezintă o indicație de întrerupere a tratamentului cu penicilină.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 1592-1599"
+        },
+        {
+          "id": "42-6",
+          "stem": "O gravidă în trimestrul II de sarcină este diagnosticată cu sifilis primar (șancru genital, teste nontreponemic și treponemic reactive). Din antecedente, pacienta a prezentat anafilaxie documentată la administrarea de penicilină. Care este conduita corectă pentru tratamentul infecției materne și prevenirea sifilisului congenital?",
+          "options": [
+            "Azitromicină orală, în doză unică",
+            "Amânarea oricărui tratament antibiotic până după naștere, pentru a evita expunerea fetală",
+            "Desensibilizare la penicilină, urmată de tratamentul standard cu penicilină",
+            "Tetraciclină orală, 500 mg de 4 ori/zi, timp de 14 zile",
+            "Doxiciclină orală, 100 mg de 2 ori/zi, timp de 14 zile"
+          ],
+          "correct": 2,
+          "explanation": "La gravidele alergice la penicilină, conduita corectă este desensibilizarea urmată de tratamentul standard cu penicilină, aceasta fiind singura strategie fiabilă de eradicare a bolii materne și de prevenire a transmiterii verticale, penicilina rămânând singurul tratament documentat eficace în sarcină. Doxiciclina și tetraciclina sunt contraindicate în sarcină, iar macrolidele nu previn eficient infecția fetală. Amânarea tratamentului este inacceptabilă, deoarece sifilisul matern netratat are o rată de transmitere verticală apropiată de 100%, cu risc de pierdere fetală, naștere prematură sau făt mort.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1592-1599"
         }
       ]
@@ -3200,10 +4320,10 @@ const QUESTIONS = {
           "id": "43-1",
           "stem": "Un sugar de 2 luni este internat pentru pneumonie severă cu Pneumocystis jirovecii, diaree cronică și candidoză orală extinsă. Imunofenotiparea evidențiază limfopenie marcată prin absența limfocitelor T, iar testul de screening neonatal (cercurile de excizie a rearanjamentului receptorului de celule T) este anormal. Care este conduita terapeutică definitivă, cu șanse de succes de peste 90% dacă este aplicată înainte de instalarea unor infecții severe ireversibile?",
           "options": [
-            "Terapie substitutivă cu imunoglobuline intravenoase",
-            "Profilaxie antiinfecțioasă cu trimetoprim-sulfametoxazol și antifungice",
-            "Transplant de țesut timic cultivat",
             "Terapie cu interferon-gamma",
+            "Profilaxie antiinfecțioasă cu trimetoprim-sulfametoxazol și antifungice",
+            "Terapie substitutivă cu imunoglobuline intravenoase",
+            "Transplant de țesut timic cultivat",
             "Transplant de celule stem hematopoietice"
           ],
           "correct": 4,
@@ -3214,13 +4334,13 @@ const QUESTIONS = {
           "id": "43-2",
           "stem": "Un sugar de sex masculin este asimptomatic până la vârsta de 7 luni, când dezvoltă otite medii recurente, pneumonii și sinuzite cu Streptococcus pneumoniae și Haemophilus influenzae. Examenul obiectiv relevă amigdale mici, absente, și ganglioni limfatici nepalpabili, iar funcția și numărul limfocitelor T sunt normale. Care modificare imunologică confirmă cel mai probabil diagnosticul de agamaglobulinemie Bruton (X-linkată)?",
           "options": [
+            "Nivel seric crescut de IgM, cu IgG și IgA scăzute",
+            "Absența limfocitelor B circulante (CD19/CD20), cu limfocite T normale numeric și funcțional",
             "Trombocite mici, în număr scăzut, cu megacariocite medulare normale",
             "Absența limfocitelor T circulante, cu limfopenie severă generalizată",
-            "CH50 absent, cu C3 și C4 serice scăzute",
-            "Absența limfocitelor B circulante (CD19/CD20), cu limfocite T normale numeric și funcțional",
-            "Nivel seric crescut de IgM, cu IgG și IgA scăzute"
+            "CH50 absent, cu C3 și C4 serice scăzute"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "În agamaglobulinemia X-linkată (XLA), defectul genei Btk blochează dezvoltarea limfocitelor B în stadiul pre-B, rezultând absența practic completă a limfocitelor B circulante (sub 1%), în timp ce procentul și funcția limfocitelor T sunt normale. Clinic apar amigdale mici/absente și absența ganglionilor palpabili (lipsa centrelor germinative), iar simptomele apar după epuizarea IgG materne transferate transplacentar, de regulă după 6-9 luni. IgM crescut cu IgG/IgA scăzute sugerează sindrom hiper-IgM, iar trombocitele mici cu megacariocite normale sunt caracteristice sindromului Wiskott-Aldrich.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1107-1118"
         },
@@ -3228,13 +4348,13 @@ const QUESTIONS = {
           "id": "43-3",
           "stem": "Un nou-născut prezintă convulsii hipocalcemice în perioada neonatală, o malformație cardiacă conotruncală și dismorfism facial (filtru scurt, hipertelorism, urechi jos implantate și rotate posterior). Se suspectează sindromul de deleție 22q11.2 (sindrom di George) cu aplazie timică completă. Ținând cont de susceptibilitatea acestor pacienți la boala grefă-contra-gazdă, care este cea mai importantă măsură de precauție?",
           "options": [
-            "Administrarea profilactică de imunoglobuline intravenoase, indiferent de nivelul lor seric",
-            "Administrarea exclusivă de produse de sânge iradiate",
-            "Evitarea vaccinurilor inactivate până la normalizarea calcemiei",
             "Corecția chirurgicală a malformației cardiace înaintea oricărei evaluări imunologice",
-            "Izolarea strictă a copilului până la vârsta de 2 ani"
+            "Izolarea strictă a copilului până la vârsta de 2 ani",
+            "Evitarea vaccinurilor inactivate până la normalizarea calcemiei",
+            "Administrarea exclusivă de produse de sânge iradiate",
+            "Administrarea profilactică de imunoglobuline intravenoase, indiferent de nivelul lor seric"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Pacienții cu aplazie timică completă din sindromul di George au o susceptibilitate similară SCID la infecții oportuniste și la boala grefă-contra-gazdă produsă de transfuzii de sânge neiradiat, deoarece limfocitele T alogene din produsul sanguin pot prolifera necontrolat într-o gazdă lipsită de imunitate celulară funcțională. De aceea, orice produs de sânge administrat acestor pacienți trebuie iradiat. Diagnosticul precoce prin numărătoarea limfocitelor T și dozarea calcemiei este esențial la orice nou-născut cu hipoparatiroidism, malformație conotruncală sau sindrom CHARGE.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1107-1118"
         },
@@ -3242,13 +4362,13 @@ const QUESTIONS = {
           "id": "43-4",
           "stem": "Un băiat de 3 ani prezintă abcese cutanate recurente cu Staphylococcus aureus, limfadenită supurativă și pneumonie cu Aspergillus, cu antecedente de granuloame hepatice. Testele de chemotactism, fagocitoză și degranulare a neutrofilelor sunt normale. Care este testul de elecție pentru confirmarea diagnosticului de boală granulomatoasă cronică?",
           "options": [
-            "Citometria în flux cu dihidrorodamină (DHR) pentru evaluarea exploziei oxidative a neutrofilelor",
             "Dozarea activității hemolitice totale a complementului (CH50) și a căii alternative (AH50)",
-            "Numărătoarea limfocitelor T naive (CD45RA) prin citometrie în flux",
             "Testul cercurilor de excizie a rearanjamentului receptorului de celule T (TREC)",
-            "Dozarea isohemaglutininelor"
+            "Dozarea isohemaglutininelor",
+            "Numărătoarea limfocitelor T naive (CD45RA) prin citometrie în flux",
+            "Citometria în flux cu dihidrorodamină (DHR) pentru evaluarea exploziei oxidative a neutrofilelor"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Boala granulomatoasă cronică (CGD) este determinată de un defect al NADPH oxidazei fagocitare, prin care neutrofilele și monocitele au chemotactism, ingestie și degranulare normale, dar nu pot genera metaboliți oxigenați microbicizi, fiind incapabile să distrugă microorganismele catalază-pozitive (S. aureus, Aspergillus, Serratia marcescens, Burkholderia cepacia). Testul actual de diagnostic este citometria în flux cu dihidrorodamină (DHR), care măsoară explozia oxidativă; testul cu nitroblue tetrazolium este folosit doar rar în prezent.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1139-1140"
         },
@@ -3256,15 +4376,57 @@ const QUESTIONS = {
           "id": "43-5",
           "stem": "Un adolescent anterior sănătos dezvoltă al doilea episod de meningită meningococică, de această dată cu un serotip neobișnuit (diferit de A, B sau C). Care este cea mai probabilă anomalie imunologică subiacentă și testele de screening indicate pentru confirmare?",
           "options": [
+            "Boală granulomatoasă cronică, evaluată prin testul DHR",
+            "Deficit de subclase de IgG, evaluat prin dozarea IgG2 și IgG4 serice",
             "Deficit selectiv de IgA, evaluat prin dozarea IgA serică",
             "Agamaglobulinemie X-linkată, evaluată prin citometrie în flux pentru limfocite B",
-            "Deficit de subclase de IgG, evaluat prin dozarea IgG2 și IgG4 serice",
-            "Boală granulomatoasă cronică, evaluată prin testul DHR",
             "Deficit al unei componente tardive a complementului (C5-C9) sau al căii alternative, evaluat prin CH50 și AP50"
           ],
           "correct": 4,
           "explanation": "Textul precizează explicit că un adolescent sau tânăr anterior sănătos cu meningită meningococică produsă de un serotip neobișnuit (nu A, B sau C) trebuie evaluat pentru deficitul unei componente tardive a complementului sau al căii alternative, prin testele CH50 și AP50. Infecțiile diseminate cu Neisseria (gonococ, meningococ) sunt manifestarea tipică a deficitelor de complement, în special ale componentelor terminale C5-C9 care formează complexul de atac membranar.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1154-1154"
+        },
+        {
+          "id": "43-6",
+          "stem": "O femeie de 22 de ani prezintă de la vârsta de 18 ani sinuzite și pneumonii bacteriene recurente, bronșiectazii vizibile la CT torace, splenomegalie și un episod recent de anemie hemolitică autoimună. Imunograma arată IgG seric sub 2 deviații standard față de valorile normale pentru vârstă, cu IgA și IgM scăzute. Numărul limfocitelor B circulante (CD19+) este normal, dar acestea nu reușesc să se diferențieze în plasmocite secretoare de imunoglobuline, cu o scădere marcată a limfocitelor B de memorie cu switch de clasă. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Imunodeficiență variabilă comună (CVID)",
+            "Deficit selectiv de IgA",
+            "Sindrom hiper-IgM",
+            "Agamaglobulinemie X-linkată (Bruton)",
+            "Sindrom Wiskott-Aldrich"
+          ],
+          "correct": 0,
+          "explanation": "CVID este cea mai frecventă dintre deficiențele de anticorpi și se caracterizează prin hipogamaglobulinemie (IgG sub 2 DS) cu IgA și/sau IgM scăzute, debut mai tardiv (spre deosebire de XLA), distribuție aproape egală pe sexe și prezența unui număr normal de limfocite B care însă nu se diferențiază normal în celule producătoare de imunoglobuline (deficit de limfocite B de memorie cu switch de clasă). Boala autoimună (anemie hemolitică) și splenomegalia sunt manifestări tipice ale CVID și marchează un prognostic mai rezervat. XLA se distinge prin absența completă a limfocitelor B circulante, deficitul de IgA este de obicei asimptomatic cu celelalte imunoglobuline normale, iar sindromul hiper-IgM și Wiskott-Aldrich au tablouri clinice și imunologice diferite (IgM crescut, respectiv trombocitopenie cu trombocite mici).",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 1107-1118"
+        },
+        {
+          "id": "43-7",
+          "stem": "Un copil de 6 ani cunoscut cu deficit selectiv de IgA (IgA serică sub 5 mg/dL, cu celelalte clase de imunoglobuline normale) necesită transfuzie de masă eritrocitară pentru o anemie severă. Se știe că până la 44% dintre pacienții cu acest deficit dezvoltă anticorpi anti-IgA, cu risc de reacții transfuzionale nonhemolitice. Care este conduita corectă pentru prevenirea acestor reacții?",
+          "options": [
+            "Excluderea definitivă a transfuziilor de sânge la acest pacient, indiferent de severitatea anemiei",
+            "Administrarea de plasmă proaspătă congelată în locul masei eritrocitare",
+            "Premedicație cu corticosteroizi sistemici, fără alte precauții suplimentare",
+            "Administrarea de imunoglobuline intravenoase (IVIG) înainte de transfuzie, pentru substituirea IgA",
+            "Administrarea de eritrocite spălate sau provenite de la donatori cu deficit de IgA"
+          ],
+          "correct": 4,
+          "explanation": "La pacienții cu deficit selectiv de IgA care au anticorpi anti-IgA, transfuzia de produse sanguine ce conțin IgA poate provoca reacții nonhemolitice; de aceea se recomandă eritrocite spălate sau produse provenite de la donatori deficitari în IgA. IVIG nu este indicată, deoarece majoritatea pacienților cu deficit de IgA produc normal anticorpi IgG, iar multe preparate de IVIG conțin suficientă IgA cât să declanșeze o reacție. Evitarea definitivă a transfuziilor nu este necesară, iar plasma proaspătă congelată conține și mai multă IgA decât masa eritrocitară, crescând riscul.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 1107-1118"
+        },
+        {
+          "id": "43-8",
+          "stem": "Un sugar de sex masculin de 8 luni prezintă sângerare prelungită după circumcizie în perioada neonatală, scaune cu striuri sangvinolente recurente, dermatită atopică severă și mai multe episoade de otită medie cu Streptococcus pneumoniae. Hemoleucograma arată trombocite mici, în număr scăzut, cu megacariocite medulare normale ca număr și morfologie. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Sindrom hiper-IgM",
+            "Sindrom Wiskott-Aldrich",
+            "Purpură trombocitopenică imună (ITP)",
+            "Ataxie-teleangiectazie",
+            "Agamaglobulinemie X-linkată (Bruton)"
+          ],
+          "correct": 1,
+          "explanation": "Sindromul Wiskott-Aldrich este o afecțiune X-linkată recesivă caracterizată prin triada dermatită atopică, trombocitopenie cu trombocite mici dar megacariocite normale, și susceptibilitate crescută la infecții cu bacterii încapsulate; sângerarea la circumcizie și scaunele sangvinolente sunt manifestări precoce tipice. Spre deosebire de ITP, unde trombocitele sunt de dimensiuni normale sau mari și lipsesc eczema și infecțiile recurente, în WAS trombocitele sunt mici. Agamaglobulinemia Bruton nu asociază trombocitopenie sau eczemă, ataxia-teleangiectazia se manifestă prin ataxie cerebeloasă progresivă și teleangiectazii, iar sindromul hiper-IgM are alt tablou imunologic (IgM crescut, fără trombocitopenie caracteristică).",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 1107-1118"
         }
       ]
     },
@@ -3276,13 +4438,13 @@ const QUESTIONS = {
           "id": "44-1",
           "stem": "Un copil în vârstă de 3 ani se prezintă cu paloare, fatigabilitate, echimoze spontane și dureri osoase, cu debut insidios în ultimele 3 săptămâni. Hemograma arată Hb 6,5 g/dL, trombocite 18.000/mmc, leucocite 3.200/mmc, fără blaști vizibili pe frotiul de sânge periferic. Care este investigația esențială pentru confirmarea diagnosticului de leucemie acută la acest pacient?",
           "options": [
-            "Radiografia cardio-pulmonară",
-            "Mielograma (aspiratul medular)",
             "Puncția lombară",
             "Biopsia ganglionară",
-            "Ecografia abdominală"
+            "Ecografia abdominală",
+            "Mielograma (aspiratul medular)",
+            "Radiografia cardio-pulmonară"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Formele aleucemice (leucocite < 10.000/mmc, fără blaști pe frotiul periferic) sunt frecvente în LAL, astfel încât diagnosticul se stabilește prin mielogramă. Măduva osoasă este constant hipercelulară și infiltrată, fiind suficientă prezența a peste 25% limfoblaști pentru diagnosticul de leucemie acută. Puncția lombară și celelalte explorări sunt utile ulterior, pentru evaluarea extensiei bolii, nu pentru diagnosticul de bază.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1230-1247"
         },
@@ -3290,13 +4452,13 @@ const QUESTIONS = {
           "id": "44-2",
           "stem": "Un copil de 5 ani se prezintă cu febră, adenopatii cervicale generalizate, splenomegalie, iar pe frotiul de sânge periferic se observă limfocitoză cu limfocite atipice. Tabloul clinico-biologic mimează o leucemie acută limfoblastică. Care este diagnosticul cel mai probabil ce trebuie exclus prin aspirat medular și serologie specifică înainte de a susține diagnosticul de LAL?",
           "options": [
-            "Limfomul Hodgkin",
-            "Mononucleoza infecțioasă (infecție cu virus Epstein-Barr)",
-            "Artrita reumatoidă juvenilă",
+            "Anemia aplastică",
             "Purpura trombocitopenică imună",
-            "Anemia aplastică"
+            "Limfomul Hodgkin",
+            "Artrita reumatoidă juvenilă",
+            "Mononucleoza infecțioasă (infecție cu virus Epstein-Barr)"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Mononucleoza infecțioasă și alte infecții virale pot prezenta un tablou clinic asemănător leucemiei acute, cu adenopatii generalizate, splenomegalie, febră și limfocitoză. Limfocitele atipice din infecția cu EBV pot fi ușor confundate cu celulele blastice, fiind necesare aspiratul medular și serologia pentru EBV pentru diagnosticul de certitudine. Celelalte entități nu asociază tipic limfocite atipice cu acest tablou.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1230-1247"
         },
@@ -3304,11 +4466,11 @@ const QUESTIONS = {
           "id": "44-3",
           "stem": "Un sugar cu leucemie acută limfoblastică prezintă un număr de leucocite de 80.000/mmc la debut, rearanjament al genei MLL cu t(4;11) și infiltrare a sistemului nervos central. Cum trebuie interpretat acest ansamblu de caracteristici din punct de vedere prognostic și al încadrării terapeutice?",
           "options": [
-            "Prognostic favorabil, independent de vârstă, datorită hiperdiploidiei asociate frecvent la sugari",
+            "Indică o leucemie congenitală cu prognostic identic populației generale cu LAL",
             "Prognostic nefavorabil, cu încadrare în grupa de risc înalt/foarte înalt",
-            "Este caracteristic formei L3 cu celule B mature și se tratează conform protocolului de limfom Burkitt",
             "Nu influențează prognosticul, fiind necesară doar profilaxia meningocerebrală standard",
-            "Indică o leucemie congenitală cu prognostic identic populației generale cu LAL"
+            "Prognostic favorabil, independent de vârstă, datorită hiperdiploidiei asociate frecvent la sugari",
+            "Este caracteristic formei L3 cu celule B mature și se tratează conform protocolului de limfom Burkitt"
           ],
           "correct": 1,
           "explanation": "Vârsta sub 1 an, leucocitoza peste 50.000/mmc, rearanjamentele MLL t(4;11) și infiltrarea SNC sunt toate criterii de prognostic nefavorabil în LAL. Pacienții cu t(4;11) sunt de obicei sugari cu leucocitoză mare și infiltrare SNC, adesea fără remisiune la finalul inducției, fiind încadrați în grupele de risc înalt/foarte înalt din stratificarea COG.",
@@ -3318,10 +4480,10 @@ const QUESTIONS = {
           "id": "44-4",
           "stem": "Un copil cu leucemie acută limfoblastică hiperleucocitară (leucocite 180.000/mmc) dezvoltă, la inițierea tratamentului, acid uric seric peste 10 mg/dL, hiperpotasemie și semne incipiente de insuficiență renală acută. Care este diagnosticul și conduita terapeutică imediată corectă?",
           "options": [
-            "Sepsis sever - antibioterapie empirică cu spectru larg",
             "Coagulare intravasculară diseminată - administrare de plasmă proaspătă congelată",
-            "Infiltrare blastică renală - biopsie renală de urgență",
             "Leucostazie cerebrală - transfuzie de masă eritrocitară",
+            "Infiltrare blastică renală - biopsie renală de urgență",
+            "Sepsis sever - antibioterapie empirică cu spectru larg",
             "Sindrom de liză tumorală - hiperhidratare, alcalinizare cu bicarbonat de sodiu și allopurinol"
           ],
           "correct": 4,
@@ -3332,14 +4494,42 @@ const QUESTIONS = {
           "id": "44-5",
           "stem": "Un copil cu leucemie acută mieloidă se prezintă cu sângerări gingivale severe, echimoze extinse, trombocitopenie marcată, timpi de protrombină și de trombină prelungiți și D-dimeri crescuți, iar mielograma evidențiază promielocite atipice. Care este conduita terapeutică specifică ce trebuie inițiată rapid, chiar la simpla suspiciune a acestui subtip de LAM?",
           "options": [
+            "Vincristina asociată cu prednison",
             "Radioterapia craniană profilactică",
             "Imatinibul (inhibitor de tirozin-kinază)",
-            "Vincristina asociată cu prednison",
-            "Acidul all-trans-retinoic (ATRA)",
-            "Metotrexatul intratecal, izolat"
+            "Metotrexatul intratecal, izolat",
+            "Acidul all-trans-retinoic (ATRA)"
+          ],
+          "correct": 4,
+          "explanation": "Tabloul clinico-biologic descrie leucemia acută promielocitară (LAM3), caracterizată prin coagulopatie severă asociată translocației t(15;17) PML-RARa. La cea mai mică suspiciune de LAM3 trebuie inițiat rapid tratamentul cu ATRA, care ameliorează coagularea intravasculară diseminată și manifestările hemoragice; translocația este asociată cu răspuns bun la acest agent.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1230-1247"
+        },
+        {
+          "id": "44-6",
+          "stem": "Un copil de 6 ani este diagnosticat cu leucemie acută pe baza mielogramei, care evidențiază peste 30% blaști. Din punct de vedere morfologic, aspectul citologic al blaștilor nu permite diferențierea certă între leucemia acută limfoblastică (LAL) și leucemia acută mieloidă (LAM), fiind necesare reacții citochimice suplimentare. Care dintre următoarele reacții, dacă este pozitivă, pledează cel mai puternic pentru diagnosticul de LAM și împotriva celui de LAL?",
+          "options": [
+            "Reacția pentru esteraze nespecifice (alfa-naftil acetat), izolat",
+            "Reacția PAS (acid periodic-Schiff) intens pozitivă, granulară",
+            "Reacția pentru terminal dezoxinucleotidil transferază (TdT)",
+            "Reacția pentru mieloperoxidază (MPO)",
+            "Reacția pentru fosfataza acidă citoplasmatică"
           ],
           "correct": 3,
-          "explanation": "Tabloul clinico-biologic descrie leucemia acută promielocitară (LAM3), caracterizată prin coagulopatie severă asociată translocației t(15;17) PML-RARa. La cea mai mică suspiciune de LAM3 trebuie inițiat rapid tratamentul cu ATRA, care ameliorează coagularea intravasculară diseminată și manifestările hemoragice; translocația este asociată cu răspuns bun la acest agent.",
+          "explanation": "Conform textului, reacția pentru mieloperoxidază (MPO) pozitivă este specifică pentru LAM și este folosită, alături de colorația negru Sudan și esterazele nespecifice, pentru diferențierea de LAL. TdT este prezentă în toate stadiile de diferențiere ale limfoblaștilor și este rareori pozitivă în leucemia mieloidă, deci pledează pentru LAL, nu pentru LAM. PAS intens pozitivă și fosfataza acidă citoplasmatică pot susține diagnosticul de LAL, fiind reacții caracteristice acesteia, nu LAM.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1230-1247"
+        },
+        {
+          "id": "44-7",
+          "stem": "Un adolescent de 14 ani, aflat în faza de inducție a tratamentului pentru leucemie acută limfoblastică (vincristină, dexametazonă, L-asparaginază), dezvoltă brusc durere abdominală intensă, greață și vărsături, fără febră sau semne de neutropenie severă. Analizele de laborator evidențiază creșterea amilazei și lipazei serice, fără hiperuricemie, hiperpotasemie sau alte semne de liză celulară. Care dintre următoarele complicații, menționată explicit ca posibilă complicație legată de tratamentul chimioterapic al LAL, cu impact negativ asupra prognosticului, este cea mai probabilă?",
+          "options": [
+            "Enterita necrozantă prin infiltrare blastică digestivă",
+            "Sindromul de liză tumorală",
+            "Tiflita neutropenică",
+            "Pancreatita acută",
+            "Leucostazia cu infarct mezenteric"
+          ],
+          "correct": 3,
+          "explanation": "Textul menționează explicit pancreatita, alături de hiperglicemie, osteonecroză și trombozele venoase profunde, drept complicații legate de tratamentul chimioterapic din LAL, cu impact negativ asupra prognosticului. Absența hiperuricemiei și a tulburărilor electrolitice exclude sindromul de liză tumorală, iar absența neutropeniei febrile face improbabilă tiflita; enterita necrozantă și leucostazia nu se corelează cu creșterea izolată a amilazei/lipazei.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1230-1247"
         }
       ]
@@ -3352,13 +4542,13 @@ const QUESTIONS = {
           "id": "45-1",
           "stem": "Un băiat de 7 ani, provenind dintr-o zonă endemică din Africa ecuatorială, se prezintă cu o tumoră cu creștere rapidă la nivelul mandibulei. Biopsia evidențiază un infiltrat difuz cu celule mici, omogene, cu nucleoli proeminenți, fenotip B matur (CD19, CD20, CD22 pozitiv, TdT negativ). Care investigație este considerată «standardul de aur» pentru confirmarea diagnosticului suspectat?",
           "options": [
-            "Puncția lombară cu examinarea lichidului cefalorahidian",
-            "Evidențierea cromozomului Philadelphia prin citogenetică standard",
+            "Identificarea rearanjamentului genei c-MYC prin tehnici moleculare",
             "Determinarea expresiei CD30 prin imunohistochimie",
+            "Evidențierea cromozomului Philadelphia prin citogenetică standard",
             "Dozarea LDH și a acidului uric seric",
-            "Identificarea rearanjamentului genei c-MYC prin tehnici moleculare"
+            "Puncția lombară cu examinarea lichidului cefalorahidian"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Tabloul clinico-morfologic descris (localizare mandibulară, vârf de incidență în jurul vârstei de 7 ani, fenotip B matur TdT negativ) este caracteristic limfomului Burkitt endemic. Translocațiile t(8;14), t(2;8) sau t(8;22) determină expresia deficitară a genei c-MYC, iar identificarea rearanjamentului c-MYC prin tehnici moleculare reprezintă, conform textului, standardul de aur pentru diagnosticul limfomului Burkitt.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1252-1262"
         },
@@ -3366,11 +4556,11 @@ const QUESTIONS = {
           "id": "45-2",
           "stem": "Un copil de 9 ani este investigat pentru o masă abdominală voluminoasă. Medulograma arată infiltrare cu celule blastice limfoide în proporție de 18%, fără afectare a sistemului nervos central. Conform criteriilor prezentate pentru diagnosticul diferențial dintre limfomul non-Hodgkinian și leucemia acută limfoblastică, care este încadrarea corectă a cazului?",
           "options": [
-            "Limfom limfoblastic, stadiul I",
+            "Leucemie acută limfoblastică cu determinare abdominală",
             "Leucemie mieloidă cronică în criză blastică",
             "Limfom non-Hodgkinian, stadiul IV",
             "Limfom Hodgkin cu afectare medulară",
-            "Leucemie acută limfoblastică cu determinare abdominală"
+            "Limfom limfoblastic, stadiul I"
           ],
           "correct": 2,
           "explanation": "Textul precizează că prezența a peste 25% blaști în măduva osoasă definește leucemia acută limfoblastică, în timp ce un procent sub 25% blaști medulari, în contextul unei mase tumorale extramedulare, sugerează limfom non-Hodgkinian stadiul IV (prin definiție, afectarea medulară sau a SNC încadrează boala în stadiul IV). Cazul prezentat, cu 18% blaști medulari, se încadrează astfel ca LMNH stadiul IV, nu ca leucemie acută limfoblastică.",
@@ -3380,13 +4570,13 @@ const QUESTIONS = {
           "id": "45-3",
           "stem": "Un copil este diagnosticat cu limfom Burkitt abdominal, cu masă tumorală voluminoasă și risc crescut de sindrom de liză tumorală. Care este conduita corectă înaintea inițierii chimioterapiei citostatice?",
           "options": [
-            "Administrare imediată de doxorubicină în doză redusă, fără hidratare prealabilă",
-            "Hiperhidratare intravenoasă (3.000 mL/m²/24h), alcalinizarea urinei cu bicarbonat izoton și administrare de allopurinol",
             "Radioterapie profilactică pe abdomen, urmată de chimioterapie standard",
             "Restricție hidrică pentru prevenirea edemului cerebral, asociată cu diuretice de ansă",
-            "Transfuzie de masă eritrocitară, indiferent de valoarea hemoglobinei"
+            "Hiperhidratare intravenoasă (3.000 mL/m²/24h), alcalinizarea urinei cu bicarbonat izoton și administrare de allopurinol",
+            "Transfuzie de masă eritrocitară, indiferent de valoarea hemoglobinei",
+            "Administrare imediată de doxorubicină în doză redusă, fără hidratare prealabilă"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Sindromul de liză tumorală, frecvent în limfoamele cu celule mici precum Burkitt, reprezintă o urgență ce trebuie anticipată și tratată înaintea terapiei citostatice. Textul menționează explicit hidratarea IV cu 3.000 mL/m²/24h, alcalinizarea urinei cu bicarbonat izoton 14 g/L și allopurinol 10 mg/kg/zi până la normalizarea acidului uric.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1252-1262"
         },
@@ -3394,13 +4584,13 @@ const QUESTIONS = {
           "id": "45-4",
           "stem": "Un adolescent cu limfom Hodgkin cu celularitate mixtă prezintă stadiul IV de boală, adenopatie mediastinală de dimensiuni mari și febră, având o albumină serică de 3,1 g/dL. Conform scorului prognostic Childhood Hodgkin International Prognostic Score (CHIPS) menționat în text, care dintre următorii parametri NU se numără printre factorii de predicție negativă incluși în acest scor?",
           "options": [
-            "Viteza de sedimentare a hematiilor crescută",
-            "Adenopatia mediastinală de dimensiuni mari",
+            "Prezența febrei",
             "Nivelul albuminei serice sub 3,5 g/dL",
             "Stadiul IV de boală",
-            "Prezența febrei"
+            "Adenopatia mediastinală de dimensiuni mari",
+            "Viteza de sedimentare a hematiilor crescută"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Scorul CHIPS, menționat în text ca având valoare predictivă pentru supraviețuirea fără evenimente, include patru factori de predicție negativă: stadiul IV de boală, adenopatia mediastinală mare, nivelul albuminei sub 3,5 g/dL și febra. VSH crescut este menționat separat, ca marker de evolutivitate a bolii, dar nu face parte din scorul CHIPS.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1252-1262"
         },
@@ -3409,13 +4599,27 @@ const QUESTIONS = {
           "stem": "Un copil de 10 ani diagnosticat cu limfom Hodgkin prezintă la evaluarea inițială adenopatii cervicale bilaterale și axilare drepte, toate localizate deasupra diafragmului, fără hepatosplenomegalie sau alte determinări extralimfatice. Nu prezintă scădere ponderală, febră sau transpirații nocturne. Conform stadializării Ann Arbor modificate Cotswold, care este stadiul corect al bolii?",
           "options": [
             "Stadiul IIIA",
+            "Stadiul IVB",
             "Stadiul IA",
             "Stadiul IIA",
-            "Stadiul IIB",
-            "Stadiul IVB"
+            "Stadiul IIB"
+          ],
+          "correct": 3,
+          "explanation": "Conform clasificării prezentate, stadiul II corespunde afectării mai multor grupe ganglionare situate de aceeași parte a diafragmului, situație întâlnită la acest pacient (adenopatii cervicale bilaterale și axilare drepte, toate supradiafragmatice). Absența simptomelor generale (scădere ponderală, febră, transpirații nocturne) încadrează cazul în categoria A, rezultând stadiul IIA.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1252-1262"
+        },
+        {
+          "id": "45-6",
+          "stem": "Un copil de 6 ani este diagnosticat cu limfom Burkitt cu masă intra-abdominală extinsă, nerezecabilă chirurgical, fără interesarea sistemului nervos central sau a măduvei osoase. Conform sistemului de stadializare Murphy (St. Jude), utilizat pentru limfoamele non-Hodgkiniene la copil, care este stadiul corect al bolii?",
+          "options": [
+            "Stadiul II",
+            "Stadiul IV",
+            "Stadiul III",
+            "Stadiul II, cu extensie extraganglionară",
+            "Stadiul I"
           ],
           "correct": 2,
-          "explanation": "Conform clasificării prezentate, stadiul II corespunde afectării mai multor grupe ganglionare situate de aceeași parte a diafragmului, situație întâlnită la acest pacient (adenopatii cervicale bilaterale și axilare drepte, toate supradiafragmatice). Absența simptomelor generale (scădere ponderală, febră, transpirații nocturne) încadrează cazul în categoria A, rezultând stadiul IIA.",
+          "explanation": "Sistemul de stadializare Murphy (St. Jude) pentru LMNH la copil încadrează la stadiul III tumorile primare intratoracice, masa intra-abdominală extinsă, precum și interesarea a două sau mai multor grupe ganglionare/extraganglionare de ambele părți ale diafragmului. Stadiul II se referă la o tumoră abdominală rezecabilă, situație diferită de cazul prezentat, iar stadiul IV presupune, în plus, afectarea SNC sau a măduvei osoase, absentă la acest pacient.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1252-1262"
         }
       ]
@@ -3428,11 +4632,11 @@ const QUESTIONS = {
           "id": "46-1",
           "stem": "Sugar de 8 luni se prezintă cu paloare marcată, instalată progresiv în ultimele săptămâni. Hemograma arată: Hb 5,5 g/dL, VEM crescut pentru vârstă, reticulocite absolute scăzute, leucocite și trombocite în limite normale. Examenul clinic evidențiază police bilateral hipoplazic, cu eminență tenară aplatizată, și nas în șa. Care este cel mai probabil diagnostic?",
           "options": [
-            "Criza aplastică din infecția cu parvovirus B19",
-            "Anemia Blackfan-Diamond",
             "Sindromul Schwachman-Diamond",
-            "Anemia Fanconi",
-            "Eritroblastopenia tranzitorie a copilăriei (TEC)"
+            "Anemia Blackfan-Diamond",
+            "Criza aplastică din infecția cu parvovirus B19",
+            "Eritroblastopenia tranzitorie a copilăriei (TEC)",
+            "Anemia Fanconi"
           ],
           "correct": 1,
           "explanation": "Anemia Blackfan-Diamond este o aplazie eritroidă pură, congenitală, ce devine simptomatică în primul an de viață (peste 90% din cazuri diagnosticate până la 1 an), cu anemie macrocitară, reticulocitopenie și celelalte linii hematopoietice normale; 40-50% dintre pacienți au anomalii congenite, cele mai frecvente fiind cele ale policelui și cele craniofaciale. TEC apare de obicei după vârsta de 12 luni, fără anomalii congenite și cu VEM normal, iar aplazia din anemia Fanconi apare de regulă mai târziu, ca pancitopenie, nu ca aplazie eritroidă izolată la sugar.",
@@ -3443,12 +4647,12 @@ const QUESTIONS = {
           "stem": "Un copil de 2 ani este diagnosticat cu anemie Blackfan-Diamond (Hb 6 g/dL, reticulocitopenie, precursori eritroizi absenți la nivel medular). Care este tratamentul de primă intenție pentru corectarea anemiei la această vârstă?",
           "options": [
             "Transfuzii cronice de masă eritrocitară la 3-5 săptămâni",
+            "Imunosupresie cu ser antitimocitar și ciclosporină",
             "Corticoterapie orală (prednison, aproximativ 2 mg/kg/zi)",
-            "Transplantul de celule stem hematopoietice de la un donator HLA-identic",
             "Terapie cu androgeni (oxymetolonă)",
-            "Imunosupresie cu ser antitimocitar și ciclosporină"
+            "Transplantul de celule stem hematopoietice de la un donator HLA-identic"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Corticoterapia reprezintă tratamentul de bază al anemiei Blackfan-Diamond, aproximativ 80% dintre pacienți răspunzând inițial; se folosește o doză de start de prednison de aproximativ 2 mg/kg/zi, cu creșterea reticulocitelor medulare în 1-3 săptămâni. La sugarii sub 1 an mulți hematologi preferă transfuziile cronice și amână corticoterapia din cauza efectelor asupra creșterii, dar la un copil de 2 ani corticoterapia este opțiunea de primă linie.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 2510-2512"
         },
@@ -3456,13 +4660,13 @@ const QUESTIONS = {
           "id": "46-3",
           "stem": "Băiat de 6 ani este evaluat pentru statură mică, pete cafe-au-lait multiple, hipoplazie bilaterală de police și trombocitopenie recent instalată, cu macrocitoză eritrocitară. Care este testul de elecție pentru confirmarea diagnosticului suspectat?",
           "options": [
-            "Nivelul hemoglobinei fetale (HbF)",
+            "Dozarea adenozin-dezaminazei eritrocitare (eADA)",
+            "Măsurarea lungimii telomerelor leucocitare",
             "Biopsia osteo-medulară cu evaluarea celularității",
             "Testul de fragilitate cromozomială la limfocite cu diepoxibutan (DEB) sau mitomicină C (MMC)",
-            "Măsurarea lungimii telomerelor leucocitare",
-            "Dozarea adenozin-dezaminazei eritrocitare (eADA)"
+            "Nivelul hemoglobinei fetale (HbF)"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Tabloul clinic (anomalii scheletice ale policelui, pete cafe-au-lait, statură mică, citopenii) este sugestiv pentru anemia Fanconi. Diagnosticul se confirmă prin testul de fragilitate cromozomială la limfocite, cu creșterea marcată a rupturilor cromatidiene după expunerea la agenți de crosslinking precum DEB sau MMC; nicio altă pancitopenie ereditară nu prezintă această hipersensibilitate marcată in vitro.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 2573-2580"
         },
@@ -3470,11 +4674,11 @@ const QUESTIONS = {
           "id": "46-4",
           "stem": "Un copil de 8 ani cu pancitopenie dobândită idiopatică are: neutrofile absolute 300/mm3, trombocite 15.000/mm3, reticulocite corectate 0,5% și celularitate medulară sub 30% la biopsie. Are un frate HLA-identic sănătos. Care este conduita terapeutică de elecție?",
           "options": [
-            "Imunosupresie cu ser antitimocitar (ATG) și ciclosporină",
-            "Transplant allogenic de celule stem hematopoietice de la fratele HLA-identic",
-            "Factor de creștere granulocitar (G-CSF) în monoterapie",
             "Corticoterapie sistemică în doză mare",
-            "Terapie cu androgeni (oxymetolonă sau danazol)"
+            "Transplant allogenic de celule stem hematopoietice de la fratele HLA-identic",
+            "Imunosupresie cu ser antitimocitar (ATG) și ciclosporină",
+            "Terapie cu androgeni (oxymetolonă sau danazol)",
+            "Factor de creștere granulocitar (G-CSF) în monoterapie"
           ],
           "correct": 1,
           "explanation": "Valorile de laborator (neutrofile <500/mm3, trombocite <20.000/mm3, reticulocite <1%, celularitate medulară <30%) îndeplinesc criteriile de aplazie medulară severă. Pentru pacienții care au un donator familial HLA-identic, transplantul allogenic de celule stem hematopoietice este tratamentul de elecție, oferind aproximativ 90% șanse de supraviețuire pe termen lung, superior imunosupresiei, care este rezervată pacienților fără donator compatibil.",
@@ -3484,14 +4688,42 @@ const QUESTIONS = {
           "id": "46-5",
           "stem": "Sugar de 10 luni prezintă steatoree, retard al creșterii staturo-ponderale și infecții bacteriene recurente. Hemoleucograma arată neutropenie cronică, iar testul de fragilitate cromozomială cu DEB/MMC este negativ. Radiografia bazinului evidențiază anomalii metafizare. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Fibroza chistică",
             "Anemia Fanconi",
             "Sindromul Pearson",
             "Anemia Blackfan-Diamond",
-            "Sindromul Schwachman-Diamond"
+            "Sindromul Schwachman-Diamond",
+            "Fibroza chistică"
+          ],
+          "correct": 3,
+          "explanation": "Asocierea dintre insuficiență pancreatică exocrină (steatoree, malabsorbție), neutropenie cronică, anomalii scheletice (displazie metafizară) și statură mică este caracteristică sindromului Schwachman-Diamond. Testul de fragilitate cromozomială la DEB/MMC este negativ, ceea ce îl diferențiază de anemia Fanconi, iar afectarea predominant neutropenică și pancreatică îl diferențiază de sindromul Pearson (anemie severă transfuzie-dependentă de la naștere) și de anemia Blackfan-Diamond (aplazie eritroidă pură).",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 2573-2580"
+        },
+        {
+          "id": "46-6",
+          "stem": "Copil de 20 de luni, anterior sănătos, este adus pentru paloare instalată treptat, la aproximativ 3 săptămâni după un episod febril viral. Nu prezintă anomalii congenite. Hemoleucograma arată Hb 6,8 g/dL, VEM normal pentru vârstă, reticulocite absolute scăzute, leucocite ușor scăzute și trombocite normale-crescute. Hemoglobina fetală (HbF) și activitatea adenozin-dezaminazei eritrocitare (eADA) sunt normale. Nu are antecedente de anemie hemolitică. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Anemia Fanconi",
+            "Eritroblastopenia tranzitorie a copilăriei (TEC)",
+            "Criza aplastică din infecția cu parvovirus B19 pe fond de sferocitoză ereditară",
+            "Anemia Blackfan-Diamond",
+            "Sindromul Pearson"
+          ],
+          "correct": 1,
+          "explanation": "TEC este cea mai frecventă aplazie eritroidă dobândită a copilăriei, apărând la copii anterior sănătoși, de regulă peste 12 luni, adesea după o boală virală, cu anemie normocitară (VEM normal), HbF și eADA normale (spre deosebire de anemia Blackfan-Diamond, unde acestea sunt de obicei crescute) și recuperare spontană în 1-2 luni. Absența anomaliilor congenite și a macrocitozei exclude anemia Blackfan-Diamond și Fanconi, iar absența unei anemii hemolitice de fond exclude criza aplastică parvovirală; sindromul Pearson debutează caracteristic în perioada neonatală, cu afectare multisistemică.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 2510-2512"
+        },
+        {
+          "id": "46-7",
+          "stem": "O adolescentă de 15 ani cu anemie Fanconi confirmată genetic, transplantată cu celule stem hematopoietice la vârsta de 9 ani pentru aplazie medulară severă, se prezintă la controlul periodic. Pe lângă monitorizarea hematologică, care este cea mai importantă măsură de supraveghere oncologică specifică acestei paciente, având în vedere riscul de malignitate asociat bolii?",
+          "options": [
+            "Dozarea alfa-fetoproteinei pentru depistarea hepatocarcinomului",
+            "Ecografie renală anuală pentru depistarea carcinomului renal",
+            "Colonoscopie anuală pentru depistarea cancerului colorectal",
+            "Mamografie anuală începând de la vârsta de 15 ani",
+            "Examinare orofaringiană/ORL și ginecologică regulată pentru depistarea precoce a carcinomului scuamos, asociată cu vaccinare anti-HPV"
           ],
           "correct": 4,
-          "explanation": "Asocierea dintre insuficiență pancreatică exocrină (steatoree, malabsorbție), neutropenie cronică, anomalii scheletice (displazie metafizară) și statură mică este caracteristică sindromului Schwachman-Diamond. Testul de fragilitate cromozomială la DEB/MMC este negativ, ceea ce îl diferențiază de anemia Fanconi, iar afectarea predominant neutropenică și pancreatică îl diferențiază de sindromul Pearson (anemie severă transfuzie-dependentă de la naștere) și de anemia Blackfan-Diamond (aplazie eritroidă pură).",
+          "explanation": "Pacienții cu anemie Fanconi au un risc marcat crescut de carcinom scuamos al capului și gâtului (de aproximativ 600 de ori mai mare) și al tractului genital feminin, esofagului superior și anusului, risc care crește suplimentar după transplantul de celule stem hematopoietice; de aceea se recomandă examinare orofaringiană regulată, screening ginecologic anual începând de la menarhă și vaccinare anti-HPV. Mamografia, colonoscopia, alfa-fetoproteina și ecografia renală nu sunt măsurile de supraveghere specifice menționate pentru anemia Fanconi.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 2573-2580"
         }
       ]
@@ -3504,11 +4736,11 @@ const QUESTIONS = {
           "id": "47-1",
           "stem": "Un copil de 5 ani se prezintă cu dispnee, ortopnee, edem facial și distensie venoasă cervicală, cu debut recent, fără antecedente oncologice cunoscute. Radiografia toracică evidențiază o masă mediastinală anterosuperioară, sugestivă pentru sindrom de venă cavă superioară. La examenul clinic se palpează adenopatii cervicale. Care este conduita cea mai adecvată pentru stabilirea rapidă a diagnosticului histologic, cu risc minim pentru pacient?",
           "options": [
-            "Chimioterapie empirică imediată, înaintea oricărei tentative de biopsie",
-            "Biopsie mediastinală sub anestezie generală, ca primă intenție",
+            "Sedare conștientă cu anxiolitice pentru realizarea unei biopsii mediastinale ghidate CT",
             "Radioterapie empirică imediată asupra masei mediastinale, fără diagnostic histologic anterior",
+            "Biopsie mediastinală sub anestezie generală, ca primă intenție",
             "Biopsierea adenopatiei periferice palpabile, deoarece este mai rapidă și mai puțin invazivă decât biopsia mediastinală",
-            "Sedare conștientă cu anxiolitice pentru realizarea unei biopsii mediastinale ghidate CT"
+            "Chimioterapie empirică imediată, înaintea oricărei tentative de biopsie"
           ],
           "correct": 3,
           "explanation": "Textul precizează că, dacă există adenopatii periferice, se recomandă biopsierea acestora, fiind mai rapidă și mai puțin invazivă decât biopsia mediastinală. Anestezia generală la acești pacienți comportă risc mare de insuficiență respiratorie/cardiacă și intubație dificilă, iar sedarea conștientă cu anxiolitice poate fi contraindicată deoarece deprimă respirația și produce vasodilatație periferică. Radioterapia sau chimioterapia empirică, fără diagnostic de certitudine, pot compromite interpretarea histopatologică ulterioară.",
@@ -3518,13 +4750,13 @@ const QUESTIONS = {
           "id": "47-2",
           "stem": "Un copil de 12 ani, aflat la 10 zile de la chimioterapie pentru leucemie acută limfoblastică, dezvoltă neutropenie severă, febră, dureri abdominale și diaree. Ecografia abdominală evidențiază îngroșarea peretelui la nivelul cecului și ileonului terminal, fără semne de perforație sau necroză, iar trombocitele și coagularea sunt în limite normale. Care este conduita terapeutică inițială cea mai adecvată pentru acest tablou clinic sugestiv de tiflită?",
           "options": [
-            "Drenaj chirurgical percutanat al colecției, fără antibioterapie",
+            "Antibioterapie cu spectru larg, activă pe germeni Gram-negativi, anaerobi și fungi",
             "Laparotomie exploratorie imediată cu rezecție de cec",
-            "Apendicectomie de urgență",
             "Repaus digestiv strict și monitorizare, fără antibioterapie",
-            "Antibioterapie cu spectru larg, activă pe germeni Gram-negativi, anaerobi și fungi"
+            "Apendicectomie de urgență",
+            "Drenaj chirurgical percutanat al colecției, fără antibioterapie"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Tratamentul tiflitei constă în antibiotice cu spectru larg, active pe Gram-negativi, anaerobi (metronidazol, carbapeneme) și fungi, mortalitatea scăzând semnificativ doar cu tratament medical. Intervenția chirurgicală este rezervată cazurilor cu sângerare persistentă necorectată, perforație, necroză intestinală sau eșecul tratamentului medical, situații absente în acest caz.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 588-598"
         },
@@ -3532,13 +4764,13 @@ const QUESTIONS = {
           "id": "47-3",
           "stem": "Doi copii cu neuroblastom paraspinal se prezintă cu durere toracolombară cu debut de câteva zile. Primul copil nu prezintă deficite neurologice la examenul clinic. Al doilea copil prezintă parapareză nou instalată la membrele inferioare. Care este conduita imagistică corectă pentru cei doi pacienți, având în vedere riscul de compresie medulară?",
           "options": [
-            "Primul pacient poate avea RMN amânat 24 de ore, iar al doilea necesită investigație imagistică imediată, dată fiind apariția deficitului neurologic",
             "La ambii pacienți, examenul RMN poate fi amânat 24 de ore, indiferent de examenul neurologic",
-            "Ambii pacienți necesită RMN imediat doar dacă durerea este accentuată nocturn",
             "Al doilea pacient poate aștepta 24 de ore, deoarece parapareza este reversibilă spontan în majoritatea cazurilor",
-            "La ambii pacienți este suficientă radiografia simplă de coloană, RMN nefiind necesar"
+            "La ambii pacienți este suficientă radiografia simplă de coloană, RMN nefiind necesar",
+            "Primul pacient poate avea RMN amânat 24 de ore, iar al doilea necesită investigație imagistică imediată, dată fiind apariția deficitului neurologic",
+            "Ambii pacienți necesită RMN imediat doar dacă durerea este accentuată nocturn"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "Textul precizează că orice copil cu deficite neurologice nou apărute trebuie investigat imagistic imediat prin RMN, deoarece paraplegia se poate instala rapid și poate fi ireversibilă. La copiii cu dureri toracolombare localizate, fără deficite neurologice focale, investigația RMN poate fi amânată 24 de ore.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 588-598"
         },
@@ -3546,13 +4778,13 @@ const QUESTIONS = {
           "id": "47-4",
           "stem": "Un copil cu leucemie acută mieloblastică prezintă hiperleucocitoză severă (leucocite 350.000/mm3) și trombocitopenie cu valoare de 15.000/mm3, fără sângerare activă. Care dintre următoarele afirmații privind conduita transfuzională este corectă?",
           "options": [
-            "Exsangvinotransfuzia este contraindicată la copiii cu hiperleucocitoză, indiferent de severitatea simptomelor",
-            "Transfuzia de masă trombocitară este contraindicată la orice valoare a trombocitelor, din cauza riscului de agravare a leucostazei",
+            "Transfuzia de plasmă proaspătă congelată este tratamentul de primă intenție al hiperleucocitozei",
             "Transfuzia de masă trombocitară este permisă pentru profilaxia hemoragiei, deoarece trombocitele nu modifică semnificativ vâscozitatea sanguină",
+            "Exsangvinotransfuzia este contraindicată la copiii cu hiperleucocitoză, indiferent de severitatea simptomelor",
             "Transfuzia de concentrat eritrocitar trebuie administrată imediat, fără restricții, pentru corectarea anemiei",
-            "Transfuzia de plasmă proaspătă congelată este tratamentul de primă intenție al hiperleucocitozei"
+            "Transfuzia de masă trombocitară este contraindicată la orice valoare a trombocitelor, din cauza riscului de agravare a leucostazei"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Pacienții cu trombocitopenie sub 20.000/ml pot primi transfuzie de masă trombocitară pentru prevenirea hemoragiei, deoarece trombocitele nu modifică semnificativ vâscozitatea sanguină. În schimb, concentratul eritrocitar crește vâscozitatea sanguină și trebuie utilizat cu prudență la acești pacienți. Exsangvinotransfuzia și/sau leucafereza pot fi utile pentru scăderea rapidă a numărului de leucocite în formele severe.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 588-598"
         },
@@ -3560,14 +4792,28 @@ const QUESTIONS = {
           "id": "47-5",
           "stem": "Un copil de 8 ani, aflat sub tratament cu vincristină, prezintă hiponatremie severă simptomatică (natremie 116 mmol/l, cu convulsii), atribuită SIADH. Se decide corectarea natremiei cu soluție salină hipertonă și furosemid intravenos. Care este rata maximă recomandată de corecție a natremiei, pentru a evita o complicație neurologică gravă?",
           "options": [
-            "4-6 mmol/l/oră",
-            "Fără limită, corecția trebuie să fie cât mai rapidă posibil",
-            "Natremia trebuie normalizată complet în primele 2 ore",
             "1-2 mmol/l/oră",
-            "8-10 mmol/l/oră"
+            "Fără limită, corecția trebuie să fie cât mai rapidă posibil",
+            "4-6 mmol/l/oră",
+            "8-10 mmol/l/oră",
+            "Natremia trebuie normalizată complet în primele 2 ore"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Textul specifică faptul că, în hiponatremia acută simptomatică tratată cu soluție salină hipertonă și furosemid, rata de corecție a sodiului nu trebuie să depășească 1-2 mmoli/l/oră, deoarece o corecție prea rapidă poate produce mielinoză pontină, urmată de afectare neurologică.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 588-598"
+        },
+        {
+          "id": "47-6",
+          "stem": "Un copil de 9 ani cu limfom non-Hodgkin, aflat sub tratament cu ciclofosfamidă, dezvoltă hematurie macroscopică cu cheaguri, disurie și polakiurie, tablou sugestiv de cistită hemoragică. Care dintre următoarele afirmații despre patogenia și prevenția acestei complicații este corectă?",
+          "options": [
+            "La copiii care nu au efectuat transplant medular, cea mai frecventă cauză de cistită hemoragică este infecția cu virusul BK",
+            "Acroleina, principalul metabolit toxic al ciclofosfamidei/ifosfamidei, este responsabilă de leziunile vezicii urinare, iar MESNA previne cistita hemoragică prin legarea acesteia",
+            "MESNA acționează prin inhibarea directă a xantinoxidazei, prevenind astfel precipitarea cristalelor la nivelul vezicii urinare",
+            "Restricția de lichide și reducerea diurezei reprezintă principala măsură de prevenție a cistitei hemoragice induse de citostatice",
+            "Cistita hemoragică indusă de citostatice apare exclusiv în primele ore de la administrarea medicamentului, riscul fiind ulterior nul"
+          ],
+          "correct": 1,
+          "explanation": "Acroleina este principalul metabolit toxic al ifosfamidei/ciclofosfamidei, toxică prin precipitare la nivelul vezicii urinare; MESNA (sodiu-2-mercaptoetansulfonat) leagă acroleina și scade semnificativ riscul de cistită hemoragică, alături de hidratarea abundentă și diureza susținută. Virusul BK este principala cauză de cistită hemoragică posttransplant de măduvă osoasă/celule stem, nu la pacienții netransplantați. MESNA nu inhibă xantinoxidaza (mecanism specific alopurinolului în sindromul de liză tumorală), iar simptomatologia cistitei hemoragice poate apărea la interval variabil, de la ore până la luni, de la administrarea medicamentului.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 588-598"
         }
       ]
@@ -3580,13 +4826,13 @@ const QUESTIONS = {
           "id": "48-1",
           "stem": "Un sugar de 8 luni este adus pentru diaree cronică apoasă, trenantă, cu faliment al creșterii și hipopotasemie severă. Examenul clinic și imagistica decelează o masă tumorală retroperitoneală, la nivelul lanțului simpatic paravertebral. Care este mecanismul cel mai probabil al diareei în acest context?",
           "options": [
-            "Invaginație intestinală cronică, secundară compresiei tumorale asupra ansei intestinale",
             "Efect motor intestinal direct al catecolaminelor secretate în exces de tumoră",
-            "Secreție tumorală de peptid intestinal vasoactiv (sindrom Kerner-Morrison), în cadrul unui neuroblastom",
             "Sindrom de malabsorbție prin infiltrare limfatică mezenterică, specific histiocitozei Langerhans",
+            "Invaginație intestinală cronică, secundară compresiei tumorale asupra ansei intestinale",
+            "Secreție tumorală de peptid intestinal vasoactiv (sindrom Kerner-Morrison), în cadrul unui neuroblastom",
             "Insuficiență pancreatică exocrină secundară compresiei ductului pancreatic de către tumoră"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Textul menționează explicit, printre simptomele asociate producerii de catecolamine de către neuroblastom, sindromul Kerner-Morrison - o tumoră secretantă de peptid vasoactiv intestinal, care determină diaree cronică cu falimentul creșterii și niveluri scăzute de potasiu. Localizarea retroperitoneală, de-a lungul lanțului simpatic, este tipică pentru neuroblastom.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1264-1269"
         },
@@ -3595,10 +4841,10 @@ const QUESTIONS = {
           "stem": "O fetiță de 3 ani este evaluată pentru mișcări oculare haotice, multidirecționale (opsoclonus), mioclonii ale trunchiului și ataxie de mers, instalate progresiv în câteva săptămâni. Investigațiile decelează o tumoră retroperitoneală, iar examenul histopatologic stabilește diagnosticul de neuroblastom bine diferențiat, care este extirpat chirurgical. Care dintre următoarele afirmații despre acest tablou clinic este corectă?",
           "options": [
             "Sindromul de ataxie-opsoclonus-mioclonus asociază, de regulă, un prognostic oncologic favorabil, dar simptomatologia neurologică poate persista chiar și după extirparea tumorii",
-            "Sindromul descris este specific tumorii Wilms și nu a fost descris în neuroblastom",
-            "Ataxia-opsoclonus-mioclonus este determinată exclusiv de metastazele cerebrale ale neuroblastomului",
             "Simptomele neurologice paraneoplazice dispar constant și complet imediat după rezecția tumorii primare",
-            "Prezența opsoclonusului semnalează întotdeauna o formă de neuroblastom slab diferențiat, cu prognostic rezervat"
+            "Sindromul descris este specific tumorii Wilms și nu a fost descris în neuroblastom",
+            "Prezența opsoclonusului semnalează întotdeauna o formă de neuroblastom slab diferențiat, cu prognostic rezervat",
+            "Ataxia-opsoclonus-mioclonus este determinată exclusiv de metastazele cerebrale ale neuroblastomului"
           ],
           "correct": 0,
           "explanation": "Conform textului, sindromul de ataxie-opsoclonus-mioclonus este mai frecvent în tumorile bine diferențiate și are un prognostic oncologic favorabil, însă simptomatologia neurologică poate persista chiar dacă tumora a fost extirpată. Acesta este un exemplu clasic de sindrom paraneoplazic al neuroblastomului, cu prognostic tumoral bun dar sechele neurologice posibile.",
@@ -3608,13 +4854,13 @@ const QUESTIONS = {
           "id": "48-3",
           "stem": "Un sugar de 6 luni cu aniridie bilaterală și malformații genito-urinare (criptorhidie, hipospadias) este diagnosticat, în urma investigării unei mase abdominale, cu tumoră Wilms. Din ce sindrom face parte cel mai probabil această asociere și care este anomalia genetică subiacentă?",
           "options": [
-            "Sindromul Denys-Drash, prin mutația genei WT1, asociat cu ambiguitate sexuală și hipogonadism sever",
-            "Sindromul WAGR, prin deleția genei WT1 de pe cromozomul 11p13",
             "Sindromul Perlman, în contextul unor mutații ale genelor care codează ribonucleaza",
             "Sindromul Li-Fraumeni, prin mutații ale genelor TP53 și CHEK2",
-            "Sindromul Beckwith-Wiedemann, prin deleția genei WT2 de pe cromozomul 11p15"
+            "Sindromul Beckwith-Wiedemann, prin deleția genei WT2 de pe cromozomul 11p15",
+            "Sindromul WAGR, prin deleția genei WT1 de pe cromozomul 11p13",
+            "Sindromul Denys-Drash, prin mutația genei WT1, asociat cu ambiguitate sexuală și hipogonadism sever"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Sindromul WAGR reunește tumora Wilms cu aniridia, malformații genito-urinare (hipospadias, criptorhidie, rinichi în potcoavă) și retard mintal, fiind asociat cu deleția cromozomului 11p13 (gena WT1). Beckwith-Wiedemann, Denys-Drash, Li-Fraumeni și Perlman sunt alte sindroame asociate nefroblastomului, dar cu tablou clinic și anomalii genetice diferite, descrise distinct în text.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1296-1298"
         },
@@ -3622,11 +4868,11 @@ const QUESTIONS = {
           "id": "48-4",
           "stem": "Un sugar anterior eutrofic dezvoltă, în decurs de câteva luni, o caşexie marcată, cu emaciere severă, în absența unor modificări evidente ale apetitului sau a unor simptome digestive; paradoxal, copilul pare alert, uneori euforic. Care este localizarea cea mai probabilă a unei tumori cerebrale la acest sugar?",
           "options": [
-            "Tumoră de emisferă cerebrală",
-            "Tumoră/infiltrare de trunchi cerebral",
-            "Tumoră/infiltrare diencefalică (regiune hipotalamică), cu sindrom diencefalic",
             "Tumoră a regiunii pineale, cu sindrom Parinaud",
-            "Tumoră infratentorială, de fosă posterioară"
+            "Tumoră infratentorială, de fosă posterioară",
+            "Tumoră/infiltrare diencefalică (regiune hipotalamică), cu sindrom diencefalic",
+            "Tumoră/infiltrare de trunchi cerebral",
+            "Tumoră de emisferă cerebrală"
           ],
           "correct": 2,
           "explanation": "Tabelul cu semnele și simptomele tumorilor SNC în funcție de localizare arată că tumora/infiltrarea diencefalică se manifestă prin sindrom diencefalic - cașexie apărută la sugarii inițial eutrofici, spre deosebire de tumorile pineale (sindrom Parinaud), infratentoriale (ataxie, nistagmus) sau de trunchi cerebral (oftalmoplegie orizontală, pareze de nervi cranieni).",
@@ -3636,14 +4882,70 @@ const QUESTIONS = {
           "id": "48-5",
           "stem": "Un copil de 4 ani prezintă poliurie și polidipsie, exoftalmie bilaterală progresivă și leziuni osteolitice multiple ale calotei craniene, vizibile radiologic, cu aspect de „hartă geografică\". Care este diagnosticul cel mai probabil?",
           "options": [
-            "Tumoră Wilms cu metastaze osoase craniene",
-            "Craniofaringiom",
+            "Histiocitoza Langerhans, forma diseminată cronică (Hand-Schuller-Christian)",
             "Neuroblastom cu determinări metastatice osoase craniene",
             "Histiocitoza Langerhans, forma localizată (granulom eozinofil unifocal)",
-            "Histiocitoza Langerhans, forma diseminată cronică (Hand-Schuller-Christian)"
+            "Craniofaringiom",
+            "Tumoră Wilms cu metastaze osoase craniene"
+          ],
+          "correct": 0,
+          "explanation": "Forma diseminată cronică Hand-Schuller-Christian este caracterizată clinic prin triada: leziuni ale oaselor membranoase, diabet insipid și exoftalmie, cu aspect radiologic de lize multiple ale calotei craniene. Forma localizată (granulomul eozinofil unifocal) nu asociază de regulă diabet insipid și exoftalmie, iar craniofaringiomul este citat în text doar ca diagnostic diferențial al diabetului insipid, fără leziunile osoase și exoftalmia descrise.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1296-1298"
+        },
+        {
+          "id": "48-6",
+          "stem": "Un copil de 9 ani este adus la consult pentru diplopie și dificultate de a privi în sus. Examenul neurologic decelează o oftalmoplegie verticală, fără alte deficite motorii sau senzoriale evidente. Neuroimagistica evidențiază o masă tumorală localizată la nivelul regiunii pineale. Care dintre următoarele sindroame corespunde acestei localizări tumorale?",
+          "options": [
+            "Triada Cushing, cu bradicardie, hipertensiune arterială și tulburări de ritm respirator",
+            "Sindromul de unghi ponto-cerebelos, cu surditate, torticolis și paralizie facială",
+            "Sindromul de trunchi cerebral, cu oftalmoplegie orizontală, pareze de nervi cranieni și pareză spastică",
+            "Sindromul Parinaud, caracteristic tumorilor de regiune pineală, cu oftalmoplegie verticală",
+            "Sindromul diencefalic, cu cașexie apărută la sugarul inițial eutrofic"
+          ],
+          "correct": 3,
+          "explanation": "Tabelul semnelor și simptomelor tumorilor SNC în funcție de localizare arată că tumora pineală se manifestă prin sindrom Parinaud, cu oftalmoplegie verticală. Celelalte variante descriu alte localizări tumorale distincte din același tabel: trunchi cerebral (oftalmoplegie orizontală, pareze de nervi cranieni), unghi ponto-cerebelos (surditate, torticolis, paralizie facială) și regiune diencefalică (sindrom diencefalic), respectiv triada Cushing, care este un semn de hipertensiune intracraniană avansată, nu de localizare specifică.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1264-1269"
+        },
+        {
+          "id": "48-7",
+          "stem": "Un nou-născut cu macroglosie, omfalocel, hemihipertrofie corporală și hipoglicemie neonatală severă este diagnosticat, la vârsta de 2 ani, cu tumoră Wilms. Ce sindrom genetic este cel mai probabil implicat și care este anomalia moleculară asociată?",
+          "options": [
+            "Sindromul Denys-Drash, prin deleția genei WT1 de pe cromozomul 11p13, cu ambiguitate sexuală și hipogonadism",
+            "Sindromul WAGR, prin deleția genei WT1 de pe cromozomul 11p13",
+            "Sindromul Perlman, prin mutații ale genelor care codifică ribonucleaza, cu macrocefalie și nas în șa",
+            "Sindromul Simpson-Golabi-Behmel, cu macrosomie, macroglosie și anomalii reno-urinare și scheletale",
+            "Sindromul Beckwith-Wiedemann, prin deleția genei WT2 de pe cromozomul 11p15"
           ],
           "correct": 4,
-          "explanation": "Forma diseminată cronică Hand-Schuller-Christian este caracterizată clinic prin triada: leziuni ale oaselor membranoase, diabet insipid și exoftalmie, cu aspect radiologic de lize multiple ale calotei craniene. Forma localizată (granulomul eozinofil unifocal) nu asociază de regulă diabet insipid și exoftalmie, iar craniofaringiomul este citat în text doar ca diagnostic diferențial al diabetului insipid, fără leziunile osoase și exoftalmia descrise.",
+          "explanation": "Textul descrie sindromul Beckwith-Wiedemann ca asociind gigantism, macroglosie, omfalocel, hemihipertrofie, visceromegalie și anomalii genito-urinare, cu hipoglicemie neonatală și deleția cromozomului 11p15 (gena WT2); aproximativ unul din 10 copii cu acest sindrom dezvoltă tumoră Wilms. Celelalte sindroame (WAGR, Denys-Drash, Perlman, Simpson-Golabi-Behmel) au tablouri clinice și anomalii genetice diferite, descrise distinct în text.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1296-1298"
+        },
+        {
+          "id": "48-8",
+          "stem": "Un sugar de 5 luni prezintă ptoză palpebrală, mioză și enoftalmie de partea dreaptă, asociate cu absența transpirației pe hemifața dreaptă. Examenul clinic decelează o masă tumorală cervico-toracică dreaptă, fermă la palpare. Care este cel mai probabil diagnostic și mecanismul acestei asocieri clinice?",
+          "options": [
+            "Rabdomiosarcom embrionar de cap și gât, prin invazia directă a mușchilor extraoculari",
+            "Histiocitoză Langerhans cu afectare orbitală, prin infiltrare retroorbitară a țesutului adipos",
+            "Retinoblastom cu extensie extraoculară, prin invazia nervului optic",
+            "Neuroblastom cervico-toracic, cu sindrom Horner prin afectarea lanțului simpatic cervical",
+            "Tumoră Wilms cu extensie toracică, prin compresia directă a plexului brahial"
+          ],
+          "correct": 3,
+          "explanation": "Textul descrie, printre simptomele locale ale neuroblastomului cu localizare oculară, sindromul Horner (enoftalmie, mioză, ptoză asociată cu anhidroză), rezultat al afectării lanțului simpatic cervical de către o tumoră cu localizare cervicală sau la nivelul mediastinului posterior - localizări frecvente ale neuroblastomului. Celelalte tumori menționate ca distractori sunt tumori solide pediatrice din capitol, dar nu sunt asociate în text cu sindromul Horner.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1270-1274"
+        },
+        {
+          "id": "48-9",
+          "stem": "Un sugar de 10 luni prezintă erupție cutanată generalizată maculo-papuloasă cu peteșii, hepatosplenomegalie, febră persistentă, anemie și trombocitopenie, tablou care mimează clinic o leucemie acută. Care este forma de histiocitoză Langerhans cea mai probabilă și care este caracteristica ei evolutivă esențială?",
+          "options": [
+            "Granulomul eozinofil multifocal, limitat la afectarea scheletului, fără implicare hematologică sau cutanată",
+            "Histiocitoza cutanată Hashimoto-Pritzker, care se vindecă spontan în câteva luni fără tratament sistemic",
+            "Granulomul eozinofil unifocal, cu regresie spontană constantă și fără afectare viscerală",
+            "Forma diseminată acută Abt-Letterer-Siwe, care afectează tipic sugarii sub 2 ani, cu afectare poliviscerală și prognostic sumbru",
+            "Forma diseminată cronică Hand-Schuller-Christian, cu evoluție lent progresivă și prognostic în general favorabil"
+          ],
+          "correct": 3,
+          "explanation": "Forma diseminată acută Abt-Letterer-Siwe apare de obicei la copiii sub 2 ani, cu erupție cutanată generalizată și afectare organică multiplă (piele, os, ganglioni, ficat, splină, plămâni, tub digestiv, măduvă hematopoietică), realizând un aspect de „leucemie acută”, cu anemie, purpură/peteșii și tulburări de coagulare; date fiind vârsta mică și afectarea poliviscerală, prognosticul este întunecat. Celelalte forme (Hand-Schuller-Christian, granulomul eozinofil uni-/multifocal, Hashimoto-Pritzker) au tablouri clinice și evoluții diferite, fără acest aspect pseudo-leucemic poliorganic la sugar.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1296-1298"
         }
       ]
@@ -3657,10 +4959,10 @@ const QUESTIONS = {
           "stem": "Un sugar de 8 luni este adus la camera de gardă pentru vărsături și diaree cu debut de 2 zile. La examenul clinic se constată: puls slab și rapid, oligoanurie, față încercănată, fontanelă anterioară deprimată, pliu cutanat persistent, absența lacrimilor, mucoase uscate și timp de recolorare capilară foarte întârziat. Care este gradul de deshidratare sugerat de acest tablou clinic?",
           "options": [
             "Deshidratare severă (peste 10% din greutatea corporală)",
-            "Deshidratare sub 3% din greutatea corporală, fără semnificație clinică",
             "Deshidratare ușoară (3-5% din greutatea corporală)",
-            "Nu se poate aprecia clinic, fiind necesară exclusiv determinarea greutății pre-boală",
-            "Deshidratare medie (6-9% din greutatea corporală)"
+            "Deshidratare sub 3% din greutatea corporală, fără semnificație clinică",
+            "Deshidratare medie (6-9% din greutatea corporală)",
+            "Nu se poate aprecia clinic, fiind necesară exclusiv determinarea greutății pre-boală"
           ],
           "correct": 0,
           "explanation": "Conform tabelului 17.2, asocierea puls slab și rapid, oligoanurie, față încercănată, fontanelă deprimată, pliu cutanat persistent, absența lacrimilor, mucoase uscate și timp de recolorare capilară foarte întârziat caracterizează deshidratarea severă (>10% din greutate). Formele ușoare și medii au tablou clinic mai puțin sever (puls normal/tahicardie și diureză redusă, respectiv oligurie și iritabilitate/letargie, fără pliu persistent sau TRC foarte întârziat).",
@@ -3670,13 +4972,13 @@ const QUESTIONS = {
           "id": "49-2",
           "stem": "Un copil cu greutatea de 25 kg necesită calcularea necesarului hidric de întreținere pe 24 de ore, conform metodei Holliday-Segar descrise în text. Care este necesarul de lichide/zi?",
           "options": [
-            "1000 ml/zi",
-            "1500 ml/zi",
-            "2000 ml/zi",
             "1600 ml/zi",
-            "1250 ml/zi"
+            "2000 ml/zi",
+            "1250 ml/zi",
+            "1000 ml/zi",
+            "1500 ml/zi"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Pentru greutăți peste 20 kg, metoda Holliday-Segar prevede 1500 ml + 20 ml pentru fiecare kg peste 20 kg. Pentru 25 kg: 1500 ml + 20 ml x 5 kg = 1600 ml/zi. Această metodă este utilizată pentru calcularea necesarului de lichide și electroliți în cele 24-48 de ore de corectare a deshidratării.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 165-167"
         },
@@ -3684,11 +4986,11 @@ const QUESTIONS = {
           "id": "49-3",
           "stem": "Un sugar cu gastroenterită acută, la care pierderile hidroelectrolitice prin diaree au fost înlocuite predominant cu apă, dezvoltă o natremie de 122 mEq/l. Care este mecanismul fiziopatologic principal ce explică reducerea marcată a volumului intravascular la acest tip de deshidratare?",
           "options": [
-            "Pierderea insensibilă crescută prin evaporare cutanată",
+            "Trecerea apei din spațiul intracelular în spațiul extracelular",
             "Trecerea apei din spațiul extracelular în spațiul intracelular",
-            "Creșterea secreției de hormon antidiuretic cu retenție hidrică intravasculară",
             "Extravazarea lichidelor intravasculare în al treilea spațiu",
-            "Trecerea apei din spațiul intracelular în spațiul extracelular"
+            "Creșterea secreției de hormon antidiuretic cu retenție hidrică intravasculară",
+            "Pierderea insensibilă crescută prin evaporare cutanată"
           ],
           "correct": 1,
           "explanation": "Textul precizează că deshidratarea hiponatremică (Na<130 mEq/l) determină o reducere importantă a volumului intravascular, explicată prin trecerea apei din spațiul extracelular în spațiul intracelular. Acest tip apare când pierderile de lichide bogate în sodiu sunt înlocuite cu apă, concentrația sodiului seric scăzând suplimentar.",
@@ -3698,13 +5000,13 @@ const QUESTIONS = {
           "id": "49-4",
           "stem": "Un sugar cu deshidratare hipernatremică (Na=168 mEq/l) este corectat rapid prin administrare de lichide hipotone, iar în cursul corectării dezvoltă convulsii și alterarea stării de conștiență. Care este explicația fiziopatologică cea mai probabilă, conform textului?",
           "options": [
-            "Hipocalcemie secundară administrării masive de bicarbonat de sodiu",
             "Hemoragie intracraniană prin creșterea bruscă a volumului intravascular",
-            "Edem cerebral prin trecerea apei din spațiul extracelular hipoton în celulele creierului, ca urmare a scăderii rapide a osmolarității extracelulare",
             "Hipoglicemie secundară administrării de soluții glucozate concentrate",
+            "Hipocalcemie secundară administrării masive de bicarbonat de sodiu",
+            "Edem cerebral prin trecerea apei din spațiul extracelular hipoton în celulele creierului, ca urmare a scăderii rapide a osmolarității extracelulare",
             "Mielinoliză pontină centrală prin corectare rapidă a sodiului"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Textul arată că scăderea rapidă a osmolarității extracelulare în timpul corectării hipernatremiei determină trecerea apei din spațiul extracelular în celulele creierului, producând edem cerebral și convulsii. Din acest motiv, corectarea hipernatremiei trebuie făcută lent, în 3-4 zile în formele severe, fără ritm rapid în primele 8 ore. Mielinoliza pontină centrală este riscul asociat corectării rapide a hiponatremiei, nu al hipernatremiei.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 165-167"
         },
@@ -3712,14 +5014,28 @@ const QUESTIONS = {
           "id": "49-5",
           "stem": "Un sugar de 6 luni se prezintă în stare de șoc hipovolemic secundar unei gastroenterite acute severe (puls slab și rapid, oligoanurie, timp de recolorare capilară foarte întârziat). Care este conduita inițială recomandată pentru refacerea volemiei?",
           "options": [
-            "Ser fiziologic 20 ml/kg administrat în 10-15 minute, repetabil până la refacerea volemiei (maximum 60 ml/kg)",
             "Bicarbonat de sodiu în bolus, pentru corectarea acidozei metabolice asociate",
             "Soluție glucozată 5% în bolus de 20 ml/kg administrată rapid",
-            "Soluție hipotonă de clorură de sodiu 0,45% în bolus de 20 ml/kg",
-            "Rehidratare orală sau pe sondă nazogastrică, similar deshidratării ușoare/moderate"
+            "Rehidratare orală sau pe sondă nazogastrică, similar deshidratării ușoare/moderate",
+            "Ser fiziologic 20 ml/kg administrat în 10-15 minute, repetabil până la refacerea volemiei (maximum 60 ml/kg)",
+            "Soluție hipotonă de clorură de sodiu 0,45% în bolus de 20 ml/kg"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "În SDA severă, pentru refacerea volemiei se administrează ser fiziologic 20 ml/kg în 10-15 minute, repetabil până la refacerea volemiei, până la maximum 60 ml/kg. Rehidratarea orală/nazogastrică este rezervată formelor ușoare/moderate, iar soluțiile glucozate sau hipotone nu sunt indicate pentru refacerea rapidă a volemiei în șocul hipovolemic.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 165-167"
+        },
+        {
+          "id": "49-6",
+          "stem": "Un sugar cu gastroenterită acută severă are ionograma cu Na=162 mEq/l. La examenul clinic, deși pierderea lichidiană estimată este importantă, tahicardia este doar moderată și diureza este relativ păstrată; sugarul prezintă în schimb febră, iritabilitate/letargie și hipertonie musculară cu hiperreflexie. Care este explicația cea mai probabilă pentru această discrepanță aparentă dintre severitatea deshidratării și semnele clinice de hipovolemie?",
+          "options": [
+            "Este vorba de deshidratare hiponatremică cu hiperaldosteronism secundar compensator",
+            "Rezultatul ionogramei este eronat și trebuie repetat, fiind incompatibil cu tabloul clinic descris",
+            "Este vorba de deshidratare hipernatremică (celulară), în care trecerea apei din spațiul intracelular în cel extracelular protejează volumul intravascular, tabloul clinic fiind mai puțin evident decât în deshidratarea hipotonă",
+            "Este vorba de deshidratare izonatremică, cu compensare renală completă a pierderilor hidroelectrolitice",
+            "Sugarul asociază o insuficiență suprarenală acută ce mascează semnele de hipovolemie"
+          ],
+          "correct": 2,
+          "explanation": "În deshidratarea hipernatremică (Na>150 mEq/l), apa trece din spațiul intracelular în spațiul extracelular hiperton, ceea ce protejează volumul intravascular; de aceea diureza poate fi păstrată și tahicardia este doar moderată, simptomatologia fiind mai puțin evidentă comparativ cu deshidratarea hipotonă. Pacienții cu deshidratare hipertonă prezintă în schimb febră, letargie/iritabilitate și hipertonie/hiperreflexie.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 165-167"
         }
       ]
@@ -3732,13 +5048,13 @@ const QUESTIONS = {
           "id": "50-1",
           "stem": "Un copil în vârstă de 2 ani prezintă, în lunile de vară, un episod de diaree inițial apoasă, ulterior cu scaune sangvinolente și dureri abdominale intense. La aproximativ o săptămână de la debutul diareei apar brusc paloare marcată, iritabilitate și oligurie. Laboratorul evidențiază anemie cu schizocite pe frotiul periferic și trombocitopenie de 45.000/mm3. Care este etiologia cel mai probabil implicată?",
           "options": [
-            "Escherichia coli enterohemoragică (producătoare de shiga-toxină), tulpina O157:H7",
             "Rejet de transplant medular",
-            "Infecție invazivă cu Streptococcus pneumoniae",
             "Administrare de antiinflamatoare nesteroidiene",
-            "Deficit congenital de factor H al complementului"
+            "Escherichia coli enterohemoragică (producătoare de shiga-toxină), tulpina O157:H7",
+            "Deficit congenital de factor H al complementului",
+            "Infecție invazivă cu Streptococcus pneumoniae"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Tabloul descris (diaree inițial apoasă, apoi sangvinolentă, urmată la 1-2 săptămâni de paloare, iritabilitate și oligurie, cu anemie hemolitică microangiopatică și trombocitopenie) este caracteristic sindromului hemolitic-uremic tipic asociat cu diaree (D+SHU), care reprezintă peste 90% din cazurile de SHU la copil și apare tipic vara-toamna la copii mici. Tulpina E. coli O157:H7 este responsabilă de 3/4 dintre cazurile de SHU.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1318-1320"
         },
@@ -3746,13 +5062,13 @@ const QUESTIONS = {
           "id": "50-2",
           "stem": "Un copil cu diaree acută este diagnosticat precoce cu infecție cu Escherichia coli enterohemoragic (producătoare de shiga-toxină). Care este atitudinea corectă privind antibioterapia?",
           "options": [
-            "Se evită terapia antibiotică, deoarece poate accelera eliberarea de shiga-toxină în circulație și poate precipita apariția SHU",
             "Se administrează penicilină G în doză de 100.000 UI/kg/zi",
             "Se administrează obligatoriu vancomicină asociată cu o cefalosporină de generația a treia",
-            "Se administrează imediat un antibiotic cu spectru larg pentru a preveni apariția SHU",
-            "Se administrează eritromicină pentru efectul său antiinflamator asupra migrării PMN"
+            "Se evită terapia antibiotică, deoarece poate accelera eliberarea de shiga-toxină în circulație și poate precipita apariția SHU",
+            "Se administrează eritromicină pentru efectul său antiinflamator asupra migrării PMN",
+            "Se administrează imediat un antibiotic cu spectru larg pentru a preveni apariția SHU"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Textul precizează explicit că se va evita terapia antibiotică în diareea cu Escherichia coli, întrucât aceasta accelerează eliberarea de shiga-toxină în circulație, putând precipita apariția SHU. Asocierea vancomicină-cefalosporină de generația a treia este rezervată SHU asociat infecției pneumococice, nu celui produs de E. coli.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1318-1320"
         },
@@ -3761,10 +5077,10 @@ const QUESTIONS = {
           "stem": "Un copil cu sindrom hemolitic-uremic dezvoltă hiperpotasemie de 8 mEq/L asociată cu modificări electrocardiografice semnificative. Care este conduita indicată?",
           "options": [
             "Plasmafereză de urgență, aceasta fiind eficientă în toate formele de SHU",
-            "Transfuzie de masă eritrocitară în regim de urgență",
+            "Administrarea de furosemid și reevaluare peste 24 de ore, fără alte măsuri",
             "Inițierea hemodializei sau a dializei peritoneale",
-            "Administrare de gluconat de calciu și continuarea monitorizării, fără dializă",
-            "Administrarea de furosemid și reevaluare peste 24 de ore, fără alte măsuri"
+            "Transfuzie de masă eritrocitară în regim de urgență",
+            "Administrare de gluconat de calciu și continuarea monitorizării, fără dializă"
           ],
           "correct": 2,
           "explanation": "Printre criteriile de inițiere a dializei în SHU se numără hiperpotasemia peste 7,5 mEq/L, în special dacă este asociată cu modificări semnificative ECG și tulburări de ritm, alături de uree > 100 mg/dL, insuficiență cardiacă congestivă și encefalopatie hipertensivă. Plasmafereza nu și-a dovedit eficiența în SHU produs de shiga-toxine.",
@@ -3774,11 +5090,11 @@ const QUESTIONS = {
           "id": "50-4",
           "stem": "O adolescentă de 15 ani se prezintă cu febră, confuzie cu debut recent, peteșii și paloare. Laboratorul arată anemie hemolitică cu schizocite pe frotiu, trombocitopenie marcată și o ușoară creștere a ureei și creatininei. Testele de coagulare (PT, PTT) sunt normale. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Sindrom hemolitic-uremic tipic asociat cu diaree",
             "Sindrom Evans",
+            "Purpură trombocitopenică imună (idiopatică)",
             "Coagulare intravasculară diseminată",
             "Purpură trombotică trombocitopenică (PTT)",
-            "Purpură trombocitopenică imună (idiopatică)"
+            "Sindrom hemolitic-uremic tipic asociat cu diaree"
           ],
           "correct": 3,
           "explanation": "PTT este o microangiopatie trombotică definită prin pentada febră, anemie hemolitică microangiopatică, trombocitopenie, afectare renală și modificări la nivelul sistemului nervos central, tablou clinic similar SHU, dar care apare de obicei la adulți și ocazional la adolescenți. Coagularea intravasculară diseminată se însoțește tipic de teste de coagulare alterate, iar purpura trombocitopenică imună și sindromul Evans nu asociază anemie hemolitică microangiopatică cu schizocite și afectare renală.",
@@ -3788,15 +5104,43 @@ const QUESTIONS = {
           "id": "50-5",
           "stem": "În forma dobândită (autoimună) de purpură trombotică trombocitopenică, care este mecanismul patogenic principal și care este tratamentul de elecție?",
           "options": [
-            "Deficit dobândit de ADAMTS13, prin autoanticorpi anti-ADAMTS13; tratamentul de elecție este plasmafereza (schimbul plasmatic)",
-            "Deficit de proteină C; tratamentul de elecție este anticoagularea cu heparină",
             "Infecție cu Escherichia coli producătoare de shiga-toxină; tratamentul este exclusiv de susținere",
-            "Deficit congenital de factor H al complementului; tratamentul de elecție este eculizumab",
-            "Nivel normal de ADAMTS13, cu mecanism mediat prin complement; tratamentul de elecție este antibioterapia"
+            "Nivel normal de ADAMTS13, cu mecanism mediat prin complement; tratamentul de elecție este antibioterapia",
+            "Deficit de proteină C; tratamentul de elecție este anticoagularea cu heparină",
+            "Deficit dobândit de ADAMTS13, prin autoanticorpi anti-ADAMTS13; tratamentul de elecție este plasmafereza (schimbul plasmatic)",
+            "Deficit congenital de factor H al complementului; tratamentul de elecție este eculizumab"
           ],
-          "correct": 0,
+          "correct": 3,
           "explanation": "Majoritatea cazurilor de PTT sunt cauzate de un deficit dobândit, mediat prin autoanticorpi, al metaloproteazei ADAMTS13, responsabilă de clivarea multimerilor de factor von Willebrand; nivelurile de ADAMTS13 sunt de obicei normale în SHU. Tratamentul PTT dobândite este plasmafereza, eficientă la 80-95% dintre pacienți, în timp ce forma congenitală se tratează prin perfuzii repetate de plasmă proaspătă congelată.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 2614-2614"
+        },
+        {
+          "id": "50-6",
+          "stem": "Un sugar de 4 luni se prezintă cu al doilea episod de anemie hemolitică microangiopatică, trombocitopenie și insuficiență renală acută, cu debut insidios și fără istoric de diaree sau de infecție documentată. Care este cea mai probabilă etiologie a acestui tablou?",
+          "options": [
+            "Deficit congenital de factor H al complementului, în cadrul unui sindrom hemolitic-uremic atipic",
+            "Infecție cu Escherichia coli enterohemoragic, tulpina O157:H7",
+            "Deficit dobândit de ADAMTS13 prin autoanticorpi, în cadrul unei purpure trombotice trombocitopenice",
+            "Infecție cu Shigella dysenteriae tip 1",
+            "Infecție invazivă cu Streptococcus pneumoniae"
+          ],
+          "correct": 0,
+          "explanation": "SHU atipic (neasociat cu diaree) apare în special la sugarii cu vârstă sub 6 luni, are debut insidios, prezintă frecvent recăderi și un prognostic mult mai nefavorabil decât forma tipică. Printre cauzele familiale se numără deficitul de factor H, de factor I sau al proteinei cofactor membranare (MCP), proteine reglatoare ale complementului. Formele asociate infecțiilor cu E. coli, Shigella sau pneumococ sunt forme de SHU tipic, cu debut acut, de obicei precedate de diaree sau infecție documentată.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1318-1320"
+        },
+        {
+          "id": "50-7",
+          "stem": "Un copil de 2 ani dezvoltă, la 5 zile de la debutul unei meningite pneumococice, anemie hemolitică microangiopatică cu schizocite, trombocitopenie și insuficiență renală acută. Testul Coombs direct este pozitiv. Care este mecanismul patogenic caracteristic acestei forme de sindrom hemolitic-uremic?",
+          "options": [
+            "Depunerea de complexe imune circulante antigen-anticorp la nivel glomerular declanșează o glomerulonefrită mediată imun",
+            "Shiga-toxina eliberată de pneumococ se fixează pe receptori specifici de la nivelul celulelor endoteliale renale, întrerupând sinteza proteică",
+            "Streptococcus pneumoniae eliberează neuraminidază, care expune antigenul criptic T de pe eritrocite, trombocite și celule endoteliale, permițând fixarea anticorpilor anti-T preexistenți și distrugerea acestor celule",
+            "Autoanticorpii anti-ADAMTS13 blochează clivarea multimerilor de factor von Willebrand, cu formare de trombi bogați în trombocite",
+            "Deficitul congenital de factor H determină activarea necontrolată a căii alterne a complementului la nivelul endoteliului vascular"
+          ],
+          "correct": 2,
+          "explanation": "În infecția cu Streptococcus pneumoniae, eliberarea de neuraminidază expune antigenul criptic T de la nivelul eritrocitelor, trombocitelor și celulelor endoteliale; anticorpii anti-T preexistenți se fixează pe aceste celule, cauzând distrugerea lor, leziuni vasculare și microangiopatie trombotică. Un test Coombs pozitiv în prezența unui SHU asociat unei infecții cu pneumococ susține etiologia pneumococică a SHU, spre deosebire de mecanismul mediat de shiga-toxină din SHU asociat E. coli.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1318-1320"
         }
       ]
     },
@@ -3808,13 +5152,13 @@ const QUESTIONS = {
           "id": "51-1",
           "stem": "Un nou-născut provenit din părinți consangvini prezintă la naștere hipotonie, detresă respiratorie prin deformări ale cutiei toracice și eșec de creștere. Bilanțul biologic arată hipercalcemie severă, hipercalciurie marcată (raport clearance calciu/creatinină > 0,01), hipofosfatemie și niveluri serice mult crescute de parathormon (PTH). Radiografia scheletică evidențiază demineralizare osoasă difuză și fracturi multiple. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Hiperparatiroidismul neonatal sever, secundar unei mutații homozigote inactivatoare a CaSR",
-            "Sindromul Williams",
-            "Intoxicația cu vitamina D transmisă transplacentar de la mamă",
             "Hipofosfatazia congenitală",
-            "Hipercalcemia hipocalciurică familială benignă (formă heterozigotă)"
+            "Sindromul Williams",
+            "Hipercalcemia hipocalciurică familială benignă (formă heterozigotă)",
+            "Intoxicația cu vitamina D transmisă transplacentar de la mamă",
+            "Hiperparatiroidismul neonatal sever, secundar unei mutații homozigote inactivatoare a CaSR"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Textul descrie hiperparatiroidismul neonatal sever ca fiind caracterizat prin hipercalcemie neonatală severă, hipercalciurie (raport clearance calciu/creatinină > 0,01), niveluri crescute de PTH, deshidratare, eșecul creșterii, demineralizare osoasă, fracturi multiple și deformații ale cutiei toracice, apărând la copii cu părinți consangvini prin mutații homozigote ale CaSR. Hipercalcemia hipocalciurică familială benignă are hipercalciurie marcat redusă (clearance calciu/creatinină < 0,01) și tablou clinic mult mai discret. Sindromul Williams și intoxicația cu vitamina D se asociază cu niveluri scăzute de PTH, nu crescute.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1143-1153"
         },
@@ -3822,13 +5166,13 @@ const QUESTIONS = {
           "id": "51-2",
           "stem": "Un copil de 8 ani este internat pentru hipercalcemie severă simptomatică (vărsături, dureri abdominale), cu semne clinice de deshidratare moderată. Care este prima măsură terapeutică recomandată?",
           "options": [
-            "Administrarea imediată de furosemid, fără expansiune volemică prealabilă",
-            "Corticoterapie sistemică în doză mare, ca primă linie terapeutică",
-            "Bisfosfonat intravenos, ca primă linie, indiferent de starea de hidratare",
+            "Hidratare intravenoasă cu ser fiziologic 0,9%, urmată, dacă este necesar, de diuretic de ansă după corectarea stării de hidratare",
             "Dializă peritoneală de urgență",
-            "Hidratare intravenoasă cu ser fiziologic 0,9%, urmată, dacă este necesar, de diuretic de ansă după corectarea stării de hidratare"
+            "Corticoterapie sistemică în doză mare, ca primă linie terapeutică",
+            "Administrarea imediată de furosemid, fără expansiune volemică prealabilă",
+            "Bisfosfonat intravenos, ca primă linie, indiferent de starea de hidratare"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Textul precizează că hidratarea intravenoasă crește excreția renală de calciu și este măsura de urgență inițială, iar diureticele de ansă sunt utilizate doar la copiii cu stare de hidratare adecvată, deoarece depleția intravasculară exacerbează hipercalcemia. Dializa este rezervată hipercalcemiei severe cu oligurie, iar corticoterapia necesită excluderea prealabilă a unei cauze maligne.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1143-1153"
         },
@@ -3837,10 +5181,10 @@ const QUESTIONS = {
           "stem": "Un sugar aflat sub tratament cu amfotericină B pentru o infecție fungică sistemică dezvoltă hipocalcemie simptomatică, cu tetanie. Administrarea de calciu intravenos nu ameliorează semnificativ simptomele. Care este explicația fiziopatologică cea mai probabilă și conduita corectă?",
           "options": [
             "Hipocalcemia este secundară unei rezistențe la vitamina D; se indică doze mari de calcitriol",
-            "Hipocalcemia reflectă un hipoparatiroidism autoimun asociat; se indică imunosupresie",
+            "Hipocalcemia este secundară hiperfosfatemiei induse de amfotericină; se indică chelatori de fosfat",
             "Hipocalcemia se datorează unui sindrom \"hungry bone\"; se indică restricția aportului de calciu",
             "Hipocalcemia este secundară hipomagneziemiei induse de amfotericină, care diminuă secreția de PTH și induce rezistență la acțiunea acestuia; este necesară corectarea magneziului",
-            "Hipocalcemia este secundară hiperfosfatemiei induse de amfotericină; se indică chelatori de fosfat"
+            "Hipocalcemia reflectă un hipoparatiroidism autoimun asociat; se indică imunosupresie"
           ],
           "correct": 3,
           "explanation": "Textul menționează aminoglicozidele, amfotericina și cisplatinul drept cele mai comune medicamente care induc hipomagneziemie, iar depleția de magneziu induce hipocalcemie prin diminuarea secreției de PTH și rezistență musculară la acțiunea PTH. Hipocalcemia secundară hipomagneziemiei nu răspunde la tratamentul cu calciu, fiind necesară corectarea magneziului.",
@@ -3850,10 +5194,10 @@ const QUESTIONS = {
           "id": "51-4",
           "stem": "Un sugar de 10 luni prezintă retard de dezvoltare motorie, hipotonie musculară generalizată, dureri osoase și un episod de convulsii hipocalcemice. Radiografia articulației radiocarpiene arată aspecte clasice de rahitism, cu debut precoce. Bilanțul biologic evidențiază hipocalcemie severă, grade variate de hipofosfatemie, fosfataze alcaline crescute, PTH mult crescut, nivel seric normal de 25(OH)D, dar nivel absent sau foarte redus de 1,25(OH)2D. Care este diagnosticul cel mai probabil și tratamentul de elecție?",
           "options": [
-            "Rahitism hipofosfatemic X-linkat prin mutație PHEX; tratament cu supliment oral de fosfor",
-            "Rahitism nutrițional prin deficit de vitamină D; tratament cu doze standard de colecalciferol oral",
-            "Rezistență ereditară la acțiunea vitaminei D prin mutație a receptorului VDR (tip II); tratament cu doze foarte mari de calciu intravenos",
             "Deficit de 25-hidroxilază hepatică; tratament cu administrare exogenă de 25(OH)D",
+            "Rezistență ereditară la acțiunea vitaminei D prin mutație a receptorului VDR (tip II); tratament cu doze foarte mari de calciu intravenos",
+            "Rahitism nutrițional prin deficit de vitamină D; tratament cu doze standard de colecalciferol oral",
+            "Rahitism hipofosfatemic X-linkat prin mutație PHEX; tratament cu supliment oral de fosfor",
             "Deficit de 1-α-hidroxilază (rahitism vitamino-D dependent tip I); tratament cu doze fiziologice de calcitriol [1,25(OH)2D]"
           ],
           "correct": 4,
@@ -3864,15 +5208,43 @@ const QUESTIONS = {
           "id": "51-5",
           "stem": "Un copil de 18 luni, la vârsta la care a început să meargă, este adus pentru deformare progresivă în varus a membrelor inferioare și viteză de creștere diminuată. Bilanțul biologic arată calcemie normală, fosfatemie scăzută, PTH normal, fosfataze alcaline crescute și nivel de 1,25(OH)2D normal sau ușor scăzut, inadecvat față de gradul hipofosfatemiei. Care este diagnosticul cel mai probabil și principiul terapeutic corect?",
           "options": [
+            "Hiperparatiroidism primar; paratiroidectomie",
             "Rahitism nutrițional prin deficit de vitamină D; tratament cu doză unică mare de colecalciferol (\"stoss therapy\")",
-            "Deficit de 1-α-hidroxilază; tratament cu doze fiziologice de calcitriol în monoterapie",
-            "Rahitism hipofosfatemic X-linkat, prin mutație a genei PHEX; tratament cu supliment oral de fosfor asociat cu 1,25(OH)2D",
             "Sindrom Fanconi; tratament cu bicarbonat și restricție proteică",
-            "Hiperparatiroidism primar; paratiroidectomie"
+            "Deficit de 1-α-hidroxilază; tratament cu doze fiziologice de calcitriol în monoterapie",
+            "Rahitism hipofosfatemic X-linkat, prin mutație a genei PHEX; tratament cu supliment oral de fosfor asociat cu 1,25(OH)2D"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Rahitismul hipofosfatemic X-linkat este cea mai frecventă formă de rahitism hipofosfatemic, debutează frecvent la vârsta mersului, cu anomalii scheletice și profil biologic caracterizat prin fosfat seric redus, niveluri normale sau reduse de 1,25(OH)2D, calciu și PTH normale, prin mutații ale genei PHEX. Tratamentul asociază fosfor oral cu 1,25(OH)2D3, deoarece administrarea izolată de fosfor induce hiperparatiroidism secundar. Rahitismul nutrițional ar avea 25(OH)D scăzut, iar deficitul de 1-α-hidroxilază se însoțește de hipocalcemie și PTH crescut.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1164-1166"
+        },
+        {
+          "id": "51-6",
+          "stem": "Un nou-născut la termen prezintă convulsii hipocalcemice în prima săptămână de viață. Ecocardiografia decelează un defect cardiac conotruncal, iar examenul clinic remarcă dismorfism facial (nas proeminent, cu bază largă) și limfopenie marcată cu deficit de celule T. Care este mecanismul cel mai probabil al hipocalcemiei acestui pacient?",
+          "options": [
+            "Pseudohipoparatiroidism tip Ia, prin mutație inactivatoare cu transmitere maternă a genei GNAS1",
+            "Sindrom poliglandular autoimun tip 1, prin mutație a genei AIRE",
+            "Deficit de 1-α-hidroxilază renală (rahitism vitamino-D dependent tip I)",
+            "Hipocalcemie autozomal dominantă tip 1, prin mutație activatoare a CaSR",
+            "Hipoparatiroidism secundar aplaziei/hipoplaziei glandelor paratiroide, în cadrul sindromului DiGeorge (deleție 22q11.2)"
+          ],
+          "correct": 4,
+          "explanation": "Sindromul DiGeorge rezultă din anomalii de dezvoltare a arcurilor branhiale 3 și 4, secundare deleției cromozomului 22q11.2, și asociază hipoparatiroidism prin aplazia/hipoplazia paratiroidelor, aplazie/hipoplazie timică cu deficit imun de tip celular, defecte cardiace și dismorfism facial (nas proeminent, cu bază largă). Pseudohipoparatiroidismul se caracterizează prin PTH crescut (rezistență tisulară), nu prin deficit de secreție, iar sindromul poliglandular autoimun tip 1 asociază candidoză cutaneo-mucoasă cronică și insuficiență suprarenală, nu defecte cardiace sau timice.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1143-1153"
+        },
+        {
+          "id": "51-7",
+          "stem": "O fetiță de 7 ani este evaluată pentru talie mică, obezitate și scurtarea bilaterală a celui de-al IV-lea metacarpian, cu calcificări subcutanate. Bilanțul biologic arată hipocalcemie, hiperfosfatemie și niveluri serice crescute de PTH. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Sindrom HDR, prin mutație a genei GATA3",
+            "Pseudopseudohipoparatiroidism, secundar transmiterii paterne a genei GNAS1 mutante",
+            "Rahitism hipofosfatemic X-linkat, prin mutație a genei PHEX",
+            "Hiperparatiroidism primar, secundar unui adenom paratiroidian",
+            "Pseudohipoparatiroidism tip Ia (sindrom Albright), prin mutație inactivatoare a genei GNAS1 cu transmitere maternă"
+          ],
+          "correct": 4,
+          "explanation": "Asocierea fenotipului de osteodistrofie ereditară Albright (talie mică, obezitate, metacarp IV scurt, calcificări subcutanate) cu profilul biologic de rezistență renală la acțiunea PTH (hipocalcemie, hiperfosfatemie, PTH crescut) definește pseudohipoparatiroidismul tip Ia, secundar mutației inactivatoare a GNAS1 cu transmitere maternă. Pseudopseudohipoparatiroidismul are fenotip identic dar cu transmitere paternă și calciu, fosfat, PTH normale (fără rezistență renală). Sindromul HDR asociază hipoparatiroidism cu surditate și displazie renală, iar rahitismul X-linkat nu produce hipocalcemie cu PTH crescut.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1143-1153"
         }
       ]
     },
@@ -3884,13 +5256,13 @@ const QUESTIONS = {
           "id": "52-1",
           "stem": "Un sugar de 5 luni, fără semne evocatoare la naştere, este adus la consult pentru întârziere a dezvoltării motorii şi convulsii recent instalate. La examenul obiectiv se remarcă păr blond şi ochi albaştri (mai deschişi la culoare decât ai părinţilor), eczemă cutanată şi un miros particular, de mucegai, al transpiraţiei şi urinei. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Alcaptonurie",
-            "Boala Wilson",
             "Fenilcetonurie",
+            "Homocistinurie",
             "Galactozemie",
-            "Homocistinurie"
+            "Alcaptonurie",
+            "Boala Wilson"
           ],
-          "correct": 2,
+          "correct": 0,
           "explanation": "Tabloul descris este caracteristic fenilcetonuriei: pigmentaţie scăzută a pielii, părului şi ochilor, semne progresive de suferinţă a SNC (întârziere motorie, convulsii), eczemă şi mirosul de mucegai/şoarece al transpiraţiei şi urinei. Homocistinuria asociază habitus marfanoid şi luxaţie de cristalin, galactozemia apare după iniţierea alimentaţiei lactate cu icter şi hepatomegalie, boala Wilson debutează mai tardiv cu manifestări hepatice şi inelul Kayser-Fleischer, iar alcaptonuria se manifestă cu urină brun-neagră şi ocronoză la vârstă adultă.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 754-769"
         },
@@ -3898,13 +5270,13 @@ const QUESTIONS = {
           "id": "52-2",
           "stem": "În tratamentul de urgenţă al hiperamoniemiei neonatale severe, secundare unei anomalii a ciclului ureei, care dintre următoarele substanţe este contraindicată, deoarece creşte nivelul seric al amoniacului?",
           "options": [
-            "Benzoat de sodiu",
-            "Fenilbutirat de sodiu",
-            "Arginină",
             "Carnitină",
-            "Acid valproic"
+            "Benzoat de sodiu",
+            "Arginină",
+            "Acid valproic",
+            "Fenilbutirat de sodiu"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "Textul precizează explicit că în hiperamoniemie nu se administrează corticosteroizi (induc balanţă negativă a nitrogenului), manitol (ineficient în edemul cerebral din hiperamoniemie) sau acid valproic, deoarece acesta creşte nivelul seric de amoniac. Fenilbutiratul de sodiu, benzoatul de sodiu, arginina şi carnitina fac parte, dimpotrivă, din schema terapeutică recomandată.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 754-769"
         },
@@ -3912,13 +5284,13 @@ const QUESTIONS = {
           "id": "52-3",
           "stem": "Un nou-născut la termen, alimentat natural, dezvoltă în a doua săptămână de viaţă vărsături, diaree, icter, hepatomegalie şi letargie; probele de laborator arată galactozurie şi acidoză metabolică hipercloremică. Care este conduita terapeutică esenţială pentru asigurarea unui prognostic favorabil?",
           "options": [
-            "Substituţie enzimatică cu agalsidază beta",
-            "Dietă săracă în fenilalanină şi tirozină",
-            "Restricţie proteică asociată cu administrare de benzoat de sodiu",
+            "Excluderea completă şi permanentă a alimentaţiei lactate (lapte şi produse lactate)",
             "Dietă restrictivă în grăsimi, cu gustări dese, bogate în hidraţi de carbon",
-            "Excluderea completă şi permanentă a alimentaţiei lactate (lapte şi produse lactate)"
+            "Restricţie proteică asociată cu administrare de benzoat de sodiu",
+            "Dietă săracă în fenilalanină şi tirozină",
+            "Substituţie enzimatică cu agalsidază beta"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Tabloul clinico-biologic este sugestiv pentru galactozemie, iar tratamentul de bază constă în excluderea alimentaţiei lactate pe toată perioada vieţii, ceea ce asigură o durată de viaţă şi un coeficient de inteligenţă normale. Textul menţionează că o întârziere a tratamentului de peste o lună determină leziuni cerebrale ireversibile, cataractă, ataxie şi deficit de vorbire. Celelalte conduite corespund altor boli metabolice (fenilcetonurie, tulburări ale acizilor graşi, boala Fabry).",
           "source": "Pleșca - Tratat de Pediatrie, pag. 754-769"
         },
@@ -3929,10 +5301,10 @@ const QUESTIONS = {
             "Tipul Ia (boala von Gierke)",
             "Tipul II (boala Pompe)",
             "Tipul III (boala Cori)",
-            "Tipul V (boala McArdle)",
-            "Tipul IV (boala Andersen)"
+            "Tipul IV (boala Andersen)",
+            "Tipul V (boala McArdle)"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Conform diagnosticului diferenţial al glicogenozelor, tipul V (boala McArdle) se caracterizează prin absenţa hepatomegaliei şi a hipoglicemiei, cu crampe musculare la efort şi mioglobinurie/rabdomioliză, debutul putând fi în copilărie sau, uneori, tardiv. Tipurile Ia, II, III şi IV asociază hepatomegalie şi/sau hipoglicemie, tablou incompatibil cu vinieta prezentată.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 754-769"
         },
@@ -3940,14 +5312,28 @@ const QUESTIONS = {
           "id": "52-5",
           "stem": "La un pacient cu hipercolesterolemie familială, comparativ cu iniţierea tratamentului hipolipemiant abia după producerea unui accident coronarian, iniţierea precoce a tratamentului cu statine are următorul efect asupra mortalităţii prin boală coronariană:",
           "options": [
+            "Reduce mortalitatea cu 90%, dar numai dacă tratamentul este iniţiat înainte de vârsta de 10 ani",
             "Reduce mortalitatea cu 25%, indiferent de momentul iniţierii tratamentului",
-            "Este eficientă doar la pacienţii homozigoţi, fiind ineficientă la heterozigoţi",
-            "Reduce mortalitatea cu 50%, faţă de doar 25% dacă tratamentul este iniţiat după accidentul coronarian",
             "Nu influenţează mortalitatea, ci doar dimensiunea xantoamelor tendinoase",
-            "Reduce mortalitatea cu 90%, dar numai dacă tratamentul este iniţiat înainte de vârsta de 10 ani"
+            "Este eficientă doar la pacienţii homozigoţi, fiind ineficientă la heterozigoţi",
+            "Reduce mortalitatea cu 50%, faţă de doar 25% dacă tratamentul este iniţiat după accidentul coronarian"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Textul precizează că tratamentul precoce cu statine reduce mortalitatea prin boală coronariană cu 50%, în timp ce, dacă tratamentul începe după producerea unui atac coronarian deja instalat, mortalitatea se reduce cu numai 25%. Aceasta subliniază importanţa diagnosticului şi tratamentului precoce în hipercolesterolemia familială, boală autozomal dominantă cu prevalenţă de 1:500 în populaţia generală.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 754-769"
+        },
+        {
+          "id": "52-6",
+          "stem": "Un nou-născut de sex feminin (cariotip 46,XX) prezintă la naştere organe genitale externe ambigue (peno-clitoris şi labio-scrot). În a doua săptămână de viaţă dezvoltă vărsături repetate, deshidratare, hiponatremie, hiperpotasemie şi hipoglicemie. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Hiperplazie congenitală adrenală prin deficit de 21-hidroxilază, forma clasică cu pierdere de sare",
+            "Deficit de 11-beta-hidroxilază",
+            "Sindrom de insensibilitate la androgeni (sindromul Morris)",
+            "Galactozemie clasică",
+            "Hiperamoniemie prin deficit de ornitin-transcarbamilază"
+          ],
+          "correct": 0,
+          "explanation": "Tabloul este caracteristic formei clasice cu pierdere de sare a deficitului de 21-hidroxilază (cea mai frecventă formă de hiperplazie congenitală adrenală): fetiţele cu genotip XX au fenotip masculinizat (ambiguitate genitală), iar pierderea de sare prin deficit de aldosteron determină hiponatremie, hiperpotasemie, diminuarea volumului sanguin şi hipoglicemie. Deficitul de 11-beta-hidroxilază nu produce tipic pierdere de sare, sindromul Morris apare la cariotip XY cu fenotip feminin fără ambiguitate genitală virilizantă, iar deficitul de OTC şi galactozemia nu explică ambiguitatea genitală.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 754-769"
         }
       ]
@@ -3960,13 +5346,13 @@ const QUESTIONS = {
           "id": "53-1",
           "stem": "Un sugar cu hiperglicemie severă (glicemie 700 mg/dL) prezintă o natremie măsurată de 128 mEq/L. Folosind formula de corecție a natremiei în context de hiperglicemie ([Na]corectat = [Na]măsurat + 1,6 × ([glucoză] − 100)/100), care este natremia corectată, cea care reflectă raportul real dintre Na+ total și apa totală a organismului?",
           "options": [
-            "Rămâne 128 mEq/L, deoarece hiperglicemia nu influențează natremia măsurată",
-            "Aproximativ 137-138 mEq/L (practic normală)",
-            "Aproximativ 158 mEq/L (hipernatremie severă)",
+            "Aproximativ 118 mEq/L (hiponatremie severă, agravată)",
             "Aproximativ 148 mEq/L (hipernatremie ușoară)",
-            "Aproximativ 118 mEq/L (hiponatremie severă, agravată)"
+            "Aproximativ 137-138 mEq/L (practic normală)",
+            "Rămâne 128 mEq/L, deoarece hiperglicemia nu influențează natremia măsurată",
+            "Aproximativ 158 mEq/L (hipernatremie severă)"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Aplicând formula: (700-100)/100 = 6, 6 × 1,6 = 9,6; 128 + 9,6 ≈ 137,6 mEq/L, adică aproape normală. Hiperglicemia crește osmolalitatea plasmatică și determină deplasarea apei din spațiul intracelular în cel extracelular, diluând Na+ măsurat, fără ca aceasta să reprezinte un deficit real de sodiu. Când hiperglicemia se rezolvă, apa revine intracelular și natremia măsurată crește spre valoarea corectată.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 390-390"
         },
@@ -3974,13 +5360,13 @@ const QUESTIONS = {
           "id": "53-2",
           "stem": "Un copil cu deshidratare hipertonă severă (hipernatremie) prezintă și hiperglicemie moderată asociată. Care este conduita corectă privind hiperglicemia în acest context?",
           "options": [
+            "Hiperglicemia nu se tratează de regulă cu insulină, deoarece scăderea bruscă a glicemiei poate precipita edem cerebral prin scăderea rapidă a osmolalității plasmatice",
             "Se administrează insulină intravenos pentru corectarea rapidă a glicemiei, indiferent de natremie",
             "Se întrerupe complet aportul de lichide și se administrează exclusiv ser fiziologic hiperton 3%",
-            "Se administrează un bolus de glucoză hipertonă 25% pentru prevenirea hipoglicemiei de rebound",
             "Se corectează natremia cu peste 10 mEq/L în 24 de ore pentru a compensa hiperglicemia",
-            "Hiperglicemia nu se tratează de regulă cu insulină, deoarece scăderea bruscă a glicemiei poate precipita edem cerebral prin scăderea rapidă a osmolalității plasmatice"
+            "Se administrează un bolus de glucoză hipertonă 25% pentru prevenirea hipoglicemiei de rebound"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Textul precizează explicit că hiperglicemia asociată hipernatremiei nu este de obicei tratată cu insulină, deoarece scăderea acută a glicemiei poate precipita edem cerebral prin scăderea rapidă a osmolalității plasmatice; rareori este necesară doar reducerea concentrației de glucoză din fluidele intravenoase. Corectarea hipernatremiei trebuie făcută lent, cu maximum 10 mEq/L/24h, pentru a evita edemul cerebral.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 390-390"
         },
@@ -3988,13 +5374,13 @@ const QUESTIONS = {
           "id": "53-3",
           "stem": "Nou-născutul unei mame cu diabet zaharat pregestațional dezvoltă macrosomie fetală (greutate mare pentru vârsta gestațională). Care este secvența fiziopatologică principală descrisă pentru acest fenomen?",
           "options": [
-            "Hiperglicemia maternă determină hiperglicemie fetală, care declanșează hiperinsulinism fetal, cu creșterea captării hepatice a glucozei, glicogenogeneză, lipogeneză și sinteză proteică accelerate",
+            "Insulina maternă traversează placenta și stimulează direct creșterea țesuturilor fetale",
+            "Hiperglicemia maternă determină restricție de creștere intrauterină prin vasoconstricție placentară",
             "Hipoglicemia maternă determină hipoinsulinism fetal și catabolism proteic crescut la făt",
             "Hiperglicemia fetală inhibă dezvoltarea celulelor beta pancreatice fetale, ducând la hipoinsulinism compensator",
-            "Insulina maternă traversează placenta și stimulează direct creșterea țesuturilor fetale",
-            "Hiperglicemia maternă determină restricție de creștere intrauterină prin vasoconstricție placentară"
+            "Hiperglicemia maternă determină hiperglicemie fetală, care declanșează hiperinsulinism fetal, cu creșterea captării hepatice a glucozei, glicogenogeneză, lipogeneză și sinteză proteică accelerate"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Textul descrie secvența: hiperglicemia maternă traversează placenta, determinând hiperglicemie fetală; răspunsul pancreatic fetal produce hiperinsulinemie/hiperinsulinism, care cresc captarea hepatică a glucozei, glicogenogeneza, lipogeneza și sinteza proteică, ducând la macrosomie. Este subliniat explicit că insulina maternă (și cea exogenă) nu traversează placenta, spre deosebire de glucoză.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 983-983"
         },
@@ -4002,13 +5388,13 @@ const QUESTIONS = {
           "id": "53-4",
           "stem": "Un nou-născut macrosom, din mamă cu diabet zaharat necontrolat, dezvoltă cardiomegalie cu hipertrofie septală interventriculară și stenoză subaortică hipertrofică tranzitorie, atribuită hiperglicemiei și hiperinsulinismului cronic fetal (încărcare cu glicogen la nivel miocardic). Care dintre următoarele conduite este CONTRAINDICATĂ în acest context?",
           "options": [
-            "Monitorizarea ecocardiografică în așteptarea rezoluției spontane",
-            "Evitarea suprasolicitării volemice cardiace",
             "Administrarea de beta-blocante, care pot ameliora obstrucția",
+            "Administrarea de agenți inotropi, deoarece agravează obstrucția la ejecție",
+            "Evitarea suprasolicitării volemice cardiace",
             "Conduita conservatoare, cu urmărire clinică atentă",
-            "Administrarea de agenți inotropi, deoarece agravează obstrucția la ejecție"
+            "Monitorizarea ecocardiografică în așteptarea rezoluției spontane"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "Textul precizează că agenții inotropi agravează obstrucția în stenoza subaortică hipertrofică tranzitorie a nou-născutului din mamă diabetică și sunt contraindicați, în timp ce beta-blocantele pot ameliora obstrucția, iar afecțiunea se remite de regulă spontan în timp, motiv pentru care conduita uzuală este conservatoare, cu supraveghere.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 983-983"
         },
@@ -4017,13 +5403,41 @@ const QUESTIONS = {
           "stem": "Un nou-născut mic pentru vârsta gestațională dezvoltă în prima zi de viață poliurie, deshidratare, scădere ponderală și acidoză, tabloul fiind sugestiv pentru diabet zaharat neonatal tranzitor (TNDM). Care este cea mai frecventă cauză genetică descrisă pentru această afecțiune?",
           "options": [
             "Mutație activatoare a canalului KATP (subunitatea KCNJ11)",
-            "Mutație în gena insulinei (INS), cu transmitere autozomal dominantă",
             "Deleție a genei glucokinazei (GCK)",
-            "Anomalie de amprentare (imprinting) la nivelul locusului cromozomial 6q24",
-            "Anomalie cromozomială de tip trisomie 21"
+            "Anomalie cromozomială de tip trisomie 21",
+            "Mutație în gena insulinei (INS), cu transmitere autozomal dominantă",
+            "Anomalie de amprentare (imprinting) la nivelul locusului cromozomial 6q24"
+          ],
+          "correct": 4,
+          "explanation": "Textul menționează că diabetul zaharat neonatal tranzitor apare tipic în prima zi de viață, la nou-născuți mici pentru vârsta gestațională, manifestându-se prin poliurie, deshidratare, scădere ponderală și acidoză, iar cauza cea mai frecventă (70% din cazuri) este o perturbare a locusului amprentat de pe cromozomul 6q24; unii pacienți au risc de recurență a diabetului mai târziu în viață.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 983-983"
+        },
+        {
+          "id": "53-6",
+          "stem": "Un nou-născut macrosom, din mamă cu diabet zaharat pregestațional slab controlat, prezintă la 3 ore de viață tremurături, iritabilitate marcată și un episod convulsiv, cu glicemie 18 mg/dL, neresponsiv la alimentație orală. Care este conduita terapeutică corectă?",
+          "options": [
+            "Restricție hidrică strictă și repetarea glicemiei peste 6 ore, fără intervenție imediată, dat fiind riscul de edem cerebral",
+            "Administrare exclusivă de glucagon intramuscular, fără acces intravenos, ca primă linie terapeutică",
+            "Bolus intravenos de glucoză hipertonă 25%, pentru corectare rapidă, urmat de reluarea alimentației orale",
+            "Bolus intravenos mic de dextroză 10% (200 mg/kg, adică 2 mL/kg), urmat de perfuzie continuă de glucoză intravenos",
+            "Continuarea exclusivă a alimentației orale cu formulă la intervale scurte, fără glucoză intravenoasă, deoarece simptomele neurologice se remit spontan"
           ],
           "correct": 3,
-          "explanation": "Textul menționează că diabetul zaharat neonatal tranzitor apare tipic în prima zi de viață, la nou-născuți mici pentru vârsta gestațională, manifestându-se prin poliurie, deshidratare, scădere ponderală și acidoză, iar cauza cea mai frecventă (70% din cazuri) este o perturbare a locusului amprentat de pe cromozomul 6q24; unii pacienți au risc de recurență a diabetului mai târziu în viață.",
+          "explanation": "În hipoglicemia neonatală simptomatică (cu semne neurologice) trebuie administrată glucoză intravenos: un bolus mic de 200 mg/kg (2 mL/kg dextroză 10%), urmat de o perfuzie continuă, pentru a evita hipoglicemia de rebound. Bolusurile de glucoză hipertonă (25%) trebuie evitate, deoarece pot agrava hiperinsulinismul și pot precipita hipoglicemie de rebound.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 983-983"
+        },
+        {
+          "id": "53-7",
+          "stem": "Un nou-născut din mamă cu diabet zaharat gestațional dezvoltă, în primele 2 zile de viață, tahipnee și detresă respiratorie, incidența sindromului de detresă respiratorie (SDR) fiind mai mare comparativ cu nou-născuții de aceeași vârstă gestațională din mame nediabetice. Care este mecanismul fiziopatologic principal descris pentru acest fenomen?",
+          "options": [
+            "Hipoglicemia fetală cronică inhibă direct sinteza de surfactant la nivelul pneumocitelor de tip II",
+            "Hipoplazia pulmonară secundară oligoamniosului este mecanismul principal la nou-născuții din mame diabetice",
+            "Deficitul genetic de proteină surfactant B este mai frecvent la nou-născuții din mame diabetice",
+            "Hiperglicemia fetală determină aspirație de meconiu prin creșterea peristaltismului intestinal fetal",
+            "Hiperinsulinismul fetal antagonizează efectul cortizolului asupra stimulării sintezei de surfactant, întârziind maturarea pulmonară"
+          ],
+          "correct": 4,
+          "explanation": "Textul precizează că nou-născuții din mame diabetice au o incidență mai mare a SDR comparativ cu cei de vârstă gestațională similară din mame nediabetice, posibil legată de un efect antagonist al insulinei asupra stimulării sintezei de surfactant de către cortizol, ceea ce întârzie maturarea pulmonară. Policitemia apare frecvent asociată cu SDR, ambele fiind consecințe ale hiperinsulinismului fetal.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 983-983"
         }
       ]
@@ -4036,13 +5450,13 @@ const QUESTIONS = {
           "id": "54-1",
           "stem": "Un nou-născut macrosom, provenit din mamă fără diabet gestațional, dezvoltă hipoglicemie severă la 4-6 ore de la ultima masă. La momentul hipoglicemiei se constată insulinemie >5 µU/mL, beta-hidroxibutirat și acizi grași liberi plasmatici scăzuți, absența cetonuriei, iar administrarea de glucagon produce o creștere a glicemiei cu peste 40 mg/dL. Care este diagnosticul cel mai probabil?",
           "options": [
+            "Hipoglicemie cetotică idiopatică",
+            "Deficit de acil-CoA dehidrogenază a acizilor grași",
             "Hipoglicemie hiperinsulinemică congenitală (defect al canalului KATP al celulei beta)",
             "Insuficiență corticosuprarenaliană primară (boala Addison)",
-            "Deficit de acil-CoA dehidrogenază a acizilor grași",
-            "Hipoglicemie cetotică idiopatică",
             "Glicogenoză tip I (deficit de glucozo-6-fosfatază)"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "Textul descrie hiperinsulinismul congenital ca fiind sugerat de macrosomie fără istoric de diabet matern, dezvoltarea rapidă a hipoglicemiei la 4-8 ore de post, insulinemie >5 µU/mL, hipocetonemie și hipoacidemie grasă, plus un răspuns glicemic la glucagon >40 mg/dL, care confirmă rezerve hepatice de glicogen intacte dar suprimate de insulină. Hipoglicemia cetotică și defectele enzimatice se asociază cu cetonurie prezentă, absentă în acest caz.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 848-862"
         },
@@ -4050,13 +5464,13 @@ const QUESTIONS = {
           "id": "54-2",
           "stem": "Un sugar de 2 luni este adus în urgență cu o criză convulsivă; glicemia capilară este 22 mg/dL. Conform conduitei recomandate pentru hipoglicemia simptomatică însoțită de convulsii la sugar, care este bolusul intravenos inițial de glucoză recomandat?",
           "options": [
-            "4 mL/kg glucoză 10% (D10W)",
             "2 mL/kg glucoză 25% (D25W)",
+            "4 mL/kg glucoză 10% (D10W)",
             "10 mL/kg glucoză 5% (D5W)",
-            "Doar gel oral cu dextroză 40%, fără abord intravenos",
-            "1 mL/kg glucoză 50% (D50W)"
+            "1 mL/kg glucoză 50% (D50W)",
+            "Doar gel oral cu dextroză 40%, fără abord intravenos"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Tratamentul hipoglicemiei simptomatice acute la nou-născut/sugar constă în bolus IV de 2 mL/kg D10W urmat de perfuzie continuă de 6-8 mg/kg/min; dacă sunt prezente convulsii hipoglicemice, textul recomandă un bolus mai mare, de 4 mL/kg D10W. Gelul de dextroză oral este menționat ca alternativă la alimentația enterală, nu ca tratament al convulsiilor.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 848-862"
         },
@@ -4065,12 +5479,12 @@ const QUESTIONS = {
           "stem": "O fetiță de 3 ani, cu o infecție respiratorie și aport alimentar redus în seara precedentă, este găsită dificil de trezit dimineața și prezintă o criză convulsivă. Glicemia este 35 mg/dL, cu cetonurie marcată; insulinemia recoltată la momentul hipoglicemiei este ≤5 µU/mL. Care este diagnosticul cel mai probabil?",
           "options": [
             "Boala urinilor cu miros de arțar (MSUD)",
-            "Sindrom Beckwith-Wiedemann",
-            "Insulinom (adenom de celule insulare)",
             "Hipoglicemie cetotică idiopatică",
-            "Hiperinsulinism congenital"
+            "Sindrom Beckwith-Wiedemann",
+            "Hiperinsulinism congenital",
+            "Insulinom (adenom de celule insulare)"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Hipoglicemia cetotică idiopatică este cea mai frecventă cauză de hipoglicemie a copilăriei, apare tipic între 18 luni și 5 ani, este precipitată de aport caloric redus în context de boală intercurentă și se caracterizează prin cetonurie/cetonemie marcată cu insulinemie adecvat scăzută (≤5 µU/mL). Hiperinsulinismul și insulinomul sunt excluse de prezența cetonuriei, care nu apare când insulina este inadecvat crescută.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 848-862"
         },
@@ -4078,13 +5492,13 @@ const QUESTIONS = {
           "id": "54-4",
           "stem": "Un sugar de 6 luni prezintă un episod de comă hipoglicemică declanșat de post prelungit în context febril, asociat cu hepatomegalie, cardiomiopatie și hipotonie. Investigațiile arată hipoglicemie fără cetonemie/cetonurie, carnitină plasmatică scăzută și aciduria dicarboxilică în urină. Care este cauza cea mai probabilă?",
           "options": [
-            "Hipoglicemie cetotică idiopatică",
             "Glicogenoză tip I (deficit de glucozo-6-fosfatază)",
+            "Hipoglicemie cetotică idiopatică",
+            "Hiperinsulinism congenital",
             "Deficit de acil-CoA dehidrogenază a acizilor grași cu lanț lung/mediu",
-            "Deficit de fructozo-1,6-difosfatază",
-            "Hiperinsulinism congenital"
+            "Deficit de fructozo-1,6-difosfatază"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Textul descrie exact acest tablou pentru deficitul de acil-CoA dehidrogenază a acizilor grași cu lanț lung sau mediu: hipoglicemie de post cu hepatomegalie, cardiomiopatie, hipotonie, carnitină plasmatică scăzută, absența cetozei și aciduria dicarboxilică, uneori cu tablou tip Reye sau evenimente asemănătoare morții subite. Celelalte entități se însoțesc fie de cetonurie prezentă (hipoglicemie cetotică, glicogenoze), fie de absența cardiomiopatiei/carnitinei scăzute (hiperinsulinism).",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 848-862"
         },
@@ -4092,14 +5506,28 @@ const QUESTIONS = {
           "id": "54-5",
           "stem": "Care este mecanismul de acțiune al diazoxidului în tratamentul hipoglicemiei hiperinsulinemice?",
           "options": [
-            "Stimulează secreția de glucagon la nivelul celulelor alfa pancreatice",
-            "Inhibă competitiv legarea insulinei de receptorul său hepatic",
-            "Inhibă glucokinaza, reducând fosforilarea intracelulară a glucozei în celula beta",
+            "Blochează influxul de calciu prin interferență directă cu canalele de calciu, similar octreotidului",
             "Menține deschis canalul de potasiu ATP-dependent (KATP) al celulei beta pancreatice, inhibând astfel secreția de insulină",
-            "Blochează influxul de calciu prin interferență directă cu canalele de calciu, similar octreotidului"
+            "Inhibă competitiv legarea insulinei de receptorul său hepatic",
+            "Stimulează secreția de glucagon la nivelul celulelor alfa pancreatice",
+            "Inhibă glucokinaza, reducând fosforilarea intracelulară a glucozei în celula beta"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Conform textului, sulfonilureele declanșează secreția de insulină prin închiderea canalului KATP, în timp ce diazoxidul inhibă acest proces, menținând canalul deschis și blocând depolarizarea membranară necesară exocitozei insulinei. Octreotidul acționează printr-un mecanism diferit, prin interferența cu influxul de calciu.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 848-862"
+        },
+        {
+          "id": "54-6",
+          "stem": "Un copil de 14 luni prezintă episoade recurente de hipoglicemie, declanșate în special după mese bogate în proteine. La momentul hipoglicemiei, insulinemia este inadecvat crescută, iar amoniemia este moderat crescută (100-200 µM/L), fără semne clinice de encefalopatie hiperamoniemică. Simptomele răspund favorabil la tratamentul cu diazoxid. Care este mecanismul molecular cel mai probabil responsabil de acest tablou?",
+          "options": [
+            "Mutație inactivantă a genei SUR1 (ABCC8), care împiedică deschiderea canalului KATP",
+            "Mutație activatoare a canalului de calciu CACNA1D la nivelul celulei beta pancreatice",
+            "Mutație cu câștig de funcție a glutamat dehidrogenazei, cu creșterea raportului ATP/ADP în celula beta și oxidare hepatică excesivă a glutamatului",
+            "Deficit al transportorului mitocondrial al piruvatului codat de gena SLC16A1",
+            "Duplicare/dereglare a amprentei genomice paterne la nivelul cromozomului 11p15, ca în sindromul Beckwith-Wiedemann"
+          ],
+          "correct": 2,
+          "explanation": "Sindromul hiperinsulinism-hiperamoniemie este determinat de o mutație cu câștig de funcție a glutamat dehidrogenazei (GDH): în celula beta, oxidarea crescută a glutamatului ridică raportul ATP/ADP, închide canalul KATP și declanșează secreția de insulină, proces amplificat de leucina din proteinele alimentare (hipoglicemie leucin-sensibilă); în ficat, oxidarea excesivă a glutamatului deturnează substratul necesar sintezei de N-acetilglutamat, generând o hiperamoniemie moderată (100-200 µM/L), fără manifestări de encefalopatie. Spre deosebire de formele recesive prin defect al canalului KATP (SUR1/KIR6.2), care răspund slab la diazoxid, această formă răspunde de obicei foarte bine la diazoxid.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 848-862"
         }
       ]
@@ -4112,13 +5540,13 @@ const QUESTIONS = {
           "id": "55-1",
           "stem": "Un copil de 9 ani, cunoscut cu diabet zaharat tip 1, este adus la camera de gardă cu vărsături, dureri abdominale și semne de deshidratare acută. Gazometria arată pH = 7,15, CO2 total = 12 mEq/L, iar glicemia este de 650 mg%. Clinic prezintă respirație Kussmaul și halenă acetonemică, fără hipotensiune arterială sau alterarea stării de conștiență. Cum se stadializează acest episod de cetoacidoză diabetică?",
           "options": [
-            "Cetoacidoză diabetică severă",
-            "Cetoacidoză diabetică moderată",
             "Cetoacidoză diabetică ușoară",
+            "Cetoacidoză diabetică severă",
             "Acidoză lactică",
+            "Cetoacidoză diabetică moderată",
             "Comă hiperglicemică hiperosmolară"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Conform tabelului de stadializare a CAD, forma moderată se caracterizează prin pH < 7,20, CO2 total 15-11 mEq/L, glicemie 600-800 mg% și tabloul clinic cu anorexie, vărsături, semne de deshidratare, halenă acetonemică și respirație Kussmaul, fără elementele de severitate (hipotensiune, hipotonie musculară, comă) specifice formei severe. Forma severă presupune pH < 7,10, deshidratare intensă cu facies cadaveric, hipotensiune și comă, elemente absente în acest caz.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 403-432"
         },
@@ -4127,9 +5555,9 @@ const QUESTIONS = {
           "stem": "Un copil de 3 ani este adus în urgență după o posibilă ingestie accidentală de medicamente, prezentând polipnee, alterarea stării de conștiență și deshidratare, fără istoric anterior de poliurie sau polidipsie. Glicemia este 220 mg/dL, corpii cetonici sunt rareori evidențiați în urină, iar concentrația serică a unei anumite substanțe este marcat crescută. Care este cel mai probabil diagnostic?",
           "options": [
             "Intoxicație cu salicilați",
-            "Acidoză tubulară renală",
             "Cetoacidoză diabetică inaugurală",
             "Comă hiperglicemică hiperosmolară",
+            "Acidoză tubulară renală",
             "Fenomenul Somogyi"
           ],
           "correct": 0,
@@ -4140,11 +5568,11 @@ const QUESTIONS = {
           "id": "55-3",
           "stem": "În protocolul terapeutic al cetoacidozei diabetice la copil, rehidratarea și corectarea glicemiei trebuie efectuate cu prudență, glicemia nefiind lăsată să scadă cu mai mult de 5,5 mmol/L (100 mg%) pe oră. Care este principala complicație a tratamentului CAD pe care această conduită urmărește să o prevină?",
           "options": [
+            "Acidoza lactică",
             "Insuficiența renală acută",
-            "Hipoglicemia de rebound",
             "Edemul cerebral",
-            "Hipopotasemia severă",
-            "Acidoza lactică"
+            "Hipoglicemia de rebound",
+            "Hipopotasemia severă"
           ],
           "correct": 2,
           "explanation": "Textul precizează explicit că, printre obiectivele tratamentului CAD, se numără prevenirea complicațiilor acestuia, edemul cerebral fiind cel mai de temut. Rehidratarea trebuie făcută atent, cu atât mai lentă cu cât dezechilibrul metabolic inițial este mai mare, iar glicemia nu trebuie corectată prea rapid tocmai pentru a evita această complicație gravă.",
@@ -4156,9 +5584,9 @@ const QUESTIONS = {
           "options": [
             "Control metabolic nesatisfăcător, necesitând creșterea dozelor",
             "Remisiune totală, cu posibilitatea opririi insulinoterapiei",
-            "Debut lent al bolii, nu remisiune",
+            "Fenomen Somogyi",
             "Remisiune parțială (\"luna de miere\")",
-            "Fenomen Somogyi"
+            "Debut lent al bolii, nu remisiune"
           ],
           "correct": 3,
           "explanation": "Remisiunea parțială se definește prin 4 criterii obligatorii: doză de insulină < 0,5 UI/kg/zi, glicozurie absentă, HbA1c < 7% și durată mai mare de 4 săptămâni, toate îndeplinite în acest caz. Remisiunea totală, mult mai rară (doar 3% din cazuri), presupune oprirea completă a insulinoterapiei cu menținerea echilibrului metabolic, ceea ce nu este cazul aici, deoarece pacientul continuă tratamentul insulinic.",
@@ -4168,14 +5596,42 @@ const QUESTIONS = {
           "id": "55-5",
           "stem": "Un adolescent cu diabet zaharat tip 1 aflat sub insulinoterapie intensivă prezintă în mod repetat hiperglicemie matinală. Determinarea glicemiei nocturne, în jurul orei 3:00, evidențiază o valoare scăzută, fără manifestări clinice sesizate de pacient. Care este conduita terapeutică corectă?",
           "options": [
-            "Creșterea dozei de insulină intermediară administrată la ora 22:00",
-            "Scăderea dozei de insulină administrată seara",
-            "Trecerea imediată la pompa de insulină",
             "Administrarea de glucagon injectabil în fiecare seară",
-            "Creșterea aportului de glucide la cina de la ora 19:00, fără modificarea insulinei"
+            "Creșterea aportului de glucide la cina de la ora 19:00, fără modificarea insulinei",
+            "Trecerea imediată la pompa de insulină",
+            "Creșterea dozei de insulină intermediară administrată la ora 22:00",
+            "Scăderea dozei de insulină administrată seara"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Tabloul descris corespunde fenomenului Somogyi: hiperglicemie matinală consecutivă unei hipoglicemii nocturne neconștientizate, produsă prin descărcarea hormonilor de contrareglare (glucagon, cortizol, adrenalină, hormon de creștere). Tratamentul constă în scăderea dozei de insulină de seară, spre deosebire de fenomenul \"dawn\", în care hiperglicemia matinală apare fără hipoglicemie nocturnă și se tratează prin creșterea dozei de insulină intermediară de la ora 22:00.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 403-432"
+        },
+        {
+          "id": "55-6",
+          "stem": "Un copil de 7 ani cu cetoacidoză diabetică severă, fără semne de insuficiență renală, are la internare o potasemie de 4,8 mmol/L (limita superioară a normalului). La 2 ore după inițierea reechilibrării hidroelectrolitice se începe perfuzia continuă cu insulină rapidă. Care este conduita corectă privind suplimentarea cu potasiu?",
+          "options": [
+            "Se administrează potasiu doar dacă apar modificări electrocardiografice sugestive de hipopotasemie",
+            "Se amână orice aport de potasiu până la scăderea glicemiei sub 250 mg%",
+            "Nu se suplimentează potasiu, deoarece valoarea plasmatică inițială este deja la limita superioară a normalului",
+            "Se inițiază suplimentarea cu potasiu (3-5 mmol/kg/24 ore) odată cu începerea perfuziei cu insulină, indiferent de valoarea plasmatică inițială",
+            "Se suplimentează potasiu numai după corectarea completă a acidozei metabolice"
+          ],
+          "correct": 3,
+          "explanation": "CAD se însoțește întotdeauna de o deficiență potasică totală severă, chiar dacă nivelul plasmatic este normal sau ușor crescut la internare, din cauza pierderilor urinare și a deplasării transcelulare induse de acidoză. Odată cu inițierea insulinoterapiei și corectarea acidozei, potasiul reintră masiv în celule, existând risc de hipopotasemie severă; de aceea, în absența semnelor de insuficiență renală, suplimentarea (3-5 mmol/kg/24 ore) trebuie începută chiar de la debutul perfuziei cu insulină, menținând potasemia între 4-5 mmol/L.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 403-432"
+        },
+        {
+          "id": "55-7",
+          "stem": "Un copil diagnosticat cu diabet zaharat tip 1 la vârsta de 7 ani este evaluat de rutină la vârsta de 10 ani (3 ani de evoluție a bolii), fiind asimptomatic, fără istoric de proteinurie. Conform recomandărilor de screening pentru boala cronică de rinichi asociată diabetului, care este conduita corectă?",
+          "options": [
+            "Investigațiile se amână până la apariția simptomelor clinice de boală renală",
+            "Screeningul se efectuează o singură dată, la momentul debutului diabetului, fiind suficient pentru monitorizarea pe termen lung",
+            "Screeningul renal nu este indicat înainte de vârsta de 18 ani",
+            "Se determină doar creatinina serică, deoarece determinarea microalbuminuriei este utilă exclusiv la pacienții adulți",
+            "Se inițiază screening anual prin calcularea raportului albumină/creatinină din urina de dimineață, întrucât copilul a depășit vârsta de 10 ani și are peste 2 ani de evoluție a diabetului"
+          ],
+          "correct": 4,
+          "explanation": "Screening-ul pentru boala cronică de rinichi asociată diabetului (BCR-DZ) se face anual la toți copiii care au depășit vârsta de 10 ani sau la debutul pubertății (dacă DZ debutează înaintea vârstei de 10 ani), după o durată de evoluție a diabetului de 2-5 ani, prin determinarea albuminuriei patologice (raportul albumină/creatinină urinară din urina de dimineață, valori normale < 30 mg/g). Microalbuminuria reprezintă primul semn al BCR-DZ și un marker al disfuncției endoteliale, progresând spre macroalbuminurie dacă factorii de risc persistă nemodificați.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 403-432"
         }
       ]
@@ -4188,13 +5644,13 @@ const QUESTIONS = {
           "id": "56-1",
           "stem": "Un nou-născut la termen prezintă hipotonie generalizată, pliu palmar transvers unic, fante palpebrale oblice în sus, epicantus, urechi mici displazice şi vărsături bilioase repetate cu distensie abdominală minimă; radiografia abdominală evidenţiază aspectul de \"double bubble\" (atrezie duodenală). Care este diagnosticul cel mai probabil?",
           "options": [
+            "Sindrom Noonan",
+            "Sindrom Edwards (trisomia 18)",
             "Sindrom Klinefelter",
             "Sindrom Down (trisomia 21)",
-            "Sindrom Edwards (trisomia 18)",
-            "Sindrom Turner",
-            "Sindrom Noonan"
+            "Sindrom Turner"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Hipotonia, pliul palmar transvers unic, fantele palpebrale oblice în sus şi urechile mici displazice sunt trăsături caracteristice ale sindromului Down în perioada neonatală. Atrezia duodenală este una dintre anomaliile gastrointestinale congenitale asociate frecvent trisomiei 21, conform textului.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 659-671"
         },
@@ -4202,13 +5658,13 @@ const QUESTIONS = {
           "id": "56-2",
           "stem": "Un copil de 8 ani cu sindrom Down doreşte să participe la gimnastică în cadrul Special Olympics, sport care presupune hiperextensia gâtului. Ştiind că această populaţie are risc crescut de instabilitate atlantoaxială, care este conduita recomandată înaintea participării?",
           "options": [
-            "Ecocardiografie de control, fără alte investigaţii",
-            "Repetarea cariotipului pentru confirmarea diagnosticului",
             "RMN cerebral de rutină la toţi copiii cu sindrom Down",
             "Radiografii de coloană cervicală în flexie şi extensie completă",
-            "Interzicerea definitivă a oricărei activităţi sportive"
+            "Interzicerea definitivă a oricărei activităţi sportive",
+            "Ecocardiografie de control, fără alte investigaţii",
+            "Repetarea cariotipului pentru confirmarea diagnosticului"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Până la 15% dintre copiii cu sindrom Down au subluxaţie/instabilitate a vertebrei C1, ceea ce îi expune riscului de leziune medulară la hiperextensia sau flexia extremă a gâtului. Special Olympics recomandă radiografii de col cervical în extensie şi flexie completă înainte de participarea la sporturi care implică stres asupra gâtului.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 659-671"
         },
@@ -4216,13 +5672,13 @@ const QUESTIONS = {
           "id": "56-3",
           "stem": "O nou-născută prezintă edeme ale mâinilor şi picioarelor, exces de piele la nivelul cefei (aspect de higrom chistic in utero) şi torace în scut cu mameloane larg spaţiate; ecocardiografia decelează o coarctaţie de aortă. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Sindrom Noonan",
+            "Sindrom Turner",
             "Trisomia 21",
             "Sindrom Klinefelter",
-            "Sindrom Turner",
+            "Sindrom Noonan",
             "Trisomia 18"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Limfedemul mâinilor şi picioarelor, pielea în exces la nivelul cefei şi toracele în scut cu mameloane larg spaţiate sunt semne caracteristice ale sindromului Turner la nou-născut, iar coarctaţia de aortă şi valva aortică bicuspidă sunt cele mai frecvente malformaţii cardiace asociate. Deşi sindromul Noonan are trăsături similare (gât scurt/palmat, torace în scut), acesta afectează ambele sexe şi se asociază tipic cu leziuni cardiace drepte, nu cu coarctaţie de aortă.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 659-671"
         },
@@ -4231,12 +5687,12 @@ const QUESTIONS = {
           "stem": "La o pacientă cu sindrom Turner şi mozaicism 45,X/46,XY, analiza FISH confirmă prezenţa de material din cromozomul Y. Ce conduită este recomandată, având în vedere riscul asociat?",
           "options": [
             "Monitorizare ecografică anuală a gonadelor, fără intervenţie chirurgicală",
-            "Administrare de hormon de creştere, fără investigaţii suplimentare",
-            "Ovarectomie unilaterală doar dacă apare pubertate precoce",
             "Gonadectomie laparoscopică, din cauza riscului crescut de gonadoblastom",
+            "Ovarectomie unilaterală doar dacă apare pubertate precoce",
+            "Administrare de hormon de creştere, fără investigaţii suplimentare",
             "Nicio conduită specială, deoarece riscul de tumoră gonadală este neglijabil"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Femeile fenotipice cu mozaicism 45,X/46,XY au un risc de 15-30% de a dezvolta gonadoblastom. Academia Americană de Pediatrie recomandă testarea FISH pentru mozaicism cu cromozom Y la toate pacientele 45,X, iar dacă se identifică material Y, se recomandă gonadectomie laparoscopică.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 659-671"
         },
@@ -4244,14 +5700,28 @@ const QUESTIONS = {
           "id": "56-5",
           "stem": "Un adolescent de 16 ani, cu statură înaltă, testicule mici, ginecomastie şi dificultăţi de limbaj, este diagnosticat prin cariotip cu 47,XXY (sindrom Klinefelter). Care este mecanismul descris în literatură pentru afectarea cognitivă observată la aceşti pacienţi?",
           "options": [
-            "Deficitul cognitiv este cauzat de expansiunea repetitivă CGG din gena FMR1",
-            "Afectarea este secundară hipotiroidismului congenital, frecvent asociat acestui sindrom",
-            "IQ-ul acestor pacienţi este independent de numărul de cromozomi X suplimentari",
             "Fiecare cromozom X suplimentar reduce IQ-ul cu aproximativ 10-15 puncte, cu efect predominant asupra limbajului şi domeniului social",
-            "Afectarea cognitivă se datorează exclusiv nivelului scăzut de testosteron seric"
+            "IQ-ul acestor pacienţi este independent de numărul de cromozomi X suplimentari",
+            "Deficitul cognitiv este cauzat de expansiunea repetitivă CGG din gena FMR1",
+            "Afectarea cognitivă se datorează exclusiv nivelului scăzut de testosteron seric",
+            "Afectarea este secundară hipotiroidismului congenital, frecvent asociat acestui sindrom"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Textul precizează că, în sindromul Klinefelter, fiecare cromozom X suplimentar reduce IQ-ul cu 10-15 puncte comparativ cu fraţii tipici, efectul principal manifestându-se în domeniul limbajului şi al abilităţilor sociale. Cu cât aneuploidia este mai mare (48,XXXY, 49,XXXXY), cu atât afectarea intelectuală şi dismorfismul sunt mai severe.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 659-671"
+        },
+        {
+          "id": "56-6",
+          "stem": "Un nou-născut cu sindrom Down cunoscut nu elimină meconiul în primele 48 de ore de viaţă şi dezvoltă distensie abdominală progresivă cu constipaţie persistentă. Conform ghidurilor de supraveghere medicală a copiilor cu trisomie 21, care este diagnosticul ce trebuie exclus în mod special la acest pacient?",
+          "options": [
+            "Invaginaţie intestinală",
+            "Alergie la proteinele laptelui de vacă",
+            "Boală Hirschsprung",
+            "Fibroză chistică cu ileus meconial",
+            "Stenoză hipertrofică de pilor"
+          ],
+          "correct": 2,
+          "explanation": "Ghidurile de supraveghere medicală pentru copiii cu sindrom Down recomandă evaluarea constipaţiei încă din perioada neonatală, deoarece aceşti pacienţi au risc crescut de boală Hirschsprung. Absenţa eliminării meconiului în primele 48 de ore şi constipaţia persistentă la un nou-născut cu trisomie 21 impun excluderea acestui diagnostic, spre deosebire de stenoza hipertrofică de pilor sau invaginaţia intestinală, care au tablouri clinice şi vârste de debut diferite.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 659-671"
         }
       ]
@@ -4265,12 +5735,12 @@ const QUESTIONS = {
           "stem": "Un copil de 9 ani prezintă, la 6 zile după o faringită documentată cu streptococ β-hemolitic de grup A, o artrită asimetrică, nemigratorie, care afectează genunchiul și articulația sacroiliacă, cu răspuns slab la antiinflamatoarele nesteroidiene. Care este diagnosticul cel mai probabil?",
           "options": [
             "Artrită septică",
-            "Artrită idiopatică juvenilă oligoarticulară",
+            "Artrită reactivă poststreptococică (ARPS)",
             "Artrită asociată entezitei",
             "Reumatism articular acut (RAA)",
-            "Artrită reactivă poststreptococică (ARPS)"
+            "Artrită idiopatică juvenilă oligoarticulară"
           ],
-          "correct": 4,
+          "correct": 1,
           "explanation": "ARPS survine în primele 10 zile de la infecția streptococică (spre deosebire de RAA, unde intervalul este de 2-3 săptămâni), este nonmigratorie, poate afecta articulațiile axiale (sacroiliace) și are un răspuns slab sau nul la AINS/aspirină. RAA se caracterizează prin artrită migratorie cu răspuns spectaculos la antiinflamatoare și nu afectează articulațiile axiale.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 740-744"
         },
@@ -4278,11 +5748,11 @@ const QUESTIONS = {
           "id": "57-2",
           "stem": "O fetiță de 9 ani prezintă febră, un suflu nou de regurgitare mitrală confirmat ecocardiografic, VSH crescut și titru ASLO crescut, la 3 săptămâni de la o faringită. Conform criteriilor de diagnostic pentru episodul inițial de reumatism articular acut, această asociere este suficientă pentru diagnostic?",
           "options": [
+            "Nu, sunt necesare obligatoriu două criterii majore",
             "Nu, cardita izolată nu poate fi considerată criteriu de diagnostic fără artrită asociată",
-            "Da, dar numai dacă se asociază și titrul ASLO în dinamică crescător de cel puțin două ori valoarea inițială",
             "Da, un criteriu major (cardita) și două criterii minore (febră, VSH crescut), alături de dovada infecției streptococice, sunt suficiente",
-            "Nu, este necesară în plus prezența coreei pentru confirmarea diagnosticului",
-            "Nu, sunt necesare obligatoriu două criterii majore"
+            "Da, dar numai dacă se asociază și titrul ASLO în dinamică crescător de cel puțin două ori valoarea inițială",
+            "Nu, este necesară în plus prezența coreei pentru confirmarea diagnosticului"
           ],
           "correct": 2,
           "explanation": "Pentru episodul inițial de RAA, diagnosticul se stabilește fie prin două criterii majore, fie printr-un criteriu major și două criterii minore, alături de dovada infecției streptococice recente. În acest caz, cardita (criteriu major) se asociază cu febra și VSH crescut (criterii minore), plus ASLO crescut ca dovadă a infecției streptococice, îndeplinind astfel condițiile diagnostice.",
@@ -4292,13 +5762,13 @@ const QUESTIONS = {
           "id": "57-3",
           "stem": "Un copil cunoscut cu artrită idiopatică juvenilă formă sistemică dezvoltă brusc febră persistentă, hepatosplenomegalie, trombocitopenie, scădere bruscă a VSH-ului și valori ale feritinei serice de peste 10000 ng/mL. Care este cea mai probabilă complicație?",
           "options": [
-            "Sepsis bacterian intercurent",
+            "Pericardită reumatismală",
             "Recădere simplă a bolii de bază (puseu articular)",
-            "Sindrom de activare macrofagică (MAS)",
+            "Sepsis bacterian intercurent",
             "Amiloidoză secundară",
-            "Pericardită reumatismală"
+            "Sindrom de activare macrofagică (MAS)"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "MAS este o complicație severă a AIJ sistemice, cu mortalitate raportată între 11% și 30%, caracterizată prin febră înaltă, hepatosplenomegalie, bi- sau pancitopenie (mai ales trombocitopenie), scădere bruscă a VSH-ului și valori ale feritinei frecvent peste 10000 ng/mL. Recunoașterea precoce este esențială deoarece tratamentul imunosupresor prompt poate fi salvator de viață.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 725-737"
         },
@@ -4307,8 +5777,8 @@ const QUESTIONS = {
           "stem": "O fetiță de 3 ani este diagnosticată cu artrită idiopatică juvenilă formă oligoarticulară (afectarea genunchiului), cu anticorpi antinucleari (ANA) pozitivi în titru semnificativ. Ținând cont de factorii de risc identificați pentru această formă de boală, care este măsura de monitorizare cea mai importantă la acest moment?",
           "options": [
             "Consult oftalmologic periodic pentru depistarea uveitei, frecvent asimptomatică",
-            "Dozarea periodică a complementului seric (C3, C4)",
             "Radiografie toracică pentru depistarea unei eventuale pericardite",
+            "Dozarea periodică a complementului seric (C3, C4)",
             "Puncție medulară pentru excluderea unei leucemii acute",
             "Electroencefalogramă pentru depistarea coreei"
           ],
@@ -4320,14 +5790,42 @@ const QUESTIONS = {
           "id": "57-5",
           "stem": "Un băiat de 12 ani prezintă dureri la nivelul inserției calcaneene a tendonului ahilian, artrită asimetrică a genunchiului și este HLA-B27 pozitiv. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Reumatism articular acut",
             "Artrită idiopatică juvenilă poliarticulară cu factor reumatoid pozitiv",
             "Artrita asociată entezitei (ERA)",
-            "Artrită idiopatică juvenilă cu debut sistemic",
-            "Lupus eritematos sistemic"
+            "Reumatism articular acut",
+            "Lupus eritematos sistemic",
+            "Artrită idiopatică juvenilă cu debut sistemic"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Entezita (inflamația la inserția tendonului, aici a tendonului ahilian pe calcaneu) asociată cu artrită periferică asimetrică, mai frecventă la băieți preadolescenți/adolescenți, alături de pozitivitatea HLA-B27 (prezent la 70-80% dintre pacienții cu ERA, față de doar 8% în populația generală), este caracteristică artritei asociate entezitei.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 725-737"
+        },
+        {
+          "id": "57-6",
+          "stem": "Un copil de 11 ani, cu antecedente de reumatism articular acut, prezintă la 3 săptămâni de la o infecție streptococică documentată febră, artralgii (fără artrită obiectivată la examenul clinic) și VSH crescut. Poate fi susținut diagnosticul de recurență a RAA în această situație?",
+          "options": [
+            "Da, prin întrunirea a trei criterii minore (febră, artralgii, VSH crescut) alături de dovada infecției streptococice recente",
+            "Nu, deoarece recurențele necesită obligatoriu prezența a cel puțin un criteriu major",
+            "Nu, este necesară în plus obligatoriu o ecocardiografie care să evidențieze regurgitare valvulară",
+            "Nu, deoarece artralgiile nu pot fi luate în calcul ca și criteriu, indiferent de context",
+            "Da, dar numai dacă se asociază și un interval PR prelungit pe electrocardiogramă"
+          ],
+          "correct": 0,
+          "explanation": "Spre deosebire de episodul inițial, care necesită cel puțin un criteriu major, diagnosticul de recurență a RAA poate fi susținut și prin întrunirea a trei criterii minore (febră, artralgii, VSH sau PCR crescute, interval PR prelungit) alături de dovada infecției streptococice recente. Artralgiile constituie criteriu minor doar în absența artritei, condiție îndeplinită în acest caz.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 740-744"
+        },
+        {
+          "id": "57-7",
+          "stem": "O adolescentă de 13 ani prezintă poliartrită simetrică a articulațiilor mici ale mâinilor, cu noduli subcutanați și factor reumatoid (FR) pozitiv la două determinări efectuate la interval de trei luni. Care este forma de artrită idiopatică juvenilă cel mai probabil implicată?",
+          "options": [
+            "Poliarticulară cu factor reumatoid negativ",
+            "Oligoarticulară extinsă",
+            "Artrită asociată entezitei",
+            "Artrită psoriazică",
+            "Poliarticulară cu factor reumatoid pozitiv"
+          ],
+          "correct": 4,
+          "explanation": "Forma poliarticulară cu FR pozitiv afectează cinci sau mai multe articulații, apare tipic la vârsta de școlar și în adolescență, cu predominanță netă feminină, și necesită cel puțin două testări FR pozitive la interval de minimum trei luni. Nodulii subcutanați din această formă pot avea o structură similară cu cea a nodulilor din poliartrita reumatoidă a adultului, boală pe care AIJ FR-pozitivă o mimează clinic și evolutiv.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 725-737"
         }
       ]
@@ -4340,13 +5838,13 @@ const QUESTIONS = {
           "id": "58-1",
           "stem": "O adolescentă de 14 ani, diagnosticată cu lupus eritematos sistemic, prezintă la puncția-biopsie renală leziuni glomerulare proliferative difuze, cu afectare a peste 50% din glomeruli. Conform clasificării ISN/RPS (2004), această formă de nefrită lupică se încadrează în:",
           "options": [
-            "Clasa III - nefrită lupică focală",
-            "Clasa I - nefrită lupică cu leziuni mezangiale minime",
             "Clasa V - nefrită lupică membranoasă",
             "Clasa IV - nefrită lupică proliferativă difuză",
+            "Clasa I - nefrită lupică cu leziuni mezangiale minime",
+            "Clasa III - nefrită lupică focală",
             "Clasa II - nefrită lupică cu leziuni mezangiale proliferative"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Conform clasificării ISN/RPS 2004, clasa IV reprezintă nefrita lupică proliferativă difuză, segmentală sau globală, cu afectare extinsă a glomerulilor. Clasele I și II corespund leziunilor mezangiale minime, respectiv proliferative, iar clasa III este forma focală (afectare mai limitată). Clasa V este forma membranoasă, cu tablou histologic distinct.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 754-769"
         },
@@ -4354,13 +5852,13 @@ const QUESTIONS = {
           "id": "58-2",
           "stem": "O fetiță de 8 ani se prezintă cu slăbiciune musculară proximală simetrică, instalată insidios în 3 luni, asociată cu un rash violaceu periorbitar cu edem palpebral și leziuni eritematoase la nivelul suprafețelor de extensie ale articulațiilor mâinilor. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Dermatomiozita juvenilă",
-            "Vasculita din purpura Henoch-Schonlein",
-            "Artrita idiopatică juvenilă forma sistemică",
             "Lupus eritematos sistemic",
-            "Sclerodermia sistemică"
+            "Dermatomiozita juvenilă",
+            "Sclerodermia sistemică",
+            "Artrita idiopatică juvenilă forma sistemică",
+            "Vasculita din purpura Henoch-Schonlein"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Tabloul descris este caracteristic dermatomiozitei juvenile: slăbiciune musculară proximală simetrică, rash heliotrop periorbitar cu edem al pleoapelor și papule Gottron la nivelul suprafețelor de extensie ale articulațiilor mâinilor. Aceste manifestări cutanate sunt patognomonice și fac parte din criteriile Bohan și Peter pentru diagnosticul bolii.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1404-1406"
         },
@@ -4368,13 +5866,13 @@ const QUESTIONS = {
           "id": "58-3",
           "stem": "Un băiat de 6 ani dezvoltă purpură palpabilă la nivelul membrelor inferioare și feselor, dureri abdominale colicative și artralgii la nivelul genunchilor și gleznelor, la o săptămână după o infecție respiratorie. Care dintre următorii factori este menționat ca fiind predictiv pentru afectarea renală persistentă în purpura Henoch-Schonlein?",
           "options": [
-            "Prezența edemului scrotal",
-            "Vârsta la debut peste 10 ani",
             "Sexul masculin",
-            "Absența manifestărilor articulare",
-            "Vârsta la debutul bolii sub 7 ani"
+            "Vârsta la debut peste 10 ani",
+            "Vârsta la debutul bolii sub 7 ani",
+            "Prezența edemului scrotal",
+            "Absența manifestărilor articulare"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "Factorii predictibili pentru afectarea renală persistentă în purpura Henoch-Schonlein menționați în text sunt: vârsta la debut sub 7 ani, persistența leziunilor purpurice, intensitatea simptomatologiei abdominale (forme severe) și scăderea activității factorului XIII. Sexul masculin este doar un factor de frecvență a bolii, nu un predictor de afectare renală.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1416-1418"
         },
@@ -4382,13 +5880,13 @@ const QUESTIONS = {
           "id": "58-4",
           "stem": "Un copil de 2 ani prezintă febră de 6 zile, neresponsivă la antitermice, hiperemie conjunctivală bilaterală nepurulentă, eritem și fisuri ale buzelor, limbă zmeurie, edem al mâinilor și un exantem polimorf pe trunchi. Care este conduita terapeutică inițială recomandată?",
           "options": [
-            "Antivirale cu spectru larg asociate cu antiinflamatoare nesteroidiene",
-            "Antibioterapie cu cefalosporină de generația a III-a în doză mare",
-            "Aspirină în doză mare, fără imunoglobuline intravenoase",
+            "Imunoglobuline intravenoase 2 g/kg în perfuzie lentă, asociate cu aspirină în doză mare",
             "Corticoterapie sistemică în puls-terapie, ca monoterapie",
-            "Imunoglobuline intravenoase 2 g/kg în perfuzie lentă, asociate cu aspirină în doză mare"
+            "Antibioterapie cu cefalosporină de generația a III-a în doză mare",
+            "Antivirale cu spectru larg asociate cu antiinflamatoare nesteroidiene",
+            "Aspirină în doză mare, fără imunoglobuline intravenoase"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Copilul întrunește criteriile clinice clasice pentru boala Kawasaki (febră peste 5 zile plus cel puțin 4 din cele 5 criterii principale). Tratamentul standard constă în imunoglobuline intravenoase 2 g/kg în perfuzie lentă de 8-12 ore, asociate cu aspirină în doză mare (80-100 mg/kg/zi), administrate optim în primele 7-10 zile de boală pentru a reduce riscul de anevrisme coronariene.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 695-705"
         },
@@ -4396,15 +5894,85 @@ const QUESTIONS = {
           "id": "58-5",
           "stem": "Un copil de origine armeană prezintă de la vârsta de 4 ani episoade recurente de febră cu durată de 12-72 ore, însoțite de dureri abdominale intense care mimează abdomenul acut și monoartrită tranzitorie, cu perioade complet asimptomatice între atacuri. Care este tratamentul de elecție pentru prevenirea atacurilor și a celei mai de temut complicații pe termen lung a acestei afecțiuni?",
           "options": [
-            "Corticoterapia continuă în doză mică",
+            "Metotrexat săptămânal",
             "Antibioterapie profilactică cu penicilină",
+            "Corticoterapia continuă în doză mică",
             "Colchicina",
-            "Anakinra ca primă linie",
-            "Metotrexat săptămânal"
+            "Anakinra ca primă linie"
           ],
-          "correct": 2,
+          "correct": 3,
           "explanation": "Tabloul clinic este sugestiv pentru febra familială mediteraneană (FMF), frecventă la populațiile din bazinul mediteranean (arabi, evrei, armeni, turci, italieni). Colchicina este medicamentul de elecție, prevenind atât atacurile febrile, cât și apariția amiloidozei, cea mai de temut complicație pe termen lung; inhibitorii de IL-1 (anakinra) se rezervă cazurilor cu răspuns nefavorabil sau incomplet la colchicină.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1416-1418"
+        },
+        {
+          "id": "58-6",
+          "stem": "O adolescentă de 13 ani prezintă fenomen Raynaud cu debut cu doi ani înaintea altor manifestări, urmat de îngroșare și indurație progresivă a tegumentului feței și mâinilor, telangiectazii periunghiale, disfagie și reflux gastroesofagian. Capilaroscopia evidențiază absența anselor capilare, cu capilare dilatate, distorsionate și sinuoase. Care dintre următorii autoanticorpi, prezent la aproximativ o treime dintre cazurile pediatrice, susține diagnosticul de sclerodermie sistemică?",
+          "options": [
+            "Anticorpii anticentromer",
+            "Anticorpii anti-ADN dublu catenar",
+            "Anticorpii anti-Jo1",
+            "Anticorpii anti-Smith (anti-Sm)",
+            "Anticorpii antitopoizomerază 1 (anti-Scl70)"
+          ],
+          "correct": 4,
+          "explanation": "Anticorpii antitopoizomerază 1 (anti-Scl70) sunt pozitivi la aproximativ o treime dintre copiii cu sclerodermie sistemică, fiind unul dintre criteriile serologice minore de diagnostic (PRES/ACR/EULAR 2007). Anticorpii anticentromer, frecvenți la adult, sunt prezenți doar la un număr mic de copii cu sclerodermie. Capilaroscopia cu absența anselor și capilare distorsionate diferențiază fenomenul Raynaud din sclerodermie de boala Raynaud primară, care nu se însoțește de modificări capilare sau de autoanticorpi.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1407-1410"
+        },
+        {
+          "id": "58-7",
+          "stem": "Un nou-născut la termen, din mamă cunoscută cu anticorpi anti-Ro (SSA) și anti-La (SSB) pozitivi, dezvoltă în prima lună de viață un rash macular periorbitar și trombocitopenie ușoară, fără afectare cardiacă decelată prenatal. Care dintre următoarele afirmații despre lupusul eritematos sistemic neonatal este corectă?",
+          "options": [
+            "Ecografia fetală seriată nu aduce niciun beneficiu în monitorizarea sarcinilor la mamele cu anticorpi anti-Ro pozitivi",
+            "Toate manifestările bolii, inclusiv cele cardiace, se remit spontan până la vârsta de șase luni",
+            "Administrarea de hidroxiclorochină gravidei purtătoare de anticorpi anti-Ro crește riscul de bloc atrioventricular fetal",
+            "Manifestările cutanate, hepatice și hematologice sunt de obicei reversibile, spre deosebire de blocul atrioventricular congenital, care este ireversibil",
+            "Boala este determinată de transferul transplacentar de IgM matern, începând din trimestrul III de sarcină"
+          ],
+          "correct": 3,
+          "explanation": "Lupusul neonatal se datorează transferului pasiv transplacentar de anticorpi IgG materni (anti-Ro/anti-La) începând din săptămâna 16 de gestație. Manifestările cutanate, hematologice și hepatice sunt de obicei reversibile, chiar spontan, în timp ce afectarea cardiacă (bloc atrioventricular congenital) este ireversibilă, motiv pentru care se recomandă monitorizare ecografică fetală seriată (săptămânal între săptămânile 16-26, apoi bisăptămânal între 26-34). Administrarea preventivă de hidroxiclorochină la mamele purtătoare de anticorpi pare să reducă, nu să crească, riscul leziunilor cardiace fetale.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 745-753"
+        },
+        {
+          "id": "58-8",
+          "stem": "Un băiat de 5 ani, cunoscut cu purpură palpabilă la nivelul membrelor inferioare de 3 zile, dezvoltă brusc dureri abdominale colicative severe, vărsături și scaun cu sânge, cu abdomen dureros difuz la palpare. Ce complicație digestivă gravă, descrisă în purpura Henoch-Schonlein ca urmare a edemului submucos și a hemoragiilor din peretele intestinal, trebuie exclusă de urgență prin ecografie abdominală?",
+          "options": [
+            "Torsiunea de ovar",
+            "Colecistita acută litiazică",
+            "Invaginația intestinală",
+            "Pancreatita cronică",
+            "Apendicita acută"
+          ],
+          "correct": 2,
+          "explanation": "Afectarea gastrointestinală din purpura Henoch-Schonlein este urmarea edemului submucos și a hemoragiilor din peretele intestinal și se poate manifesta ca invaginație, gangrenă sau perforație intestinală, motiv pentru care ecografia abdominală este necesară de urgență în prezența tulburărilor digestive. Manifestările abdominale pot precede rash-ul purpuric, ceea ce creează frecvent confuzie cu abdomenul acut chirurgical.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1416-1418"
+        },
+        {
+          "id": "58-9",
+          "stem": "Un copil de 3 ani prezintă, de la vârsta de un an, episoade febrile recurente cu debut brusc, temperaturi de 40-41°C, durată medie de 5 zile, separate de intervale libere de aproximativ o lună în care copilul este complet asimptomatic, cu creștere și dezvoltare normale. În timpul episoadelor febrile prezintă stomatită aftoasă, faringită și adenopatie cervicală, iar testele genetice pentru febrele periodice monogenice sunt negative. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Sindromul PFAPA",
+            "Sindromul Muckle-Wells",
+            "Sindromul febrei periodice cu hiperimunoglobulinemie D",
+            "Febra familială mediteraneană",
+            "Sindromul periodic asociat receptorului factorului de necroză tumorală (TRAPS)"
+          ],
+          "correct": 0,
+          "explanation": "Tabloul clinic corespunde criteriilor Marshall pentru sindromul PFAPA: debut înaintea vârstei de 5 ani, episoade febrile bruște însoțite de stomatită aftoasă, faringită și/sau adenopatii cervicale, reactanți de fază acută pozitivi în puseu, perioade intercritice de 4-10 săptămâni complet asimptomatice, cu dezvoltare normală, după excluderea neutropeniei ciclice și a altor boli autoinflamatoare cu mutații genetice cunoscute. Spre deosebire de FMF sau TRAPS, PFAPA nu are etiologie genetică identificată și are prognostic benign.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1419-1424"
+        },
+        {
+          "id": "58-10",
+          "stem": "Un sugar de 4 luni prezintă febră neexplicată de 8 zile și iritabilitate marcată, dar întrunește doar 2 din cele 5 criterii clinice clasice ale bolii Kawasaki. Reactanții de fază acută sunt marcat crescuți (CRP > 30 mg/L, VSH > 40 mm/oră), iar dintre criteriile de laborator de susținere prezintă hipoalbuminemie sub 3 g/dL, anemie pentru vârstă și trombocitoză peste 450.000/mm3 la 7 zile de boală. Care este conduita corectă?",
+          "options": [
+            "Se exclude diagnosticul de boală Kawasaki, deoarece nu sunt îndeplinite cele 4 criterii clinice clasice necesare",
+            "Se temporizează orice tratament până la eventuala apariție a anevrismelor coronariene la ecografie",
+            "Se recomandă exclusiv antibioterapie empirică, cu reevaluare clinică peste două săptămâni",
+            "Se indică ecocardiografia și, întrucât criteriile clinice și de laborator pentru forma incompletă sunt întrunite, imunoglobulinele intravenoase pot fi administrate chiar înainte de confirmarea ecografică",
+            "Se administrează doar aspirină în doză mică, fără imunoglobuline, până la clarificarea completă a diagnosticului"
+          ],
+          "correct": 3,
+          "explanation": "Sugarii sub 6 luni cu boală Kawasaki incompletă sunt cei mai dificil de diagnosticat, dar au risc crescut de leziuni coronariene, motiv pentru care la orice sugar sub 6 luni cu febră neexplicată de cel puțin 7 zile și markeri de inflamație crescuți se indică ecocardiografia. Cazul descris întrunește criteriile AHA pentru forma incompletă (CRP și VSH crescute, plus cel puțin 3 criterii de susținere de laborator), situație în care imunoglobulinele intravenoase pot fi administrate chiar înainte de efectuarea ecocardiografiei, pentru a preveni leziunile coronariene.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 695-705"
         }
       ]
     },
@@ -4416,13 +5984,13 @@ const QUESTIONS = {
           "id": "59-1",
           "stem": "Un sugar cu meningococemie fulminantă prezintă la evaluare: colaps cardiovascular, erupție peteșial-purpurică apărută în primele 10 ore de la debut, trombocitopenie și absența leucocitozei sanguine (celelalte elemente ale scorului prognostic fiind absente). Care este încadrarea prognostică corectă, conform scorului prognostic din meningococemia fulminantă?",
           "options": [
+            "Prognostic sever (scor 3)",
+            "Scorul nu se poate calcula fără leucocitele din LCR",
             "Prognostic favorabil, indiferent de scor, la vârsta de sugar",
             "Prognostic favorabil (scor 0-2)",
-            "Prognostic rezervat-letal (scor peste 3)",
-            "Scorul nu se poate calcula fără leucocitele din LCR",
-            "Prognostic sever (scor 3)"
+            "Prognostic rezervat-letal (scor peste 3)"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Scorul prognostic în meningococemia fulminantă acordă câte un punct pentru fiecare element prezent (leucocite LCR<20/mmc, colaps cardiovascular, purpură peteșială apărută în primele 12 ore, trombocitopenie, absența leucocitozei sanguine, VSH normal, hiperpirexie rectală >39°C). Pacientul din vinietă întrunește 4 puncte, iar un scor peste 3 se asociază cu prognostic rezervat-letal. Un scor de 0-2 înseamnă prognostic favorabil, iar un scor de 3 înseamnă prognostic sever.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 805-815"
         },
@@ -4430,13 +5998,13 @@ const QUESTIONS = {
           "id": "59-2",
           "stem": "Un copil cu sindrom meningian și febră are puncție rahidiană cu următoarele rezultate: LCR tulbure, peste 1500 elemente/mmc cu predominanța polimorfonuclearelor, proteinorahie mult crescută și glicorahie scăzută. Ce etiologie sugerează cel mai probabil acest tablou al LCR?",
           "options": [
-            "Meningită bacteriană",
-            "Meningism asociat unei viroze respiratorii",
-            "Meningită virală",
             "Reacție meningiană cu biochimie normală",
-            "Meningită tuberculoasă"
+            "Meningism asociat unei viroze respiratorii",
+            "Meningită tuberculoasă",
+            "Meningită virală",
+            "Meningită bacteriană"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Conform textului, un LCR tulbure cu peste 1500 elemente/mmc, cu predominanța polimorfonuclearelor, proteinorahie foarte crescută și glicorahie scăzută este caracteristic meningitei bacteriene. Meningitele virale au de regulă 10-1500 elemente/mmc cu predominanță limfocitară și glicorahie normală, iar meningita tuberculoasă are 200-400 elemente/mmc cu predominanță limfocitară.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 805-815"
         },
@@ -4444,13 +6012,13 @@ const QUESTIONS = {
           "id": "59-3",
           "stem": "O gravidă dezvoltă febră, cefalee și alterarea progresivă a stării de conștiență, cu paralizii de nervi cranieni sugestive pentru suferință de trunchi cerebral. Examenul LCR arată proporții egale de polimorfonucleare și limfocite, cu hiperproteinorahie și hipoglicorahie. Care este etiologia cea mai probabilă și schema de tratament etiologic de elecție?",
           "options": [
-            "Listeria monocytogenes; ampicilină asociată cu gentamicină",
-            "Cryptococcus neoformans; amfotericină B",
             "Haemophilus influenzae; ampicilină în monoterapie",
+            "Cryptococcus neoformans; amfotericină B",
             "Neisseria meningitidis; penicilină G",
-            "Streptococcus pneumoniae; cefalosporină de generația a treia"
+            "Streptococcus pneumoniae; cefalosporină de generația a treia",
+            "Listeria monocytogenes; ampicilină asociată cu gentamicină"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Meningita cu Listeria monocytogenes apare tipic la organisme imunodeficitare, inclusiv gravide, are tablou de meningoencefalită cu afectare de trunchi cerebral și paralizii de nervi cranieni, iar în LCR proporțiile de polimorfonucleare și limfocite se egalizează, cu hiperproteinorahie și hipoglicorahie constante. Tratamentul etiologic constă în dublă asociere de ampicilină cu gentamicină.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 805-815"
         },
@@ -4458,13 +6026,13 @@ const QUESTIONS = {
           "id": "59-4",
           "stem": "Un pacient prezintă tulburări de conștiență cu semne neurologice de focar, iar RMN cerebral evidențiază un aspect pseudotumoral temporofrontal; examenul LCR arată pleiocitoză cu proteinorahie crescută, fără identificarea altor agenți patogeni bacterieni sau fungici. Care este conduita terapeutică imediată corectă?",
           "options": [
-            "Se instituie tuberculostatice în așteptarea culturii LCR",
             "Se administrează doar corticoterapie, fără tratament antiviral",
             "Se administrează empiric aciclovir intravenos, 10 mg/kgc la fiecare 8 ore",
+            "Se instituie tuberculostatice în așteptarea culturii LCR",
             "Se așteaptă rezultatul PCR pentru HSV înainte de a începe orice tratament",
             "Se inițiază cefalosporină de generația a treia în monoterapie"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Manifestările sugestive pentru o leziune la nivelul lobului temporal, împreună cu pleiocitoza LCR și absența altor patogeni, orientează spre encefalita cu virus herpes simplex. În encefalite, singura indicație de terapie etiologică este cea din encefalita herpetică, cu aciclovir intravenos 10 mg/kgc la fiecare 8 ore (30 mg/kgc/zi), tratament ce trebuie inițiat prompt, fără a aștepta confirmarea etiologică.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 815-819"
         },
@@ -4472,14 +6040,42 @@ const QUESTIONS = {
           "id": "59-5",
           "stem": "Un băiat de 10 ani, cu istoric de rujeolă la vârsta de 18 luni, prezintă de câteva luni deteriorare intelectuală progresivă și scăderea performanței școlare, iar recent au apărut mioclonii ample, brusc instalate, cu relaxare lentă, repetitive la intervale de 10-60 de secunde. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Encefalita herpetică",
             "Encefalita cu virusul West Nile",
+            "Meningococemie fulminantă",
             "Panencefalita sclerozantă subacută (PESS)",
-            "Meningita tuberculoasă",
-            "Meningococemie fulminantă"
+            "Encefalita herpetică",
+            "Meningita tuberculoasă"
           ],
           "correct": 2,
           "explanation": "Tabloul descris este caracteristic panencefalitei sclerozante subacute (PESS), complicație tardivă a rujeolei survenite la vârste mici, cu debut la 8-10 ani distanță de infecția inițială. Stadiul 1 al bolii se manifestă prin deteriorare intelectuală progresivă și scăderea performanței școlare, iar stadiul 2 prin instalarea mioclonilor ample, cu relaxare lentă, la intervale de 10-60 de secunde.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 815-819"
+        },
+        {
+          "id": "59-6",
+          "stem": "Un nou-născut la termen, aflat în a 10-a zi de viață, dezvoltă febră și convulsii, fără semne evidente de infecție de focar. Se suspectează meningită neonatală cu debut tardiv (interval 7 zile - 6 săptămâni de la naștere), la care agenții etiologici posibili sunt extrem de diverși (Streptococcus agalactiae, bacili Gram-negativi tip Klebsiella/Enterobacter/E. coli/Pseudomonas, Listeria monocytogenes, stafilococi). Care este conduita terapeutică inițială cea mai adecvată, având în vedere această diversitate etiologică?",
+          "options": [
+            "Vancomicină în monoterapie, indiferent de agentul etiologic suspectat",
+            "Monoterapie cu ampicilină, fără alt antibiotic asociat",
+            "Aciclovir intravenos, ca primă linie, indiferent de tabloul clinic",
+            "Penicilină G în doză unică, fără investigații suplimentare",
+            "Cefalosporină de generația a treia sau amoxicilină, asociată cu un aminoglicozid (gentamicină, amikacină) sau, alternativ, un carbapenem (meropenem)"
+          ],
+          "correct": 4,
+          "explanation": "Diversitatea etiologică a meningitei neonatale face dificilă stabilirea unui tratament etiologic de primă intenție, mai ales pentru tulpinile de Enterobacteriaceae cu rezistență crescândă la aminopeniciline. Se indică inițierea tratamentului cu o cefalosporină de generația a treia sau cu amoxicilină, la care se poate asocia un aminoglicozid (gentamicină, amikacină) sau chiar un carbapenem (meropenem). Mortalitatea meningitei neonatale ajunge la 20-30%.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 805-815"
+        },
+        {
+          "id": "59-7",
+          "stem": "Un pacient adult din sudul României, provenit dintr-un mediu socioeconomic defavorizat, dezvoltă în sezonul cald febră cu alterare rapidă a stării de conștiență, evoluând spre comă; serologia confirmă infecția cu virusul West Nile. Care este conduita terapeutică corectă și care este letalitatea așteptată la cazurile confirmate cu evoluție spre forma meningoencefalitică?",
+          "options": [
+            "Ampicilină asociată cu gentamicină timp de 30 de zile, letalitate sub 10%",
+            "Aciclovir intravenos 30 mg/kgc/zi timp de 14 zile, cu letalitate sub 5%",
+            "Nu există tratament etiologic specific; se recomandă corticoterapie cu bună penetrare hematoencefalică (dexametazonă) și tratament suportiv, letalitatea depășind 18% dintre cazurile confirmate",
+            "Tuberculostatice asociate cu corticoterapie timp de 12 luni, letalitate de 100% în absența tratamentului",
+            "Amfotericină B deoxicolat asociată cu flucitozină, letalitate de aproximativ 70%"
+          ],
+          "correct": 2,
+          "explanation": "Encefalita cu virusul West Nile, transmisă prin înțepătura de țânțar și mai frecventă în sezonul cald în sudul României, la populații socioeconomic defavorizate, nu beneficiază de terapie etiologică specifică; se folosesc corticosteroizi cu penetrare hematoencefalică bună (dexametazonă) și tratament suportiv. Dacă se instalează meningita cu manifestări encefalitice importante, evoluția este rapid comatoasă, cu evoluție letală în peste 18% dintre cazurile confirmate.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 815-819"
         }
       ]
@@ -4492,11 +6088,11 @@ const QUESTIONS = {
           "id": "60-1",
           "stem": "Un copil de 7 ani este diagnosticat cu scarlatină (angină eritematoasă, exantem micropapulos aspru, ciclu lingual prezent), fără istoric de alergie la penicilină. Care este conduita terapeutică etiologică corectă?",
           "options": [
-            "Doar tratament simptomatic cu antitermice, antibioticul nefiind necesar la copil imunocompetent",
-            "Cefalosporină de generația a III-a, în doză unică, fără necesitatea continuării tratamentului",
-            "Penicilină G (IM) sau penicilină V (oral) timp de 7-10 zile, urmată de benzatin-penicilină o doză pe săptămână, 3 săptămâni consecutiv",
             "Aciclovir oral, 30 mg/kg/zi, în patru prize, timp de 5-10 zile",
-            "Imunoglobuline standard intravenos, fără antibioterapie"
+            "Imunoglobuline standard intravenos, fără antibioterapie",
+            "Penicilină G (IM) sau penicilină V (oral) timp de 7-10 zile, urmată de benzatin-penicilină o doză pe săptămână, 3 săptămâni consecutiv",
+            "Doar tratament simptomatic cu antitermice, antibioticul nefiind necesar la copil imunocompetent",
+            "Cefalosporină de generația a III-a, în doză unică, fără necesitatea continuării tratamentului"
           ],
           "correct": 2,
           "explanation": "Pentru pacienții fără alergie la penicilină, tratamentul de elecție al scarlatinei este penicilina G (de preferat injectabil) sau penicilina V oral, 7-10 zile, urmate de benzatin-penicilină săptămânal, 3 săptămâni consecutiv. Aciclovirul este tratamentul specific al varicelei/zonei zoster, nu al scarlatinei, iar scarlatina netratată antibiotic are risc crescut de complicații poststreptococice.",
@@ -4506,13 +6102,13 @@ const QUESTIONS = {
           "id": "60-2",
           "stem": "Un copil nevaccinat, în vârstă de 3 ani, prezintă de 3 zile febră progresivă (39-40°C), coriză intensă, tuse și conjunctivită cu fotofobie. La examinarea cavității bucale, pe mucoasa jugală, în dreptul molarilor, se observă mici pete albicioase, ca bobițele de griș, pe fond eritematos. Ce reprezintă acest semn și ce boală indică?",
           "options": [
-            "Semnul Grozovici-Pastia, specific scarlatinei",
-            "Enantemul rubeolic de pe palatul moale",
-            "Herpangina, specifică bolii mână-picior-gură",
             "Semnul Koplik, patognomonic pentru rujeolă, apărut cu 2 zile înaintea erupției",
-            "Masca Filatov, semn caracteristic scarlatinei"
+            "Herpangina, specifică bolii mână-picior-gură",
+            "Enantemul rubeolic de pe palatul moale",
+            "Masca Filatov, semn caracteristic scarlatinei",
+            "Semnul Grozovici-Pastia, specific scarlatinei"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Enantemul cu pete albe pe fond eritematos la nivelul mucoasei jugale și gingivale, în dreptul molarilor, reprezintă semnul Koplik, patognomonic pentru rujeolă; acesta apare cu 2 zile anterior erupției și persistă încă 2 zile după apariția acesteia, fiind util pentru diagnosticul precoce, înaintea exantemului. Masca Filatov și semnul Grozovici-Pastia sunt caracteristice scarlatinei, nu rujeolei.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1515-1519"
         },
@@ -4520,13 +6116,13 @@ const QUESTIONS = {
           "id": "60-3",
           "stem": "Un sugar de 8 luni, aflat într-o perioadă cu focar comunitar de boală mână-picior-gură, este adus pentru febră, iritabilitate și fotofobie, fără redoare de ceafă netă. Puncția lombară arată pleiocitoză moderată, cu glicorahie normală. Care este cea mai probabilă etiologie a acestei meningite virale la sugarul mic?",
           "options": [
-            "Virusul varicelo-zosterian",
-            "Virusul rubeolic",
+            "Virusul rujeolic",
             "Enterovirusuri (de tipul Coxsackie sau ECHO), cauza cea mai frecventă de meningită virală la copil",
+            "Virusul rubeolic",
             "Streptococul beta-hemolitic de grup A",
-            "Virusul rujeolic"
+            "Virusul varicelo-zosterian"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Enterovirusurile (aceleași care produc boala mână-picior-gură) reprezintă cea mai frecventă cauză de meningită virală la copil, fiind responsabile de până la 90% sau mai mult din cazurile cu etiologie identificată, în special la sugarii sub 3 luni; tabloul cu pleiocitoză moderată și glicorahie normală/ușor scăzută este tipic. Streptococul, virusul rujeolic, rubeolic sau varicelo-zosterian nu sunt cauze tipice de meningită aseptică în acest context epidemiologic.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1701-1708"
         },
@@ -4534,13 +6130,13 @@ const QUESTIONS = {
           "id": "60-4",
           "stem": "Un copil de 5 ani, aflat în a treia zi de la debutul erupției variceloase caracteristice, dezvoltă brusc febră ridicată, tuse, dispnee și expectorație cu striuri de sânge. Care este complicația cel mai probabil implicată?",
           "options": [
-            "Sindromul Reye",
-            "Suprainfecția bacteriană cutanată a veziculelor",
-            "Purpura trombocitopenică",
             "Encefalita variceloasă",
-            "Pneumonia variceloasă"
+            "Suprainfecția bacteriană cutanată a veziculelor",
+            "Pneumonia variceloasă",
+            "Purpura trombocitopenică",
+            "Sindromul Reye"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "Pneumonia variceloasă, mai frecventă la imunodeprimați, debutează brusc la 2-6 zile de la debutul bolii, cu febră ridicată, dispnee, tuse și uneori expectorație cu striuri de sânge, exact tabloul descris. Encefalita variceloasă apare la 4-7 zile și se manifestă predominant cu tulburări de conștiență și convulsii, nu cu simptomatologie respiratorie.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 790-791"
         },
@@ -4548,14 +6144,84 @@ const QUESTIONS = {
           "id": "60-5",
           "stem": "O gravidă la 10 săptămâni de amenoree, fără istoric de rubeolă sau vaccinare antirubeolică, are contact confirmat cu un copil bolnav de rubeolă, urmat la două săptămâni de febră, exantem maculopapulos fin și adenopatie occipitală/retroauriculară. Care este principala consecință fetală de care trebuie ținut cont în acest context?",
           "options": [
-            "Nu există risc fetal semnificativ, rubeola fiind considerată inofensivă în sarcină",
-            "Risc de scarlatină neonatală cu evoluție spre șoc toxic",
-            "Risc crescut de malformații fetale (cardiace, oculare, auditive), dat fiind că infecția a survenit în primele 4 luni de sarcină",
             "Risc de pneumonie interstițială cu celule gigante Hecht la nou-născut",
-            "Risc de encefalită herpetică neonatală"
+            "Risc de encefalită herpetică neonatală",
+            "Risc crescut de malformații fetale (cardiace, oculare, auditive), dat fiind că infecția a survenit în primele 4 luni de sarcină",
+            "Nu există risc fetal semnificativ, rubeola fiind considerată inofensivă în sarcină",
+            "Risc de scarlatină neonatală cu evoluție spre șoc toxic"
           ],
           "correct": 2,
           "explanation": "Rubeola contractată de gravidă în primele patru luni de sarcină are potențial teratogen important, viremia afectând endoteliul vascular placentar; malformațiile caracteristice sunt cele cardiace (75%), oculare (45%) și auditive, iar sarcina se poate solda și cu avort spontan sau făt mort. Riscul teratogen justifică, în caz de IgM pozitiv la vârsta de sarcină cu risc, discutarea întreruperii sarcinii.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 788-789"
+        },
+        {
+          "id": "60-6",
+          "stem": "Un sugar de 4 luni, cu impetigo stafilococic extins la nivelul membrelor (cultură pozitivă pentru Staphylococcus aureus), dezvoltă febră (38,5°C), vărsături și erupție difuză scarlatiniformă. Examenul orofaringelui este normal, fără angină, iar limba nu prezintă modificări specifice (ciclul lingual absent). Hemodinamic pacientul este stabil, fără semne de insuficiență multiplă de organ. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Boala Kawasaki",
+            "Sindromul șocului toxic stafilococic (TSS)",
+            "Reumatismul articular acut",
+            "Scarlatină streptococică cu poartă de intrare cutanată (impetigo streptococic), formă în care ciclul lingual este prezent",
+            "„Scarlatina stafilococică” (boala a 4-a): erupție scarlatiniformă pe fondul unui focar stafilococic, cu absența enantemului și a ciclului lingual"
+          ],
+          "correct": 4,
+          "explanation": "„Scarlatina stafilococică” (boala a 4-a) se caracterizează prin febră, erupție scarlatiniformă, vărsături, existența unui focar stafilococic, cu absența enantemului și a ciclului lingual - spre deosebire de scarlatina streptococică cu poartă de intrare cutanată, la care ciclul lingual este prezent. Sindromul șocului toxic stafilococic asociază suplimentar hipotensiune arterială și insuficiență multiplă de organ, absente în acest caz.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1509-1513"
+        },
+        {
+          "id": "60-7",
+          "stem": "Un sugar de 7 luni este expus la un caz confirmat de rujeolă în familie. Mama nu poate preciza dacă a fost vaccinată antirujeolic sau dacă a trecut prin boală în copilărie. Știind că anticorpii materni transplacentari se epuizează de obicei în jurul vârstei de 6 luni-1 an, care este riscul de îmbolnăvire al sugarului dacă mama nu are imunitate antirujeolică (nici naturală, nici postvaccinală)?",
+          "options": [
+            "Risc scăzut, sub 10%, datorită persistenței anticorpilor materni până la vârsta de 2 ani",
+            "Risc moderat, exclusiv în cazul alăptării la sân",
+            "Risc nul, rujeola nefiind transmisibilă la sugarii sub 12 luni",
+            "Risc semnificativ doar dacă sugarul este născut prematur, indiferent de statusul imun matern",
+            "Risc de aproximativ 100% de îmbolnăvire, atât pentru sugar, cât și pentru mamă, dacă aceasta nu are imunitate antirujeolică"
+          ],
+          "correct": 4,
+          "explanation": "Sugarii între 6 luni și 1 an au pierdut anticorpii materni transmiși transplacentar și devin receptivi la infecție, reprezentând una dintre categoriile cel mai frecvent afectate în focarele epidemice actuale. Dacă mama nu prezintă imunitate antirujeolică (postvaccinală sau ca urmare a trecerii prin boală), riscul de îmbolnăvire atât al nou-născutului/sugarului, cât și al acesteia, este de 100%.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1515-1519"
+        },
+        {
+          "id": "60-8",
+          "stem": "Un copil de 2 ani, diagnosticat cu boală mână-picior-gură cu leziuni tipice, dezvoltă la 3 zile de la debut mioclonii, ataxie, tremor, nistagmus și letargie marcată, cu semne de disfuncție autonomă. Simptomatologia progresează rapid spre detresă respiratorie cu edem pulmonar și instabilitate cardiocirculatorie. Care este complicația neurologică severă cel mai probabil implicată, caracteristică epidemiilor cu enterovirus A71?",
+          "options": [
+            "Rombencefalita cu enterovirus A71, cu risc de evoluție spre edem pulmonar neurogen și insuficiență cardiorespiratorie",
+            "Paralizia flască acută izolată, prin afectarea cornului anterior medular",
+            "Meningita virală necomplicată",
+            "Encefalita autoimună postinfecțioasă tardivă",
+            "Sindromul Guillain-Barré clasic"
+          ],
+          "correct": 0,
+          "explanation": "Rombencefalita determinată de enterovirusul A71 se caracterizează prin alterarea stării de conștiență, mioclonii, vărsături, ataxie, nistagmus, tremor, afectare de nervi cranieni și disfuncție autonomă; unii copii progresează rapid spre edem pulmonar neurogen, hemoragie, insuficiență cardiorespiratorie, șoc și comă, cu mortalitate crescută mai ales sub 5 ani, în special sub 1 an. Meningita necomplicată sau paralizia flască izolată nu explică tabloul multisistemic sever descris.",
+          "source": "Nelson Textbook of Pediatrics, 21E, pag. 1701-1708"
+        },
+        {
+          "id": "60-9",
+          "stem": "Un copil de 9 ani, cu antecedente de varicelă la vârsta de 2 ani, prezintă de 4 zile durere și parestezii la nivelul hemitoracelui drept, urmate de apariția unei erupții veziculare grupate, dispuse strict unilateral, pe traiectul unui dermatom, fără febră asociată. Cum trebuie interpretată apariția febrei pe parcursul evoluției acestui herpes zoster?",
+          "options": [
+            "Herpesul zoster necomplicat nu se însoțește de febră; apariția acesteia sugerează o complicație, de exemplu o suprainfecție bacteriană",
+            "Febra apare constant în a doua săptămână de evoluție, ca semn de vindecare",
+            "Absența febrei de la debut exclude diagnosticul de herpes zoster",
+            "Febra precede întotdeauna erupția cu 2 zile, similar semnului Koplik din rujeolă",
+            "Febra este un element constant și așteptat, prezent pe toată durata perioadei eruptive a herpesului zoster necomplicat"
+          ],
+          "correct": 0,
+          "explanation": "Spre deosebire de varicelă, herpesul zoster necomplicat nu se însoțește de creșterea febrei, iar evoluția febrilă sugerează o complicație, cel mai frecvent o suprainfecție cu germeni piogeni, care induce febră și alte manifestări septice și temporizează vindecarea. Diagnosticul se bazează pe asocierea nevritei cu dermita metamerică, în afebrilitate.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 790-791"
+        },
+        {
+          "id": "60-10",
+          "stem": "O adolescentă de 15 ani prezintă erupție maculopapuloasă generalizată, adenopatie occipitală și retroauriculară, iar la câteva zile după debutul erupției dezvoltă tumefacție dureroasă, bilaterală, a articulațiilor mâinilor și pumnilor, fără semne de artrită septică (fără eritem intens local, fără poartă de intrare cutanată evidentă). Care este cea mai probabilă explicație pentru simptomatologia articulară, în contextul unui episod de rubeolă?",
+          "options": [
+            "Meningoencefalita rubeolică",
+            "Purpura trombocitopenică asociată rubeolei",
+            "Artrita septică cu Staphylococcus aureus",
+            "Artrita rubeolică, complicație relativ frecventă la adolescente și femei tinere, de obicei autolimitată, cu durată de 2-4 săptămâni",
+            "Reumatismul articular acut poststreptococic"
+          ],
+          "correct": 3,
+          "explanation": "Artrita rubeolică este localizată frecvent la nivelul mâinilor și genunchilor și afectează în special adulții tineri de sex feminin, putând apărea încă din perioada de incubație sau în perioada de stare a bolii, cu o durată de 2-4 săptămâni. Purpura trombocitopenică și meningoencefalita sunt alte complicații posibile ale rubeolei, dar se manifestă prin sângerări, respectiv prin alterarea stării de conștiență, nu prin afectare articulară.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 788-789"
         }
       ]
@@ -4582,13 +6248,13 @@ const QUESTIONS = {
           "id": "61-2",
           "stem": "Un copil diagnosticat cu parotidită epidemică (oreion) dezvoltă, la aproximativ trei săptămâni de la debutul bolii, febră, delir, convulsii, comă și paralizii de nervi cranieni. Despre care complicație este vorba și care este letalitatea asociată, conform textului?",
           "options": [
-            "Encefalita urliană, cu letalitate de 18-30%",
             "Encefalita urliană, cu letalitate de 1-2%",
-            "Pancreatita urliană, cu letalitate de 1-2%",
             "Meningita urliană, cu letalitate de 1-2%",
-            "Miocardita urliană, cu letalitate de 20%"
+            "Miocardita urliană, cu letalitate de 20%",
+            "Encefalita urliană, cu letalitate de 18-30%",
+            "Pancreatita urliană, cu letalitate de 1-2%"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Encefalita urliană (0,2-0,5% din cazuri) apare tardiv, după aproximativ trei săptămâni de la debut, cu febră, delir, convulsii, comă, paralizii de nervi cranieni și periferici, letalitatea fiind de 1-2%. Meningita urliană, spre deosebire de encefalită, apare precoce (ziua 4-7) și are evoluție benignă cu LCR clar.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 794-795"
         },
@@ -4596,13 +6262,13 @@ const QUESTIONS = {
           "id": "61-3",
           "stem": "Un copil cu parotidită epidemică dezvoltă semne de meningită urliană cu LCR clar (cefalee, vărsături, contractură meningiană). Știind că nu există tratament etiologic pentru infecția urliană, care este conduita terapeutică adecvată?",
           "options": [
-            "Doar repaus la pat, fără altă intervenție terapeutică",
-            "Antibioterapie cu penicilină G în doze mari",
-            "Imunoglobuline intravenoase",
             "Aciclovir intravenos timp de 10 zile",
-            "Corticoterapie (prednison 1 mg/kgc/zi), cu măsuri suplimentare (dietă hiposodată, protecție gastrică)"
+            "Antibioterapie cu penicilină G în doze mari",
+            "Doar repaus la pat, fără altă intervenție terapeutică",
+            "Corticoterapie (prednison 1 mg/kgc/zi), cu măsuri suplimentare (dietă hiposodată, protecție gastrică)",
+            "Imunoglobuline intravenoase"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "Deoarece nu există tratament etiologic pentru infecția urliană, tratamentul este simptomatic, iar corticoterapia (prednison 1 mg/kgc/zi) este indicată specific pacienților cu meningită și orhită, însoțită de măsuri împotriva efectelor adverse (dietă hiposodată, protecție gastrică, fără exces de glucide).",
           "source": "Pleșca - Tratat de Pediatrie, pag. 794-795"
         },
@@ -4610,13 +6276,13 @@ const QUESTIONS = {
           "id": "61-4",
           "stem": "În investigarea unui sindrom mononucleozic se efectuează reacția Paul-Bunnell-Davidsohn în două etape, cu absorbția serului pe hematii de bou și, respectiv, pe extract de rinichi de cobai. Care este criteriul de confirmare a diagnosticului de mononucleoză infecțioasă?",
           "options": [
-            "Testul rămâne pozitiv după ambele tipuri de absorbție",
-            "Testul este pozitiv doar în prima etapă, fără a necesita etapa a doua",
-            "Testul se negativează după absorbția cu hematii de bou și rămâne nemodificat după absorbția cu rinichi de cobai",
             "Testul se negativează după ambele tipuri de absorbție",
-            "Testul se negativează după absorbția cu rinichi de cobai și rămâne nemodificat după absorbția cu hematii de bou"
+            "Testul se negativează după absorbția cu rinichi de cobai și rămâne nemodificat după absorbția cu hematii de bou",
+            "Testul este pozitiv doar în prima etapă, fără a necesita etapa a doua",
+            "Testul rămâne pozitiv după ambele tipuri de absorbție",
+            "Testul se negativează după absorbția cu hematii de bou și rămâne nemodificat după absorbția cu rinichi de cobai"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Conform textului, hematiile de bou leagă ireversibil exclusiv anticorpii din mononucleoza infecțioasă, iar rinichiul de cobai leagă toți ceilalți anticorpi, cu excepția celor din mononucleoză. Astfel, diagnosticul se confirmă dacă testul se negativează în proba tratată cu hematii de bou și rămâne nemodificat în proba tratată cu extract de rinichi de cobai.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 795-797"
         },
@@ -4625,13 +6291,41 @@ const QUESTIONS = {
           "stem": "Un adolescent prezintă febră prelungită, angină eritemato-pultacee, adenopatii generalizate și splenomegalie. A fost tratat empiric cu ampicilină pentru suspiciunea de angină bacteriană, moment în care a dezvoltat un exantem cutanat generalizat. Care este cea mai probabilă explicație a acestui tablou clinic?",
           "options": [
             "Angină difterică, cu exantem toxic asociat",
-            "Reacție alergică idiosincratică la ampicilină, fără legătură cu boala de fond",
             "Mononucleoză infecțioasă, la care eritemul cutanat apare la aproximativ 90% dintre pacienții tratați cu ampicilină",
-            "Toxoplasmoză acută, cu exantem tipic post-antibiotic",
-            "Scarlatină suprainfectată, cu exantem caracteristic"
+            "Reacție alergică idiosincratică la ampicilină, fără legătură cu boala de fond",
+            "Scarlatină suprainfectată, cu exantem caracteristic",
+            "Toxoplasmoză acută, cu exantem tipic post-antibiotic"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Tabloul clinic (febră, angină eritemato-pultacee, adenopatii, splenomegalie) este sugestiv pentru mononucleoză infecțioasă, boală în care poate apărea un eritem cutanat la aproximativ 90% dintre cazurile tratate cu ampicilină, acesta fiind un element util de recunoaștere a bolii și de diferențiere de anginele bacteriene tratate greșit cu acest antibiotic.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 795-797"
+        },
+        {
+          "id": "61-6",
+          "stem": "Un copil de 9 ani cu parotidită epidemică bilaterală, aflat în ziua a 6-a de boală, dezvoltă anorexie, vărsături repetate și diaree, fără apărare musculară în fosa iliacă dreaptă și fără alte semne de iritație peritoneală localizată. Care este cea mai probabilă cauză a acestui tablou digestiv, în contextul infecției urliene?",
+          "options": [
+            "Apendicita acută concomitentă",
+            "Ocluzia intestinală mecanică",
+            "Gastroenterita acută bacteriană supraadăugată",
+            "Hepatita urliană",
+            "Pancreatita urliană"
+          ],
+          "correct": 4,
+          "explanation": "Pancreatita reprezintă o localizare extrasalivară a infecției urliene care apare tipic în ziua 4-10 de boală și se manifestă prin anorexie, vărsături și diaree. Contextul temporal (zilele 4-10 de la debutul parotiditei) și absența semnelor de abdomen acut chirurgical (apărare musculară, iritație peritoneală localizată) orientează diagnosticul spre pancreatita urliană și nu spre o cauză chirurgicală sau altă etiologie.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 794-795"
+        },
+        {
+          "id": "61-7",
+          "stem": "La un adolescent cu tablou clinic sugestiv de mononucleoză infecțioasă (febră, angină, adenopatii, splenomegalie) se efectuează o hemoleucogramă completă. Care este aspectul caracteristic al formulei leucocitare, util pentru orientarea diagnosticului?",
+          "options": [
+            "Leucocitoză cu neutrofilie marcată și deviere la stânga a formulei leucocitare",
+            "Leucocitoză (10000-20000/mmc) cu predominanța limfomonocitelor, printre care limfocite atipice, denumite celule Downey",
+            "Leucopenie cu neutropenie și trombocitopenie severă",
+            "Pancitopenie, sugestivă pentru o afectare medulară primară",
+            "Eozinofilie marcată, sugestivă pentru o parazitoză asociată"
+          ],
+          "correct": 1,
+          "explanation": "În mononucleoza infecțioasă, formula leucocitară arată leucocitoză (10000-20000/mmc) cu predominanța limfomonocitelor, printre care se identifică limfocite atipice, denumite celule Downey, acest aspect fiind un element important de orientare diagnostică alături de datele clinice. Neutrofilia cu deviere la stânga, eozinofilia marcată și pancitopenia nu sunt modificări caracteristice acestei boli.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 795-797"
         }
       ]
@@ -4644,13 +6338,13 @@ const QUESTIONS = {
           "id": "62-1",
           "stem": "Un copil nevaccinat, cu tuse persistentă de trei săptămâni, care a debutat afebril ca o presupusă traheobronșită banală, prezintă acum accese de tuse repetate. Care este caracteristica clinică cea mai sugestivă pentru diagnosticul de tuse convulsivă în faza de stare?",
           "options": [
-            "Tuse însoțită de wheezing expirator și raluri sibilante difuze bilateral",
             "Accese de tuse chinuitoare, constituite din chinte repetate, fiecare cu un inspir profund șuierător (repriza), urmate frecvent de vărsături",
+            "Tuse nocturnă izolată, fără accese, ameliorată de bronhodilatatoare inhalatorii",
             "Tuse productivă cu expectorație muco-purulentă abundentă, însoțită de febră înaltă continuă",
             "Tuse uscată cu debut brusc, evoluție de câteva ore și stridor inspirator sever",
-            "Tuse nocturnă izolată, fără accese, ameliorată de bronhodilatatoare inhalatorii"
+            "Tuse însoțită de wheezing expirator și raluri sibilante difuze bilateral"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "În faza de stare, tusea convulsivă se manifestă prin accese constituite din chinte repetate; fiecare chintă are un inspir profund șuierător (repriza), urmat de sacade expiratorii de tuse, iar accesul este frecvent urmat de vărsături. Această succesiune caracteristică diferențiază tusea convulsivă de alte cauze de tuse cronică.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 802-803"
         },
@@ -4658,13 +6352,13 @@ const QUESTIONS = {
           "id": "62-2",
           "stem": "Un sugar de 4 luni este diagnosticat cu tuse convulsivă în faza de stare, fără intoleranță digestivă și fără alte contraindicații. Care este tratamentul etiologic de primă intenție?",
           "options": [
+            "Cefalosporină de generația a treia, timp de 14 zile",
             "Claritromicină 15 mg/kgc/zi, timp de 10-14 zile",
             "Corticoterapie sistemică, asociată cu antitusive centrale",
             "Aminoglicozid parenteral, timp de 10 zile",
-            "Cefalosporină de generația a treia, timp de 14 zile",
             "Amoxicilină-clavulanat în doză standard, timp de 7 zile"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Tratamentul etiologic rapid indicat este claritromicina în doză de 15 mg/kgc/zi, timp de 10-14 zile; amoxicilina sau ampicilina reprezintă alternative, în special la copiii mici cu intoleranță gastrică. Aminoglicozidele sau cefalosporinele de generația a treia se rezervă complicațiilor infecțioase, iar corticoterapia doar formelor severe cu insuficiență respiratorie sau complicații nervoase.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 802-803"
         },
@@ -4672,13 +6366,13 @@ const QUESTIONS = {
           "id": "62-3",
           "stem": "Un sugar cu tuse convulsivă severă prezintă, în timpul unui acces de tuse, un episod de apnee prelungită urmat de stop respirator. Din ce categorie de complicații ale tusei convulsive face parte acest tablou?",
           "options": [
-            "Complicații infecțioase",
+            "Complicații toxice",
             "Complicații hemoragice",
-            "Complicații mecanice",
             "Complicații pulmonare",
-            "Complicații toxice"
+            "Complicații mecanice",
+            "Complicații infecțioase"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Textul clasifică apneea cu stop respirator drept complicație toxică a tusei convulsive, distinctă de complicațiile mecanice (hernieri), hemoragice (prin hipertensiune în teritoriul cav superior), pulmonare (pneumotorax, emfizem) sau infecțioase (pneumonii, suprainfecții).",
           "source": "Pleșca - Tratat de Pediatrie, pag. 802-803"
         },
@@ -4688,11 +6382,11 @@ const QUESTIONS = {
           "options": [
             "Bronșiolita virală",
             "Sindromul Reye",
-            "Laringita acută gripală",
+            "Gripa malignă",
             "Gripa necomplicată, formă medie",
-            "Gripa malignă"
+            "Laringita acută gripală"
           ],
-          "correct": 4,
+          "correct": 2,
           "explanation": "Textul descrie gripa malignă drept o formă clinică gravă, caracterizată prin debut brusc, febril, cu edem pulmonar acut și manifestări de insuficiență respiratorie acută, spre deosebire de formele necomplicate sau de complicațiile respiratorii obișnuite.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 798-800"
         },
@@ -4701,13 +6395,41 @@ const QUESTIONS = {
           "stem": "Un adult nevaccinat, aflat într-un focar epidemic de gripă și cu risc crescut de complicații, este confirmat cu infecție cu virus gripal B. Care este conduita corectă privind chimioprofilaxia cu amantadină/rimantadină?",
           "options": [
             "Se administrează doar în asociere cu oseltamivir, pentru potențare terapeutică",
-            "Nu este indicată, deoarece amantadina/rimantadina sunt eficiente numai pentru infecția cu virus gripal A",
             "Se indică exclusiv ca tratament curativ, nu ca profilaxie",
+            "Se administrează 100-200 mg/zi, fiind eficientă și pentru virusul gripal B",
             "Este contraindicată la persoanele nevaccinate aflate în focar",
-            "Se administrează 100-200 mg/zi, fiind eficientă și pentru virusul gripal B"
+            "Nu este indicată, deoarece amantadina/rimantadina sunt eficiente numai pentru infecția cu virus gripal A"
+          ],
+          "correct": 4,
+          "explanation": "Chimioprofilaxia cu amantadină sau rimantadină (100-200 mg/zi) se administrează persoanelor nevaccinate, aflate în focar și cu risc crescut de complicații, dar este indicată numai pentru infecția cu virus gripal A, nefiind eficientă împotriva virusului gripal B.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 798-800"
+        },
+        {
+          "id": "62-6",
+          "stem": "Un copil de 6 ani, aflat în convalescență după un episod de gripă, dezvoltă brusc vărsături repetate, convulsii și alterarea progresivă a stării de conștiență până la comă. Examenul LCR arată pleiocitoză cu limfocitoză, iar probele biologice evidențiază hipoglicemie, hiperamoniemie și teste hepatice modificate. Care este diagnosticul cel mai probabil?",
+          "options": [
+            "Laringită acută gripală complicată cu hipoxie cerebrală",
+            "Meningită bacteriană secundară unei suprainfecții",
+            "Miocardită gripală cu insuficiență cardiacă congestivă",
+            "Sindromul Reye",
+            "Encefalită gripală prin invazie virală directă a sistemului nervos central"
+          ],
+          "correct": 3,
+          "explanation": "Sindromul Reye, complicație rară a gripei (dar și a altor infecții virale), se manifestă prin vărsături, convulsii și comă, cu pleiocitoză limfocitară în LCR, hipoglicemie, hiperamoniemie și teste hepatice modificate. Acest tablou biologic caracteristic îl diferențiază de encefalita sau meningita propriu-zisă.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 798-800"
+        },
+        {
+          "id": "62-7",
+          "stem": "Un adolescent de 15 ani se prezintă la 24 de ore de la debutul febrei înalte, mialgiilor și tusei, cu tablou clinic sugestiv de gripă necomplicată. Care este conduita terapeutică antivirală corectă?",
+          "options": [
+            "Se temporizează orice tratament antiviral până la confirmarea prin PCR a tipului viral",
+            "Oseltamivir 75 mg x 2/zi, timp de cinci zile, inițiat cât mai precoce",
+            "Amantadină 100-200 mg/zi, eficientă indiferent de tipul de virus gripal izolat",
+            "Oseltamivir 75 mg/zi în doză unică, timp de șapte zile, ca în prevenția postexpunere",
+            "Oseltamivir 75 mg/zi, timp de șase săptămâni, ca în profilaxia pe durata epidemiei"
           ],
           "correct": 1,
-          "explanation": "Chimioprofilaxia cu amantadină sau rimantadină (100-200 mg/zi) se administrează persoanelor nevaccinate, aflate în focar și cu risc crescut de complicații, dar este indicată numai pentru infecția cu virus gripal A, nefiind eficientă împotriva virusului gripal B.",
+          "explanation": "În tratamentul curativ al gripei, oseltamivirul se administrează cât mai precoce, optim în primele două zile de la debutul simptomatologiei; la adulți și adolescenți peste 13 ani doza este de 75 mg x 2/zi, timp de cinci zile. Schemele de 75 mg/zi timp de șapte zile sau șase săptămâni corespund prevenției postexpunere, respectiv profilaxiei pe durata unei epidemii, nu tratamentului curativ.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 798-800"
         }
       ]
@@ -4720,13 +6442,13 @@ const QUESTIONS = {
           "id": "63-1",
           "stem": "Un copil de 8 ani este înțepat de o viespe. La câteva minute apar urticarie generalizată, extremități calde, puls periferic săltăreț, tahicardie marcată și hipotensiune arterială. Din punct de vedere fiziopatologic, acest tip de șoc se caracterizează prin creșterea debitului cardiac și scăderea rezistenței vasculare periferice, secundare tulburărilor tonusului vasomotor. Despre ce tip de șoc este vorba?",
           "options": [
+            "Șoc obstructiv",
+            "Șoc hipovolemic",
             "Șoc septic",
             "Șoc cardiogen",
-            "Șoc distributiv (anafilactic)",
-            "Șoc obstructiv",
-            "Șoc hipovolemic"
+            "Șoc distributiv (anafilactic)"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Conform clasificării tipurilor de șoc, șocul distributiv (în principal anafilactic) se produce prin tulburări ale tonusului vasomotor, cu debit cardiac crescut și scăderea rezistenței vasculare periferice, etiologia principală fiind anafilaxia. Extremitățile calde și pulsul săltăreț descriu tabloul de „șoc cald”, tipic vasodilatației din anafilaxie, spre deosebire de vasoconstricția din șocul hipovolemic.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 453-468"
         },
@@ -4734,13 +6456,13 @@ const QUESTIONS = {
           "id": "63-2",
           "stem": "Un copil cu sepsis sever prezintă, după administrarea a 60 ml/kg ser fiziologic în bolusuri, persistența hipotensiunii, puls periferic slab, extremități reci și prelungirea timpului de recolorare capilară („șoc rece”). Care este agentul vasoactiv recomandat ca primă opțiune în această situație?",
           "options": [
-            "Adrenalina (epinefrina), preferată în prezent dopaminei",
             "Norepinefrina, ca vasopresor de primă linie",
             "Dobutamina, pentru efectul de vasodilatație periferică",
+            "Adrenalina (epinefrina), preferată în prezent dopaminei",
             "Corticoterapia în doză mare, ca tratament hemodinamic de primă linie",
             "Doze mari de dopamină cu efect exclusiv vasopresor"
           ],
-          "correct": 0,
+          "correct": 2,
           "explanation": "În șocul septic refractar la repleția volemică, dacă tabloul este de „șoc rece” (puls slab, extremități reci, recolorare capilară prelungită, hipotensiune), se impune administrarea de adrenalină, recent preferată dopaminei ca primă opțiune. Norepinefrina este recomandată de primă intenție în „șocul cald”, cu extremități calde și puls săltăreț.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 453-468"
         },
@@ -4748,11 +6470,11 @@ const QUESTIONS = {
           "id": "63-3",
           "stem": "Un sugar cu enterocolită acută severă prezintă tahicardie, recolorare capilară prelungită, stare de iritabilitate și scăderea diurezei, în timp ce tensiunea arterială sistolică este încă în limite normale. Care este interpretarea corectă a acestui tablou clinic?",
           "options": [
-            "TA sistolică normală exclude diagnosticul de șoc hipovolemic la acest sugar",
-            "Prezența tahicardiei fără hipotensiune indică un șoc cardiogen, nu hipovolemic",
-            "Tahicardia și semnele de hipoperfuzie periferică sunt parametri mai relevanți pentru starea circulatorie decât TA, care rămâne conservată o perioadă",
+            "Este necesară doar monitorizarea seriată a TA pentru aprecierea gradului de deshidratare",
             "Debitul urinar scăzut nu are valoare diagnostică în șocul hipovolemic al sugarului",
-            "Este necesară doar monitorizarea seriată a TA pentru aprecierea gradului de deshidratare"
+            "Tahicardia și semnele de hipoperfuzie periferică sunt parametri mai relevanți pentru starea circulatorie decât TA, care rămâne conservată o perioadă",
+            "Prezența tahicardiei fără hipotensiune indică un șoc cardiogen, nu hipovolemic",
+            "TA sistolică normală exclude diagnosticul de șoc hipovolemic la acest sugar"
           ],
           "correct": 2,
           "explanation": "Textul precizează că tahicardia și scăderea perfuziei periferice (recolorare capilară, stare mintală, debit urinar, acidoză metabolică) reprezintă parametri mai relevanți pentru aprecierea stării circulatorii decât TA, aceasta fiind un parametru bine conservat o perioadă de timp, mai ales la sugar, unde semnele depleției volemice pot fi subtile la debut.",
@@ -4762,13 +6484,13 @@ const QUESTIONS = {
           "id": "63-4",
           "stem": "Un copil de 6 ani dezvoltă, la 15 minute după consumul de alune, urticarie generalizată, edem labial și vărsături repetate, fără dispnee, wheezing sau hipotensiune. Conform criteriilor de diagnostic pentru anafilaxie, acest tablou clinic:",
           "options": [
-            "Necesită obligatoriu dozarea triptazei serice pentru confirmare înainte de inițierea tratamentului",
             "Reprezintă o reacție alergică izolată, neîncadrabilă ca anafilaxie în absența afectării respiratorii sau cardiovasculare",
-            "Îndeplinește criteriile de anafilaxie, prin asocierea afectării cutaneo-mucoase cu simptome gastrointestinale persistente, apărute rapid după expunerea la un alergen probabil",
+            "Necesită obligatoriu dozarea triptazei serice pentru confirmare înainte de inițierea tratamentului",
+            "Nu îndeplinește criteriile de anafilaxie, fiind obligatorie prezența hipotensiunii arteriale",
             "Îndeplinește criteriile de anafilaxie numai dacă se asociază bronhospasm documentat spirometric",
-            "Nu îndeplinește criteriile de anafilaxie, fiind obligatorie prezența hipotensiunii arteriale"
+            "Îndeplinește criteriile de anafilaxie, prin asocierea afectării cutaneo-mucoase cu simptome gastrointestinale persistente, apărute rapid după expunerea la un alergen probabil"
           ],
-          "correct": 2,
+          "correct": 4,
           "explanation": "Anafilaxia este foarte probabilă când apar rapid, după expunerea la un alergen probabil, două sau mai multe dintre: afectare cutaneo-mucoasă, compromitere respiratorie, scăderea TA sau simptome gastrointestinale persistente. În acest caz, urticaria/edemul (afectare cutaneo-mucoasă) asociate cu vărsăturile repetate (simptom GI persistent) îndeplinesc acest criteriu, fără a fi necesară prezența hipotensiunii sau a afectării respiratorii.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1228-1234"
         },
@@ -4777,14 +6499,42 @@ const QUESTIONS = {
           "stem": "Un adolescent aflat în tratament cronic cu un beta-blocant dezvoltă anafilaxie după o înțepătură de albină și nu răspunde la administrări repetate de adrenalină intramusculară, persistând hipotensiunea. Care este conduita terapeutică suplimentară adecvată în această situație?",
           "options": [
             "Se administrează atropină ca substitut al adrenalinei pentru susținerea tensiunii arteriale",
-            "Se administrează glucagon, care are efecte inotrope și cronotrope independente de receptorii catecolaminergici",
-            "Se cresc dozele de adrenalină IM fără limită superioară, fiind singurul tratament posibil",
             "Se așteaptă instalarea efectului corticoterapiei, considerată tratamentul de elecție la acești pacienți",
+            "Se cresc dozele de adrenalină IM fără limită superioară, fiind singurul tratament posibil",
+            "Se administrează glucagon, care are efecte inotrope și cronotrope independente de receptorii catecolaminergici",
             "Se întrerupe adrenalina și se tratează exclusiv cu corticosteroizi în doză mare"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "La pacienții tratați cu beta-blocante, răspunsul la adrenalină poate fi suboptimal, iar anafilaxia refractoră la doze repetate de adrenalină a fost tratată, anecdotic, cu glucagon, un polipeptid cu efecte inotrope și cronotrope cardiace independente de calea catecolaminergică. Atropina este rezervată bradicardiei persistente, nu ca substitut al adrenalinei, iar corticosteroizii au doar rol secundar, cu debut de acțiune tardiv.",
           "source": "Nelson Textbook of Pediatrics, 21E, pag. 1228-1234"
+        },
+        {
+          "id": "63-6",
+          "stem": "Un copil de 30 kg dezvoltă, la câteva minute după o înțepătură de albină, urticarie generalizată, stridor și hipotensiune arterială, tablou compatibil cu șoc anafilactic. Care este doza și calea corectă de administrare a adrenalinei ca primă măsură terapeutică?",
+          "options": [
+            "0,03 mg adrenalină intramuscular, în doză unică, fără posibilitate de repetare",
+            "0,3 mg adrenalină intramuscular, în porțiunea anterolaterală a coapsei, repetabilă la 5-15 minute dacă răspunsul este nesatisfăcător",
+            "0,3 mg adrenalină subcutanat, cale preferată datorită difuziunii rapide și constante",
+            "0,5 mg adrenalină intramuscular, doză fixă recomandată indiferent de greutatea corporală",
+            "0,3 mg adrenalină intravenos în bolus, ca primă linie de tratament, indiferent de severitate"
+          ],
+          "correct": 1,
+          "explanation": "Doza de adrenalină în anafilaxie este de 0,01 mg/kg (maximum 0,5 mg), administrată intramuscular în porțiunea anterolaterală medie a coapsei, putând fi repetată la 5-15 minute dacă răspunsul clinic este nesatisfăcător; pentru un copil de 30 kg doza corespunde categoriei 25-50 kg, adică 0,3 mg. Administrarea subcutanată a fost abandonată din cauza variațiilor de difuziune, iar adrenalina intravenoasă (în perfuzie continuă) este rezervată șocului refractar cu hipotensiune severă, nu ca bolus de primă linie.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 453-468"
+        },
+        {
+          "id": "63-7",
+          "stem": "Un copil de 9 ani, cunoscut cu astm bronșic, dezvoltă brusc, în cursul unei crize severe de tuse, durere toracică, dispnee marcată, cianoză și distensia venelor jugulare. La examenul obiectiv se constată abolirea unilaterală a murmurului vezicular, hipersonoritate la percuție, tahicardie și hipotensiune arterială. Care este conduita imediată, salvatoare de viață, în acest caz de șoc obstructiv prin pneumotorax sub tensiune?",
+          "options": [
+            "Decompresie de urgență prin inserția unui cateter vascular deasupra coastei a treia, pe linia medioclaviculară, înaintea radiografiei pulmonare",
+            "Repleție volemică rapidă cu ser fiziologic 60 ml/kg, ca în șocul hipovolemic, fără altă intervenție",
+            "Administrare de adrenalină intramusculară, ca în șocul anafilactic",
+            "Radiografie pulmonară de urgență pentru confirmarea diagnosticului, înaintea oricărei intervenții terapeutice",
+            "Pericardiocenteză de urgență, pentru drenajul unui presupus revărsat pericardic"
+          ],
+          "correct": 0,
+          "explanation": "Pneumotoraxul sub tensiune este o cauză de șoc obstructiv și reprezintă un diagnostic clinic; din cauza necesității unei intervenții imediate, decompresia de urgență prin inserția unui cateter vascular deasupra coastei a treia, pe linia medioclaviculară, este manevra salvatoare, efectuată înaintea radiografiei pulmonare. După decompresia pe ac urmează instalarea unui tub pleural. Pericardiocenteza este tratamentul specific tamponadei cardiace, o altă cauză de șoc obstructiv, nu al pneumotoraxului sub tensiune.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 453-468"
         }
       ]
     },
@@ -4798,9 +6548,9 @@ const QUESTIONS = {
           "options": [
             "Flumazenil, care acționează prin antagonism competitiv pe receptorii GABA",
             "N-acetilcisteină, care reconstituie stocurile hepatice de glutation",
+            "Naloxonă, care blochează competitiv receptorii opioizi",
             "Fizostigmină, care inhibă acetilcolinesteraza",
-            "Deferoxamină, care chelează fierul liber circulant",
-            "Naloxonă, care blochează competitiv receptorii opioizi"
+            "Deferoxamină, care chelează fierul liber circulant"
           ],
           "correct": 1,
           "explanation": "În intoxicația cu paracetamol, metabolitul toxic (N-acetil-benzo-paraquinonimina) se leagă covalent de hepatocit atunci când rezervele de glutation sunt depășite, producând necroză hepatică centrolobulară. N-acetilcisteina este antidotul specific deoarece este un precursor de glutation și reconstituie stocurile hepatice ale acestuia. Tratamentul cu antidot durează, în funcție de protocol, 72 de ore.",
@@ -4810,13 +6560,13 @@ const QUESTIONS = {
           "id": "64-2",
           "stem": "O adolescentă de 15 ani este adusă în urgență în comă calmă, hipotonă, cu abolirea reflexelor osteotendinoase și depresie respiratorie moderată, la aproximativ o oră după ingestia voluntară a unei cantități mari de diazepam. Care este antidotul specific și modul său de acțiune?",
           "options": [
-            "Fizostigmină, inhibitor de acetilcolinesterază",
-            "Naloxonă, antagonist pur al receptorilor opioizi",
+            "Atropină, antagonist al receptorilor muscarinici",
             "N-acetilcisteină, precursor de glutation",
             "Flumazenil, cu acțiune competitivă pe receptorii GABA",
-            "Atropină, antagonist al receptorilor muscarinici"
+            "Fizostigmină, inhibitor de acetilcolinesterază",
+            "Naloxonă, antagonist pur al receptorilor opioizi"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "Depresia respiratorie și coma din intoxicația cu benzodiazepine sunt reversibile la administrarea de flumazenil (Anexate), care are acțiune antagonistă competitivă la nivelul receptorilor GABA. Provocarea de vărsături și spălătura gastrică sunt inutile și contraindicate în intoxicația cu diazepam, din cauza absorbției rapide a medicamentului.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1589-1590"
         },
@@ -4824,11 +6574,11 @@ const QUESTIONS = {
           "id": "64-3",
           "stem": "Un copil aflat în tratament cronic cu digoxin pentru insuficiență cardiacă dezvoltă brusc bradicardie severă sub 40 bpm, care nu răspunde la atropină, extrasistole ventriculare bigeminate și hiperpotasemie, cu nivel seric al digoxinei mult crescut. Care este tratamentul specific indicat în această situație?",
           "options": [
-            "Diureză forțată prin hidratare masivă și furosemid",
             "Dimercaprol (BAL) intramuscular",
+            "Diureză forțată prin hidratare masivă și furosemid",
             "Anticorpi antidigitalici specifici (fragmente Fab, de tip Digibind), administrați intravenos",
-            "Bicarbonat de sodiu molar în perfuzie, pentru alcalinizare",
-            "Administrarea de gluconat de calciu intravenos pentru corectarea rapidă a hiperpotasemiei"
+            "Administrarea de gluconat de calciu intravenos pentru corectarea rapidă a hiperpotasemiei",
+            "Bicarbonat de sodiu molar în perfuzie, pentru alcalinizare"
           ],
           "correct": 2,
           "explanation": "Antidotul specific al intoxicației digitalice grave, cu aritmii amenințătoare de viață, este reprezentat de anticorpii antidigitalici de tip Digibind (fragmente Fab), care se leagă de molecula digitalică și eliberează ATP-aza membranară blocată. Administrarea de calciu este contraindicată, deoarece crește toxicitatea miocardică a digitalicelor, iar diureza forțată și dializa sunt în general ineficiente în această intoxicație.",
@@ -4840,9 +6590,9 @@ const QUESTIONS = {
           "options": [
             "Se neutralizează chimic substanța caustică prin administrarea orală a unei soluții acide diluate",
             "Se interzic neutralizarea chimică, spălătura gastrică și cărbunele activat; se internează de urgență pentru endoscopie digestivă în primele 24 de ore",
-            "Se provoacă vărsătura pentru evacuarea rapidă a conținutului gastric",
             "Se administrează cărbune activat 1 g/kg în prima oră de la ingestie",
-            "Se efectuează spălătură gastrică imediată cu ser fiziologic pentru îndepărtarea toxicului restant"
+            "Se efectuează spălătură gastrică imediată cu ser fiziologic pentru îndepărtarea toxicului restant",
+            "Se provoacă vărsătura pentru evacuarea rapidă a conținutului gastric"
           ],
           "correct": 1,
           "explanation": "În intoxicațiile cu substanțe caustice este interzisă neutralizarea chimică, spălătura gastrică și administrarea de cărbune activat, manevre care pot agrava leziunile. Conduita corectă este internarea de urgență, cu efectuarea unei endoscopii digestive în primele 24 de ore pentru aprecierea gravității leziunilor, alături de terapie intensivă de susținere.",
@@ -4853,13 +6603,97 @@ const QUESTIONS = {
           "stem": "Un copil este resuscitat dintr-un incendiu domestic și adus în stare de comă, cu nivel de carboxihemoglobină (HbCO) de 30%. Care este tratamentul de elecție indicat, având în vedere severitatea intoxicației cu monoxid de carbon?",
           "options": [
             "Albastru de metilen administrat intravenos lent",
-            "Oxigenoterapie pe mască 5-10 L/minut, fără alte măsuri asociate",
-            "Hidroxicobalamină intravenoasă, ca unică măsură terapeutică",
+            "Exsangvinotransfuzie",
             "Oxigenoterapie hiperbară",
-            "Exsangvinotransfuzie"
+            "Hidroxicobalamină intravenoasă, ca unică măsură terapeutică",
+            "Oxigenoterapie pe mască 5-10 L/minut, fără alte măsuri asociate"
+          ],
+          "correct": 2,
+          "explanation": "Oxigenoterapia hiperbară este indicată în intoxicația cu monoxid de carbon atunci când există comă, deficit neurologic focal, tulburări cardiovasculare, sarcină sau un nivel de HbCO peste 20%, situație întâlnită la acest pacient. O singură ședință de oxigenoterapie hiperbară este de obicei salvatoare. Hidroxicobalamina este antidotul specific pentru intoxicația asociată cu cianuri din fumul de incendiu, nu tratamentul de elecție pentru toxicitatea CO în sine.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1600-1602"
+        },
+        {
+          "id": "64-6",
+          "stem": "Un copil de 4 ani ingeră accidental o cantitate mare de vodcă la o petrecere de familie. La 2 ore de la ingestie prezintă mers ebrios, dizartrie și confuzie, iar glicemia capilară este de 32 mg/dL, cu alterarea stării de conștiență. Care este măsura terapeutică prioritară pentru complicația metabolică amenințătoare de viață din această intoxicație?",
+          "options": [
+            "Spălătură gastrică tardivă, la peste 2 ore de la ingestie, urmată de cărbune activat",
+            "Hemodializă de urgență pentru creșterea clearance-ului etanolului",
+            "Administrare de etanol intravenos în doză de încărcare, ca antidot competitiv",
+            "Administrare de fomepizol (4-metilpirazol) intravenos, ca inhibitor competitiv de alcooldehidrogenază",
+            "Perfuzie intravenoasă cu glucoză concentrată (de exemplu, glucoză 33% 2 mL/kg în caz de convulsii), pentru corectarea și prevenirea hipoglicemiei"
+          ],
+          "correct": 4,
+          "explanation": "Intoxicația acută cu etanol la copil se însoțește frecvent de hipoglicemie severă, complicație metabolică amenințătoare de viață; convulsiile hipoglicemice se tratează cu glucoză 33% 2 mL/kg IV, iar perfuzia cu glucoză previne agravarea. Hemodializa nu este necesară dacă funcția hepatică și renală sunt normale, iar fomepizolul sau etanolul ca antidot sunt indicate în intoxicația cu metanol sau etilenglicol, nu în intoxicația cu etanol propriu-zisă.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1589-1590"
+        },
+        {
+          "id": "64-7",
+          "stem": "Un adolescent este găsit inconștient la aproximativ 6 ore după ingestia voluntară a unei cantități mari de fenobarbital. Prezintă comă profundă, calmă, hipotonă, cu abolirea reflexelor osteotendinoase, respirație rară și temperatură centrală de 29°C. Care este una dintre măsurile terapeutice specifice, menite să crească eliminarea renală a barbituricului?",
+          "options": [
+            "Diureza alcalină, cu ser fiziologic și bicarbonat de sodiu, menținând pH-ul urinar peste 8",
+            "Administrare unică de N-acetilcisteină intravenos",
+            "Alcalinizarea sângelui cu bicarbonat molar, fără urmărirea diurezei sau a pH-ului urinar",
+            "Administrarea de anticorpi specifici de tip Fab (Digibind)",
+            "Perfuzie cu etanol intravenos, ca inhibitor enzimatic competitiv"
+          ],
+          "correct": 0,
+          "explanation": "În intoxicația cu barbiturice, mai ales cu cele de lungă durată precum fenobarbitalul, eliminarea renală este favorizată prin diureză alcalină, cu monitorizarea pH-ului urinar peste 8, alături de repetarea dozelor de cărbune activat, dat fiind ciclul enterohepatic al barbituricelor. Coma este tipic calmă, hipotonă, hiporeflexivă, profundă și prelungită, asociată cu hipotensiune și hipotermie, care poate coborî temperatura centrală sub 30°C.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1589-1590"
+        },
+        {
+          "id": "64-8",
+          "stem": "Un copil de 3 ani este adus în stare de comă calmă, hipotonă, cu bradipnee marcată și mioză bilaterală strânsă, după ce a ingerat accidental un tratament cu metadonă al unui membru al familiei. Care este antidotul specific indicat și mecanismul său de acțiune?",
+          "options": [
+            "Atropină, antagonist al receptorilor muscarinici",
+            "Naloxonă, antagonist pur opioid, prin antagonism competitiv la nivelul receptorilor miu",
+            "N-acetilcisteină, precursor de glutation",
+            "Fizostigmină, inhibitor de acetilcolinesterază",
+            "Flumazenil, antagonist competitiv la nivelul receptorilor GABA"
+          ],
+          "correct": 1,
+          "explanation": "Triada patognomonică a intoxicației cu opioide este comă calmă hipotonă cu miorelaxare, bradipnee cu evoluție spre apnee și mioză bilaterală strânsă. Naloxona (Narcan) este antagonistul pur opioid, acționând prin antagonism competitiv la nivelul receptorilor miu, rezolvând depresia respiratorie, hipotensiunea și mioza, cu acțiune rapidă în 2-3 minute.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1585-1586"
+        },
+        {
+          "id": "64-9",
+          "stem": "Un copil de 5 ani ingeră accidental un număr mare de comprimate de difenhidramină (antihistaminic H1). La 2 ore prezintă agitație, halucinații, midriază bilaterală, tegumente uscate și fierbinți, tahicardie sinusală și retenție acută de urină, tablou sugestiv pentru sindrom anticolinergic sever. Care este antidotul specific indicat în intoxicațiile grave „pure” cu anticolinergice?",
+          "options": [
+            "Albastru de metilen intravenos",
+            "Atropină intravenoasă, în doze crescânde",
+            "Flumazenil intravenos",
+            "Fizostigmină intravenoasă lentă, în doză de 0,02 mg/kg",
+            "Naloxonă intravenos"
           ],
           "correct": 3,
-          "explanation": "Oxigenoterapia hiperbară este indicată în intoxicația cu monoxid de carbon atunci când există comă, deficit neurologic focal, tulburări cardiovasculare, sarcină sau un nivel de HbCO peste 20%, situație întâlnită la acest pacient. O singură ședință de oxigenoterapie hiperbară este de obicei salvatoare. Hidroxicobalamina este antidotul specific pentru intoxicația asociată cu cianuri din fumul de incendiu, nu tratamentul de elecție pentru toxicitatea CO în sine.",
+          "explanation": "Fizostigmina este antidotul specific în intoxicațiile grave „pure” cu substanțe anticolinergice, precum difenhidramina sau atropina, administrată intravenos lent, 0,02 mg/kg, maximum 0,5 mg, doză ce se poate repeta după 10 minute. Este contraindicată în intoxicația cu antidepresive triciclice, deoarece poate exacerba cardiotoxicitatea.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1575-1577"
+        },
+        {
+          "id": "64-10",
+          "stem": "Un copil aflat sub tratament cronic cu digoxin acuză grețuri, vărsături și faptul că vede toate obiectele colorate în galben-verde. Ce reprezintă această tulburare vizuală în cadrul intoxicației digitalice?",
+          "options": [
+            "O manifestare directă a hiperpotasemiei severe asociate intoxicației",
+            "Un semn neurosenzorial caracteristic (discromatopsie), care apare tardiv față de manifestările digestive și orientează diagnosticul spre intoxicație digitalică",
+            "Un semn precoce de impregnare digitalică terapeutică, fără legătură cu toxicitatea",
+            "Un efect advers al tratamentului cu anticorpi antidigitalici de tip Digibind",
+            "Un semn de gravitate extremă, echivalent cu bradicardia severă sub 40 bpm care nu răspunde la atropină"
+          ],
+          "correct": 1,
+          "explanation": "Semnele neurologice și oculare ale intoxicației digitalice sunt inconstante, apar tardiv față de manifestările digestive și sunt mai puțin specifice, cu excepția discromatopsiei (vedere colorată în galben sau verde), un semn caracteristic ce orientează diagnosticul. Acestea sunt diferite de semnele de gravitate (aritmii ventriculare, bradicardie severă sub 40 bpm fără răspuns la atropină) sau de semnele EKG de impregnare digitalică terapeutică.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 1580-1582"
+        },
+        {
+          "id": "64-11",
+          "stem": "La 3 săptămâni după o intoxicație acută severă cu monoxid de carbon, din care își revenise aparent complet, un adolescent dezvoltă stare confuzională progresivă, urmată de comă. Cum se numește această complicație tardivă și care este intervalul tipic de apariție?",
+          "options": [
+            "Encefalopatia asociată sindromului de deshidratare acută secundar intoxicației",
+            "Edem cerebral acut, complicație imediată a hipoxiei, apărută în primele 24 de ore",
+            "Recurența intoxicației prin eliberarea monoxidului de carbon stocat pe hemoproteinele tisulare",
+            "Sindromul postinterval, cu manifestări neurologice tardive apărute la un interval variabil, de la câteva zile până la o lună de la intoxicația acută",
+            "Encefalopatie hepatică, secundară insuficienței hepatice acute induse de monoxidul de carbon"
+          ],
+          "correct": 3,
+          "explanation": "O complicație recunoscută a intoxicației acute cu monoxid de carbon este sindromul postinterval, caracterizat prin manifestări neurologice tardive ce apar după un interval variabil, de la câteva zile până la o lună de la intoxicația acută, manifestat prin stare confuzională sau demență, urmată de comă, care poate evolua letal. În cazurile cu evoluție favorabilă, vindecarea apare după 2-3 săptămâni.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 1600-1602"
         }
       ]
@@ -4872,13 +6706,13 @@ const QUESTIONS = {
           "id": "65-1",
           "stem": "Un copil de 6 ani, fără boală hepatică cronică cunoscută, se prezintă cu alterarea stării de conștiență, flapping tremor și INR = 1,6, necorectat după administrarea parenterală de vitamina K. Conform criteriilor PALF (Pediatric Acute Liver Failure Group), care dintre următoarele afirmații este corectă?",
           "options": [
-            "Diagnosticul necesită INR > 2,0, indiferent de prezența encefalopatiei hepatice",
-            "Diagnosticul necesită coagulopatie corectabilă după administrarea de vitamina K",
+            "INR-ul de 1,6 în prezența encefalopatiei hepatice este suficient pentru susținerea diagnosticului de insuficiență hepatică acută",
             "Diagnosticul se stabilește exclusiv pe baza nivelului transaminazelor, indiferent de valoarea INR",
-            "Diagnosticul necesită prezența unei boli hepatice cronice preexistente",
-            "INR-ul de 1,6 în prezența encefalopatiei hepatice este suficient pentru susținerea diagnosticului de insuficiență hepatică acută"
+            "Diagnosticul necesită coagulopatie corectabilă după administrarea de vitamina K",
+            "Diagnosticul necesită INR > 2,0, indiferent de prezența encefalopatiei hepatice",
+            "Diagnosticul necesită prezența unei boli hepatice cronice preexistente"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Conform criteriilor PALF din anul 2000, IHA la copil este definită prin absența unei afecțiuni cronice hepatice, coagulopatie necorectată după vitamina K parenterală, cu INR de 1,5-1,9 în prezența encefalopatiei hepatice sau INR > 2,0 în absența encefalopatiei. Un INR de 1,6 asociat cu encefalopatie hepatică se încadrează exact în acest criteriu diagnostic.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 978-990"
         },
@@ -4886,13 +6720,13 @@ const QUESTIONS = {
           "id": "65-2",
           "stem": "O adolescentă de 15 ani se prezintă cu icter intens, anemie hemolitică cu test Coombs negativ, transaminaze ușor-moderat crescute (raport AST/ALT > 4) și tulburări severe de coagulare, în contextul unei insuficiențe hepatice acute. Care este diagnosticul cel mai probabil și conduita terapeutică imediată?",
           "options": [
+            "Hepatită virală B fulminantă; se administrează imunoglobulină specifică anti-VHB",
             "Intoxicație cu paracetamol; se administrează N-acetilcisteină",
-            "Hepatită autoimună tip 2; se inițiază corticoterapie în doze mari",
             "Sindrom Reye; se instituie restricție proteică și lactuloză",
-            "Boala Wilson; se inițiază tratament cu D-penicilamină imediat ce se suspectează diagnosticul, chiar înainte de confirmarea biochimică",
-            "Hepatită virală B fulminantă; se administrează imunoglobulină specifică anti-VHB"
+            "Hepatită autoimună tip 2; se inițiază corticoterapie în doze mari",
+            "Boala Wilson; se inițiază tratament cu D-penicilamină imediat ce se suspectează diagnosticul, chiar înainte de confirmarea biochimică"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Asocierea IHA cu transaminaze ușor/moderat crescute, raport AST/ALT > 4, bilirubină mult crescută prin hemoliză nonimună (Coombs negativ) este înalt sugestivă pentru boala Wilson, formă de debut caracteristică mai ales la adolescente. Textul precizează că tratamentul cu D-penicilamină trebuie inițiat imediat ce se suspectează boala, chiar în absența rezultatelor biochimice de confirmare.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 978-990"
         },
@@ -4900,13 +6734,13 @@ const QUESTIONS = {
           "id": "65-3",
           "stem": "Un copil cu insuficiență hepatică acută și encefalopatie hepatică grad IV dezvoltă semne de hipertensiune intracraniană prin edem cerebral. Care este mecanismul principal al edemului cerebral în acest context și o măsură terapeutică adecvată?",
           "options": [
-            "Edem citotoxic, care afectează în primul rând substanța cenușie, tratat cu soluții hiperosmolare (manitol 20% sau soluție salină NaCl 3%)",
+            "Edem obstructiv, prin blocarea circulației LCR, tratat prin derivație ventriculo-peritoneală",
+            "Edem vasogenic, prin creșterea permeabilității capilare, tratat cu corticosteroizi în doze mari",
             "Edem hemoragic, secundar coagulopatiei, tratat cu plasmă proaspătă congelată în doze mari",
             "Edem interstițial, secundar hidrocefaliei, tratat cu acetazolamidă",
-            "Edem vasogenic, prin creșterea permeabilității capilare, tratat cu corticosteroizi în doze mari",
-            "Edem obstructiv, prin blocarea circulației LCR, tratat prin derivație ventriculo-peritoneală"
+            "Edem citotoxic, care afectează în primul rând substanța cenușie, tratat cu soluții hiperosmolare (manitol 20% sau soluție salină NaCl 3%)"
           ],
-          "correct": 0,
+          "correct": 4,
           "explanation": "Textul precizează că edemul cerebral, complicația de temut a encefalopatiei hepatice, afectează în primul rând substanța cenușie și este produs prin mecanism citotoxic, motiv pentru care răspunde la terapia cu manitol sau soluție salină hipertonă. Alte măsuri menționate sunt reducerea temperaturii corporale, hiperventilația și restricția de lichide.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 978-990"
         },
@@ -4914,13 +6748,13 @@ const QUESTIONS = {
           "id": "65-4",
           "stem": "Un copil cu insuficiență hepatică acută secundară intoxicației cu paracetamol prezintă pH arterial = 7,25, fără alte criterii asociate. Conform criteriilor King's College pentru IHA indusă de paracetamol, această situație clinică:",
           "options": [
+            "Reprezintă criteriu de transplant doar dacă se asociază cu creatinină > 3,4 mg/dL și comă de grad III/IV",
             "Impune doar monitorizare, deoarece criteriile de transplant necesită minimum 3 din 4 criterii asociate, ca la cauzele non-paracetamol",
             "Reprezintă, prin ea însăși, criteriu de indicație pentru transplant hepatic de urgență, independent de celelalte criterii (creatinină, comă)",
-            "Reprezintă criteriu de transplant doar dacă se asociază cu creatinină > 3,4 mg/dL și comă de grad III/IV",
             "Nu se aplică, deoarece criteriile King's College sunt valabile doar pentru cauzele non-paracetamol de IHA",
             "Nu reprezintă criteriu de indicație pentru transplant hepatic de urgență, fiind necesară obligatoriu și asocierea unui INR > 6"
           ],
-          "correct": 1,
+          "correct": 2,
           "explanation": "Conform criteriilor King's College pentru IHA din intoxicația cu paracetamol, pH < 7,3 constituie singur criteriu suficient de indicație pentru transplant hepatic de urgență; alternativ, se pot asocia INR > 6, creatinină > 3,4 mg/dL și comă de grad III/IV. Criteriile pentru celelalte cauze de IHA (necesitatea a 3 din 4 elemente) sunt diferite și separate în text.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 978-990"
         },
@@ -4928,14 +6762,28 @@ const QUESTIONS = {
           "id": "65-5",
           "stem": "Un copil cu insuficiență hepatică acută, fără sângerare activă, necesită montarea unui cateter venos central. Trombocitele sunt 12.000/mm3, iar INR este crescut. Care este conduita corectă conform ghidului de tratament?",
           "options": [
+            "Se administrează factor VII recombinant doar dacă trombocitele scad ulterior sub 50.000/mm3, indiferent de context",
             "Se administrează masă trombocitară, având în vedere valoarea sub 15.000/mm3 în absența hemoragiei, procedura invazivă justificând corectarea",
-            "Corectarea coagulopatiei nu este necesară, deoarece nu există sângerare activă",
-            "Se amână manopera până la normalizarea completă a INR, indiferent de necesitatea clinică a cateterului",
             "Se administrează plasmă proaspătă congelată de rutină, pentru corectarea INR înainte de orice manoperă",
-            "Se administrează factor VII recombinant doar dacă trombocitele scad ulterior sub 50.000/mm3, indiferent de context"
+            "Se amână manopera până la normalizarea completă a INR, indiferent de necesitatea clinică a cateterului",
+            "Corectarea coagulopatiei nu este necesară, deoarece nu există sângerare activă"
+          ],
+          "correct": 1,
+          "explanation": "Textul precizează că procedurile invazive se pot efectua sub protecția administrării de trombocite dacă acestea sunt sub 15.000/mm3 în absența hemoragiei (sau sub 50.000/mm3 în prezența acesteia) sau de factor VII recombinant. Corectarea INR/TQ este justificată doar în sângerările active sau înaintea manoperelor invazive, iar administrarea de rutină a plasmei proaspete congelate nu este recomandată, deoarece îngreunează aprecierea evoluției coagulopatiei.",
+          "source": "Iordăchescu - Tratat de Pediatrie, pag. 978-990"
+        },
+        {
+          "id": "65-6",
+          "stem": "Un copil cu insuficiență hepatică acută dezvoltă oligoanurie progresivă, fără răspuns adecvat la reechilibrarea volemică, în condițiile în care funcția tubulară renală și arhitectura ecografică a rinichilor rămân normale. Care este diagnosticul cel mai probabil și ce factori au un rol important în apariția acestei complicații?",
+          "options": [
+            "Sindrom hepato-renal (insuficiență renală acută funcțională), în apariția căruia au un rol important dezechilibrele electrolitice și infecțiile",
+            "Necroză tubulară acută, cu afectare structurală a tubilor renali, cauzată în principal de deshidratare și hipovolemie",
+            "Insuficiență renală acută prerenală prin deshidratare, care răspunde prompt la administrarea de fluide intravenoase",
+            "Nefropatie toxică directă indusă de hiperbilirubinemie, cu leziuni ireversibile ale epiteliului tubular",
+            "Glomerulonefrită acută secundară depunerii de complexe imune circulante specifice bolii hepatice"
           ],
           "correct": 0,
-          "explanation": "Textul precizează că procedurile invazive se pot efectua sub protecția administrării de trombocite dacă acestea sunt sub 15.000/mm3 în absența hemoragiei (sau sub 50.000/mm3 în prezența acesteia) sau de factor VII recombinant. Corectarea INR/TQ este justificată doar în sângerările active sau înaintea manoperelor invazive, iar administrarea de rutină a plasmei proaspete congelate nu este recomandată, deoarece îngreunează aprecierea evoluției coagulopatiei.",
+          "explanation": "Sindromul hepato-renal, numit și „insuficiența renală acută funcțională\", este principala cauză de uremie la copiii cu IHA și este definit prin disfuncție renală cu oligo-anurie, dar cu păstrarea funcției tubulare și a arhitecturii normale a rinichiului. Spre deosebire de insuficiența renală prerenală sau de necroza tubulară acută, în care factorii etiologici principali sunt deshidratarea și hipovolemia, în sindromul hepato-renal un rol important îl au dezechilibrele electrolitice și infecțiile.",
           "source": "Iordăchescu - Tratat de Pediatrie, pag. 978-990"
         }
       ]
@@ -4948,13 +6796,13 @@ const QUESTIONS = {
           "id": "66-1",
           "stem": "Un copil de 8 ani cu traumatism cranio-cerebral sever este monitorizat în terapie intensivă. Presiunea arterială medie (PAM) este 70 mmHg, iar presiunea intracraniană (PIC), monitorizată invaziv, este 35 mmHg. Care este valoarea presiunii de perfuzie cerebrală (PPC) și semnificația ei clinică?",
           "options": [
-            "PPC = 105 mmHg; hiperperfuzie cerebrală care impune reducerea de urgență a PAM",
-            "PPC = 35 mmHg; valoare sub pragul minim acceptat pentru copiii peste 3 ani (>50-60 mmHg), asociată cu risc crescut de ischemie cerebrală",
             "PPC = 70 mmHg; valoare normală, nu necesită nicio intervenție terapeutică",
             "PPC nu poate fi calculată fără cunoașterea valorii PaCO2",
-            "PPC = 35 mmHg; valoare peste pragul minim acceptat pentru vârsta sa, fără risc de ischemie cerebrală"
+            "PPC = 105 mmHg; hiperperfuzie cerebrală care impune reducerea de urgență a PAM",
+            "PPC = 35 mmHg; valoare peste pragul minim acceptat pentru vârsta sa, fără risc de ischemie cerebrală",
+            "PPC = 35 mmHg; valoare sub pragul minim acceptat pentru copiii peste 3 ani (>50-60 mmHg), asociată cu risc crescut de ischemie cerebrală"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "PPC se calculează după formula PPC = PAM - PIC, deci 70 - 35 = 35 mmHg. Valorile minime acceptate ale PPC pentru a preveni ischemia cerebrală la copiii peste 3 ani sunt >50-60 mmHg, iar o PPC sub 40 mmHg este un predictor important de mortalitate la copiii cu traumatism cranio-cerebral. Valoarea obținută este deci periculos de scăzută.",
           "source": "Protocoale de diagnostic și tratament în Pediatrie (2023), pag. 347-354"
         },
@@ -4962,13 +6810,13 @@ const QUESTIONS = {
           "id": "66-2",
           "stem": "Un copil cu hipertensiune intracraniană decompensată prezintă brusc bradicardie, hipertensiune arterială și respirații neregulate. Ce reprezintă acest tablou clinic și ce implicație are?",
           "options": [
-            "Semn de șoc septic decompensat, ce impune inițierea antibioterapiei de urgență",
             "Triada Cushing, semn de angajare cerebrală severă/iminentă, care impune măsuri de urgență pentru reducerea PIC",
             "Semn tipic de deshidratare severă, ce impune reechilibrare volemică rapidă cu ser fiziologic",
             "Semn de convulsii subclinice, ce impune doar administrare de diazepam intravenos",
+            "Semn de șoc septic decompensat, ce impune inițierea antibioterapiei de urgență",
             "Semn de hipoglicemie acută, ce impune administrare imediată de glucoză 10%"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Asocierea bradicardie-hipertensiune arterială-respirații neregulate constituie triada Cushing, descrisă în text ca semn clinic asociat angajării cerebrale. Recunoașterea ei impune intervenție de urgență pentru scăderea presiunii intracraniene, nu doar corectarea unor tulburări metabolice sau volemice.",
           "source": "Protocoale de diagnostic și tratament în Pediatrie (2023), pag. 347-354"
         },
@@ -4976,13 +6824,13 @@ const QUESTIONS = {
           "id": "66-3",
           "stem": "Un copil cu hipertensiune intracraniană dezvoltă brusc ptoză palpebrală și midriază unilaterală fixă, areactivă, de aceeași parte, însoțite de hemipareză controlaterală. Care sindrom de angajare cerebrală este cel mai probabil sugerat de acest tablou?",
           "options": [
+            "Hernia transtentorială ascendentă (în sus, deasupra cerebelului și mezencefalului)",
+            "Hernia transtentorială centrală",
             "Hernia transforaminală (a amigdalelor cerebeloase)",
             "Hernia transtentorială laterală (uncală), prin compresia nervului III de către uncus și girusul parahipocampic",
-            "Hernia subfalcină (a girusului cingular)",
-            "Hernia transtentorială centrală",
-            "Hernia transtentorială ascendentă (în sus, deasupra cerebelului și mezencefalului)"
+            "Hernia subfalcină (a girusului cingular)"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Paralizia de nerv III (ptoză palpebrală, midriază unilaterală) însoțită de hemipareză este manifestarea caracteristică a herniei transtentoriale laterale (uncale), produsă prin deplasarea uncusului și girusului parahipocampic medial, cu compresia nervului oculomotor. Celelalte tipuri de angajare au tablouri clinice diferite (mioză bilaterală/pupile fixe în hernia centrală, privire „în apus de soare” în cea ascendentă, redoare de ceafă și apnee în cea transforaminală).",
           "source": "Protocoale de diagnostic și tratament în Pediatrie (2023), pag. 347-354"
         },
@@ -4991,10 +6839,10 @@ const QUESTIONS = {
           "stem": "Un copil cu traumatism cranio-cerebral sever are scor Glasgow (GCS) = 6, respirații neregulate cu efort respirator crescut și cianoză de tip central. Care este conduita imediată recomandată în cadrul managementului hipertensiunii intracraniene decompensate?",
           "options": [
             "Intubație endotraheală de urgență în secvență rapidă, cu agent de inducție (propofol sau tiopental) și relaxant muscular cu acțiune rapidă",
-            "Sedare orală cu diazepam și reevaluare clinică peste 2 ore",
-            "Hiperventilație susținută, cu menținerea PaCO2 sub 25 mmHg, ca metodă de primă linie de reducere a PIC",
+            "Administrare imediată de manitol în doză mare, fără alte măsuri de stabilizare",
             "Puncție lombară pentru măsurarea presiunii LCR, înaintea oricărei alte manevre",
-            "Administrare imediată de manitol în doză mare, fără alte măsuri de stabilizare"
+            "Hiperventilație susținută, cu menținerea PaCO2 sub 25 mmHg, ca metodă de primă linie de reducere a PIC",
+            "Sedare orală cu diazepam și reevaluare clinică peste 2 ore"
           ],
           "correct": 0,
           "explanation": "Un scor Glasgow < 8, semnele de detresă respiratorie și de ventilare/oxigenare inadecvată (cianoză centrală, respirații neregulate cu efort) reprezintă indicații de intubație endotraheală de urgență în secvență rapidă, cu agent de inducție și relaxant muscular cu acțiune rapidă. Hiperventilația agresivă și susținută este contraindicată (risc de vasoconstricție și ischemie cerebrală), fiind acceptată doar temporar și în situații de iminență de angajare.",
@@ -5004,14 +6852,28 @@ const QUESTIONS = {
           "id": "66-5",
           "stem": "Un copil cu tumoră cerebrală prezintă edem cerebral peritumoral de tip vasogenic și semne de hipertensiune intracraniană compensată. Care este tratamentul specific recomandat pentru acest tip de edem?",
           "options": [
-            "Manitol în doză mare, administrat ca primă linie de tratament",
-            "Barbiturice în doze mari (tiopental intravenos)",
-            "Craniectomie decompresivă de urgență",
             "Corticoterapie (dexametazonă intravenos, 0,5-1 mg/kg/zi, divizată în 2-4 subdoze zilnice)",
-            "Soluție salină hipertonă 3% în bolus, ca primă intervenție"
+            "Barbiturice în doze mari (tiopental intravenos)",
+            "Soluție salină hipertonă 3% în bolus, ca primă intervenție",
+            "Craniectomie decompresivă de urgență",
+            "Manitol în doză mare, administrat ca primă linie de tratament"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "În edemul vasogenic peritumoral (tumoră cerebrală) sau în edemul inflamator (abces cerebral), tratamentul specific recomandat este corticoterapia cu dexametazonă intravenos. Manitolul, soluțiile saline hipertone, barbituricele și craniectomia decompresivă sunt rezervate altor situații (hemoragie intracraniană, HIC decompensată refractară).",
+          "source": "Protocoale de diagnostic și tratament în Pediatrie (2023), pag. 347-354"
+        },
+        {
+          "id": "66-6",
+          "stem": "Un copil de 10 ani, victimă a unui traumatism cranio-cerebral sever, prezintă hemoragie intracraniană confirmată CT și semne de hipertensiune intracraniană decompensată, cu iminență de angajare cerebrală, în așteptarea rezolvării neurochirurgicale a leziunii. Care este conduita de depleție cerebrală recomandată de primă intenție în acest context etiologic?",
+          "options": [
+            "Craniectomie decompresivă imediată, fără a încerca alte măsuri de reducere medicală a PIC",
+            "Soluție salină hipertonă 3%, 6,5-10 ml/kg în bolus, ca măsură temporară de reducere a PIC până la rezolvarea chirurgicală",
+            "Corticoterapie cu dexametazonă intravenos, datorită caracterului vasogenic al edemului din hemoragia intracraniană",
+            "Barbiturice în doze mari (tiopental i.v.), ca primă măsură, înaintea oricărei alte intervenții",
+            "Manitol 0,5-1 g/kg/zi, ca primă linie de tratament, indiferent de etiologia hemoragică a HIC"
+          ],
+          "correct": 1,
+          "explanation": "La pacienții cu hemoragie intracraniană se recomandă soluție salină hipertonă 3% (6,5-10 ml/kg în bolus) ca măsură temporară de reducere a PIC până la rezolvarea chirurgicală a leziunii, deoarece soluțiile hiperosmolare reduc vâscozitatea sanguină și edemul cerebral. Manitolul nu are dovezi susținute pentru reducerea HIC în hemoragiile cerebrale și poate produce insuficiență renală și hipovolemie, cu agravarea perfuziei cerebrale; barbituricele sunt rezervate cazurilor refractare la hiperventilație și terapie hiperosmolară, corticoterapia este specifică edemului vasogenic peritumoral/inflamator, iar craniectomia decompresivă este rezervată cazurilor ce nu răspund la tratamentul medical.",
           "source": "Protocoale de diagnostic și tratament în Pediatrie (2023), pag. 347-354"
         }
       ]
@@ -5024,13 +6886,13 @@ const QUESTIONS = {
           "id": "67-1",
           "stem": "Un copil de 6 ani este adus în stare de comă. La examenul clinic se constată redoare de ceafă și semne Kernig și Brudzinski prezente, fără context febril. Care este diagnosticul cel mai probabil sugerat de acest tablou clinic?",
           "options": [
-            "Meningoencefalită virală",
-            "Encefalopatie hepatică",
-            "Meningită bacteriană acută",
             "Hemoragie subarahnoidiană",
+            "Meningoencefalită virală",
+            "Meningită bacteriană acută",
+            "Encefalopatie hepatică",
             "Abces cerebral"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Prezența semnelor de iritație meningeală în context febril orientează către o infecție a sistemului nervos central, dar dacă aceste semne nu se asociază cu febră, diagnosticul trebuie orientat către hemoragie subarahnoidiană. Absența febrei exclude etiologia infecțioasă ca primă ipoteză.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 683-688"
         },
@@ -5038,13 +6900,13 @@ const QUESTIONS = {
           "id": "67-2",
           "stem": "Un copil aflat în stare de comă prezintă midriază unilaterală, fixă și areactivă. Cum trebuie interpretat acest semn clinic?",
           "options": [
+            "Semn de urgență neurochirurgicală, sugestiv pentru hernierea subtentorială a lobului temporal",
             "Semn de intoxicație cu substanțe atropinice, care necesită doar monitorizare",
-            "Semn caracteristic stării postcritice, după o criză de convulsii tonico-clonice",
-            "Semn de comă cu siderare vegetativă indus de hipotermie severă",
             "Semn de intoxicație cu substanțe organofosforate",
-            "Semn de urgență neurochirurgicală, sugestiv pentru hernierea subtentorială a lobului temporal"
+            "Semn de comă cu siderare vegetativă indus de hipotermie severă",
+            "Semn caracteristic stării postcritice, după o criză de convulsii tonico-clonice"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Midriaza unilaterală este descrisă în text ca semn de urgență neurochirurgicală, reprezentând de obicei hernierea subtentorială a lobului temporal. Midriaza bilaterală, în schimb, poate apărea în stările postcritice sau în intoxicații cu atropinice, simpatomimetice ori benzodiazepine.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 683-688"
         },
@@ -5052,13 +6914,13 @@ const QUESTIONS = {
           "id": "67-3",
           "stem": "Un copil suferă un traumatism cranio-cerebral și rămâne inițial conștient (interval liber). La aproximativ 36 de ore de la traumatism, starea sa se alterează progresiv și intră în comă. Ce tip de leziune hemoragică este cel mai probabil sugerat de această evoluție?",
           "options": [
-            "Contuzie cerebrală simplă, fără hematom asociat",
-            "Comoție cerebrală",
             "Hematom extradural",
+            "Comoție cerebrală",
             "Hematom subdural subacut",
-            "Hematom subdural cronic"
+            "Hematom subdural cronic",
+            "Contuzie cerebrală simplă, fără hematom asociat"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "Conform textului, dacă intervalul liber este sub 12 ore se suspectează hematom extradural, dacă este între 24 și 48 de ore se are în vedere hematomul subdural subacut, iar dacă depășește 72 de ore, hematomul subdural cronic. Un interval liber de 36 de ore se încadrează în intervalul sugestiv pentru hematom subdural subacut.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 683-688"
         },
@@ -5066,13 +6928,13 @@ const QUESTIONS = {
           "id": "67-4",
           "stem": "La examinarea unui copil aflat în comă se remarcă o halenă particulară, asemănătoare mirosului de „mere putrede”. Care dintre următoarele situații clinice se asociază cel mai frecvent cu această halenă acetonemică?",
           "options": [
+            "Insuficiența hepatică (foetor hepatic)",
             "Intoxicația cu substanțe organofosforate",
-            "Diabetul zaharat sau hipoglicemia cetotică cu vărsături incoercibile",
             "Insuficiența renală cronică",
             "Intoxicația voluntară cu alcool etilic",
-            "Insuficiența hepatică (foetor hepatic)"
+            "Diabetul zaharat sau hipoglicemia cetotică cu vărsături incoercibile"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Halena de tip „mere putrede”, acetonemică, este descrisă în text ca fiind întâlnită în diabet, dar și la copiii cu hipoglicemie cetotică sau cu vărsături incoercibile. Halena de amoniac orientează spre insuficiență renală cronică, iar halena de ficat crud spre insuficiență hepatică.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 683-688"
         },
@@ -5082,12 +6944,40 @@ const QUESTIONS = {
           "options": [
             "Expansiune volemică agresivă cu ser fiziologic izoton",
             "Reducerea volumului soluțiilor perfuzabile administrate și monitorizarea atentă a ionogramei sanguine",
+            "Administrarea de soluții saline hipertone în ritm crescut",
             "Restricția hidrică nu este necesară dacă natremia este normală",
-            "Administrarea de diuretice osmotice în doze mari, indiferent de ionogramă",
-            "Administrarea de soluții saline hipertone în ritm crescut"
+            "Administrarea de diuretice osmotice în doze mari, indiferent de ionogramă"
           ],
           "correct": 1,
           "explanation": "Textul precizează că sindromul de secreție inadecvată de hormon antidiuretic apare la copiii cu meningită bacteriană și că, în această situație, trebuie monitorizată ionograma sanguină și trebuie reduse soluțiile perfuzabile administrate, pentru a evita agravarea hiponatremiei diluționale.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 683-688"
+        },
+        {
+          "id": "67-6",
+          "stem": "Un copil în comă este evaluat cu ajutorul scorului Glasgow, obținându-se un scor total de 3 puncte. Cum trebuie interpretat acest rezultat, conform criteriilor de stadializare a comelor?",
+          "options": [
+            "Comă vigilă (stadiul I), cu prognostic favorabil",
+            "Comă cu siderare vegetativă, potențial reversibilă",
+            "Comă profundă (stadiul III), cu reactivitate absentă doar la stimuli nociceptivi",
+            "Comă tipică (stadiul II), echivalentă unui scor Glasgow sub 7",
+            "Comă depășită, cel mai sever grad de alterare a stării de conștiență"
+          ],
+          "correct": 4,
+          "explanation": "Conform textului, un scor Glasgow sub 7 este echivalent cu coma de grad II (comă tipică), în timp ce un scor de 3 puncte, cel mai mic scor posibil, corespunde comei depășite. Scala Glasgow, adaptată și pentru vârstele mici, este unul dintre instrumentele folosite pentru stadializarea comelor la copil, alături de criteriile clinice și de scala FOUR.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 683-688"
+        },
+        {
+          "id": "67-7",
+          "stem": "Un nou-născut dismatur prezintă hipoglicemie severă, netratată prompt, iar necesarul crescut de glucoză al sistemului nervos central nu poate fi asigurat de rezervele organismului. Hipoglicemia se prelungește și determină crize convulsive continue (stare de rău epileptic). Care este complicația neurologică descrisă în acest context?",
+          "options": [
+            "Hernierea subtentorială a lobului temporal, cu midriază unilaterală fixă",
+            "Absența oricărei sechele neurologice, indiferent de durata crizelor convulsive",
+            "Leziuni sechelare neurologice prin hipoxie prelungită, cu epilepsie organică secundară",
+            "Comă cu siderare vegetativă, complet reversibilă fără sechele",
+            "Sindrom de secreție inadecvată de hormon antidiuretic"
+          ],
+          "correct": 2,
+          "explanation": "Textul precizează că hipoglicemia severă și prelungită, mai ales la nou-născutul dismatur, poate determina crize de convulsii pe durată lungă (stare de rău epileptic), iar acestea pot antrena, prin hipoxia prelungită, leziuni sechelare neurologice, cu epilepsie organică. Aceasta se deosebește de coma postcritică de scurtă durată din convulsiile febrile simple, care nu lasă sechele.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 683-688"
         }
       ]
@@ -5101,12 +6991,12 @@ const QUESTIONS = {
           "stem": "Un sugar în vârstă de 14 luni, aflat în plină ascensiune febrilă (temperatură axilară 38,8°C, debutată de circa 20 de minute), prezintă mișcări oscilatorii ritmice, fine, ale întregului corp, fără pierderea stării de conștiență. Care este cel mai probabil diagnostic?",
           "options": [
             "Convulsie febrilă simplă",
-            "Frison",
             "Stare de rău convulsiv febril",
+            "Spasmul hohotului de plâns",
             "Convulsie febrilă complexă",
-            "Spasmul hohotului de plâns"
+            "Frison"
           ],
-          "correct": 1,
+          "correct": 4,
           "explanation": "Frisoanele sunt frecvent confundate cu convulsiile febrile, dar sunt mișcări oscilatorii ritmice, fine, ale întregului corp, care nu se asociază cu pierderea stării de conștiență și apar concomitent cu/urmate de ascensiunea termică, spre deosebire de convulsiile febrile propriu-zise. Convulsia febrilă presupune pierderea stării de conștiență. Spasmul hohotului de plâns este precedat de plâns și expir prelungit, nefiind legat de febră.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 667-682"
         },
@@ -5114,13 +7004,13 @@ const QUESTIONS = {
           "id": "68-2",
           "stem": "Un copil de 2 ani, în a doua zi a unei viroze respiratorii febrile, prezintă o criză convulsivă cu debut prin deviere a capului și ochilor spre dreapta, cu durată de aproximativ 20 de minute; la câteva ore, în cadrul aceluiași episod febril, prezintă o a doua criză cu aceleași caracteristici. Cum se clasifică acest tip de convulsie febrilă?",
           "options": [
-            "Convulsie febrilă complexă",
-            "Criză de absență tipică",
             "Epilepsie parțială continuă",
-            "Frison",
-            "Convulsie febrilă simplă"
+            "Convulsie febrilă complexă",
+            "Convulsie febrilă simplă",
+            "Criză de absență tipică",
+            "Frison"
           ],
-          "correct": 0,
+          "correct": 1,
           "explanation": "Convulsiile febrile complexe se caracterizează prin debut focal, durată prelungită (peste 15 minute) și caracter recurent în cursul aceluiași episod de boală acută febrilă — toate trei elemente fiind prezente în acest caz. Convulsiile febrile simple sunt generalizate, durează sub 15 minute și apar o singură dată în episodul febril respectiv.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 667-682"
         },
@@ -5130,11 +7020,11 @@ const QUESTIONS = {
           "options": [
             "Se indică tomografie computerizată cerebrală de urgență",
             "Se indică electroencefalogramă de urgență, înaintea externării",
-            "Nu este necesară nicio investigație suplimentară, doar tratamentul afecțiunii febrile subiacente",
             "Se indică efectuarea puncției lombare, având în vedere statusul vaccinal incomplet",
-            "Se indică internare cu monitorizare video-EEG timp de 24 de ore"
+            "Se indică internare cu monitorizare video-EEG timp de 24 de ore",
+            "Nu este necesară nicio investigație suplimentară, doar tratamentul afecțiunii febrile subiacente"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "Conform recomandărilor Academiei Americane de Pediatrie citate în text, puncția lombară este indicată la copiii cu convulsii febrile care sunt nevaccinați anti-Haemophilus influenzae tip b sau anti-Streptococcus pneumoniae, sau la care vaccinarea este incertă, chiar în absența altor semne clinice de meningită. La copiii cu CFS tipice și examen neurologic normal, în general nu sunt necesare EEG, neuroimagistică sau puncție lombară, dar acest caz are un factor de risc specific menționat explicit ca indicație pentru puncție lombară.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 667-682"
         },
@@ -5142,13 +7032,13 @@ const QUESTIONS = {
           "id": "68-4",
           "stem": "Un copil febril se prezintă la urgență aflat încă în criză convulsivă generalizată, cu o durată estimată de 7 minute de la debut. Abordul venos periferic nu poate fi obținut rapid. Care este conduita terapeutică de primă linie în această situație?",
           "options": [
-            "Fenitoină intravenoasă 20 mg/kg, prin abord osos de urgență",
-            "Midazolam cu administrare bucală sau nazală, 0,2 mg/kg",
             "Așteptare fără tratament, deoarece convulsiile febrile durează întotdeauna sub 5 minute",
-            "Fenobarbital intramuscular, în doze anticonvulsivante",
-            "Antipiretic administrat oral, criza urmând să cedeze spontan odată cu scăderea febrei"
+            "Fenitoină intravenoasă 20 mg/kg, prin abord osos de urgență",
+            "Antipiretic administrat oral, criza urmând să cedeze spontan odată cu scăderea febrei",
+            "Midazolam cu administrare bucală sau nazală, 0,2 mg/kg",
+            "Fenobarbital intramuscular, în doze anticonvulsivante"
           ],
-          "correct": 1,
+          "correct": 3,
           "explanation": "Convulsiile febrile cu durată mai mare de 5 minute au indicație de oprire farmacologică; anticonvulsivantele de primă linie sunt diazepamul și lorazepamul intravenos, iar dacă nu se poate aborda calea intravenoasă, midazolamul cu administrare bucală sau nazală, 0,2 mg/kg, reprezintă opțiunea corectă. Fenitoina se rezervă cazurilor care nu răspund la benzodiazepine, în cadrul stării de rău convulsiv.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 667-682"
         },
@@ -5156,14 +7046,42 @@ const QUESTIONS = {
           "id": "68-5",
           "stem": "Un sugar de 8 luni are prima convulsie febrilă simplă. Din anamneză reiese: vârsta sub 1 an, mama a prezentat convulsii febrile în copilărie, temperatura măsurată în departamentul de urgență a fost relativ scăzută, iar intervalul dintre debutul febrei și apariția crizei a fost scurt. Ținând cont de asocierea acestor factori de risc, care este riscul aproximativ de recurență a convulsiilor febrile la acest copil?",
           "options": [
+            "30-35%",
             "100%, recurența fiind inevitabilă",
-            "50-65%",
-            "Sub 20%",
             "Cel puțin 70%",
-            "30-35%"
+            "50-65%",
+            "Sub 20%"
           ],
-          "correct": 3,
+          "correct": 2,
           "explanation": "Factorii de risc pentru recurență menționați în text sunt: vârsta mică la prima convulsie febrilă (sub 1 an), istoric de convulsii febrile la rudele de gradul 1, nivelul scăzut al febrei și durata scurtă între debutul febrei și apariția crizei. Copiii care prezintă toți acești factori au un risc de recurență de cel puțin 70%, comparativ cu sub 20% la cei fără niciun factor de risc.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 667-682"
+        },
+        {
+          "id": "68-6",
+          "stem": "Un copil de 3 ani prezintă o convulsie febrilă complexă (debut cu deviere a globilor oculari, deci cu caracter focal), iar din anamneza familială reiese un istoric de epilepsie pe linie maternă. Comparativ cu un copil care a avut o convulsie febrilă simplă, fără niciun alt factor de risc asociat, care este riscul aproximativ de epilepsie ulterioară al copilului descris mai sus?",
+          "options": [
+            "1-2%, identic cu cel al copilului cu convulsie febrilă simplă fără alți factori de risc",
+            "20-25%",
+            "Sub 1%, similar cu riscul din populația generală",
+            "Peste 50%, dat fiind cumulul factorilor de risc",
+            "5-10%"
+          ],
+          "correct": 4,
+          "explanation": "Riscul de epilepsie ulterioară la un copil normal cu o convulsie febrilă simplă este de 1-2%, comparativ cu 0,5% în populația generală. Copiii cu convulsii febrile complexe, cu antecedente personale patologice de afecțiune neurologică sau cu istoric familial de epilepsie au un risc de epilepsie ulterioară de 5-10%. Istoricul familial de epilepsie, în special pe linie maternă, și caracterul complex/focal al convulsiei febrile sunt factori de risc identificați pentru epilepsie ulterioară.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 667-682"
+        },
+        {
+          "id": "68-7",
+          "stem": "Părinții unui sugar de 10 luni, care a avut deja două convulsii febrile simple în ultimele 4 luni, solicită sfatul medicului cu privire la administrarea de antipiretic încă de la primul grad de febră, pentru a preveni o nouă criză convulsivă. Care este afirmația corectă, conform recomandărilor citate în text?",
+          "options": [
+            "Este indicată administrarea intermitentă de valproat la fiecare episod febril, pentru prevenirea recurențelor",
+            "Este indicată profilaxia cronică cu fenobarbital, ale cărei beneficii depășesc net riscurile la acest copil",
+            "Administrarea antipireticelor la debutul febrei poate ameliora disconfortul copilului, dar nu influențează rata recurențelor convulsiilor febrile",
+            "Ibuprofenul previne recurențele convulsiilor febrile, spre deosebire de acetaminofen, care nu are acest efect",
+            "Administrarea antipireticelor la debutul febrei reduce semnificativ riscul de recurență, fiind o indicație standard de profilaxie"
+          ],
+          "correct": 2,
+          "explanation": "Administrarea antipireticelor la momentul ascensiunii termice poate ameliora disconfortul, dar nu afectează rata recurențelor de convulsii febrile, această afirmație fiind valabilă atât pentru acetaminofen, cât și pentru ibuprofen sau diclofenac. Ghidul din 2008 al Academiei Americane de Pediatrie nu recomandă terapie anticonvulsivantă continuă sau intermitentă la copiii cu convulsii febrile simple, întrucât riscurile depășesc în general beneficiile, fiind preferată informarea și susținerea emoțională a părinților.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 667-682"
         }
       ]
@@ -5176,13 +7094,13 @@ const QUESTIONS = {
           "id": "69-1",
           "stem": "Sugar în vârstă de 5 luni este adus la consult deoarece părinții observă că folosește preferențial mâna dreaptă pentru apucarea obiectelor. La examinare, prehensiunea se face cu hiperextensia și răsfirarea degetelor, flexia cotului și abducția excesivă a brațului drept; membrul inferior drept este în extensie, iar piciorul în var equin. Care este diagnosticul cel mai probabil?",
           "options": [
-            "Monoplegie congenitală a membrului superior drept",
             "Hemisindrom neonatal tranzitoriu",
             "Hemiplegie spastică dreaptă",
+            "Monoplegie congenitală a membrului superior drept",
             "Paralizie obstetricală de plex brahial drept",
             "Diplegie spastică cu afectare asimetrică a membrelor superioare"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Textul descrie exact acest tablou clinic: primele manifestări ale hemiplegiei spastice apar în jurul vârstei de 4-5 luni, când sugarul folosește preferențial un membru superior, cu prehensiune caracterizată de hiperextensia și răsfirarea degetelor, flexia cotului și abducția excesivă a brațului, iar membrul inferior este în extensie cu picior în var equin. Paralizia obstetricală de plex brahial se diferențiază prin semne de afectare a neuronului motor periferic, iar hemisindroamele neonatale sunt tranzitorii.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 654-664"
         },
@@ -5190,13 +7108,13 @@ const QUESTIONS = {
           "id": "69-2",
           "stem": "Un copil de 8 luni prezintă hemiplegie dreaptă cu instalare relativ bruscă, după un episod de convulsii de hemicorp drept. La examenul clinic se constată hipotonie a membrelor afectate și pareză facială (nerv VII) de tip central pe aceeași parte. Aceste elemente clinice pledează cel mai mult pentru:",
           "options": [
-            "Diplegie atonă cu afectare asimetrică",
             "Hemiplegie dobândită (survenită după perioada neonatală)",
-            "Hemiplegie congenitală cu debut tardiv",
             "Paralizie obstetricală de plex brahial",
-            "Leucomalacie periventriculară simetrică bilaterală"
+            "Diplegie atonă cu afectare asimetrică",
+            "Leucomalacie periventriculară simetrică bilaterală",
+            "Hemiplegie congenitală cu debut tardiv"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Conform textului, este greu de diferențiat forma congenitală de cea dobândită la vârsta de sugar, dar prezența hipotoniei și a paraliziei faciale de tip central pledează pentru hemiplegia dobândită. De asemenea, sunt descrise cazuri rare cu debut brusc, după accident vascular cerebral sau convulsii de hemicorp, când hemiplegia inițial flască devine ulterior spastică.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 654-664"
         },
@@ -5205,12 +7123,12 @@ const QUESTIONS = {
           "stem": "Un nou-născut la termen suferă un episod de hipoperfuzie cerebrală severă, cu afectare predominantă a zonei corticale de graniță (watershed) dintre teritoriile arteriale. Conform mecanismelor fiziopatologice descrise, care este forma clinică de paralizie cerebrală cel mai probabil rezultată?",
           "options": [
             "Diplegie atonă",
-            "Formă dischinetică/extrapiramidală",
             "Hemiplegie spastică",
-            "Paralizie cerebrală ataxică",
-            "Tetraplegie spastică"
+            "Formă dischinetică/extrapiramidală",
+            "Tetraplegie spastică",
+            "Paralizie cerebrală ataxică"
           ],
-          "correct": 4,
+          "correct": 3,
           "explanation": "Textul precizează că, la nou-născutul la termen, hipoperfuzia lezează zona de graniță (watershed) a cortexului, ducând la tetraplegie spastică, în timp ce leziunile vasculare din teritoriul arterei cerebrale medii determină hemiplegie spastică, iar afectarea ganglionilor bazali produce forme extrapiramidale/dischinetice.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 654-664"
         },
@@ -5218,13 +7136,13 @@ const QUESTIONS = {
           "id": "69-4",
           "stem": "Copil de 4 ani cu tetrapareză spastică severă, neambulator, este urmărit în cadrul unei echipe multidisciplinare de recuperare neuromotorie. Care este conduita corectă de screening pentru o complicație osteoarticulară frecventă la acest tip de pacient?",
           "options": [
-            "Radiografie de coloană vertebrală lunară",
-            "IRM cerebral anual pentru reevaluarea leziunilor",
             "Tomografie computerizată cerebrală anuală",
-            "Radiografie de bazin la interval de 6-12 luni",
-            "Ecografie transfontanelară la fiecare 6 luni"
+            "IRM cerebral anual pentru reevaluarea leziunilor",
+            "Ecografie transfontanelară la fiecare 6 luni",
+            "Radiografie de coloană vertebrală lunară",
+            "Radiografie de bazin la interval de 6-12 luni"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Textul recomandă urmărirea și screeningul afectării șoldului (displazie, subluxație, dislocare) la copiii cu PC, în special la cei nonambulatorii cu tetrapareză spastică, prin efectuarea unei radiografii de bazin la interval de 6-12 luni. Intervenția chirurgicală precoce (osteotomie femurală și/sau de pelvis) pare să aibă rezultate mai bune.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 654-664"
         },
@@ -5232,14 +7150,28 @@ const QUESTIONS = {
           "id": "69-5",
           "stem": "Un copil de 5 ani cu diplegie spastică la nivelul membrelor inferioare, nivel funcțional înalt și capacitate cognitivă adecvată pentru a susține terapia de reabilitare postoperatorie, este evaluat pentru rizotomie dorsală selectivă. Care dintre următoarele afirmații despre această procedură este corectă, conform textului?",
           "options": [
-            "Se recomandă la copii cu vârsta peste 10 ani, după consolidarea deformărilor osoase",
             "Este indicată cu precădere în formele mixte de PC cu distonie marcantă",
             "Constă în secționarea selectivă a rădăcinilor nervoase posterioare (senzoriale) L1-S2, cu conservarea rădăcinilor motorii",
+            "Se recomandă la copii cu vârsta peste 10 ani, după consolidarea deformărilor osoase",
             "Presupune plasarea unei pompe cu eliberare continuă de baclofen la nivel subarahnoidian",
             "Constă în secționarea rădăcinilor nervoase anterioare (motorii) L1-S2, cu conservarea celor senzoriale"
           ],
-          "correct": 2,
+          "correct": 1,
           "explanation": "Rizotomia dorsală selectivă presupune laminectomie, izolarea și stimularea electrică a rădăcinilor nervoase posterioare (senzoriale) L1-S2, cu secționarea celor responsabile de răspunsul spastic anormal (până la 70-90%), toate rădăcinile motorii fiind conservate. Se recomandă la copii cu vârste între 2 și 9 ani, cu răspuns mai bun la cei cu diplegie față de tetraplegie, și nu este indicată în formele mixte cu distonie marcantă.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 654-664"
+        },
+        {
+          "id": "69-6",
+          "stem": "Un copil de 10 ani cu tetraplegie spastică severă, asociind și distonie generalizată, prezintă spasticitate marcantă la nivelul membrelor și trunchiului, refractară la kinetoterapie susținută, medicație miorelaxantă orală și injectări repetate de toxină botulinică. Este avută în vedere inserarea unei pompe pentru administrare intratecală de baclofen. Care este etapa obligatorie, premergătoare deciziei de montare definitivă a pompei?",
+          "options": [
+            "Rizotomia dorsală selectivă efectuată în aceeași ședință operatorie",
+            "Chirurgia stereotactică a ganglionilor bazali, ca etapă premergătoare obligatorie",
+            "Testarea răspunsului la baclofen administrat prin puncție lombară",
+            "Administrarea intratecală test de toxină botulinică",
+            "O probă terapeutică cu dantrolen oral, timp de cel puțin 6 luni"
+          ],
+          "correct": 2,
+          "explanation": "Textul precizează că, înaintea plasării definitive a pompei, pacientul trebuie testat pentru răspunsul la baclofen administrat prin puncție lombară, iar dacă răspunsul este benefic, se poate efectua procedura chirurgicală de implantare la nivelul peretelui abdominal anterior, cu cateterul montat în spațiul subarahnoidian. Metoda rămâne indicată doar la pacienții cu spasticitate și clonus sever care nu răspund la alte mijloace terapeutice, precum cele menționate în vinietă.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 654-664"
         }
       ]
@@ -5254,9 +7186,9 @@ const QUESTIONS = {
           "options": [
             "Diagnosticul de SHP este exclus, fiind vorba despre reflux gastroesofagian fiziologic",
             "Diagnosticul de stenoză hipertrofică de pilor formă atipică trebuie luat în discuție",
-            "Tabloul clinic este tipic pentru invaginația intestinală",
+            "Alcaloza hipocloremică orientează în mod caracteristic spre gastroenterită acută",
             "Ameliorarea rapidă după rehidratare exclude o patologie obstructivă digestivă",
-            "Alcaloza hipocloremică orientează în mod caracteristic spre gastroenterită acută"
+            "Tabloul clinic este tipic pentru invaginația intestinală"
           ],
           "correct": 1,
           "explanation": "Textul precizează că forma atipică de SHP trebuie luată în discuție la un sugar de vârstă mică cu vărsături nonbilioase repetate, alcaloză metabolică hipocloremică și/sau ameliorare clinică rapidă după rehidratare. Aceste elemente, deși nespecifice, nu exclud SHP, ci impun suspiciune diagnostică suplimentară. Palparea olivei pilorice este oricum mai rar pozitivă în prezent (aproximativ 49% din cazuri).",
@@ -5266,13 +7198,13 @@ const QUESTIONS = {
           "id": "70-2",
           "stem": "Un sugar diagnosticat cu stenoză hipertrofică de pilor prezintă și icter. Care este afirmația corectă referitoare la această asociere?",
           "options": [
-            "Icterul la un sugar cu SHP impune amânarea pilorotomiei până la investigarea completă a unei atrezii de căi biliare",
+            "Reprezintă sindromul ictero-piloric, întâlnit la aproximativ 14% dintre cazurile de SHP, cu rezoluție după intervenția chirurgicală",
             "Hiperbilirubinemia asociată SHP este exclusiv de tip direct și nu se remite postoperator",
-            "Asocierea icter-SHP este întâlnită la peste jumătate din cazuri",
             "Prezența icterului contraindică intervenția chirurgicală până la normalizarea bilirubinei",
-            "Reprezintă sindromul ictero-piloric, întâlnit la aproximativ 14% dintre cazurile de SHP, cu rezoluție după intervenția chirurgicală"
+            "Icterul la un sugar cu SHP impune amânarea pilorotomiei până la investigarea completă a unei atrezii de căi biliare",
+            "Asocierea icter-SHP este întâlnită la peste jumătate din cazuri"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Textul menționează explicit că hiperbilirubinemia poate însoți SHP, determinând sindromul ictero-piloric în 14% din cazuri, cu rezoluție după intervenția chirurgicală. Nu se descrie necesitatea amânării intervenției sau contraindicarea acesteia din cauza icterului.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 302-304"
         },
@@ -5281,10 +7213,10 @@ const QUESTIONS = {
           "stem": "Un sugar de 5 săptămâni cu suspiciune clinică de stenoză hipertrofică de pilor este investigat ecografic. Care dintre următoarele seturi de valori corespunde limitelor superioare descrise pentru grosimea și lungimea mușchiului piloric, respectiv diametrul pilorului, susținând diagnosticul de SHP?",
           "options": [
             "Grosime 3-4 mm, lungime 15-19 mm, diametru 10-14 mm",
-            "Grosime 1-2 mm, lungime 8-10 mm, diametru 5-7 mm",
-            "Grosime 10 mm, lungime 15-19 mm, diametru 3-4 mm",
+            "Grosime 6-8 mm, lungime 25-30 mm, diametru 18-20 mm",
             "Grosime 3-4 mm, lungime 5-7 mm, diametru 10-14 mm",
-            "Grosime 6-8 mm, lungime 25-30 mm, diametru 18-20 mm"
+            "Grosime 10 mm, lungime 15-19 mm, diametru 3-4 mm",
+            "Grosime 1-2 mm, lungime 8-10 mm, diametru 5-7 mm"
           ],
           "correct": 0,
           "explanation": "Textul precizează că la ecografia abdominală se apreciază grosimea mușchiului piloric (limita superioară de 3-4 mm), lungimea mușchiului piloric (limita superioară de 15-19 mm) și diametrul pilorului (limita superioară de 10-14 mm). Ecografia abdominală are sensibilitate și specificitate de peste 95% pentru SHP.",
@@ -5294,13 +7226,13 @@ const QUESTIONS = {
           "id": "70-4",
           "stem": "Un sugar se prezintă cu vărsături bilioase, aspect care nu este caracteristic stenozei hipertrofice de pilor. Care este investigația imagistică inițială recomandată pentru a exclude o cauză distală de obstrucție intestinală?",
           "options": [
-            "Tomografia computerizată abdominală",
+            "Endoscopia digestivă superioară",
             "Ecografia abdominală, ca investigație de rutină pentru SHP",
+            "Tomografia computerizată abdominală",
             "Examenul radiologic cu substanță de contrast per os",
-            "Radiografia abdominală pe gol",
-            "Endoscopia digestivă superioară"
+            "Radiografia abdominală pe gol"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Textul precizează că radiografia abdominală pe gol se efectuează în cazul sugarilor cu vărsături bilioase la care se suspectează o cauză distală de obstrucție, spre deosebire de SHP, care se manifestă tipic prin vărsături nonbilioase. Examenul cu substanță de contrast se rezervă cazurilor incerte clinic și ecografic, iar endoscopia se folosește extrem de rar.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 302-304"
         },
@@ -5308,14 +7240,28 @@ const QUESTIONS = {
           "id": "70-5",
           "stem": "Un sugar cu stenoză hipertrofică de pilor prezintă alcaloză hipocloremică semnificativă la evaluarea preoperatorie. Care este conduita corectă înaintea intervenției chirurgicale (pilorotomie extramucoasă Fredet-Weber-Ramstedt)?",
           "options": [
-            "Alcaloza hipocloremică nu influențează evoluția postoperatorie și nu necesită corectare prealabilă",
-            "Se recomandă restricție hidrică strictă până la normalizarea spontană a electroliților",
+            "Corectarea alcalozei și a dezechilibrelor electrolitice anterior intervenției, întrucât persistența lor se asociază cu risc crescut de apnee postoperatorie",
             "Intervenția chirurgicală trebuie efectuată imediat, iar corectarea electrolitică se realizează exclusiv postoperator",
             "Corectarea se realizează exclusiv prin administrarea de KCl în bolus rapid intravenos",
-            "Corectarea alcalozei și a dezechilibrelor electrolitice anterior intervenției, întrucât persistența lor se asociază cu risc crescut de apnee postoperatorie"
+            "Se recomandă restricție hidrică strictă până la normalizarea spontană a electroliților",
+            "Alcaloza hipocloremică nu influențează evoluția postoperatorie și nu necesită corectare prealabilă"
           ],
-          "correct": 4,
+          "correct": 0,
           "explanation": "Textul precizează că alcaloza și dezechilibrele electrolitice trebuie corectate anteoperatoriu, deoarece persistența lor a fost asociată cu un risc crescut de apnee. Postoperator se impune, de asemenea, monitorizarea riscului de apnee cel puțin în primele 24 de ore.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 302-304"
+        },
+        {
+          "id": "70-6",
+          "stem": "Un sugar operat prin pilorotomie extramucoasă Fredet-Weber-Ramstedt pentru stenoză hipertrofică de pilor este realimentat oral la câteva ore postoperator. La reluarea alimentației, prezintă episoade de regurgitații repetate, fără alte semne de alarmă. Care este conduita corectă?",
+          "options": [
+            "Se administrează antiemetice injectabile ca primă linie terapeutică",
+            "Regurgitațiile postoperatorii apar frecvent (aproximativ 80% din cazuri) și nu impun întreruperea alimentației per os",
+            "Se suspectează o perforație de mucoasă nedecelată intraoperator și se indică reintervenție chirurgicală de urgență",
+            "Se efectuează de urgență tranzit baritat pentru excluderea unei stenoze pilorice reziduale",
+            "Se întrerupe imediat alimentația orală și se reia nutriția parenterală totală"
+          ],
+          "correct": 1,
+          "explanation": "Textul menționează explicit că, după inițierea alimentației postoperatorii la câteva ore de la intervenție, în 80% din cazuri apar regurgitații, dar acestea nu impun întreruperea alimentației per os. Perforația mucoasei este o complicație rară (sub 1%), depistată de regulă intraoperator, și nu se manifestă tipic prin regurgitații izolate postoperatorii.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 302-304"
         }
       ]
@@ -5328,13 +7274,13 @@ const QUESTIONS = {
           "id": "71-1",
           "stem": "Un sugar de 8 luni se prezintă cu dureri abdominale colicative, vărsături și scaun cu aspect de „jeleu de coacăze”. Se suspectează invaginație intestinală. Care este investigația imagistică de elecție pentru confirmarea diagnosticului?",
           "options": [
-            "Tomografia computerizată abdominală",
             "Ecografia abdominală",
-            "Radiografia abdominală simplă",
+            "Tomografia computerizată abdominală",
             "Tranzitul baritat",
+            "Radiografia abdominală simplă",
             "Rezonanța magnetică abdominală"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Ecografia abdominală reprezintă investigația de elecție în diagnosticul invaginației intestinale, fiind ușor de efectuat, neiradiantă și permițând identificarea unui posibil punct de plecare, cu aspect tipic „în cocardă” sau „pseudorinichi”. Radiografia abdominală are valoare limitată, oferind doar semne indirecte, iar CT și IRM nu sunt utilizate de rutină.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 305-307"
         },
@@ -5342,13 +7288,13 @@ const QUESTIONS = {
           "id": "71-2",
           "stem": "În cadrul reducerii pneumatice a invaginației intestinale sub ghidaj fluoroscopic sau ecografic, care este gazul cel mai frecvent utilizat pentru insuflare și care este motivul principal al preferinței acestuia?",
           "options": [
-            "Oxigenul, deoarece asigură cea mai bună vizualizare fluoroscopică a tumorii de invaginație",
-            "Azotul, deoarece are cea mai mică solubilitate sanguină dintre gazele disponibile",
-            "Aerul atmosferic, deoarece este disponibil imediat și nu necesită echipament suplimentar",
             "Dioxidul de carbon, deoarece este rapid absorbit din intestin, creează un disconfort redus și nu este asociat cu embolii gazoase",
-            "Heliul, deoarece reduce semnificativ riscul de perforație intestinală în timpul insuflării"
+            "Aerul atmosferic, deoarece este disponibil imediat și nu necesită echipament suplimentar",
+            "Heliul, deoarece reduce semnificativ riscul de perforație intestinală în timpul insuflării",
+            "Oxigenul, deoarece asigură cea mai bună vizualizare fluoroscopică a tumorii de invaginație",
+            "Azotul, deoarece are cea mai mică solubilitate sanguină dintre gazele disponibile"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Textul precizează că dioxidul de carbon este cel mai utilizat gaz pentru reducerea pneumatică, fiind rapid absorbit din intestin, creând un disconfort redus și nefiind asociat cu embolii gazoase. Presiunea medie de insuflare variază între 80 și 120 mmHg, sub ghidaj fluoroscopic sau ecografic.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 305-307"
         },
@@ -5356,13 +7302,13 @@ const QUESTIONS = {
           "id": "71-3",
           "stem": "În timpul unei reduceri pneumatice a invaginației intestinale la un copil, survine o perforație intestinală cu pneumoperitoneu. Care este conduita imediată recomandată?",
           "options": [
-            "Trecerea imediată la reducere hidrostatică cu substanță de contrast baritată",
             "Administrarea de antibiotice cu monitorizare clinică, fără intervenție imediată",
-            "Laparoscopie exploratorie efectuată fără decompresia prealabilă a pneumoperitoneului",
             "Decompresia pe ac a pneumoperitoneului, urmată de explorarea chirurgicală",
-            "Continuarea insuflării până la finalizarea reducerii, urmată de reevaluare ecografică"
+            "Trecerea imediată la reducere hidrostatică cu substanță de contrast baritată",
+            "Continuarea insuflării până la finalizarea reducerii, urmată de reevaluare ecografică",
+            "Laparoscopie exploratorie efectuată fără decompresia prealabilă a pneumoperitoneului"
           ],
-          "correct": 3,
+          "correct": 1,
           "explanation": "Conform textului, în cazul unei perforații survenite în timpul reducerii pneumatice se recomandă decompresia pe ac a pneumoperitoneului, pentru a evita compromiterea statusului respirator, urmată de explorarea chirurgicală. Bariul nu mai este recomandat pentru reducerea hidrostatică tocmai din cauza riscului de peritonită severă în caz de perforație.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 305-307"
         },
@@ -5370,13 +7316,13 @@ const QUESTIONS = {
           "id": "71-4",
           "stem": "Un copil cu invaginație intestinală prezintă la evaluare semne de iritație peritoneală, iar radiografia abdominală evidențiază pneumoperitoneu. Care este conduita terapeutică adecvată?",
           "options": [
-            "Abord laparoscopic, considerat metodă de elecție indiferent de context clinic",
             "Intervenție chirurgicală, reducerea nechirurgicală și abordul laparoscopic fiind contraindicate în acest context",
+            "Abord laparoscopic, considerat metodă de elecție indiferent de context clinic",
             "Reducere hidrostatică cu ser fiziologic sub ghidaj ecografic",
             "Repetarea tentativelor de reducere nechirurgicală la interval de 30 de minute",
             "Reducere pneumatică sub ghidaj fluoroscopic, ca primă intenție"
           ],
-          "correct": 1,
+          "correct": 0,
           "explanation": "Semnele de afectare intestinală (iritație peritoneală sau pneumoperitoneu) reprezintă o indicație pentru managementul chirurgical, reducerea pneumatică sau hidrostatică fiind contraindicată în prezența semnelor de perforație. În plus, pneumoperitoneul și semnele de peritonită sunt contraindicații pentru abordul laparoscopic, impunând astfel chirurgia clasică.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 305-307"
         },
@@ -5384,14 +7330,28 @@ const QUESTIONS = {
           "id": "71-5",
           "stem": "Un copil a beneficiat de dezinvaginare nechirurgicală reușită pentru un episod de invaginație intestinală. Referitor la riscul și managementul reinvaginării, care afirmație este corectă conform datelor din literatură?",
           "options": [
-            "Reinvaginarea apare la aproximativ 1% din cazuri și impune întotdeauna intervenție chirurgicală imediată",
-            "Reinvaginarea apare la aproximativ 10% din cazurile reduse nechirurgical, o treime în primele 24 de ore, iar majoritatea în primele șase luni postreducere",
             "Reinvaginarea apare la aproximativ 50% din cazuri, majoritatea în prima săptămână postreducere",
+            "Reinvaginarea apare la aproximativ 10% din cazurile reduse nechirurgical, o treime în primele 24 de ore, iar majoritatea în primele șase luni postreducere",
             "Reinvaginarea apare mai frecvent decât episodul inițial, iar ratele de succes ale reducerii nechirurgicale sunt semnificativ mai scăzute",
-            "Reinvaginarea nu poate fi niciodată tratată nechirurgical, fiind necesară laparotomia de fiecare dată"
+            "Reinvaginarea nu poate fi niciodată tratată nechirurgical, fiind necesară laparotomia de fiecare dată",
+            "Reinvaginarea apare la aproximativ 1% din cazuri și impune întotdeauna intervenție chirurgicală imediată"
           ],
           "correct": 1,
           "explanation": "Reinvaginarea apare în aproximativ 10% din cazurile la care s-a reușit dezinvaginarea nechirurgicală, o treime dintre acestea survenind în primele 24 de ore, iar majoritatea în primele șase luni postreducere. Managementul este similar celui din primul episod, iar ratele de succes ale tehnicilor nechirurgicale sunt comparabile cu cele din episodul inițial dacă pacientul este stabil hemodinamic și fără semne de peritonită sau pneumoperitoneu.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 305-307"
+        },
+        {
+          "id": "71-6",
+          "stem": "Un copil de 5 ani este diagnosticat cu invaginație intestinală. Spre deosebire de sugarii mici, la această vârstă crește semnificativ probabilitatea existenței unui punct de plecare patologic (invaginație secundară). Care este cea mai frecventă cauză de invaginație secundară la copii, conform textului?",
+          "options": [
+            "Polipii intestinali",
+            "Duplicațiile intestinale",
+            "Diverticulul Meckel",
+            "Limfomul intestinal",
+            "Purpura Henoch-Schönlein"
+          ],
+          "correct": 2,
+          "explanation": "Textul precizează că, odată cu creșterea în vârstă, crește incidența invaginațiilor cu punct de plecare identificabil, cel mai frecvent fiind diverticulul Meckel, urmat de polipi și duplicații intestinale. Purpura Henoch-Schönlein este menționată separat, printre alte patologii asociate invaginației, iar limfoamele reprezintă o cauză malignă rară de invaginație secundară.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 305-307"
         }
       ]
@@ -5404,13 +7364,13 @@ const QUESTIONS = {
           "id": "72-1",
           "stem": "Un nou-născut prematur (32 săptămâni), alimentat enteral cu formulă de lapte praf, aflat în ziua a 7-a de viață, dezvoltă distensie abdominală ușoară, reziduu gastric crescut la alimentație, un episod de apnee, bradicardie și instabilitate termică. Nu se decelează zgomote intestinale diminuate, hemoragie digestivă, celulită abdominală, formațiune palpabilă în fosa iliacă dreaptă sau semne de peritonită. Conform stadializării Bell a enterocolitei necrozante, acest tablou clinic corespunde:",
           "options": [
-            "Sepsis neonatal tardiv necomplicat, fără afectare digestivă",
-            "Peritonită primară neonatală",
-            "Stadiul III – enterocolită necrozantă avansată",
             "Stadiul I – suspiciune de enterocolită necrozantă",
-            "Stadiul II – enterocolită necrozantă certă"
+            "Peritonită primară neonatală",
+            "Sepsis neonatal tardiv necomplicat, fără afectare digestivă",
+            "Stadiul II – enterocolită necrozantă certă",
+            "Stadiul III – enterocolită necrozantă avansată"
           ],
-          "correct": 3,
+          "correct": 0,
           "explanation": "Distensia abdominală ușoară (semn precoce), dificultățile de alimentație cu reziduu gastric crescut, apneea, bradicardia și instabilitatea termică sunt semnele enumerate pentru stadiul I (suspiciune de EN) în tabelul de stadializare Bell. Absența zgomotelor intestinale diminuate, a hemoragiei digestive și a celulitei abdominale exclude stadiul II, iar absența distensiei marcante, a formațiunii în fosa iliacă dreaptă și a semnelor de peritonită sau șoc septic exclude stadiul III.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 139-142"
         },
@@ -5420,8 +7380,8 @@ const QUESTIONS = {
           "options": [
             "Ecografia abdominală nu poate evidenția prezența gazului la nivel portal",
             "Pneumatoza intestinală caracterizează stadiul radiologic incipient, de aspect normal/ileus ușor",
-            "Spectroscopia în infraroșu (NIRS) a demonstrat, prin studii concludente, o valoare predictivă certă pentru EN",
             "Gazul la nivelul venei porte se identifică radiografic la peste jumătate dintre cazuri",
+            "Spectroscopia în infraroșu (NIRS) a demonstrat, prin studii concludente, o valoare predictivă certă pentru EN",
             "Pneumoperitoneul este prezent la aproximativ 60% dintre cazuri și semnalează un prognostic rezervat"
           ],
           "correct": 4,
@@ -5446,13 +7406,13 @@ const QUESTIONS = {
           "id": "72-4",
           "stem": "Un nou-născut cu enterocolită necrozantă stadiul III prezintă șoc septic refractar și coagulare intravasculară diseminată, fiind considerat cu risc operator prohibitiv pentru o rezecție intestinală extensivă imediată. Care este soluția terapeutică menționată pentru temporizarea intervenției chirurgicale definitive, până la ameliorarea stării clinice a pacientului?",
           "options": [
-            "Reluarea imediată a alimentației enterale trofice",
-            "Continuarea exclusivă a antibioterapiei cu spectru larg, fără altă intervenție",
+            "Transplant intestinal de urgență",
             "Enteroplastia seriată transversă",
-            "Instalarea unui tub de dren la nivel peritoneal",
-            "Transplant intestinal de urgență"
+            "Continuarea exclusivă a antibioterapiei cu spectru larg, fără altă intervenție",
+            "Reluarea imediată a alimentației enterale trofice",
+            "Instalarea unui tub de dren la nivel peritoneal"
           ],
-          "correct": 3,
+          "correct": 4,
           "explanation": "Textul precizează că instalarea unui tub de dren la nivel peritoneal reprezintă o tehnică alternativă la rezecția chirurgicală, propusă în cazurile cu stare critică, având ca scop temporizarea rezecției până la ameliorarea stării clinice a pacientului. Transplantul intestinal se impune doar în cazurile cu rezecții extensive deja efectuate, iar enteroplastia seriată este menționată ca tehnică chirurgicală mai nouă, nu ca metodă de temporizare.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 139-142"
         },
@@ -5460,14 +7420,28 @@ const QUESTIONS = {
           "id": "72-5",
           "stem": "Care dintre următoarele reprezintă o complicație tardivă posibilă a necrozei transmurale intestinale în evoluția enterocolitei necrozante, secundară proliferării fibroblastice locale, raportată în 10-35% din cazuri?",
           "options": [
-            "Ciroza hepatică, independentă de durata nutriției parenterale",
+            "Sindromul de intestin scurt la toți pacienții tratați exclusiv medical",
             "Stricturile intestinale, cu evoluție ulterioară spre ocluzie intestinală",
             "Recurența enterocolitei necrozante",
             "Perforația gastrică izolată, fără antecedente de necroză intestinală",
-            "Sindromul de intestin scurt la toți pacienții tratați exclusiv medical"
+            "Ciroza hepatică, independentă de durata nutriției parenterale"
           ],
           "correct": 1,
           "explanation": "Conform textului, necroza transmurală poate evolua, printre altele, către proliferare fibroblastică locală cu formarea, în timp, de stricturi intestinale (în 10-35% din cazuri) și apoi de ocluzii intestinale. Recurența EN este raportată separat, în 5-10% din cazuri, sindromul de intestin scurt apare doar la cei operați (nu la toți tratați medical), iar ciroza hepatică este o complicație asociată nutriției parenterale totale prelungite, nu independentă de aceasta.",
+          "source": "Pleșca - Tratat de Pediatrie, pag. 139-142"
+        },
+        {
+          "id": "72-6",
+          "stem": "Un nou-născut prematur cu risc crescut de enterocolită necrozantă se află în perioada de inițiere a alimentației enterale. Care dintre următoarele măsuri profilactice este susținută de text ca reducând riscul de enterocolită necrozantă?",
+          "options": [
+            "Administrarea de rutină a inhibitorilor de receptori H2 pentru profilaxia ulcerului de stres",
+            "Cateterizarea precoce a vaselor ombilicale pentru monitorizare hemodinamică",
+            "Utilizarea prelungită de antibiotice cu spectru larg în primele săptămâni de viață",
+            "Inițierea alimentației enterale precoce cu formulă de lapte praf",
+            "Alimentația standardizată cu lapte matern, cu o perioadă inițială de alimentație trofică"
+          ],
+          "correct": 4,
+          "explanation": "Textul menționează, ca măsură profilactică, alimentația cu lapte matern standardizată, cu o perioadă inițială de alimentație trofică. În schimb, utilizarea prelungită de antibiotice și de inhibitori de receptori H2 favorizează translocația bacteriană și cresc riscul de EN, alimentația cu formulă crește riscul (alimentația enterală precoce fiind asociată cu un risc de aproximativ 100 de ori mai mare), iar cateterizarea vaselor ombilicale este enumerată printre factorii predispozanți, nu printre cei protectivi.",
           "source": "Pleșca - Tratat de Pediatrie, pag. 139-142"
         }
       ]
